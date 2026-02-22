@@ -1,5 +1,6 @@
 services:
   postgres:
+    # TODO: upgrade to postgres:17 when Docker Hub connectivity is restored
     image: postgres:16
     environment:
       POSTGRES_DB: explore_universe
@@ -35,6 +36,7 @@ services:
       - minio_data:/data
 
   minio-init:
+    # TODO: switch to minio/mc:latest when Docker Hub connectivity is restored
     image: minio/minio:latest
     depends_on:
       - minio
