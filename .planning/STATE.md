@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-21)
 
 **Core value:** Any astronomical image goes in, every object comes out segmented, classified, and explorable -- turning raw telescope data into a navigable, queryable encyclopedia of the universe.
-**Current focus:** Phase 2: Data Ingestion & Tiling
+**Current focus:** Phase 3: Sky Viewer
 
 ## Current Position
 
-Phase: 2 of 8 (Data Ingestion & Tiling) -- COMPLETE
-Plan: 3 of 3 in current phase (all complete)
-Status: Phase Complete
-Last activity: 2026-02-22 -- Plan 02-03 complete (pipeline orchestrator & integration tests)
+Phase: 3 of 8 (Sky Viewer)
+Plan: 1 of 3 in current phase (1 complete)
+Status: In Progress
+Last activity: 2026-02-22 -- Plan 03-01 complete (tile serving API & frontend types)
 
 Progress: [████░░░░░░] 37.5%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 4
-- Average duration: ~48 min
-- Total execution time: ~3h 3min
+- Total plans completed: 5
+- Average duration: ~37 min
+- Total execution time: ~3h 5min
 
 **By Phase:**
 
@@ -29,13 +29,14 @@ Progress: [████░░░░░░] 37.5%
 |-------|-------|-------|----------|
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
 | 2. Data Ingestion & Tiling | 3 | 13min | 4min |
+| 3. Sky Viewer | 1 (of 3) | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits), Phase 2 Plan 1 (2 tasks, 2 commits), Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits)
-- Trend: Execution speed increasing with established patterns. Phase 2 complete.
+- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits), Phase 2 Plan 1 (2 tasks, 2 commits), Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits)
+- Trend: Execution speed increasing with established patterns. Phase 3 in progress.
 
 *Updated after each plan completion*
-| Phase 02 P03 | 3min | 2 tasks | 6 files |
+| Phase 03 P01 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -66,6 +67,10 @@ Recent decisions affecting current work:
 - [Phase 2]: Ingest task creates Observation record synchronously before dispatching Celery chain for immediate UUID availability
 - [Phase 2]: API endpoint queries DB by archive_observation_id for UUID (not blocking on Celery task result)
 - [Phase 2]: Status endpoint returns full provenance + processing steps with timestamps for pipeline monitoring
+- [Phase 3]: WCS extracted on-demand from FITS in MinIO (not persisted in DB) -- avoids modifying Phase 2 code
+- [Phase 3]: CD matrix falls back to CDELT1/CDELT2 for older FITS files lacking CD keywords
+- [Phase 3]: Tile proxy uses StreamingResponse for minimal memory (no download-then-send)
+- [Phase 3]: API client uses standard fetch() -- no external HTTP library dependency
 
 ### Pending Todos
 
@@ -83,6 +88,6 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 02-03-PLAN.md (pipeline orchestrator & integration tests). Phase 2 complete. Next: Phase 3
+Stopped at: Completed 03-01-PLAN.md (tile serving API & frontend types). Next: 03-02-PLAN.md
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe

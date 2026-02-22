@@ -33,8 +33,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Browsing & Visualization
 
-- [ ] **BROWSE-01**: User can pan and zoom across ingested imagery like a map, from full field down to individual objects
-- [ ] **BROWSE-02**: User sees sky coordinates (RA/Dec) on hover or click within the viewer
+- [x] **BROWSE-01**: User can pan and zoom across ingested imagery like a map, from full field down to individual objects
+- [x] **BROWSE-02**: User sees sky coordinates (RA/Dec) on hover or click within the viewer
 - [ ] **BROWSE-03**: User can search for objects by name (resolved via SIMBAD)
 - [ ] **BROWSE-04**: User can search for objects by sky coordinates (cone search)
 - [ ] **BROWSE-05**: User can filter objects by classification type
@@ -121,8 +121,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | CLASS-04 | Phase 5 | Pending |
 | CLASS-05 | Phase 5 | Pending |
 | CLASS-06 | Phase 5 | Pending |
-| BROWSE-01 | Phase 3 | Pending |
-| BROWSE-02 | Phase 3 | Pending |
+| BROWSE-01 | Phase 3 | Complete |
+| BROWSE-02 | Phase 3 | Complete |
 | BROWSE-03 | Phase 6 | Pending |
 | BROWSE-04 | Phase 6 | Pending |
 | BROWSE-05 | Phase 6 | Pending |
