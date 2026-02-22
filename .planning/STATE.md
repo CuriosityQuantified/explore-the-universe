@@ -10,17 +10,17 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 2 of 8 (Data Ingestion & Tiling)
-Plan: 0 of 3 in current phase
-Status: Ready to plan
-Last activity: 2026-02-21 -- Phase 1 complete, merged to main, pushed to GitHub
+Plan: 1 of 3 in current phase
+Status: Executing
+Last activity: 2026-02-22 -- Plan 02-01 complete (MAST download task)
 
-Progress: [█░░░░░░░░░] 12.5%
+Progress: [██░░░░░░░░] 16.7%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
-- Average duration: ~3 hours
+- Total plans completed: 2
+- Average duration: ~1.5 hours
 - Total execution time: ~3 hours
 
 **By Phase:**
@@ -28,10 +28,11 @@ Progress: [█░░░░░░░░░] 12.5%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
+| 2. Data Ingestion & Tiling | 1 | 2min | 2min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits)
-- Trend: First phase, baseline established
+- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits), Phase 2 Plan 1 (2 tasks, 2 commits)
+- Trend: Execution speed increasing with established patterns
 
 *Updated after each plan completion*
 
@@ -53,12 +54,16 @@ Recent decisions affecting current work:
 - [Phase 1]: PostgreSQL 16 (not 17) due to Docker Hub connectivity -- TODO to upgrade when resolved
 - [Phase 1]: Celery uses explicit include= instead of autodiscover_tasks -- more reliable for nested task modules
 - [Phase 1]: Next.js 16 uses src/ directory by default -- --src-dir=false flag not respected
+- [Phase 2]: S3 client uses lazy singleton pattern in shared/s3.py (resolves Phase 1 TODO)
+- [Phase 2]: MAST download uses query_criteria -> get_product_list -> filter_products chain (avoids obsid pitfall)
+- [Phase 2]: Celery tasks create own SessionLocal() for DB access (not FastAPI dependency injection)
+- [Phase 2]: Provenance from MAST query table, not FITS headers -- WCS extraction in Plan 02
 
 ### Pending Todos
 
 - Upgrade postgres:16 to postgres:17 when Docker Hub connectivity is restored (TODO in docker-compose.yml)
 - Switch minio-init from minio/minio to minio/mc:latest when Docker Hub connectivity is restored (TODO in docker-compose.yml)
-- Factor S3 client into shared dependency before Phase 2 (review recommendation I-2)
+- ~~Factor S3 client into shared dependency before Phase 2 (review recommendation I-2)~~ DONE in 02-01
 - Create Neo4j driver as singleton at app startup (review recommendation I-3)
 
 ### Blockers/Concerns
@@ -69,7 +74,7 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-02-21
-Stopped at: Phase 1 complete. Merged to main, pushed to GitHub. Ready for Phase 2.
+Last session: 2026-02-22
+Stopped at: Completed 02-01-PLAN.md (MAST download task). Next: 02-02-PLAN.md
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe
