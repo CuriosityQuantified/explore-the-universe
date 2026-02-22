@@ -156,7 +156,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
-| 2. Data Ingestion & Tiling | 3/3 | Complete | 2026-02-22 |
+| 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
 | 3. Sky Viewer | 0/1 | Not started | - |
 | 4. Segmentation | 0/2 | Not started | - |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |

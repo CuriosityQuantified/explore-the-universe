@@ -8,5 +8,16 @@
     "research": true,
     "plan_check": true,
     "verifier": true
+  },
+  "execution_output": {
+    "technical_depth": "comprehensive",
+    "include": [
+      "function_names",
+      "variable_names",
+      "call_graph",
+      "code_map",
+      "architecture_connections",
+      "data_flow"
+    ]
   }
 }
