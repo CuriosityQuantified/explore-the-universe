@@ -7,7 +7,7 @@ from sqlalchemy.orm import Session
 
 from api.db.session import get_database_session
 from shared.config import settings
-from shared.models import Observation
+from shared.models import Observation, PipelineStatus
 
 router = APIRouter()
 
@@ -44,7 +44,7 @@ def upload_test_file(
         archive_observation_id=f"test-{new_observation_uuid}",
         telescope_name="test",
         instrument_name="test",
-        pipeline_status="pending",
+        pipeline_status=PipelineStatus.pending,
     )
     database_session.add(observation_record)
     database_session.commit()

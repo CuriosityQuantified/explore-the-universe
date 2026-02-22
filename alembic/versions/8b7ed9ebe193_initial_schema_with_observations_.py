@@ -84,4 +84,6 @@ def downgrade() -> None:
     op.drop_table('processing_steps')
     op.drop_table('astronomical_objects')
     op.drop_table('observations')
+    op.execute("DROP TYPE IF EXISTS pipeline_status_enum")
+    op.execute("DROP TYPE IF EXISTS step_status_enum")
     # ### end Alembic commands ###
