@@ -11,5 +11,6 @@ celery_app = Celery(
         "pipeline.tasks.download",
         "pipeline.tasks.validate_wcs",
         "pipeline.tasks.tile",
+        "pipeline.tasks.ingest",
     ],
 )
