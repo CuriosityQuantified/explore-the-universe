@@ -21,6 +21,10 @@ class Settings(BaseSettings):
     neo4j_user: str = "neo4j"
     neo4j_password: str = "neo4j_dev_password"
 
+    # MAST (Mikulski Archive for Space Telescopes)
+    mast_api_token: str = ""  # Empty string = public data only, no auth needed for public JWST data
+    mast_download_directory: str = "/tmp/mast_downloads"  # Local temp dir for downloads before MinIO upload
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 

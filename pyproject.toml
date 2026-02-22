@@ -15,6 +15,11 @@ dependencies = [
     "boto3>=1.35.0",
     "neo4j>=5.26.0",
     "python-multipart>=0.0.18",
+    # Astronomy stack
+    "astropy>=7.0",
+    "astroquery>=0.4.11",
+    "pyvips>=3.1.0",  # Requires: brew install vips (macOS) or apt install libvips-dev (Linux)
+    "Pillow>=10.0",
 ]
 
 [project.optional-dependencies]
@@ -32,3 +37,6 @@ packages = ["shared", "pipeline", "api"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+]

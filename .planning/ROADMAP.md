@@ -13,7 +13,7 @@ This roadmap delivers a galactic encyclopedia that ingests JWST imagery, segment
 Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Infrastructure** - Docker Compose services, database schemas, pipeline skeleton, and API framework
-- [ ] **Phase 2: Data Ingestion & Tiling** - FITS download from MAST, WCS extraction, multi-resolution tile pyramid generation
+- [x] **Phase 2: Data Ingestion & Tiling** - FITS download from MAST, WCS extraction, multi-resolution tile pyramid generation
 - [ ] **Phase 3: Sky Viewer** - Deep-zoom tile viewer with pan, zoom, and coordinate overlay
 - [ ] **Phase 4: Segmentation** - SAM-based object detection with tile boundary merging and per-object cutouts
 - [ ] **Phase 5: Classification & Cross-Matching** - Catalog cross-matching, ML classification for unknowns, anomaly flagging
@@ -49,12 +49,12 @@ UAT: 6/6 passed, 0 issues
   3. Ingested images are tiled into multi-resolution pyramids viewable at any zoom level
   4. Provenance metadata (telescope, instrument, filter, exposure time, observation ID) is stored and queryable
   5. A trillion-pixel-class FITS image processes through tiling without memory exhaustion
-**Plans**: 3 plans
+**Plans**: Complete
 
 Plans:
-- [ ] 02-01-PLAN.md — Shared S3 client, astronomy dependencies, MAST download task
-- [ ] 02-02-PLAN.md — WCS validation and DZI tile pyramid generation
-- [ ] 02-03-PLAN.md — Pipeline orchestration, API endpoint, integration tests
+- [x] 02-01: Shared S3 client, astronomy dependencies, MAST download task (2 tasks, 2 commits)
+- [x] 02-02: WCS validation and DZI tile pyramid generation (2 tasks, 2 commits)
+- [x] 02-03: Pipeline orchestration, API endpoint, integration tests (2 tasks, 2 commits)
 
 ### Phase 3: Sky Viewer
 **Goal**: Users can visually explore ingested imagery by panning and zooming like a map, with sky coordinates displayed
@@ -156,7 +156,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
-| 2. Data Ingestion & Tiling | 0/3 | Not started | - |
+| 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
 | 3. Sky Viewer | 0/1 | Not started | - |
 | 4. Segmentation | 0/2 | Not started | - |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |
