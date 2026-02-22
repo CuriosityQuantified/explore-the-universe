@@ -3,6 +3,7 @@ from fastapi import FastAPI
 from api.routers.health import router as health_router
 from api.routers.ingest import router as ingest_router
 from api.routers.test_upload import router as test_upload_router
+from api.routers.tiles import router as tiles_router
 
 app = FastAPI(
     title="Explore the Universe",
@@ -13,3 +14,4 @@ app = FastAPI(
 app.include_router(health_router)
 app.include_router(ingest_router)
 app.include_router(test_upload_router)
+app.include_router(tiles_router)
