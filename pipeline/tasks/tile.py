@@ -24,7 +24,6 @@ import tempfile
 import uuid
 
 import numpy as np
-import pyvips
 from astropy.io import fits
 from astropy.visualization import AsinhStretch, ZScaleInterval
 from sqlalchemy import func as sql_func
@@ -41,6 +40,32 @@ from shared.models import (
 from shared.s3 import get_s3_client
 
 logger = logging.getLogger(__name__)
+
+# Lazy import for pyvips -- the C library (libvips) may not be on the default
+# search path on macOS (Homebrew installs to /opt/homebrew/lib).  Deferring
+# the import to first use lets the module be loaded (and the Celery task
+# registered) even when libvips is absent, e.g. during FastAPI startup or CI.
+_pyvips = None
+
+
+def _get_pyvips():
+    """Lazily import pyvips, setting DYLD_LIBRARY_PATH for macOS Homebrew."""
+    global _pyvips
+    if _pyvips is None:
+        import platform
+
+        if platform.system() == "Darwin":
+            dyld_path = os.environ.get("DYLD_LIBRARY_PATH", "")
+            homebrew_lib = "/opt/homebrew/lib"
+            if homebrew_lib not in dyld_path:
+                os.environ["DYLD_LIBRARY_PATH"] = (
+                    f"{homebrew_lib}:{dyld_path}" if dyld_path else homebrew_lib
+                )
+        import pyvips
+
+        _pyvips = pyvips
+    return _pyvips
+
 
 # Number of rows per processing chunk. Balances memory usage vs overhead.
 # 4096 rows at 16-bit, 16k pixels wide = ~128MB per chunk.
@@ -205,6 +230,7 @@ def _process_fits_to_tiff(fits_path, temp_dir):
             chunk_uint8 = _normalize_chunk(chunk, vmin, vmax, stretch)
 
             # Convert to pyvips image strip
+            pyvips = _get_pyvips()
             strip = pyvips.Image.new_from_memory(
                 chunk_uint8.tobytes(), nx, chunk_height, 1, "uchar"
             )
@@ -228,7 +254,7 @@ def _process_fits_to_tiff(fits_path, temp_dir):
         else:
             # For normal-sized images, use arrayjoin which is more efficient
             # for moderate strip counts
-            full_image = pyvips.Image.arrayjoin(strips, across=1)
+            full_image = _get_pyvips().Image.arrayjoin(strips, across=1)
 
         # Save as intermediate tiled pyramidal TIFF
         temp_tiff_path = os.path.join(temp_dir, "intermediate.tif")
@@ -266,6 +292,7 @@ def _generate_dzi_pyramid(tiff_path, temp_dir, observation_uuid_hex):
     output_base = os.path.join(temp_dir, observation_uuid_hex)
 
     # Load with sequential access for efficient streaming
+    pyvips = _get_pyvips()
     vips_image = pyvips.Image.new_from_file(tiff_path, access="sequential")
 
     # Generate DZI tile pyramid
