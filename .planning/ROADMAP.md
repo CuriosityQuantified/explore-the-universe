@@ -49,12 +49,12 @@ UAT: 6/6 passed, 0 issues
   3. Ingested images are tiled into multi-resolution pyramids viewable at any zoom level
   4. Provenance metadata (telescope, instrument, filter, exposure time, observation ID) is stored and queryable
   5. A trillion-pixel-class FITS image processes through tiling without memory exhaustion
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 02-01: TBD
-- [ ] 02-02: TBD
-- [ ] 02-03: TBD
+- [ ] 02-01-PLAN.md — Shared S3 client, astronomy dependencies, MAST download task
+- [ ] 02-02-PLAN.md — WCS validation and DZI tile pyramid generation
+- [ ] 02-03-PLAN.md — Pipeline orchestration, API endpoint, integration tests
 
 ### Phase 3: Sky Viewer
 **Goal**: Users can visually explore ingested imagery by panning and zooming like a map, with sky coordinates displayed
