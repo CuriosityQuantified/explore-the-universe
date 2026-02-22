@@ -1,7 +1,7 @@
 # Requirements: Explore the Universe
 
 **Defined:** 2026-02-21
-**Core Value:** Any astronomical image goes in, every object comes out segmented, classified, and explorable — turning raw telescope data into a navigable, queryable encyclopedia of the universe.
+**Core Value:** Any astronomical image goes in, every object comes out segmented, classified, and explorable -- turning raw telescope data into a navigable, queryable encyclopedia of the universe.
 
 ## v1 Requirements
 
@@ -91,14 +91,14 @@ Deferred to future release. Tracked but not in current roadmap.
 
 | Feature | Reason |
 |---------|--------|
-| Mobile native app | Web-first, responsive later — astronomical images require large screens |
-| Telescope control / observation scheduling | Completely different domain — remain a passive data consumer |
+| Mobile native app | Web-first, responsive later -- astronomical images require large screens |
+| Telescope control / observation scheduling | Completely different domain -- remain a passive data consumer |
 | Full LSST real-time ingestion (20TB/night) | Requires massive infrastructure unsustainable for self-funded POC |
-| Citizen science platform (Zooniverse-style) | Building a full citizen science platform is a separate product — lightweight flagging only |
-| 3D universe navigation | Technically demanding and often scientifically misleading — 2D map with depth as filterable property |
-| Raw SQL/ADQL query interface | Exposes database internals, creates security surface — use structured query builder and AI chat instead |
-| Real-time collaborative editing | Requires WebSocket infrastructure, conflict resolution — single-user for v1 |
-| Spectral analysis tools | Deep domain-specific tooling — display basic spectral info, link to specialist tools |
+| Citizen science platform (Zooniverse-style) | Building a full citizen science platform is a separate product -- lightweight flagging only |
+| 3D universe navigation | Technically demanding and often scientifically misleading -- 2D map with depth as filterable property |
+| Raw SQL/ADQL query interface | Exposes database internals, creates security surface -- use structured query builder and AI chat instead |
+| Real-time collaborative editing | Requires WebSocket infrastructure, conflict resolution -- single-user for v1 |
+| Spectral analysis tools | Deep domain-specific tooling -- display basic spectral info, link to specialist tools |
 
 ## Traceability
 
@@ -106,46 +106,46 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| INGEST-01 | — | Pending |
-| INGEST-02 | — | Pending |
-| INGEST-03 | — | Pending |
-| INGEST-04 | — | Pending |
-| INGEST-05 | — | Pending |
-| SEG-01 | — | Pending |
-| SEG-02 | — | Pending |
-| SEG-03 | — | Pending |
-| SEG-04 | — | Pending |
-| CLASS-01 | — | Pending |
-| CLASS-02 | — | Pending |
-| CLASS-03 | — | Pending |
-| CLASS-04 | — | Pending |
-| CLASS-05 | — | Pending |
-| CLASS-06 | — | Pending |
-| BROWSE-01 | — | Pending |
-| BROWSE-02 | — | Pending |
-| BROWSE-03 | — | Pending |
-| BROWSE-04 | — | Pending |
-| BROWSE-05 | — | Pending |
-| BROWSE-06 | — | Pending |
-| BROWSE-07 | — | Pending |
-| GRAPH-01 | — | Pending |
-| GRAPH-02 | — | Pending |
-| GRAPH-03 | — | Pending |
-| GRAPH-04 | — | Pending |
-| INTEL-01 | — | Pending |
-| INTEL-02 | — | Pending |
-| INTEL-03 | — | Pending |
-| INTEL-04 | — | Pending |
-| INFRA-01 | — | Pending |
-| INFRA-02 | — | Pending |
-| INFRA-03 | — | Pending |
-| INFRA-04 | — | Pending |
+| INGEST-01 | Phase 2 | Pending |
+| INGEST-02 | Phase 2 | Pending |
+| INGEST-03 | Phase 2 | Pending |
+| INGEST-04 | Phase 2 | Pending |
+| INGEST-05 | Phase 2 | Pending |
+| SEG-01 | Phase 4 | Pending |
+| SEG-02 | Phase 4 | Pending |
+| SEG-03 | Phase 4 | Pending |
+| SEG-04 | Phase 4 | Pending |
+| CLASS-01 | Phase 5 | Pending |
+| CLASS-02 | Phase 5 | Pending |
+| CLASS-03 | Phase 5 | Pending |
+| CLASS-04 | Phase 5 | Pending |
+| CLASS-05 | Phase 5 | Pending |
+| CLASS-06 | Phase 5 | Pending |
+| BROWSE-01 | Phase 3 | Pending |
+| BROWSE-02 | Phase 3 | Pending |
+| BROWSE-03 | Phase 6 | Pending |
+| BROWSE-04 | Phase 6 | Pending |
+| BROWSE-05 | Phase 6 | Pending |
+| BROWSE-06 | Phase 6 | Pending |
+| BROWSE-07 | Phase 6 | Pending |
+| GRAPH-01 | Phase 7 | Pending |
+| GRAPH-02 | Phase 7 | Pending |
+| GRAPH-03 | Phase 7 | Pending |
+| GRAPH-04 | Phase 7 | Pending |
+| INTEL-01 | Phase 5 | Pending |
+| INTEL-02 | Phase 8 | Pending |
+| INTEL-03 | Phase 8 | Pending |
+| INTEL-04 | Phase 8 | Pending |
+| INFRA-01 | Phase 1 | Pending |
+| INFRA-02 | Phase 1 | Pending |
+| INFRA-03 | Phase 1 | Pending |
+| INFRA-04 | Phase 6 | Pending |
 
 **Coverage:**
 - v1 requirements: 34 total
-- Mapped to phases: 0
-- Unmapped: 34 ⚠️
+- Mapped to phases: 34
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-21*
-*Last updated: 2026-02-21 after initial definition*
+*Last updated: 2026-02-21 after roadmap creation*
