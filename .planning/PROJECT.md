@@ -12,7 +12,10 @@ Any astronomical image goes in, every object comes out segmented, classified, an
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] Docker Compose orchestration (PostgreSQL, Redis, MinIO, Neo4j) -- Phase 1
+- [x] Celery task pipeline framework with Redis broker -- Phase 1
+- [x] MinIO object storage for FITS files with metadata in PostgreSQL -- Phase 1
+- [x] FastAPI backend with health monitoring -- Phase 1
 
 ### Active
 
@@ -83,8 +86,11 @@ Any astronomical image goes in, every object comes out segmented, classified, an
 | Cross-match then ML classify | Leverage existing astronomical knowledge first, ML fills gaps, truly unknown objects get flagged | — Pending |
 | Knowledge graph for relationships | Spatial hierarchy + properties + catalog links requires graph structure, not just relational DB | — Pending |
 | Both FITS and processed images | Raw for scientific analysis, processed for display — dual-layer approach | — Pending |
-| Python + Next.js | Python ecosystem is dominant for astronomy/ML; Next.js for rich interactive frontend | — Pending |
-| POC-first with subset | Validate approach before committing to full-scale infrastructure | — Pending |
+| Python + Next.js | Python ecosystem is dominant for astronomy/ML; Next.js for rich interactive frontend | Confirmed -- FastAPI + Next.js 16 scaffolded |
+| POC-first with subset | Validate approach before committing to full-scale infrastructure | Confirmed -- local MinIO with S3-compatible API for migration path |
+| Single root venv | One pyproject.toml at root with shared/, pipeline/, api/ as sub-packages | Confirmed -- hatchling build with explicit wheel packages |
+| Infra in Docker, Python native | Databases in Docker Compose, Python services run natively via uv | Confirmed -- fast iteration with uv venv |
+| Full schema upfront | All 4 tables defined in initial Alembic migration | Confirmed -- observations, processing_steps, astronomical_objects, catalog_cross_matches |
 
 ---
-*Last updated: 2026-02-21 after initialization*
+*Last updated: 2026-02-21 after Phase 1 completion*

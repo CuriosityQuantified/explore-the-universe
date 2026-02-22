@@ -12,7 +12,7 @@ This roadmap delivers a galactic encyclopedia that ingests JWST imagery, segment
 
 Decimal phases appear between their surrounding integers in numeric order.
 
-- [ ] **Phase 1: Foundation & Infrastructure** - Docker Compose services, database schemas, pipeline skeleton, and API framework
+- [x] **Phase 1: Foundation & Infrastructure** - Docker Compose services, database schemas, pipeline skeleton, and API framework
 - [ ] **Phase 2: Data Ingestion & Tiling** - FITS download from MAST, WCS extraction, multi-resolution tile pyramid generation
 - [ ] **Phase 3: Sky Viewer** - Deep-zoom tile viewer with pan, zoom, and coordinate overlay
 - [ ] **Phase 4: Segmentation** - SAM-based object detection with tile boundary merging and per-object cutouts
@@ -32,11 +32,12 @@ Decimal phases appear between their surrounding integers in numeric order.
   2. Celery worker processes a no-op test task through the full chain (enqueue, execute, report status)
   3. FastAPI health endpoint confirms all service connections are live
   4. Raw file upload to MinIO succeeds and metadata record appears in PostgreSQL
-**Plans**: TBD
+**Plans**: Complete
 
 Plans:
-- [ ] 01-01: TBD
-- [ ] 01-02: TBD
+- [x] 01-01: Foundation infrastructure (design + implementation, 10 tasks, 13 commits)
+
+UAT: 6/6 passed, 0 issues
 
 ### Phase 2: Data Ingestion & Tiling
 **Goal**: A JWST observation goes in by ID and comes out as validated, tiled imagery ready for viewing and processing
@@ -154,7 +155,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation & Infrastructure | 0/2 | Not started | - |
+| 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
 | 2. Data Ingestion & Tiling | 0/3 | Not started | - |
 | 3. Sky Viewer | 0/1 | Not started | - |
 | 4. Segmentation | 0/2 | Not started | - |

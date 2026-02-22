@@ -57,9 +57,9 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Infrastructure
 
-- [ ] **INFRA-01**: System runs via Docker Compose with PostgreSQL, Redis, MinIO, and Neo4j services
-- [ ] **INFRA-02**: Pipeline processes observations as Celery task chains (download → validate → tile → segment → classify → store)
-- [ ] **INFRA-03**: System stores raw FITS in object storage (MinIO) and metadata in PostgreSQL
+- [x] **INFRA-01**: System runs via Docker Compose with PostgreSQL, Redis, MinIO, and Neo4j services
+- [x] **INFRA-02**: Pipeline processes observations as Celery task chains (download → validate → tile → segment → classify → store)
+- [x] **INFRA-03**: System stores raw FITS in object storage (MinIO) and metadata in PostgreSQL
 - [ ] **INFRA-04**: System provides pipeline status dashboard showing processing progress per observation
 
 ## v2 Requirements
@@ -136,9 +136,9 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INTEL-02 | Phase 8 | Pending |
 | INTEL-03 | Phase 8 | Pending |
 | INTEL-04 | Phase 8 | Pending |
-| INFRA-01 | Phase 1 | Pending |
-| INFRA-02 | Phase 1 | Pending |
-| INFRA-03 | Phase 1 | Pending |
+| INFRA-01 | Phase 1 | Complete |
+| INFRA-02 | Phase 1 | Complete |
+| INFRA-03 | Phase 1 | Complete |
 | INFRA-04 | Phase 6 | Pending |
 
 **Coverage:**
@@ -148,4 +148,4 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 ---
 *Requirements defined: 2026-02-21*
-*Last updated: 2026-02-21 after roadmap creation*
+*Last updated: 2026-02-21 after Phase 1 completion*
