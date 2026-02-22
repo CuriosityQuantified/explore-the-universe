@@ -10,17 +10,17 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 2 of 8 (Data Ingestion & Tiling)
-Plan: 1 of 3 in current phase
+Plan: 2 of 3 in current phase
 Status: Executing
-Last activity: 2026-02-22 -- Plan 02-01 complete (MAST download task)
+Last activity: 2026-02-22 -- Plan 02-02 complete (WCS validation & tile generation)
 
-Progress: [██░░░░░░░░] 16.7%
+Progress: [███░░░░░░░] 25.0%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 2
-- Average duration: ~1.5 hours
+- Total plans completed: 3
+- Average duration: ~1 hour
 - Total execution time: ~3 hours
 
 **By Phase:**
@@ -28,10 +28,10 @@ Progress: [██░░░░░░░░] 16.7%
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
-| 2. Data Ingestion & Tiling | 1 | 2min | 2min |
+| 2. Data Ingestion & Tiling | 2 | 10min | 5min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits), Phase 2 Plan 1 (2 tasks, 2 commits)
+- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits), Phase 2 Plan 1 (2 tasks, 2 commits), Phase 2 Plan 2 (2 tasks, 2 commits)
 - Trend: Execution speed increasing with established patterns
 
 *Updated after each plan completion*
@@ -58,6 +58,10 @@ Recent decisions affecting current work:
 - [Phase 2]: MAST download uses query_criteria -> get_product_list -> filter_products chain (avoids obsid pitfall)
 - [Phase 2]: Celery tasks create own SessionLocal() for DB access (not FastAPI dependency injection)
 - [Phase 2]: Provenance from MAST query table, not FITS headers -- WCS extraction in Plan 02
+- [Phase 2]: WCS round-trip validation uses 1.0 pixel error threshold, logs warning but continues for approximate WCS
+- [Phase 2]: Normalization params (vmin/vmax) computed once from ~100-row subsample, applied to all chunks for seamless tiles
+- [Phase 2]: DZI tiles use 256px, 1px overlap, JPEG Q=85, 'dz' layout (OpenSeadragon standard)
+- [Phase 2]: FITS SCI extension checked first with fallback to primary HDU for non-JWST files
 
 ### Pending Todos
 
@@ -69,12 +73,12 @@ Recent decisions affecting current work:
 ### Blockers/Concerns
 
 - [Phase 4]: SAM performance on astronomical images is uncharted -- highest technical risk in the project
-- [Phase 2]: HiPS vs DZI tile format decision needs resolution during Phase 2 planning
+- ~~[Phase 2]: HiPS vs DZI tile format decision needs resolution during Phase 2 planning~~ RESOLVED: DZI chosen (OpenSeadragon standard, pyvips native support)
 - [Phase 5]: Neo4j only supports WGS-84 spatial -- celestial coordinate queries must stay in PostgreSQL
 
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 02-01-PLAN.md (MAST download task). Next: 02-02-PLAN.md
+Stopped at: Completed 02-02-PLAN.md (WCS validation & tile generation). Next: 02-03-PLAN.md
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe

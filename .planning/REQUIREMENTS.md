@@ -10,10 +10,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Data Ingestion
 
 - [x] **INGEST-01**: User can trigger ingestion of JWST observations from MAST by observation ID or program ID
-- [ ] **INGEST-02**: System extracts and validates WCS coordinates from FITS headers for accurate sky positioning
-- [ ] **INGEST-03**: System tiles ingested images into multi-resolution pyramids for web viewing and SAM processing
+- [x] **INGEST-02**: System extracts and validates WCS coordinates from FITS headers for accurate sky positioning
+- [x] **INGEST-03**: System tiles ingested images into multi-resolution pyramids for web viewing and SAM processing
 - [x] **INGEST-04**: System stores data provenance metadata (telescope, instrument, filter, exposure time, observation ID, program ID)
-- [ ] **INGEST-05**: System handles trillion-pixel FITS images via tile-based processing without memory exhaustion
+- [x] **INGEST-05**: System handles trillion-pixel FITS images via tile-based processing without memory exhaustion
 
 ### Segmentation
 
@@ -107,10 +107,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | INGEST-01 | Phase 2 | Complete |
-| INGEST-02 | Phase 2 | Pending |
-| INGEST-03 | Phase 2 | Pending |
+| INGEST-02 | Phase 2 | Complete |
+| INGEST-03 | Phase 2 | Complete |
 | INGEST-04 | Phase 2 | Complete |
-| INGEST-05 | Phase 2 | Pending |
+| INGEST-05 | Phase 2 | Complete |
 | SEG-01 | Phase 4 | Pending |
 | SEG-02 | Phase 4 | Pending |
 | SEG-03 | Phase 4 | Pending |
