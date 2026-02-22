@@ -21,6 +21,9 @@ web/node_modules/
 web/.next/
 web/out/
 
+# Worktrees
+.worktrees/
+
 # OS
 .DS_Store
 Thumbs.db
