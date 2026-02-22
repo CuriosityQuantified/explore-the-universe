@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 3 of 8 (Sky Viewer)
-Plan: 1 of 3 in current phase (1 complete)
+Plan: 2 of 3 in current phase (2 complete)
 Status: In Progress
-Last activity: 2026-02-22 -- Plan 03-01 complete (tile serving API & frontend types)
+Last activity: 2026-02-22 -- Plan 03-02 complete (core sky viewer)
 
-Progress: [████░░░░░░] 37.5%
+Progress: [█████░░░░░] 43.75%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 5
-- Average duration: ~37 min
-- Total execution time: ~3h 5min
+- Total plans completed: 6
+- Average duration: ~32 min
+- Total execution time: ~3h 10min
 
 **By Phase:**
 
@@ -29,14 +29,15 @@ Progress: [████░░░░░░] 37.5%
 |-------|-------|-------|----------|
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
 | 2. Data Ingestion & Tiling | 3 | 13min | 4min |
-| 3. Sky Viewer | 1 (of 3) | 2min | 2min |
+| 3. Sky Viewer | 2 (of 3) | 7min | 3.5min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 1 (1 plan, 10 tasks, 13 commits), Phase 2 Plan 1 (2 tasks, 2 commits), Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits)
-- Trend: Execution speed increasing with established patterns. Phase 3 in progress.
+- Last 5 plans: Phase 2 Plan 1 (2 tasks, 2 commits), Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits)
+- Trend: Execution speed consistent at 2-5min/plan. Phase 3 nearly complete (2/3 plans done).
 
 *Updated after each plan completion*
 | Phase 03 P01 | 2min | 2 tasks | 4 files |
+| Phase 03 P02 | 5min | 2 tasks | 13 files |
 
 ## Accumulated Context
 
@@ -71,6 +72,10 @@ Recent decisions affecting current work:
 - [Phase 3]: CD matrix falls back to CDELT1/CDELT2 for older FITS files lacking CD keywords
 - [Phase 3]: Tile proxy uses StreamingResponse for minimal memory (no download-then-send)
 - [Phase 3]: API client uses standard fetch() -- no external HTTP library dependency
+- [Phase 3]: Imperative DOM mutation for coordinate display at 30fps (not React state) to avoid re-render overhead
+- [Phase 3]: OSD MouseTrackerEvent extended locally (OsdMouseEvent) because @types/openseadragon lacks position/quick fields
+- [Phase 3]: ViewerClient.tsx as separate client boundary -- server page.tsx fetches data, ViewerClient owns interactive state
+- [Phase 3]: Scale bar picks "nice" angular values from predefined list for clean labels
 
 ### Pending Todos
 
@@ -88,6 +93,6 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 03-01-PLAN.md (tile serving API & frontend types). Next: 03-02-PLAN.md
+Stopped at: Completed 03-02-PLAN.md (core sky viewer). Next: 03-03-PLAN.md
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe
