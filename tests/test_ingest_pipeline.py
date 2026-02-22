@@ -32,9 +32,11 @@ from shared.config import settings
 
 BASE_URL = "http://localhost:8000"
 
-# Known public JWST NIRCam observation from program 2731 (JADES)
-# This is a single detector file, relatively small for integration testing.
-TEST_ARCHIVE_OBSERVATION_ID = "jw02731001001_04101_00001_nrca1"
+# Known public JWST NIRCam observation from program 5924.
+# This is a small sub-array observation (64x64 pixels, ~2.5 MB total FITS),
+# ideal for quick integration testing. MAST obs_id format is observation-level
+# (not file/exposure-level).
+TEST_ARCHIVE_OBSERVATION_ID = "jw05924-o015_t014_nircam_clear-f212n-sub64p"
 
 
 def _server_is_running() -> bool:

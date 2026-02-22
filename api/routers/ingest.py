@@ -4,13 +4,16 @@ POST /api/ingest - Trigger ingestion of a JWST observation
 GET /api/ingest/{observation_uuid}/status - Check pipeline progress
 """
 
+import uuid
+
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel, Field
+from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 
 from api.db.session import get_database_session
 from pipeline.tasks.ingest import ingest_observation
-from shared.models import Observation, ProcessingStep
+from shared.models import Observation, PipelineStatus, ProcessingStep
 
 router = APIRouter(prefix="/api/ingest", tags=["ingest"])
 
@@ -62,38 +65,59 @@ def trigger_ingest(
 ):
     """Trigger the ingestion pipeline for a JWST observation.
 
-    Creates an Observation record and dispatches the Celery chain:
-    download_fits -> validate_wcs -> generate_tiles.
+    Creates an Observation record synchronously, then dispatches the
+    Celery chain: download_fits -> validate_wcs -> generate_tiles.
 
     Returns 202 Accepted immediately -- the pipeline runs asynchronously.
     """
-    result = ingest_observation.delay(
-        request.archive_observation_id,
-        request.archive_program_id,
-    )
-
-    # The Celery task returns a dict, but .delay() gives us an AsyncResult.
-    # We need the observation_uuid from the task, but the task hasn't
-    # completed yet. Instead, we wait briefly for the initial task to
-    # create the Observation and return its UUID.
-    #
-    # However, since ingest_observation creates the DB record synchronously
-    # before dispatching the chain, we can look it up by archive_observation_id.
-    observation = (
+    # Check if this observation was already ingested
+    existing = (
         database_session.query(Observation)
         .filter(
             Observation.archive_observation_id
             == request.archive_observation_id
         )
-        .order_by(Observation.ingested_at.desc())
         .first()
     )
+    if existing is not None:
+        raise HTTPException(
+            status_code=409,
+            detail=(
+                f"Observation '{request.archive_observation_id}' already exists "
+                f"(uuid={existing.observation_uuid}, "
+                f"status={existing.pipeline_status.value})"
+            ),
+        )
 
-    if observation is not None:
-        observation_uuid = str(observation.observation_uuid)
-    else:
-        # Fallback: return the Celery task ID if observation not yet created
-        observation_uuid = result.id
+    # Create the Observation record synchronously so the UUID is
+    # available for the immediate API response (no race condition).
+    observation = Observation(
+        observation_uuid=uuid.uuid4(),
+        archive_observation_id=request.archive_observation_id,
+        archive_program_id=request.archive_program_id,
+        telescope_name="JWST",
+        instrument_name="UNKNOWN",
+        pipeline_status=PipelineStatus.downloading,
+    )
+    database_session.add(observation)
+    try:
+        database_session.commit()
+    except IntegrityError:
+        database_session.rollback()
+        raise HTTPException(
+            status_code=409,
+            detail=f"Observation '{request.archive_observation_id}' already exists",
+        )
+    database_session.refresh(observation)
+
+    observation_uuid = str(observation.observation_uuid)
+
+    # Dispatch the Celery chain asynchronously
+    ingest_observation.delay(
+        observation_uuid,
+        request.archive_observation_id,
+        request.archive_program_id,
+    )
 
     return IngestResponse(
         observation_uuid=observation_uuid,

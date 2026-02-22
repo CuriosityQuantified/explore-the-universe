@@ -205,6 +205,19 @@ def _process_fits_to_tiff(fits_path, temp_dir):
     with fits.open(fits_path, memmap=True, mode="denywrite") as hdul:
         sci_hdu = _find_sci_extension(hdul)
         data = sci_hdu.data
+
+        # Handle 3D+ FITS cubes (e.g., spectral cubes with shape (nz, ny, nx))
+        # by selecting the first spectral/wavelength slice for tiling.
+        if data.ndim > 2:
+            logger.info(
+                "FITS data has %d dimensions (shape=%s), selecting first 2D slice",
+                data.ndim,
+                data.shape,
+            )
+            # Take first slice along all extra leading dimensions
+            while data.ndim > 2:
+                data = data[0]
+
         ny, nx = data.shape
 
         logger.info(

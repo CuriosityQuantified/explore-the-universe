@@ -279,8 +279,18 @@ def validate_wcs(self, download_result: dict) -> dict:
                     )
                     continue
 
-                # Extract WCS
-                wcs_object = WCS(header)
+                # Extract WCS — use celestial sub-WCS to handle 3D+ FITS
+                # (e.g. spectral cubes) by projecting to 2D RA/Dec only
+                full_wcs = WCS(header)
+                if full_wcs.naxis > 2:
+                    logger.info(
+                        "FITS %s has %dD WCS, extracting 2D celestial sub-WCS",
+                        fits_s3_key,
+                        full_wcs.naxis,
+                    )
+                    wcs_object = full_wcs.celestial
+                else:
+                    wcs_object = full_wcs
 
                 # Validate WCS with round-trip test
                 is_valid, max_error_pixels = _validate_wcs_round_trip(
