@@ -1,8 +1,9 @@
 """Pipeline orchestrator Celery task for JWST observations.
 
 Dispatches the full pipeline chain: download_fits -> validate_wcs ->
-generate_tiles. The Observation record is created by the API endpoint
-before this task is dispatched.
+generate_tiles -> detect_sources -> segment_sam -> generate_cutouts.
+The Observation record is created by the API endpoint before this task
+is dispatched.
 
 Usage:
     ingest_observation.delay(observation_uuid_hex, archive_observation_id, archive_program_id)
@@ -13,7 +14,10 @@ import logging
 from celery import chain
 
 from pipeline.celery_app import celery_app
+from pipeline.tasks.detect_sources import detect_sources
 from pipeline.tasks.download import download_fits
+from pipeline.tasks.generate_cutouts import generate_cutouts
+from pipeline.tasks.segment_sam import segment_sam
 from pipeline.tasks.tile import generate_tiles
 from pipeline.tasks.validate_wcs import validate_wcs
 
@@ -34,7 +38,8 @@ def ingest_observation(
 
     The Observation record must already exist in PostgreSQL (created by
     the API endpoint). This task builds and dispatches the Celery chain:
-    download_fits -> validate_wcs -> generate_tiles.
+    download_fits -> validate_wcs -> generate_tiles -> detect_sources ->
+    segment_sam -> generate_cutouts.
 
     Args:
         observation_uuid_hex: UUID of the pre-created Observation record.
@@ -61,6 +66,9 @@ def ingest_observation(
         ),
         validate_wcs.s(),
         generate_tiles.s(),
+        detect_sources.s(),
+        segment_sam.s(),
+        generate_cutouts.s(),
     )
     result = pipeline.apply_async()
 

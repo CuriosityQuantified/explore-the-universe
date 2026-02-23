@@ -10,7 +10,10 @@ into memory), and normalization parameters are computed once from a subsample
 to ensure consistent stretch across all chunks (no visible seams).
 
 This is the third step in the pipeline chain, receiving output from
-validate_wcs and producing the final viewable tile set.
+validate_wcs. After tile generation, the pipeline continues to segmentation
+tasks (detect_sources -> segment_sam -> generate_cutouts). This task does NOT
+set the observation pipeline_status to completed — that is done by the final
+task in the chain.
 
 Usage:
     # Called as part of Celery chain (receives validate_wcs output dict)
@@ -570,27 +573,13 @@ def generate_tiles(self, wcs_result: dict) -> dict:
         processing_step.step_output_metadata = step_output_metadata
         database_session.commit()
 
-        # Update Observation to completed
-        observation_record = (
-            database_session.query(Observation)
-            .filter(Observation.observation_uuid == observation_uuid)
-            .first()
+        # Pipeline continues to segmentation — do NOT set completed here.
+        # The final task in the chain (generate_cutouts, Plan 04-03) sets completed.
+        logger.info(
+            "Tile generation complete — pipeline continues to segmentation "
+            "for observation %s",
+            observation_uuid_hex,
         )
-
-        if observation_record is not None:
-            observation_record.pipeline_status = PipelineStatus.completed
-            database_session.commit()
-
-            logger.info(
-                "Observation %s pipeline_status set to completed",
-                observation_uuid_hex,
-            )
-        else:
-            logger.warning(
-                "Observation record %s not found -- "
-                "pipeline_status not updated to completed",
-                observation_uuid_hex,
-            )
 
         logger.info(
             "Tile generation completed for observation %s: "

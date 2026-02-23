@@ -12,5 +12,8 @@ celery_app = Celery(
         "pipeline.tasks.validate_wcs",
         "pipeline.tasks.tile",
         "pipeline.tasks.ingest",
+        "pipeline.tasks.detect_sources",
+        "pipeline.tasks.segment_sam",
+        "pipeline.tasks.generate_cutouts",
     ],
 )
