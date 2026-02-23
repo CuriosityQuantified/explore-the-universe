@@ -600,10 +600,6 @@ def segment_sam(self, detection_result: dict) -> dict:
 
             fits_data = np.array(fits_data, dtype=np.float32)
 
-            # Fix byte order
-            if fits_data.dtype.byteorder not in ("=", "<", "|"):
-                fits_data = fits_data.byteswap().newbyteorder()
-
         image_height, image_width = fits_data.shape
 
         # Compute normalization parameters for SAM RGB conversion
