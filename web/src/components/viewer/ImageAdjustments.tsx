@@ -17,6 +17,19 @@ const DEFAULTS: ImageAdjustmentValues = {
   invert: false,
 };
 
+interface Preset {
+  label: string;
+  values: ImageAdjustmentValues;
+}
+
+const PRESETS: Preset[] = [
+  { label: "Default", values: DEFAULTS },
+  {
+    label: "Deep Sky",
+    values: { brightness: 0.95, contrast: 1.75, gamma: 0.35, invert: false },
+  },
+];
+
 interface ImageAdjustmentsProps {
   onAdjustmentChange: (adjustments: ImageAdjustmentValues) => void;
   isOpen: boolean;
@@ -62,6 +75,14 @@ export default function ImageAdjustments({
     onAdjustmentChange(DEFAULTS);
   }, [onAdjustmentChange]);
 
+  const applyPreset = useCallback(
+    (preset: Preset) => {
+      setAdjustments(preset.values);
+      onAdjustmentChange(preset.values);
+    },
+    [onAdjustmentChange],
+  );
+
   if (!isOpen) return null;
 
   const isDefault =
@@ -94,6 +115,30 @@ export default function ImageAdjustments({
             <path d="M8 2 L2 8" />
           </svg>
         </button>
+      </div>
+
+      {/* Presets */}
+      <div className="px-3 pt-2 pb-1 flex gap-1.5">
+        {PRESETS.map((preset) => {
+          const isActive =
+            adjustments.brightness === preset.values.brightness &&
+            adjustments.contrast === preset.values.contrast &&
+            adjustments.gamma === preset.values.gamma &&
+            adjustments.invert === preset.values.invert;
+          return (
+            <button
+              key={preset.label}
+              onClick={() => applyPreset(preset)}
+              className={`px-2 py-0.5 rounded text-[10px] transition-colors ${
+                isActive
+                  ? "bg-cyan-600 text-white"
+                  : "bg-zinc-700 text-zinc-400 hover:bg-zinc-600 hover:text-zinc-200"
+              }`}
+            >
+              {preset.label}
+            </button>
+          );
+        })}
       </div>
 
       {/* Sliders */}
