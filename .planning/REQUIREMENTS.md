@@ -17,10 +17,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Segmentation
 
-- [ ] **SEG-01**: System segments every distinguishable object in tiled images using SAM
-- [ ] **SEG-02**: System merges segmentation masks across tile boundaries for objects that span multiple tiles
-- [ ] **SEG-03**: System produces per-object cutout images and pixel-level masks
-- [ ] **SEG-04**: System uses traditional source detection (SEP/photutils) as baseline and SAM prompt source
+- [x] **SEG-01**: System segments every distinguishable object in tiled images using SAM
+- [x] **SEG-02**: System merges segmentation masks across tile boundaries for objects that span multiple tiles
+- [x] **SEG-03**: System produces per-object cutout images and pixel-level masks
+- [x] **SEG-04**: System uses traditional source detection (SEP/photutils) as baseline and SAM prompt source
 
 ### Classification
 
@@ -111,10 +111,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | INGEST-03 | Phase 2 | Complete |
 | INGEST-04 | Phase 2 | Complete |
 | INGEST-05 | Phase 2 | Complete |
-| SEG-01 | Phase 4 | Pending |
-| SEG-02 | Phase 4 | Pending |
-| SEG-03 | Phase 4 | Pending |
-| SEG-04 | Phase 4 | Pending |
+| SEG-01 | Phase 4 | Complete |
+| SEG-02 | Phase 4 | Complete |
+| SEG-03 | Phase 4 | Complete |
+| SEG-04 | Phase 4 | Complete |
 | CLASS-01 | Phase 5 | Pending |
 | CLASS-02 | Phase 5 | Pending |
 | CLASS-03 | Phase 5 | Pending |

@@ -9,19 +9,19 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 
 ## Current Position
 
-Phase: 3 of 8 (Sky Viewer) -- COMPLETE
-Plan: 3 of 3 in current phase (3 complete)
-Status: Phase Complete
-Last activity: 2026-02-22 -- Plan 03-03 complete (viewer panels & verification)
+Phase: 4 of 8 (Segmentation)
+Plan: 1 of 3 in current phase (1 complete)
+Status: Executing
+Last activity: 2026-02-23 -- Plan 04-01 complete (segmentation foundation)
 
-Progress: [██████░░░░] 50.00%
+Progress: [██████░░░░] 53.33%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 7
-- Average duration: ~28 min
-- Total execution time: ~3h 18min
+- Total plans completed: 8
+- Average duration: ~25 min
+- Total execution time: ~3h 21min
 
 **By Phase:**
 
@@ -30,15 +30,17 @@ Progress: [██████░░░░] 50.00%
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
 | 2. Data Ingestion & Tiling | 3 | 13min | 4min |
 | 3. Sky Viewer | 3/3 | 15min | 5min |
+| 4. Segmentation | 1/3 | 3min | 3min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits)
-- Trend: Execution speed consistent at 2-8min/plan. Phase 3 complete (3/3 plans done). Next: Phase 4 (Segmentation).
+- Last 5 plans: Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits), Phase 4 Plan 1 (2 tasks, 2 commits)
+- Trend: Execution speed consistent at 2-8min/plan. Phase 4 in progress (1/3 plans done).
 
 *Updated after each plan completion*
 | Phase 03 P01 | 2min | 2 tasks | 4 files |
 | Phase 03 P02 | 5min | 2 tasks | 13 files |
 | Phase 03 P03 | 8min | 2 tasks | 9 files |
+| Phase 04 P01 | 3min | 2 tasks | 11 files |
 
 ## Accumulated Context
 
@@ -83,6 +85,9 @@ Recent decisions affecting current work:
 - [Phase 3]: ViewerLoader SSR wrapper using next/dynamic with ssr: false -- prevents OSD from accessing DOM during SSR
 - [Phase 3]: OSD 6.x drawer forced to 'canvas' (canvas2d) to avoid WebGL "Error creating texture" failures
 - [Phase 3]: Band selector UI built with documented limitation -- Phase 2 overwrites tiles per FITS file
+- [Phase 4]: Pipeline status fix -- tile.py no longer sets PipelineStatus.completed; observation stays processing for downstream segmentation tasks; final task (generate_cutouts) sets completed
+- [Phase 4]: Stub task pattern -- detect_sources, segment_sam, generate_cutouts created as stubs raising NotImplementedError so chain/imports work before Plans 02/03
+- [Phase 4]: torch/torchvision/sam3 excluded from pyproject.toml -- require CUDA-specific pip index URLs, optional GPU dependencies for Plan 04-02
 
 ### Pending Todos
 
@@ -99,7 +104,7 @@ Recent decisions affecting current work:
 
 ## Session Continuity
 
-Last session: 2026-02-22
-Stopped at: Completed 03-03-PLAN.md (viewer panels & verification). Phase 3 complete. Next: Phase 4 (Segmentation)
+Last session: 2026-02-23
+Stopped at: Completed 04-01-PLAN.md (segmentation foundation). Next: Plan 04-02 (source detection)
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe
