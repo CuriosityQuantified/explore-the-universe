@@ -161,7 +161,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
 | 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
 | 3. Sky Viewer | 3/3 | Complete    | 2026-02-23 |
-| 4. Segmentation | 3/3 | Complete | 2026-02-23 |
+| 4. Segmentation | 3/3 | Complete    | 2026-02-23 |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |
 | 6. Search, Browse & Object Pages | 0/3 | Not started | - |
 | 7. Knowledge Graph | 0/2 | Not started | - |
