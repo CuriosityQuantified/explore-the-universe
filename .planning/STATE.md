@@ -10,18 +10,18 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 4 of 8 (Segmentation)
-Plan: 1 of 3 in current phase (1 complete)
+Plan: 2 of 3 in current phase (2 complete)
 Status: Executing
-Last activity: 2026-02-23 -- Plan 04-01 complete (segmentation foundation)
+Last activity: 2026-02-23 -- Plan 04-02 complete (source detection + segmentation)
 
-Progress: [██████░░░░] 53.33%
+Progress: [██████░░░░] 60.00%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 8
-- Average duration: ~25 min
-- Total execution time: ~3h 21min
+- Total plans completed: 9
+- Average duration: ~23 min
+- Total execution time: ~3h 27min
 
 **By Phase:**
 
@@ -30,17 +30,18 @@ Progress: [██████░░░░] 53.33%
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
 | 2. Data Ingestion & Tiling | 3 | 13min | 4min |
 | 3. Sky Viewer | 3/3 | 15min | 5min |
-| 4. Segmentation | 1/3 | 3min | 3min |
+| 4. Segmentation | 2/3 | 9min | 4.5min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits), Phase 4 Plan 1 (2 tasks, 2 commits)
-- Trend: Execution speed consistent at 2-8min/plan. Phase 4 in progress (1/3 plans done).
+- Last 5 plans: Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits), Phase 4 Plan 1 (2 tasks, 2 commits), Phase 4 Plan 2 (2 tasks, 3 commits)
+- Trend: Execution speed consistent at 2-8min/plan. Phase 4 in progress (2/3 plans done).
 
 *Updated after each plan completion*
 | Phase 03 P01 | 2min | 2 tasks | 4 files |
 | Phase 03 P02 | 5min | 2 tasks | 13 files |
 | Phase 03 P03 | 8min | 2 tasks | 9 files |
 | Phase 04 P01 | 3min | 2 tasks | 11 files |
+| Phase 04 P02 | 6min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -88,6 +89,11 @@ Recent decisions affecting current work:
 - [Phase 4]: Pipeline status fix -- tile.py no longer sets PipelineStatus.completed; observation stays processing for downstream segmentation tasks; final task (generate_cutouts) sets completed
 - [Phase 4]: Stub task pattern -- detect_sources, segment_sam, generate_cutouts created as stubs raising NotImplementedError so chain/imports work before Plans 02/03
 - [Phase 4]: torch/torchvision/sam3 excluded from pyproject.toml -- require CUDA-specific pip index URLs, optional GPU dependencies for Plan 04-02
+- [Phase 4]: SEP ellipse params (a, b, theta, flux) stored in physical_properties JSONB for segment_sam elliptical fallback masks
+- [Phase 4]: Boundary merging compares across scale levels only (not within same scale) -- within-scale dedup deferred to Phase 5/7
+- [Phase 4]: Per-object SAM processing with sub-region context (bbox + 50% padding) -- keeps within SAM 1024px limit
+- [Phase 4]: Full-field detections on images >1024px always use SEP elliptical masks (SAM max input size)
+- [Phase 4]: fits_s3_keys recovered from download_fits ProcessingStep metadata when not in tile_result dict
 
 ### Pending Todos
 
@@ -105,6 +111,6 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 04-01-PLAN.md (segmentation foundation). Next: Plan 04-02 (source detection)
+Stopped at: Completed 04-02-PLAN.md (source detection + segmentation). Next: Plan 04-03 (cutout generation)
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe

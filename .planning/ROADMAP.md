@@ -83,8 +83,8 @@ Plans:
 **Plans**: 3 plans
 
 Plans:
-- [ ] 04-01-PLAN.md — Foundation: schema migration, config, dependencies, pipeline chain extension
-- [ ] 04-02-PLAN.md — SEP multi-scale detection + SAM 3 segmentation with CPU fallback
+- [x] 04-01: Foundation: schema migration, config, dependencies, pipeline chain extension (2 tasks, 2 commits)
+- [x] 04-02: SEP multi-scale detection + SAM 3 segmentation with CPU fallback (2 tasks, 3 commits)
 - [ ] 04-03-PLAN.md — Cutout generation + end-to-end verification
 
 ### Phase 5: Classification & Cross-Matching
@@ -161,7 +161,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
 | 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
 | 3. Sky Viewer | 3/3 | Complete    | 2026-02-23 |
-| 4. Segmentation | 0/3 | Not started | - |
+| 4. Segmentation | 2/3 | In progress | - |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |
 | 6. Search, Browse & Object Pages | 0/3 | Not started | - |
 | 7. Knowledge Graph | 0/2 | Not started | - |
