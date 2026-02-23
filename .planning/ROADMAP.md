@@ -80,11 +80,12 @@ Plans:
   2. Objects spanning tile boundaries are correctly merged into single masks
   3. Each segmented object has a cutout image and pixel-level mask stored and retrievable
   4. Traditional source detection (SEP/photutils) runs as baseline and provides prompt positions for SAM
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 04-01: TBD
-- [ ] 04-02: TBD
+- [ ] 04-01-PLAN.md — Foundation: schema migration, config, dependencies, pipeline chain extension
+- [ ] 04-02-PLAN.md — SEP multi-scale detection + SAM 3 segmentation with CPU fallback
+- [ ] 04-03-PLAN.md — Cutout generation + end-to-end verification
 
 ### Phase 5: Classification & Cross-Matching
 **Goal**: Every segmented object is identified against known catalogs or classified by ML, with truly novel objects flagged for review
@@ -160,7 +161,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
 | 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
 | 3. Sky Viewer | 3/3 | Complete    | 2026-02-23 |
-| 4. Segmentation | 0/2 | Not started | - |
+| 4. Segmentation | 0/3 | Not started | - |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |
 | 6. Search, Browse & Object Pages | 0/3 | Not started | - |
 | 7. Knowledge Graph | 0/2 | Not started | - |
