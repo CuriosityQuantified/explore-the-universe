@@ -1,5 +1,5 @@
 import { fetchObservation, fetchWcsParams, getTileUrl } from "@/lib/api";
-import ViewerClient from "./ViewerClient";
+import ViewerLoader from "./ViewerLoader";
 
 interface ViewerPageProps {
   params: Promise<{ uuid: string }>;
@@ -43,7 +43,7 @@ export default async function ViewerPage({ params }: ViewerPageProps) {
     const tileBaseUrl = getTileUrl(uuid);
 
     return (
-      <ViewerClient
+      <ViewerLoader
         observationUuid={uuid}
         wcsParams={wcsParams}
         tileMetadata={observation.tile_metadata}

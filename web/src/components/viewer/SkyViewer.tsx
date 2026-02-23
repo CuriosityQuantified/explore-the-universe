@@ -113,7 +113,7 @@ const SkyViewer = forwardRef<SkyViewerHandle, SkyViewerProps>(
         tileSources: {
           Image: {
             xmlns: "http://schemas.microsoft.com/deepzoom/2008",
-            Url: `${tileBaseUrl}tiles/`,
+            Url: tileBaseUrl,
             Format: "jpg",
             Overlap: "1",
             TileSize: "256",
@@ -123,19 +123,34 @@ const SkyViewer = forwardRef<SkyViewerHandle, SkyViewerProps>(
             },
           },
         },
+        // Use canvas2d drawer — OSD 6.x defaults to WebGL which fails in
+        // some environments with "Error creating texture" and causes a blank
+        // screen until user interaction forces a re-draw.
+        drawer: "canvas",
         showNavigator: false,
         navigatorPosition: "BOTTOM_LEFT",
         gestureSettingsMouse: { scrollToZoom: true },
         gestureSettingsTouch: { pinchToZoom: true },
-        visibilityRatio: 1.0,
-        minZoomLevel: 0.5,
+        // Zoom config: defaultZoomLevel=0 auto-fits the entire image in the
+        // viewport on load ("home" zoom). minZoomLevel=0.1 allows zooming out
+        // to 10% of home. maxZoomPixelRatio=20 allows 20x native pixel zoom.
+        // visibilityRatio=0.5 allows panning image partially off-screen.
         defaultZoomLevel: 0,
-        immediateRender: true,
+        visibilityRatio: 0.5,
+        minZoomLevel: 0.1,
+        maxZoomPixelRatio: 20,
         imageLoaderLimit: 4,
         showNavigationControl: false,
       });
 
       viewerRef.current = viewer;
+
+      // Zoom out 20% from auto-fit so the full image has breathing room
+      viewer.addOnceHandler("open", () => {
+        const homeZoom = viewer.viewport.getHomeZoom();
+        viewer.viewport.zoomTo(homeZoom * 0.8, undefined, true);
+      });
+
       onViewerReady(viewer);
 
       return () => {
