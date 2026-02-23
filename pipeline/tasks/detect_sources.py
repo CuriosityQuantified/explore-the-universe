@@ -102,7 +102,10 @@ def _fix_byte_order(data: np.ndarray) -> np.ndarray:
         float32 array in native byte order.
     """
     if data.dtype.byteorder not in ("=", "<", "|"):
-        data = data.byteswap().newbyteorder()
+        # np.array with explicit dtype handles byteswap automatically.
+        # ndarray.newbyteorder() was removed in numpy 2.x.
+        data = np.array(data, dtype=np.float32)
+        return data
     return data.astype(np.float32, copy=False)
 
 
