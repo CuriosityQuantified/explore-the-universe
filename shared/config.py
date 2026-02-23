@@ -25,6 +25,23 @@ class Settings(BaseSettings):
     mast_api_token: str = ""  # Empty string = public data only, no auth needed for public JWST data
     mast_download_directory: str = "/tmp/mast_downloads"  # Local temp dir for downloads before MinIO upload
 
+    # Segmentation
+    s3_bucket_segmentation: str = "segmentation"
+    sam3_model_checkpoint_path: str = ""  # Local path to SAM 3 checkpoint (empty = auto-download from HuggingFace)
+    sam3_bpe_path: str = ""  # Path to bpe_simple_vocab_16e6.txt.gz for SAM 3 text prompts
+    segmentation_detection_threshold_sigma: float = 1.5
+    segmentation_min_area_pixels: int = 5
+    segmentation_deblend_nthresh: int = 32
+    segmentation_deblend_contrast: float = 0.005
+    segmentation_background_box_size: int = 64
+    segmentation_sub_region_size: int = 1024
+    segmentation_sub_sub_region_size: int = 256
+    segmentation_overlap_fraction: float = 0.2
+    segmentation_snr_high_threshold: float = 10.0
+    segmentation_snr_medium_threshold: float = 3.0
+    segmentation_cutout_padding_fraction: float = 0.1
+    segmentation_boundary_iou_threshold: float = 0.5
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 

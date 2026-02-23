@@ -20,6 +20,13 @@ dependencies = [
     "astroquery>=0.4.11",
     "pyvips>=3.1.0",  # Requires: brew install vips (macOS) or apt install libvips-dev (Linux)
     "Pillow>=10.0",
+    # Segmentation stack
+    "sep>=1.4.0",  # Astronomical source detection (C backend, SExtractor algorithms)
+    "photutils>=2.3.0",  # Extended source detection and deblending
+    "pycocotools>=2.0.11",  # COCO RLE mask encoding/decoding
+    # NOTE: torch/torchvision/sam3 are optional GPU dependencies installed separately.
+    # They are not declared here because they require CUDA-specific pip index URLs
+    # and are only needed for the SAM segmentation task (Plan 04-02).
 ]
 
 [project.optional-dependencies]

@@ -35,6 +35,12 @@ class StepStatus(str, enum.Enum):
     skipped = "skipped"
 
 
+class DetectionConfidenceTier(str, enum.Enum):
+    high = "high"
+    medium = "medium"
+    low = "low"
+
+
 class Observation(Base):
     __tablename__ = "observations"
 
@@ -117,6 +123,19 @@ class AstronomicalObject(Base):
     classification_confidence_score = Column(Float, nullable=True)
     physical_properties = Column(JSONB, nullable=True)
     is_anomaly_flagged = Column(Boolean, default=False, nullable=False)
+    segmentation_mask_rle = Column(JSONB, nullable=True)
+    cutout_s3_prefix = Column(String, nullable=True)
+    bounding_box_pixels = Column(JSONB, nullable=True)
+    detection_signal_to_noise_ratio = Column(Float, nullable=True)
+    detection_confidence_tier = Column(
+        Enum(DetectionConfidenceTier, name="detection_confidence_tier_enum"),
+        nullable=True,
+    )
+    detection_scale_level = Column(String, nullable=True)
+    is_edge_detection = Column(Boolean, default=False, nullable=False)
+    pixel_centroid_x = Column(Float, nullable=True)
+    pixel_centroid_y = Column(Float, nullable=True)
+    segmentation_method = Column(String, nullable=True)
     detected_at = Column(TIMESTAMP, server_default=func.now(), nullable=False)
 
     # Relationships

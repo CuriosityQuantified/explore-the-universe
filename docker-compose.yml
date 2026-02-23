@@ -46,6 +46,7 @@ services:
       /usr/bin/mc alias set local http://minio:9000 minioadmin minioadmin;
       /usr/bin/mc mb --ignore-existing local/fits-raw;
       /usr/bin/mc mb --ignore-existing local/tiles;
+      /usr/bin/mc mb --ignore-existing local/segmentation;
       echo 'Buckets created successfully';
       exit 0;
       "
