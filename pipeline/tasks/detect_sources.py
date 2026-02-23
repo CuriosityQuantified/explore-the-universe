@@ -698,7 +698,7 @@ def detect_sources(self, tile_result: dict) -> dict:
                 database_session.query(ProcessingStep)
                 .filter(
                     ProcessingStep.observation_uuid == observation_uuid,
-                    ProcessingStep.step_name == "download_fits",
+                    ProcessingStep.step_name == "download",
                 )
                 .first()
             )
