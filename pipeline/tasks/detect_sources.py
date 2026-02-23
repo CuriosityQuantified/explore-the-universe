@@ -16,6 +16,7 @@ Usage:
 """
 
 import logging
+import math
 import os
 import tempfile
 import uuid
@@ -610,11 +611,16 @@ def _detect_and_store(
         confidence_tier_enum = DetectionConfidenceTier(tier_string)
 
         # SEP ellipse params in physical_properties for segment_sam fallback
+        # Replace NaN/Inf with None — PostgreSQL JSON rejects NaN tokens
+        def _sanitize(v):
+            f = float(v)
+            return None if math.isnan(f) or math.isinf(f) else f
+
         physical_properties = {
-            "sep_a": float(objects["a"][i]),
-            "sep_b": float(objects["b"][i]),
-            "sep_theta": float(objects["theta"][i]),
-            "sep_flux": float(flux[i]),
+            "sep_a": _sanitize(objects["a"][i]),
+            "sep_b": _sanitize(objects["b"][i]),
+            "sep_theta": _sanitize(objects["theta"][i]),
+            "sep_flux": _sanitize(flux[i]),
         }
 
         object_uuid = uuid.uuid4()
