@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation & Infrastructure** - Docker Compose services, database schemas, pipeline skeleton, and API framework
 - [x] **Phase 2: Data Ingestion & Tiling** - FITS download from MAST, WCS extraction, multi-resolution tile pyramid generation
-- [ ] **Phase 3: Sky Viewer** - Deep-zoom tile viewer with pan, zoom, and coordinate overlay
+- [x] **Phase 3: Sky Viewer** - Deep-zoom tile viewer with pan, zoom, and coordinate overlay
 - [ ] **Phase 4: Segmentation** - SAM-based object detection with tile boundary merging and per-object cutouts
 - [ ] **Phase 5: Classification & Cross-Matching** - Catalog cross-matching, ML classification for unknowns, anomaly flagging
 - [ ] **Phase 6: Search, Browse & Object Pages** - Object search, filtering, detail pages, data export, pipeline dashboard
@@ -64,12 +64,12 @@ Plans:
   1. User can pan and zoom smoothly across an ingested JWST image from full field down to individual pixel scale
   2. User sees RA/Dec sky coordinates update on hover or click within the viewer
   3. Tile loading is lazy -- only visible tiles at the current zoom level are fetched
-**Plans**: 3 plans
+**Plans**: Complete
 
 Plans:
-- [ ] 03-01-PLAN.md -- Backend APIs: tile proxy, WCS extraction, observation detail + TypeScript types/client
-- [ ] 03-02-PLAN.md -- Core viewer: OpenSeadragon deep-zoom, WCS coordinate overlay, toolbar, scale bar, dark theme
-- [ ] 03-03-PLAN.md -- UI panels: observation info sidebar, image adjustments, band selector, coordinate grid + verification
+- [x] 03-01: Backend APIs: tile proxy, WCS extraction, observation detail + TypeScript types/client (2 tasks, 2 commits)
+- [x] 03-02: Core viewer: OpenSeadragon deep-zoom, WCS coordinate overlay, toolbar, scale bar, dark theme (2 tasks, 2 commits)
+- [x] 03-03: UI panels: observation info sidebar, image adjustments, band selector, coordinate grid + verification (2 tasks, 2 commits)
 
 ### Phase 4: Segmentation
 **Goal**: Every distinguishable object in an ingested image is detected, segmented, and stored with pixel-level masks and cutout images
@@ -159,7 +159,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 |-------|----------------|--------|-----------|
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
 | 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
-| 3. Sky Viewer | 0/3 | Not started | - |
+| 3. Sky Viewer | 3/3 | Complete | 2026-02-22 |
 | 4. Segmentation | 0/2 | Not started | - |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |
 | 6. Search, Browse & Object Pages | 0/3 | Not started | - |

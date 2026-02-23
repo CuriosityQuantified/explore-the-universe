@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-21)
 
 **Core value:** Any astronomical image goes in, every object comes out segmented, classified, and explorable -- turning raw telescope data into a navigable, queryable encyclopedia of the universe.
-**Current focus:** Phase 3: Sky Viewer
+**Current focus:** Phase 4: Segmentation
 
 ## Current Position
 
-Phase: 3 of 8 (Sky Viewer)
-Plan: 2 of 3 in current phase (2 complete)
-Status: In Progress
-Last activity: 2026-02-22 -- Plan 03-02 complete (core sky viewer)
+Phase: 3 of 8 (Sky Viewer) -- COMPLETE
+Plan: 3 of 3 in current phase (3 complete)
+Status: Phase Complete
+Last activity: 2026-02-22 -- Plan 03-03 complete (viewer panels & verification)
 
-Progress: [█████░░░░░] 43.75%
+Progress: [██████░░░░] 50.00%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 6
-- Average duration: ~32 min
-- Total execution time: ~3h 10min
+- Total plans completed: 7
+- Average duration: ~28 min
+- Total execution time: ~3h 18min
 
 **By Phase:**
 
@@ -29,15 +29,16 @@ Progress: [█████░░░░░] 43.75%
 |-------|-------|-------|----------|
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
 | 2. Data Ingestion & Tiling | 3 | 13min | 4min |
-| 3. Sky Viewer | 2 (of 3) | 7min | 3.5min |
+| 3. Sky Viewer | 3/3 | 15min | 5min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 2 Plan 1 (2 tasks, 2 commits), Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits)
-- Trend: Execution speed consistent at 2-5min/plan. Phase 3 nearly complete (2/3 plans done).
+- Last 5 plans: Phase 2 Plan 2 (2 tasks, 2 commits), Phase 2 Plan 3 (2 tasks, 2 commits), Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits)
+- Trend: Execution speed consistent at 2-8min/plan. Phase 3 complete (3/3 plans done). Next: Phase 4 (Segmentation).
 
 *Updated after each plan completion*
 | Phase 03 P01 | 2min | 2 tasks | 4 files |
 | Phase 03 P02 | 5min | 2 tasks | 13 files |
+| Phase 03 P03 | 8min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -76,6 +77,12 @@ Recent decisions affecting current work:
 - [Phase 3]: OSD MouseTrackerEvent extended locally (OsdMouseEvent) because @types/openseadragon lacks position/quick fields
 - [Phase 3]: ViewerClient.tsx as separate client boundary -- server page.tsx fetches data, ViewerClient owns interactive state
 - [Phase 3]: Scale bar picks "nice" angular values from predefined list for clean labels
+- [Phase 3]: CSS filter for image adjustments applied to OSD canvas via canvas.style.filter -- avoids WebGL or per-pixel manipulation
+- [Phase 3]: Gamma approximation via brightness factor pow(0.5, 1/gamma - 1) -- not true per-pixel power-law but acceptable for Phase 3
+- [Phase 3]: Inverse WCS TAN deprojection (raDecToPixel) in CoordinateGrid for RA/Dec -> pixel conversion
+- [Phase 3]: ViewerLoader SSR wrapper using next/dynamic with ssr: false -- prevents OSD from accessing DOM during SSR
+- [Phase 3]: OSD 6.x drawer forced to 'canvas' (canvas2d) to avoid WebGL "Error creating texture" failures
+- [Phase 3]: Band selector UI built with documented limitation -- Phase 2 overwrites tiles per FITS file
 
 ### Pending Todos
 
@@ -93,6 +100,6 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-22
-Stopped at: Completed 03-02-PLAN.md (core sky viewer). Next: 03-03-PLAN.md
+Stopped at: Completed 03-03-PLAN.md (viewer panels & verification). Phase 3 complete. Next: Phase 4 (Segmentation)
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe
