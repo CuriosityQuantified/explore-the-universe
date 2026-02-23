@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation & Infrastructure** - Docker Compose services, database schemas, pipeline skeleton, and API framework
 - [x] **Phase 2: Data Ingestion & Tiling** - FITS download from MAST, WCS extraction, multi-resolution tile pyramid generation
 - [x] **Phase 3: Sky Viewer** - Deep-zoom tile viewer with pan, zoom, and coordinate overlay
-- [ ] **Phase 4: Segmentation** - SAM-based object detection with tile boundary merging and per-object cutouts
+- [x] **Phase 4: Segmentation** - SAM-based object detection with tile boundary merging and per-object cutouts
 - [ ] **Phase 5: Classification & Cross-Matching** - Catalog cross-matching, ML classification for unknowns, anomaly flagging
 - [ ] **Phase 6: Search, Browse & Object Pages** - Object search, filtering, detail pages, data export, pipeline dashboard
 - [ ] **Phase 7: Knowledge Graph** - Neo4j spatial hierarchy, catalog linking, property queries, graph navigation
@@ -85,7 +85,7 @@ Plans:
 Plans:
 - [x] 04-01: Foundation: schema migration, config, dependencies, pipeline chain extension (2 tasks, 2 commits)
 - [x] 04-02: SEP multi-scale detection + SAM 3 segmentation with CPU fallback (2 tasks, 3 commits)
-- [ ] 04-03-PLAN.md — Cutout generation + end-to-end verification
+- [x] 04-03: Cutout generation + end-to-end pipeline verification (2 tasks, 1 commit)
 
 ### Phase 5: Classification & Cross-Matching
 **Goal**: Every segmented object is identified against known catalogs or classified by ML, with truly novel objects flagged for review
@@ -161,7 +161,7 @@ Note: Phases 3 and 4 can execute in parallel (both depend on Phase 2, not each o
 | 1. Foundation & Infrastructure | 1/1 | Complete | 2026-02-21 |
 | 2. Data Ingestion & Tiling | 3/3 | Complete    | 2026-02-22 |
 | 3. Sky Viewer | 3/3 | Complete    | 2026-02-23 |
-| 4. Segmentation | 2/3 | In progress | - |
+| 4. Segmentation | 3/3 | Complete | 2026-02-23 |
 | 5. Classification & Cross-Matching | 0/3 | Not started | - |
 | 6. Search, Browse & Object Pages | 0/3 | Not started | - |
 | 7. Knowledge Graph | 0/2 | Not started | - |

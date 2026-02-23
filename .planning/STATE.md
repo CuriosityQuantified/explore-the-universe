@@ -5,23 +5,23 @@
 See: .planning/PROJECT.md (updated 2026-02-21)
 
 **Core value:** Any astronomical image goes in, every object comes out segmented, classified, and explorable -- turning raw telescope data into a navigable, queryable encyclopedia of the universe.
-**Current focus:** Phase 4: Segmentation
+**Current focus:** Phase 5: Classification & Cross-Matching
 
 ## Current Position
 
-Phase: 4 of 8 (Segmentation)
-Plan: 2 of 3 in current phase (2 complete)
-Status: Executing
-Last activity: 2026-02-23 -- Plan 04-02 complete (source detection + segmentation)
+Phase: 5 of 8 (Classification & Cross-Matching)
+Plan: 0 of 3 in current phase (0 complete)
+Status: Planning
+Last activity: 2026-02-23 -- Phase 4 complete (segmentation). All 3 plans executed.
 
-Progress: [██████░░░░] 60.00%
+Progress: [██████░░░░] 66.67%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 9
-- Average duration: ~23 min
-- Total execution time: ~3h 27min
+- Total plans completed: 10
+- Average duration: ~21 min
+- Total execution time: ~3h 32min
 
 **By Phase:**
 
@@ -30,11 +30,11 @@ Progress: [██████░░░░] 60.00%
 | 1. Foundation & Infrastructure | 1 | ~3h | ~3h |
 | 2. Data Ingestion & Tiling | 3 | 13min | 4min |
 | 3. Sky Viewer | 3/3 | 15min | 5min |
-| 4. Segmentation | 2/3 | 9min | 4.5min |
+| 4. Segmentation | 3/3 | 14min | 4.7min |
 
 **Recent Trend:**
-- Last 5 plans: Phase 3 Plan 1 (2 tasks, 2 commits), Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits), Phase 4 Plan 1 (2 tasks, 2 commits), Phase 4 Plan 2 (2 tasks, 3 commits)
-- Trend: Execution speed consistent at 2-8min/plan. Phase 4 in progress (2/3 plans done).
+- Last 5 plans: Phase 3 Plan 2 (2 tasks, 2 commits), Phase 3 Plan 3 (2 tasks, 2 commits), Phase 4 Plan 1 (2 tasks, 2 commits), Phase 4 Plan 2 (2 tasks, 3 commits), Phase 4 Plan 3 (2 tasks, 1 commit)
+- Trend: Execution speed consistent at 2-8min/plan. Phase 4 complete (3/3 plans done).
 
 *Updated after each plan completion*
 | Phase 03 P01 | 2min | 2 tasks | 4 files |
@@ -42,6 +42,7 @@ Progress: [██████░░░░] 60.00%
 | Phase 03 P03 | 8min | 2 tasks | 9 files |
 | Phase 04 P01 | 3min | 2 tasks | 11 files |
 | Phase 04 P02 | 6min | 2 tasks | 2 files |
+| Phase 04 P03 | 5min | 2 tasks | 1 files |
 
 ## Accumulated Context
 
@@ -94,6 +95,9 @@ Recent decisions affecting current work:
 - [Phase 4]: Per-object SAM processing with sub-region context (bbox + 50% padding) -- keeps within SAM 1024px limit
 - [Phase 4]: Full-field detections on images >1024px always use SEP elliptical masks (SAM max input size)
 - [Phase 4]: fits_s3_keys recovered from download_fits ProcessingStep metadata when not in tile_result dict
+- [Phase 4]: Per-cutout ZScale -- each cutout computes own ZScaleInterval limits rather than reusing full-image normalization for better per-object contrast
+- [Phase 4]: Per-object temp file cleanup -- cutout files deleted after S3 upload before next object to prevent temp dir accumulation
+- [Phase 4]: Cutout2D mode=partial with fill_value=0.0 for edge objects extending beyond image boundaries
 
 ### Pending Todos
 
@@ -111,6 +115,6 @@ Recent decisions affecting current work:
 ## Session Continuity
 
 Last session: 2026-02-23
-Stopped at: Completed 04-02-PLAN.md (source detection + segmentation). Next: Plan 04-03 (cutout generation)
+Stopped at: Completed 04-03-PLAN.md (cutout generation + pipeline finalization). Phase 4 complete. Next: Phase 5 planning (Classification & Cross-Matching)
 Resume file: None
 GitHub repo: https://github.com/CuriosityQuantified/explore-the-universe
