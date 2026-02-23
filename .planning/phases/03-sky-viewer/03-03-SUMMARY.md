@@ -8,7 +8,7 @@ tags: [react, openseadragon, wcs, css-filters, svg-overlay, coordinate-grid, ima
 requires:
   - phase: 03-sky-viewer
     plan: 02
-    provides: "OpenSeadragon viewer, ViewerClient client boundary, ViewerToolbar, ScaleBar, coordinate overlay, SkyViewer component with forwardRef handle"
+    provides: "OpenSeadragon viewer, ViewerClient client boundary (app/viewer/[uuid]/ViewerClient.tsx), ViewerToolbar, ScaleBar, coordinate overlay, SkyViewer component with forwardRef handle"
   - phase: 03-sky-viewer
     plan: 01
     provides: "Tile proxy endpoint, WCS extraction endpoint, observation detail endpoint, TypeScript interfaces, API client"
@@ -80,6 +80,7 @@ completed: 2026-02-22
 - Extended ViewerToolbar from 5 to 8 buttons (added info, adjustments, grid toggles with active state highlighting in cyan)
 - ViewerLoader SSR wrapper using `next/dynamic` with `ssr: false` to prevent OpenSeadragon from attempting DOM access during server-side rendering
 - Human-verified: zoom, grid, brightness (0.95), contrast (1.75), gamma (0.35) settings produce clear imagery with visible stars against dark background
+- Added "Deep Sky" preset (brightness 0.95, contrast 1.75, gamma 0.35) as one-click preset button alongside "Default", with active preset highlighted in cyan
 
 ## Task Commits
 
@@ -87,6 +88,7 @@ Each task was committed atomically:
 
 1. **Task 1: Create observation info sidebar, image adjustments, band selector, and coordinate grid overlay** - `85d38fb` (feat) + `9121f61` (fix: ViewerLoader SSR wrapper, tile URL, drawer config)
 2. **Task 2: Verify complete sky viewer experience** - checkpoint:human-verify, APPROVED
+3. **Post-verification: Deep Sky preset** - `3f30ba6` (feat: add Deep Sky preset to image adjustments panel)
 
 ## Files Created/Modified
 
@@ -248,6 +250,7 @@ None -- no external service configuration required.
 - [x] 03-03-SUMMARY.md exists
 - [x] Commit 85d38fb found (Task 1 feat)
 - [x] Commit 9121f61 found (Task 1 fix)
+- [x] Commit 3f30ba6 found (Deep Sky preset)
 
 ---
 *Phase: 03-sky-viewer*
