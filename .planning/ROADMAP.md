@@ -96,12 +96,12 @@ Plans:
   2. Objects not found in any catalog are classified by ML with a predicted type and confidence score
   3. Objects that do not match known categories are automatically flagged as anomalies with confidence scores
   4. Cross-match and classification results are stored per-object and retrievable via API
-**Plans**: TBD
+**Plans**: 3 plans
 
 Plans:
-- [ ] 05-01: TBD
-- [ ] 05-02: TBD
-- [ ] 05-03: TBD
+- [ ] 05-01: Schema migration, config, dependencies, catalog clients, 9-task Celery chain (2 tasks)
+- [ ] 05-02: Cross-match catalogs task, feature extraction, ML classification task (2 tasks)
+- [ ] 05-03: Anomaly detection task, classification API endpoints (2 tasks)
 
 ### Phase 6: Search, Browse & Object Pages
 **Goal**: Users can find any classified object by name, coordinates, or type, view its full detail page, and export data
