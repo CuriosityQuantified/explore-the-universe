@@ -34,6 +34,12 @@ dev = [
     "pytest>=8.0.0",
     "httpx>=0.28.0",
 ]
+# Knowledge graph tooling. Builds graphify-out/ from the codebase so agents and
+# humans can query relationships instead of grepping. See docs/knowledge-graph.md.
+# The [mcp] extra provides the `graphify-mcp` stdio server wired up in .mcp.json.
+graph = [
+    "graphifyy[mcp,pdf]>=0.9.30",
+]
 
 [build-system]
 requires = ["hatchling"]
