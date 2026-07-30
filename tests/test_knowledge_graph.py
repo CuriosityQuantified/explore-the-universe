@@ -55,6 +55,27 @@ def test_mcp_server_is_registered():
     assert servers["graphify"]["command"] == "graphify-mcp"
 
 
+def test_sessionstart_refresh_hook_is_registered_and_executable():
+    """The graph only stays fresh if this hook survives; `graphify install` rewrites
+    settings.json and does not know about it."""
+    hooks = _load(CLAUDE_SETTINGS)["hooks"]
+    assert "SessionStart" in hooks, (
+        "SessionStart refresh hook is missing — the graph will go stale silently"
+    )
+
+    commands = [h["command"] for entry in hooks["SessionStart"] for h in entry["hooks"]]
+    assert any("graph-refresh.sh" in c for c in commands)
+
+    script = REPO_ROOT / ".claude" / "hooks" / "graph-refresh.sh"
+    assert script.is_file(), f"{script} is referenced by settings.json but missing"
+    assert script.stat().st_mode & 0o111, f"{script} is not executable"
+
+
+def test_freshness_checker_exists():
+    """CI (.github/workflows/knowledge-graph.yml) shells out to this."""
+    assert (REPO_ROOT / "scripts" / "check_graph_fresh.py").is_file()
+
+
 @pytest.mark.parametrize("matcher", ["Bash|Grep", "Read|Glob"])
 def test_pretooluse_hook_command_is_portable(matcher):
     """`graphify install` hardcodes an absolute interpreter path here.

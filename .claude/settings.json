@@ -1,5 +1,18 @@
 {
   "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"${CLAUDE_PROJECT_DIR}/.claude/hooks/graph-refresh.sh\"",
+            "timeout": 180,
+            "statusMessage": "Refreshing knowledge graph"
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "matcher": "Bash|Grep",

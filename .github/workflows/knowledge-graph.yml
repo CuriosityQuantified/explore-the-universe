@@ -1,0 +1,48 @@
+name: Knowledge graph
+
+# Fails when graphify-out/graph.json no longer matches the source tree, so a PR
+# cannot land code that agents will then answer questions about from a stale graph.
+#
+# The rebuild is AST-only (tree-sitter, local) — no LLM backend and no API key.
+# See docs/knowledge-graph.md.
+
+on:
+  pull_request:
+    paths:
+      - "**.py"
+      - "**.ts"
+      - "**.tsx"
+      - "**.js"
+      - "**.mjs"
+      - "**.sh"
+      - "graphify-out/**"
+      - "scripts/check_graph_fresh.py"
+      - ".github/workflows/knowledge-graph.yml"
+  push:
+    branches: [main]
+
+jobs:
+  freshness:
+    name: Graph is current
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      # Only the base package — `graphify update` needs tree-sitter, not the
+      # mcp/pdf extras, and pulling fewer wheels keeps this job quick.
+      - name: Install graphify
+        run: pip install "graphifyy>=0.9.30"
+
+      - name: Check graph freshness
+        run: python3 scripts/check_graph_fresh.py
+
+      # The graph is only as useful as it is used; surfacing the number keeps the
+      # tradeoff visible rather than assumed.
+      - name: Report token reduction
+        if: success()
+        run: graphify benchmark || true
