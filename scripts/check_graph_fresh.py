@@ -28,7 +28,15 @@ import tempfile
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-GRAPH = REPO_ROOT / "graphify-out" / "graph.json"
+OUT = REPO_ROOT / "graphify-out"
+GRAPH = OUT / "graph.json"
+
+# `graphify update` rewrites all of these, not just graph.json. Without --write the
+# check must leave the working tree exactly as it found it, so every one gets restored
+# — otherwise a read-only freshness check dirties the repo (and GRAPH_REPORT.md embeds
+# a corpus word count that shifts whenever any doc changes).
+ARTIFACTS = ("graph.json", "graph.html", "GRAPH_REPORT.md", ".graphify_labels.json",
+             ".graphify_labels.json.sig", ".graphify_analysis.json")
 
 
 def structure(path: Path) -> tuple[set, set]:
@@ -63,25 +71,33 @@ def main() -> int:
     before_nodes, before_edges = structure(GRAPH)
 
     with tempfile.TemporaryDirectory() as tmp:
-        backup = Path(tmp) / "graph.json"
-        shutil.copy2(GRAPH, backup)
+        backups = {}
+        for name in ARTIFACTS:
+            source = OUT / name
+            if source.is_file():
+                backups[name] = Path(tmp) / name
+                shutil.copy2(source, backups[name])
 
-        rebuild = subprocess.run(
-            ["graphify", "update", "."],
-            cwd=REPO_ROOT,
-            capture_output=True,
-            text=True,
-        )
-        if rebuild.returncode != 0:
-            print("error: `graphify update .` failed", file=sys.stderr)
-            print(rebuild.stdout[-2000:], file=sys.stderr)
-            print(rebuild.stderr[-2000:], file=sys.stderr)
-            return 1
+        try:
+            rebuild = subprocess.run(
+                ["graphify", "update", "."],
+                cwd=REPO_ROOT,
+                capture_output=True,
+                text=True,
+            )
+            if rebuild.returncode != 0:
+                print("error: `graphify update .` failed", file=sys.stderr)
+                print(rebuild.stdout[-2000:], file=sys.stderr)
+                print(rebuild.stderr[-2000:], file=sys.stderr)
+                return 1
 
-        after_nodes, after_edges = structure(GRAPH)
-
-        if not args.write:
-            shutil.copy2(backup, GRAPH)
+            after_nodes, after_edges = structure(GRAPH)
+        finally:
+            # Restore on the error path too — a failed rebuild can still have
+            # overwritten some artifacts before giving up.
+            if not args.write:
+                for name, backup in backups.items():
+                    shutil.copy2(backup, OUT / name)
 
     added_n, removed_n = after_nodes - before_nodes, before_nodes - after_nodes
     added_e, removed_e = after_edges - before_edges, before_edges - after_edges
