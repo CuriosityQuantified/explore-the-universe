@@ -27,3 +27,17 @@ Caveat — the graph indexes `.planning/`, which describes code before it is wri
 carry a `source_file` that does not exist yet (Phase 5 catalog clients, classification, and
 anomaly detection are the current cases). **Confirm a cited file exists before acting on it.**
 See docs/knowledge-graph.md for the audit command.
+
+## Agent skills
+
+### Issue tracker
+
+Issues live in GitHub Issues for this repo (CuriosityQuantified/explore-the-universe); use the `gh` CLI. See `docs/agents/issue-tracker.md`.
+
+### Triage labels
+
+Default five-label vocabulary: `needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`. See `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+Single-context repo — domain vocabulary, requirements, and phase decisions live in `.planning/`. See `docs/agents/domain.md`.
