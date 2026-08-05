@@ -65,8 +65,10 @@ jobs:
         # the process is listening. Neo4j takes the longest to come up.
         run: |
           uvicorn api.main:app --host 127.0.0.1 --port 8000 &
-          API_PID=$!
-          trap 'kill $API_PID 2>/dev/null || true' EXIT
+          # NOTE: no trap / no kill here — GitHub Actions keeps background
+          # processes alive across steps, and the runner reaps them when the
+          # job ends. A `trap ... EXIT` would kill the server as soon as THIS
+          # step's shell exits, before the test step runs.
           for i in $(seq 1 120); do
             if curl -sf http://127.0.0.1:8000/health >/dev/null 2>&1; then
               echo "API healthy after ${i}s"
