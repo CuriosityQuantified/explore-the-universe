@@ -1,16 +1,16 @@
-# Graph Report - explore-the-universe  (2026-07-30)
+# Graph Report - explore-the-universe  (2026-08-05)
 
 ## Corpus Check
-- 119 files · ~121,708 words
+- 122 files · ~122,515 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 578 nodes · 871 edges · 62 communities (41 shown, 21 thin omitted)
+- 594 nodes · 884 edges · 65 communities (44 shown, 21 thin omitted)
 - Extraction: 93% EXTRACTED · 6% INFERRED · 1% AMBIGUOUS · INFERRED: 54 edges (avg confidence: 0.64)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `127b5e42`
+- Built from commit: `81d5c2f9`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,15 +21,15 @@
 - Knowledge Graph With Spatial Hierarchy
 - devDependencies
 - TypeScript Config
-- detect_sources.py
+- _detect_and_store
 - Phase 5 Plan 01: Schema, Config, Catalog Clients
 - Phase 1-2 Planning Docs
 - tiles.py
-- ProcessingStep
+- Observation
 - segment_sam
-- segment_sam.py
+- detect_sources.py
 - Ingest Pipeline Tests
-- generate_cutouts
+- ProcessingStep
 - _process_fits_to_tiff
 - Graphify Skill Docs
 - graph-refresh.sh
@@ -37,7 +37,7 @@
 - Coordinate Overlay UI
 - Phase 3 Viewer Planning Docs
 - Docker Compose Services
-- models.py
+- Domain Docs
 - Phase 4 Segmentation Planning Docs
 - MAST Ingestion Task Pattern
 - upload_test_file
@@ -66,7 +66,10 @@
 - Phase 5 Plan 02: Cross-Match & Classification Tasks
 - Phase 5 Plan 03: Anomaly Detection & API Endpoints
 - get_ingest_status
-- Settings
+- Issue tracker: GitHub
+- detect_sources
+- generate_tiles
+- triage-labels.md
 
 ## God Nodes (most connected - your core abstractions)
 1. `ProcessingStep` - 22 edges
@@ -107,23 +110,23 @@
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
 
-## Communities (62 total, 21 thin omitted)
+## Communities (65 total, 21 thin omitted)
 
 ### Community 0 - "Sky Viewer Pages"
 Cohesion: 0.07
 Nodes (42): ViewerPage(), ViewerPageProps, NOTE: Currently all bands share the same tile prefix in MinIO due to, ViewerClient(), ViewerClientProps, ViewerClient, ViewerLoader(), ViewerLoaderProps (+34 more)
 
 ### Community 1 - "Project Research Summary"
-Cohesion: 0.05
-Nodes (36): check_service_health(), get, Astropy, astroquery, Celery, FastAPI, healpix-alchemy, MinIO (+28 more)
+Cohesion: 0.06
+Nodes (32): check_service_health(), get, Celery, FastAPI, healpix-alchemy, MinIO, Neo4j, Next.js (+24 more)
 
 ### Community 2 - "Phase 5 Research: Classification & Cross-Matching"
 Cohesion: 0.10
 Nodes (25): Phase 5 Context: Classification & Cross-Matching, Anomaly Sensitivity Decisions, Classification Taxonomy Decisions, Cross-Match Behavior Decisions, Result Storage & API Decisions, Phase 5 Research: Classification & Cross-Matching, Gaia DR3 Catalog, joblib (+17 more)
 
 ### Community 3 - "Knowledge Graph With Spatial Hierarchy"
-Cohesion: 0.08
-Nodes (34): react-force-graph, openseadragon, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: 3D Universe Navigation, Anti-feature: Full Citizen Science Platform, Anti-feature: Full LSST Real-time Ingestion, Anti-feature: Raw SQL/ADQL Query Interface (+26 more)
+Cohesion: 0.07
+Nodes (38): Astropy, astroquery, react-force-graph, openseadragon, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: 3D Universe Navigation, Anti-feature: Full Citizen Science Platform (+30 more)
 
 ### Community 4 - "devDependencies"
 Cohesion: 0.06
@@ -133,9 +136,9 @@ Nodes (35): eslint, eslint-config-next, next, react, react-dom, tailwindcss, @ta
 Cohesion: 0.07
 Nodes (28): dom, dom.iterable, esnext, **/*.mts, .next/dev/types/**/*.ts, next-env.d.ts, .next/types/**/*.ts, node_modules (+20 more)
 
-### Community 6 - "detect_sources.py"
-Cohesion: 0.13
-Nodes (26): _assign_confidence_tiers(), _compute_kron_photometry(), _detect_and_store(), detect_sources(), _detect_sources_in_array(), _extract_sub_regions(), _find_sci_extension(), _fix_byte_order() (+18 more)
+### Community 6 - "_detect_and_store"
+Cohesion: 0.17
+Nodes (16): _assign_confidence_tiers(), _compute_kron_photometry(), _detect_and_store(), _detect_sources_in_array(), _extract_sub_regions(), _flag_edge_detections(), ndarray, UUID (+8 more)
 
 ### Community 8 - "Phase 1-2 Planning Docs"
 Cohesion: 0.12
@@ -143,31 +146,31 @@ Nodes (19): Phase 1 UAT, Phase 2 Plan 01 (MAST download), Phase 2 Plan 01 Summar
 
 ### Community 9 - "tiles.py"
 Cohesion: 0.13
-Nodes (19): get_database_session(), _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get (+11 more)
+Nodes (20): get_database_session(), _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get (+12 more)
 
-### Community 10 - "ProcessingStep"
-Cohesion: 0.20
-Nodes (16): IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, post, Ingest API endpoints for triggering and monitoring the pipeline. POST…, Request body for POST /api/ingest., Response body for POST /api/ingest (202 Accepted). (+8 more)
+### Community 10 - "Observation"
+Cohesion: 0.17
+Nodes (18): IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, post, Ingest API endpoints for triggering and monitoring the pipeline. POST…, Request body for POST /api/ingest., Response body for POST /api/ingest (202 Accepted). (+10 more)
 
 ### Community 11 - "segment_sam"
 Cohesion: 0.11
 Nodes (21): _compute_normalization_parameters(), _encode_mask_to_rle(), _find_sci_extension(), _fits_to_sam_rgb(), _generate_elliptical_mask(), _generate_sam_masks(), _get_sam_processor(), _merge_boundary_masks() (+13 more)
 
-### Community 12 - "segment_sam.py"
-Cohesion: 0.16
-Nodes (20): download_fits(), task, MAST download Celery task for JWST observations. Queries the Mikulski Archive…, Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-…, Cutout generation and pipeline finalization Celery task. Extracts per-object…, Pipeline orchestrator Celery task for JWST observations. Dispatches the full…, SAM 3 segmentation with SEP elliptical fallback Celery task. Generates pixel-…, generate_tiles() (+12 more)
+### Community 12 - "detect_sources.py"
+Cohesion: 0.18
+Nodes (15): BaseSettings, Multi-scale SEP source detection Celery task. Runs SEP (Source Extractor as a…, download_fits(), task, MAST download Celery task for JWST observations. Queries the Mikulski Archive…, Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-…, Pipeline orchestrator Celery task for JWST observations. Dispatches the full…, SAM 3 segmentation with SEP elliptical fallback Celery task. Generates pixel-… (+7 more)
 
 ### Community 13 - "Ingest Pipeline Tests"
 Cohesion: 0.16
 Nodes (15): server_running, slow, Integration tests for the ingest pipeline. Tests the POST /api/ingest and GET…, GET /api/ingest/{uuid}/status with unknown UUID should return 404., End-to-end test: ingest a real JWST observation through the full pipeline. This…, Check if the FastAPI server is reachable., POST /api/ingest should return 202 with observation_uuid and status., POST /api/ingest with empty body should return 422 validation error. (+7 more)
 
-### Community 14 - "generate_cutouts"
-Cohesion: 0.13
-Nodes (15): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Extract a WCS-preserving cutout from FITS data using Cutout2D. Computes a… (+7 more)
+### Community 14 - "ProcessingStep"
+Cohesion: 0.12
+Nodes (21): DeclarativeBase, _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task (+13 more)
 
 ### Community 15 - "_process_fits_to_tiff"
-Cohesion: 0.17
-Nodes (12): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), Compute ZScale normalization parameters from a subsample of the image. Samples…, Normalize a chunk of FITS data to 8-bit using pre-computed parameters. Applies… (+4 more)
+Cohesion: 0.20
+Nodes (10): _compute_normalization_parameters(), _find_sci_extension(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), Compute ZScale normalization parameters from a subsample of the image. Samples…, Normalize a chunk of FITS data to 8-bit using pre-computed parameters. Applies…, Process a FITS file into a tiled, pyramidal TIFF using chunked reads. MEMORY… (+2 more)
 
 ### Community 16 - "Graphify Skill Docs"
 Cohesion: 0.22
@@ -189,9 +192,9 @@ Nodes (8): Phase 3 Plan 01: Tile Serving API Plan, Phase 3 Plan 01 Summary, Phas
 Cohesion: 0.43
 Nodes (6): Pending todos (STATE.md), MinIO service, minio-init bucket bootstrap service, Neo4j service, PostgreSQL service, Redis service
 
-### Community 22 - "models.py"
-Cohesion: 0.36
-Nodes (4): DeclarativeBase, AstronomicalObject, Base, CatalogCrossMatch
+### Community 22 - "Domain Docs"
+Cohesion: 0.29
+Nodes (6): Before exploring, read these, Domain Docs, Domain vocabulary, File structure, Flag ADR conflicts, Graphify first
 
 ### Community 23 - "Phase 4 Segmentation Planning Docs"
 Cohesion: 0.29
@@ -233,6 +236,18 @@ Nodes (15): parametrize, _load(), Path, Guards on the committed graphify knowled
 Cohesion: 0.50
 Nodes (4): get_ingest_status(), get, Session, Check the status of an ingestion pipeline. Returns the observation details…
 
+### Community 61 - "Issue tracker: GitHub"
+Cohesion: 0.29
+Nodes (6): Blocking, Conventions, Issue tracker: GitHub, Pull requests as a triage surface, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
+
+### Community 62 - "detect_sources"
+Cohesion: 0.29
+Nodes (7): detect_sources(), _find_sci_extension(), _fix_byte_order(), task, Find the SCI extension in a FITS HDU list. Same logic as…, Run multi-scale SEP source detection on a FITS observation. Receives the output…, Ensure data is in native byte order and float32 for SEP. FITS files are big-…
+
+### Community 63 - "generate_tiles"
+Cohesion: 0.29
+Nodes (7): _generate_dzi_pyramid(), generate_tiles(), task, Generate DZI tile pyramid from a pyramidal TIFF. Uses pyvips dzsave to create a…, Upload DZI XML and all tile images to MinIO tiles bucket. Uploads the DZI…, Generate DZI tile pyramids from FITS data and upload to MinIO. Receives the…, _upload_tiles_to_minio()
+
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]
   web/public/file.svg · relation: conceptually_related_to
@@ -246,7 +261,7 @@ Nodes (4): get_ingest_status(), get, Session, Check the status of an ingestion p
   web/public/window.svg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **150 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `eslintConfig`, `nextConfig` (+145 more)
+- **161 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `eslintConfig`, `nextConfig` (+156 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -264,6 +279,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Next.js Web README` and `window.svg Icon`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `Project Research Summary` connect `Project Research Summary` to `Knowledge Graph With Spatial Hierarchy`?**
-  _High betweenness centrality (0.162) - this node is a cross-community bridge._
+  _High betweenness centrality (0.153) - this node is a cross-community bridge._
 - **Why does `MinIO` connect `Project Research Summary` to `tiles.py`?**
-  _High betweenness centrality (0.075) - this node is a cross-community bridge._
+  _High betweenness centrality (0.071) - this node is a cross-community bridge._
