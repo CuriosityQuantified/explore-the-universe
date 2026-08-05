@@ -57,22 +57,16 @@ jobs:
       - name: Start service stack
         # Postgres, Redis, MinIO (+ bucket init), Neo4j — the whole compose
         # file. Config defaults in shared/config.py match these credentials.
-        run: docker compose up -d
+        # --wait blocks until postgres passes its pg_isready healthcheck, so
+        # migrations never race a half-initialized server.
+        run: docker compose up -d --wait
 
       - name: Apply database migrations
         # The stack comes up with an empty Postgres; the health check only
         # runs SELECT version(), so it passes on a schema-less DB. Writes to
         # observations etc. 500 without the tables — `alembic upgrade head`
         # is a documented step in every phase plan.
-        run: |
-          for i in $(seq 1 60); do
-            if python -c "import socket; socket.create_connection(('127.0.0.1', 5432))" 2>/dev/null; then
-              echo "Postgres accepting connections after ${i}s"
-              break
-            fi
-            sleep 1
-          done
-          python -m alembic upgrade head
+        run: python -m alembic upgrade head
 
       - name: Start API server and wait for full health
         # /health returns 503 until postgres, redis, minio AND neo4j all
