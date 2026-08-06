@@ -42,6 +42,20 @@ class Settings(BaseSettings):
     segmentation_cutout_padding_fraction: float = 0.1
     segmentation_boundary_iou_threshold: float = 0.5
 
+    # Classification & Cross-Matching
+    classification_catalog_query_timeout_seconds: int = 60
+    classification_catalog_max_retries: int = 3
+    classification_ned_rate_limit_per_second: float = 2.0
+    classification_simbad_batch_size: int = 20
+    classification_sdss_max_radius_arcmin: float = 3.0
+    classification_compact_source_radius_arcsec: float = 2.0
+    classification_extended_source_scale_factor: float = 1.5
+    classification_compact_source_threshold_arcsec: float = 5.0
+    classification_ml_model_s3_key: str = "models/classifier_v1.joblib"
+    classification_anomaly_contamination: float = 0.1
+    classification_anomaly_model_s3_key: str = "models/anomaly_detector_v1.joblib"
+    s3_bucket_models: str = "models"
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 

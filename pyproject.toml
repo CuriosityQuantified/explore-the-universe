@@ -24,6 +24,9 @@ dependencies = [
     "sep>=1.4.0",  # Astronomical source detection (C backend, SExtractor algorithms)
     "photutils>=2.3.0",  # Extended source detection and deblending
     "pycocotools>=2.0.11",  # COCO RLE mask encoding/decoding
+    # Classification stack (Phase 5)
+    "scikit-learn>=1.4.0",
+    "statmorph>=0.7.1",
     # NOTE: torch/torchvision/sam3 are optional GPU dependencies installed separately.
     # They are not declared here because they require CUDA-specific pip index URLs
     # and are only needed for the SAM segmentation task (Plan 04-02).

@@ -137,6 +137,10 @@ class AstronomicalObject(Base):
     pixel_centroid_y = Column(Float, nullable=True)
     segmentation_method = Column(String, nullable=True)
     detected_at = Column(TIMESTAMP, server_default=func.now(), nullable=False)
+    # Catalog cross-match denormalized fields (populated by cross_match_catalogs task)
+    catalog_object_name = Column(String, nullable=True, index=True)
+    catalog_magnitude = Column(Float, nullable=True)
+    catalog_redshift = Column(Float, nullable=True)
 
     # Relationships
     source_observation = relationship(
@@ -144,6 +148,38 @@ class AstronomicalObject(Base):
     )
     catalog_cross_matches = relationship(
         "CatalogCrossMatch", back_populates="astronomical_object"
+    )
+    classifications = relationship(
+        "ObjectClassification", back_populates="astronomical_object"
+    )
+
+
+class ObjectClassification(Base):
+    """Append-only ML classification record for a single pipeline run on one object."""
+
+    __tablename__ = "object_classifications"
+
+    classification_uuid = Column(
+        UUID(as_uuid=True), primary_key=True, default=uuid.uuid4
+    )
+    object_uuid = Column(
+        UUID(as_uuid=True),
+        ForeignKey("astronomical_objects.object_uuid"),
+        nullable=False,
+    )
+    predicted_object_type = Column(String, nullable=False)
+    classification_confidence_score = Column(Float, nullable=False)
+    ml_model_version = Column(String, nullable=False)
+    feature_extractor_version = Column(String, nullable=False)
+    feature_vector = Column(JSONB, nullable=False)
+    is_anomaly_flagged = Column(Boolean, default=False, nullable=False)
+    anomaly_score = Column(Float, nullable=True)
+    anomaly_explanation = Column(Text, nullable=True)
+    classified_at = Column(TIMESTAMP, server_default=func.now(), nullable=False)
+
+    # Relationships
+    astronomical_object = relationship(
+        "AstronomicalObject", back_populates="classifications"
     )
 
 

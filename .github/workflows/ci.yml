@@ -29,6 +29,35 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  # Fast offline unit tests — no docker, no live services, no network. These
+  # are the pure-Python suites: Celery task registration/chain shape, the
+  # Phase 5 classification schema + catalog clients (retry/not_queried
+  # sentinel behavior is mocked), and graphify knowledge-graph queries. They
+  # run in seconds and catch import/schema/chain regressions before the
+  # docker-dependent integration suite below.
+  unit-tests:
+    name: Unit tests
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install system libvips
+        run: sudo apt-get update && sudo apt-get install -y libvips-dev
+
+      - name: Install dependencies
+        run: pip install -e ".[dev]"
+
+      - name: Run offline unit tests
+        run: python -m pytest tests/test_celery.py tests/test_classification_schema.py tests/test_knowledge_graph.py -q
+
   # The service-dependent Python suite. Docker is available on the runner; the
   # compose file needs no secrets (shared/config.py defaults match it).
   python-tests:
