@@ -1,16 +1,16 @@
 # Graph Report - explore-the-universe  (2026-08-05)
 
 ## Corpus Check
-- 122 files · ~122,515 words
+- 123 files · ~123,589 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 594 nodes · 884 edges · 65 communities (44 shown, 21 thin omitted)
+- 602 nodes · 891 edges · 60 communities (39 shown, 21 thin omitted)
 - Extraction: 93% EXTRACTED · 6% INFERRED · 1% AMBIGUOUS · INFERRED: 54 edges (avg confidence: 0.64)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `81d5c2f9`
+- Built from commit: `04a49e24`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -24,16 +24,14 @@
 - _detect_and_store
 - Phase 5 Plan 01: Schema, Config, Catalog Clients
 - Phase 1-2 Planning Docs
-- tiles.py
-- Observation
+- Summary
 - segment_sam
 - detect_sources.py
 - Ingest Pipeline Tests
-- ProcessingStep
+- generate_cutouts
 - _process_fits_to_tiff
 - Graphify Skill Docs
 - graph-refresh.sh
-- WCS Validation & Provenance
 - Coordinate Overlay UI
 - Phase 3 Viewer Planning Docs
 - Docker Compose Services
@@ -65,10 +63,7 @@
 - cross_match_all_catalogs
 - Phase 5 Plan 02: Cross-Match & Classification Tasks
 - Phase 5 Plan 03: Anomaly Detection & API Endpoints
-- get_ingest_status
 - Issue tracker: GitHub
-- detect_sources
-- generate_tiles
 - triage-labels.md
 
 ## God Nodes (most connected - your core abstractions)
@@ -110,7 +105,7 @@
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
 
-## Communities (65 total, 21 thin omitted)
+## Communities (60 total, 21 thin omitted)
 
 ### Community 0 - "Sky Viewer Pages"
 Cohesion: 0.07
@@ -137,48 +132,40 @@ Cohesion: 0.07
 Nodes (28): dom, dom.iterable, esnext, **/*.mts, .next/dev/types/**/*.ts, next-env.d.ts, .next/types/**/*.ts, node_modules (+20 more)
 
 ### Community 6 - "_detect_and_store"
-Cohesion: 0.17
-Nodes (16): _assign_confidence_tiers(), _compute_kron_photometry(), _detect_and_store(), _detect_sources_in_array(), _extract_sub_regions(), _flag_edge_detections(), ndarray, UUID (+8 more)
+Cohesion: 0.08
+Nodes (32): _find_sci_extension(), get_observation_detail(), get_wcs_params(), get, Session, Extract WCS parameters from the primary FITS file for client-side projection.…, Return observation provenance metadata and tile metadata. Queries the…, Find the SCI extension in a FITS HDU list. Same logic as pipeline/tasks/tile.py… (+24 more)
 
 ### Community 8 - "Phase 1-2 Planning Docs"
 Cohesion: 0.12
 Nodes (19): Phase 1 UAT, Phase 2 Plan 01 (MAST download), Phase 2 Plan 01 Summary, Phase 2 Plan 02 (WCS + Tiling), Phase 2 Plan 02 Summary, Phase 2 Plan 03 (Orchestration), Phase 2 Plan 03 Summary, Phase 2 UAT (+11 more)
 
-### Community 9 - "tiles.py"
-Cohesion: 0.13
-Nodes (20): get_database_session(), _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get (+12 more)
-
-### Community 10 - "Observation"
-Cohesion: 0.17
-Nodes (18): IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, post, Ingest API endpoints for triggering and monitoring the pipeline. POST…, Request body for POST /api/ingest., Response body for POST /api/ingest (202 Accepted). (+10 more)
+### Community 9 - "Summary"
+Cohesion: 0.25
+Nodes (7): Changes, Checklist, How was this tested?, Notes for the issue-worker, Screenshots, Summary, Type of change
 
 ### Community 11 - "segment_sam"
 Cohesion: 0.11
 Nodes (21): _compute_normalization_parameters(), _encode_mask_to_rle(), _find_sci_extension(), _fits_to_sam_rgb(), _generate_elliptical_mask(), _generate_sam_masks(), _get_sam_processor(), _merge_boundary_masks() (+13 more)
 
 ### Community 12 - "detect_sources.py"
-Cohesion: 0.18
-Nodes (15): BaseSettings, Multi-scale SEP source detection Celery task. Runs SEP (Source Extractor as a…, download_fits(), task, MAST download Celery task for JWST observations. Queries the Mikulski Archive…, Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-…, Pipeline orchestrator Celery task for JWST observations. Dispatches the full…, SAM 3 segmentation with SEP elliptical fallback Celery task. Generates pixel-… (+7 more)
+Cohesion: 0.06
+Nodes (68): get_database_session(), get_ingest_status(), IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, get, post (+60 more)
 
 ### Community 13 - "Ingest Pipeline Tests"
 Cohesion: 0.16
 Nodes (15): server_running, slow, Integration tests for the ingest pipeline. Tests the POST /api/ingest and GET…, GET /api/ingest/{uuid}/status with unknown UUID should return 404., End-to-end test: ingest a real JWST observation through the full pipeline. This…, Check if the FastAPI server is reachable., POST /api/ingest should return 202 with observation_uuid and status., POST /api/ingest with empty body should return 422 validation error. (+7 more)
 
-### Community 14 - "ProcessingStep"
-Cohesion: 0.12
-Nodes (21): DeclarativeBase, _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task (+13 more)
+### Community 14 - "generate_cutouts"
+Cohesion: 0.13
+Nodes (15): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Extract a WCS-preserving cutout from FITS data using Cutout2D. Computes a… (+7 more)
 
 ### Community 15 - "_process_fits_to_tiff"
-Cohesion: 0.20
-Nodes (10): _compute_normalization_parameters(), _find_sci_extension(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), Compute ZScale normalization parameters from a subsample of the image. Samples…, Normalize a chunk of FITS data to 8-bit using pre-computed parameters. Applies…, Process a FITS file into a tiled, pyramidal TIFF using chunked reads. MEMORY… (+2 more)
+Cohesion: 0.17
+Nodes (12): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), Compute ZScale normalization parameters from a subsample of the image. Samples…, Normalize a chunk of FITS data to 8-bit using pre-computed parameters. Applies… (+4 more)
 
 ### Community 16 - "Graphify Skill Docs"
 Cohesion: 0.22
 Nodes (10): .claude/CLAUDE.md (graphify trigger), graphify reference: add-watch, graphify reference: exports, graphify reference: extraction-spec, graphify reference: github-and-merge, graphify reference: hooks, graphify reference: query, graphify reference: transcribe (+2 more)
-
-### Community 18 - "WCS Validation & Provenance"
-Cohesion: 0.22
-Nodes (9): _extract_fits_header_provenance(), _find_sci_extension(), task, Extract provenance metadata from FITS header fields. Supplements MAST metadata…, Extract and validate WCS from FITS headers, update Observation with pointing.…, Find the SCI extension in a FITS HDU list. Checks for a named 'SCI' extension…, Validate WCS accuracy via pixel-to-world-to-pixel round-trip test. Tests…, validate_wcs() (+1 more)
 
 ### Community 19 - "Coordinate Overlay UI"
 Cohesion: 0.36
@@ -232,21 +219,9 @@ Nodes (13): Caveats, How agents use it, If graph.json starts conflicting, Keepin
 Cohesion: 0.17
 Nodes (15): parametrize, _load(), Path, Guards on the committed graphify knowledge-graph integration. These are static…, graph.json is committed, so it must not embed this checkout's location., The graph only stays fresh if this hook survives; `graphify install` rewrites…, CI (.github/workflows/knowledge-graph.yml) shells out to this., `graphify install` hardcodes an absolute interpreter path here. That path only… (+7 more)
 
-### Community 60 - "get_ingest_status"
-Cohesion: 0.50
-Nodes (4): get_ingest_status(), get, Session, Check the status of an ingestion pipeline. Returns the observation details…
-
 ### Community 61 - "Issue tracker: GitHub"
 Cohesion: 0.29
 Nodes (6): Blocking, Conventions, Issue tracker: GitHub, Pull requests as a triage surface, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
-
-### Community 62 - "detect_sources"
-Cohesion: 0.29
-Nodes (7): detect_sources(), _find_sci_extension(), _fix_byte_order(), task, Find the SCI extension in a FITS HDU list. Same logic as…, Run multi-scale SEP source detection on a FITS observation. Receives the output…, Ensure data is in native byte order and float32 for SEP. FITS files are big-…
-
-### Community 63 - "generate_tiles"
-Cohesion: 0.29
-Nodes (7): _generate_dzi_pyramid(), generate_tiles(), task, Generate DZI tile pyramid from a pyramidal TIFF. Uses pyvips dzsave to create a…, Upload DZI XML and all tile images to MinIO tiles bucket. Uploads the DZI…, Generate DZI tile pyramids from FITS data and upload to MinIO. Receives the…, _upload_tiles_to_minio()
 
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]
@@ -261,7 +236,7 @@ Nodes (7): _generate_dzi_pyramid(), generate_tiles(), task, Generate DZI tile py
   web/public/window.svg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **161 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `eslintConfig`, `nextConfig` (+156 more)
+- **167 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `eslintConfig`, `nextConfig` (+162 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **21 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -279,6 +254,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Next.js Web README` and `window.svg Icon`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `Project Research Summary` connect `Project Research Summary` to `Knowledge Graph With Spatial Hierarchy`?**
-  _High betweenness centrality (0.153) - this node is a cross-community bridge._
-- **Why does `MinIO` connect `Project Research Summary` to `tiles.py`?**
-  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+  _High betweenness centrality (0.149) - this node is a cross-community bridge._
+- **Why does `MinIO` connect `Project Research Summary` to `detect_sources.py`?**
+  _High betweenness centrality (0.069) - this node is a cross-community bridge._

@@ -231,8 +231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "alembic_env",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "env.py"
     },
     {
@@ -242,8 +242,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -253,8 +253,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -363,8 +363,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "api_db_session_get_database_session",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "get_database_session()"
     },
     {
@@ -374,8 +374,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_main",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "main.py"
     },
     {
@@ -440,8 +440,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_ingest",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "routers/ingest.py"
     },
     {
@@ -451,8 +451,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "api_routers_ingest_ingestrequest",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "ingestrequest"
     },
     {
@@ -462,8 +462,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_ingest_py_basemodel",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "basemodel"
     },
     {
@@ -473,8 +473,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "api_routers_ingest_ingestresponse",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "ingestresponse"
     },
     {
@@ -484,8 +484,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "api_routers_ingest_ingeststatusresponse",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "ingeststatusresponse"
     },
     {
@@ -495,8 +495,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_ingest_py_post",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "post"
     },
     {
@@ -506,8 +506,8 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "api_routers_ingest_trigger_ingest",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "trigger_ingest()"
     },
     {
@@ -517,8 +517,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_ingest_py_session",
-      "community": 60,
-      "community_name": "get_ingest_status",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "session"
     },
     {
@@ -528,8 +528,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_ingest_py_get",
-      "community": 60,
-      "community_name": "get_ingest_status",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "get"
     },
     {
@@ -539,8 +539,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "api_routers_ingest_get_ingest_status",
-      "community": 60,
-      "community_name": "get_ingest_status",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "get_ingest_status()"
     },
     {
@@ -550,8 +550,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_1",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post..."
     },
     {
@@ -561,8 +561,8 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_25",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "request body for post /api/ingest."
     },
     {
@@ -572,8 +572,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_38",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "response body for post /api/ingest (202 accepted)."
     },
     {
@@ -583,8 +583,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_49",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "response body for get /api/ingest/{observation_uuid}/status."
     },
     {
@@ -594,8 +594,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_66",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "trigger the ingestion pipeline for a jwst observation. creates an observation..."
     },
     {
@@ -605,8 +605,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_140",
-      "community": 60,
-      "community_name": "get_ingest_status",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "check the status of an ingestion pipeline. returns the observation details..."
     },
     {
@@ -616,8 +616,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_test_upload",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "test_upload.py"
     },
     {
@@ -682,8 +682,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_tiles",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "tiles.py"
     },
     {
@@ -693,8 +693,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "api_routers_tiles_wcsparamsresponse",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "wcsparamsresponse"
     },
     {
@@ -704,8 +704,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_tiles_py_basemodel",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "basemodel"
     },
     {
@@ -715,8 +715,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "api_routers_tiles_tilemetadataresponse",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "tilemetadataresponse"
     },
     {
@@ -726,8 +726,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "api_routers_tiles_observationdetailresponse",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "observationdetailresponse"
     },
     {
@@ -737,8 +737,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "api_routers_tiles_find_sci_extension",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -748,8 +748,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_tiles_py_get",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "get"
     },
     {
@@ -759,8 +759,8 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "api_routers_tiles_get_tile",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "get_tile()"
     },
     {
@@ -770,8 +770,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "api_routers_tiles_get_wcs_params",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "get_wcs_params()"
     },
     {
@@ -781,8 +781,8 @@
       "source_location": "L243",
       "_origin": "ast",
       "id": "api_routers_tiles_get_observation_detail",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "get_observation_detail()"
     },
     {
@@ -792,8 +792,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_tiles_py_session",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "session"
     },
     {
@@ -803,8 +803,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_1",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "tile serving api endpoints for the sky viewer. get..."
     },
     {
@@ -814,8 +814,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_34",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "wcs header parameters for client-side pixel-to-sky coordinate conversion."
     },
     {
@@ -825,8 +825,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_51",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "tile generation metadata from the generate_tiles processing step."
     },
     {
@@ -836,8 +836,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_66",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "observation provenance and tile metadata for the info panel."
     },
     {
@@ -847,8 +847,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_85",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "find the sci extension in a fits hdu list. same logic as pipeline/tasks/tile.py..."
     },
     {
@@ -858,8 +858,8 @@
       "source_location": "L129",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_129",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "stream a tile jpeg from minio. proxies tile requests to minio to avoid cors..."
     },
     {
@@ -869,8 +869,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_163",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "extract wcs parameters from the primary fits file for client-side projection...."
     },
     {
@@ -880,8 +880,8 @@
       "source_location": "L247",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_247",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "return observation provenance metadata and tile metadata. queries the..."
     },
     {
@@ -935,8 +935,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_find_sci_extension",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -946,8 +946,8 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_fix_byte_order",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "_fix_byte_order()"
     },
     {
@@ -1034,8 +1034,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "wcs",
-      "community": 9,
-      "community_name": "tiles.py",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "wcs"
     },
     {
@@ -1067,8 +1067,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_task",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "task"
     },
     {
@@ -1078,8 +1078,8 @@
       "source_location": "L665",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_sources",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "detect_sources()"
     },
     {
@@ -1100,8 +1100,8 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_53",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -1111,8 +1111,8 @@
       "source_location": "L93",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_93",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "ensure data is in native byte order and float32 for sep. fits files are big-..."
     },
     {
@@ -1199,8 +1199,8 @@
       "source_location": "L666",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_666",
-      "community": 62,
-      "community_name": "detect_sources",
+      "community": 6,
+      "community_name": "_detect_and_store",
       "norm_label": "run multi-scale sep source detection on a fits observation. receives the output..."
     },
     {
@@ -1265,8 +1265,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "generate_cutouts.py"
     },
     {
@@ -1277,7 +1277,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_find_sci_extension",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -1288,7 +1288,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_extract_cutout_data",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "_extract_cutout_data()"
     },
     {
@@ -1299,7 +1299,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_stretched_png",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "_create_stretched_png()"
     },
     {
@@ -1310,7 +1310,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_raw_png",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "_create_raw_png()"
     },
     {
@@ -1321,7 +1321,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_fits_cutout",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "_create_fits_cutout()"
     },
     {
@@ -1332,7 +1332,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_upload_cutout_files",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "_upload_cutout_files()"
     },
     {
@@ -1343,7 +1343,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_py_task",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "task"
     },
     {
@@ -1354,7 +1354,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_generate_cutouts",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "generate_cutouts()"
     },
     {
@@ -1364,8 +1364,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_1",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "cutout generation and pipeline finalization celery task. extracts per-object..."
     },
     {
@@ -1376,7 +1376,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_59",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -1387,7 +1387,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_105",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "extract a wcs-preserving cutout from fits data using cutout2d. computes a..."
     },
     {
@@ -1398,7 +1398,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_147",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "create auto-stretched png using asinh stretch (same as tile.py). applies zscale..."
     },
     {
@@ -1409,7 +1409,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_179",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "create raw linear png (no stretch, percentile-clipped linear mapping). maps the..."
     },
     {
@@ -1420,7 +1420,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_206",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "create a fits file with the cutout data and preserved wcs. writes a minimal..."
     },
     {
@@ -1431,7 +1431,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_222",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "upload all cutout files for one object to minio segmentation bucket. uploads..."
     },
     {
@@ -1442,7 +1442,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_276",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "generate_cutouts",
       "norm_label": "generate per-object cutout images and finalize pipeline status. extracts per-..."
     },
     {
@@ -1463,8 +1463,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_py_task",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "task"
     },
     {
@@ -1474,8 +1474,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_ingest_observation",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "ingest_observation()"
     },
     {
@@ -1496,8 +1496,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_rationale_37",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "dispatch the full pipeline chain for a pre-created observation. the observation..."
     },
     {
@@ -1870,8 +1870,8 @@
       "source_location": "L294",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_dzi_pyramid",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 15,
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_generate_dzi_pyramid()"
     },
     {
@@ -1881,8 +1881,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_upload_tiles_to_minio",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "_upload_tiles_to_minio()"
     },
     {
@@ -1892,8 +1892,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_py_task",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "task"
     },
     {
@@ -1903,8 +1903,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_tiles",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "generate_tiles()"
     },
     {
@@ -1980,8 +1980,8 @@
       "source_location": "L295",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_295",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 15,
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "generate dzi tile pyramid from a pyramidal tiff. uses pyvips dzsave to create a..."
     },
     {
@@ -1991,8 +1991,8 @@
       "source_location": "L348",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_348",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi..."
     },
     {
@@ -2002,8 +2002,8 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_433",
-      "community": 63,
-      "community_name": "generate_tiles",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "generate dzi tile pyramids from fits data and upload to minio. receives the..."
     },
     {
@@ -2024,8 +2024,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_find_sci_extension",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -2035,8 +2035,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_validate_wcs_round_trip",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "_validate_wcs_round_trip()"
     },
     {
@@ -2046,8 +2046,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_extract_fits_header_provenance",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "_extract_fits_header_provenance()"
     },
     {
@@ -2057,8 +2057,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_py_task",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "task"
     },
     {
@@ -2068,8 +2068,8 @@
       "source_location": "L191",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_validate_wcs",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "validate_wcs()"
     },
     {
@@ -2090,8 +2090,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_40",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "find the sci extension in a fits hdu list. checks for a named 'sci' extension..."
     },
     {
@@ -2101,8 +2101,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_88",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "validate wcs accuracy via pixel-to-world-to-pixel round-trip test. tests..."
     },
     {
@@ -2112,8 +2112,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_137",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "extract provenance metadata from fits header fields. supplements mast metadata..."
     },
     {
@@ -2123,8 +2123,8 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_192",
-      "community": 18,
-      "community_name": "WCS Validation & Provenance",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "extract and validate wcs from fits headers, update observation with pointing...."
     },
     {
@@ -2236,8 +2236,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "shared_models",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "models.py"
     },
     {
@@ -2247,8 +2247,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "shared_models_base",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "base"
     },
     {
@@ -2258,8 +2258,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "declarativebase",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "declarativebase"
     },
     {
@@ -2269,8 +2269,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "shared_models_pipelinestatus",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "pipelinestatus"
     },
     {
@@ -2280,8 +2280,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "str",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "str"
     },
     {
@@ -2302,8 +2302,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "shared_models_detectionconfidencetier",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "detectionconfidencetier"
     },
     {
@@ -2313,8 +2313,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "shared_models_observation",
-      "community": 10,
-      "community_name": "Observation",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "observation"
     },
     {
@@ -2324,8 +2324,8 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "shared_models_processingstep",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "processingstep"
     },
     {
@@ -2335,8 +2335,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "shared_models_astronomicalobject",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "astronomicalobject"
     },
     {
@@ -2346,8 +2346,8 @@
       "source_location": "L150",
       "_origin": "ast",
       "id": "shared_models_catalogcrossmatch",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 12,
+      "community_name": "detect_sources.py",
       "norm_label": "catalogcrossmatch"
     },
     {
@@ -4527,6 +4527,94 @@
       "community": 5,
       "community_name": "TypeScript Config",
       "norm_label": "node_modules"
+    },
+    {
+      "label": "pull_request_template.md",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "github_pull_request_template",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "pull_request_template.md"
+    },
+    {
+      "label": "Summary",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "github_pull_request_template_summary",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "summary"
+    },
+    {
+      "label": "Changes",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "github_pull_request_template_changes",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "changes"
+    },
+    {
+      "label": "Type of change",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "github_pull_request_template_type_of_change",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "type of change"
+    },
+    {
+      "label": "How was this tested?",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "github_pull_request_template_how_was_this_tested",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "how was this tested?"
+    },
+    {
+      "label": "Screenshots",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "github_pull_request_template_screenshots",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "screenshots"
+    },
+    {
+      "label": "Checklist",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "github_pull_request_template_checklist",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "checklist"
+    },
+    {
+      "label": "Notes for the issue-worker",
+      "file_type": "document",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "github_pull_request_template_notes_for_the_issue_worker",
+      "community": 9,
+      "community_name": "Summary",
+      "norm_label": "notes for the issue-worker"
     },
     {
       "label": "domain.md",
@@ -14904,6 +14992,83 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template",
+      "target": "github_pull_request_template_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template_summary",
+      "target": "github_pull_request_template_changes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template_summary",
+      "target": "github_pull_request_template_checklist",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template_summary",
+      "target": "github_pull_request_template_how_was_this_tested",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template_summary",
+      "target": "github_pull_request_template_notes_for_the_issue_worker",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template_summary",
+      "target": "github_pull_request_template_screenshots",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".github/pull_request_template.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "github_pull_request_template_summary",
+      "target": "github_pull_request_template_type_of_change",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/agents/domain.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -17216,5 +17381,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "81d5c2f9b16beea0f05e422499bf64377fe8fe2d"
+  "built_at_commit": "04a49e24a64c4b0240cd462d572f30a47192b400"
 }
