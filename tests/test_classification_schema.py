@@ -284,13 +284,18 @@ def test_generate_cutouts_does_not_set_pipeline_completed():
     )
 
 
-def test_stub_tasks_raise_not_implemented():
-    """Only detect_anomalies remains a stub after Plan 2; cross_match and classify are real."""
+def test_no_stub_tasks_remain():
+    """After Plan 3, all 9 pipeline tasks are fully implemented — no NotImplementedError stubs."""
+    import inspect
     from pipeline.tasks.detect_anomalies import detect_anomalies
-    import pytest
+    from pipeline.tasks.cross_match_catalogs import cross_match_catalogs
+    from pipeline.tasks.classify_objects import classify_objects
 
-    with pytest.raises(NotImplementedError):
-        detect_anomalies.run({})
+    for task_fn in (detect_anomalies, cross_match_catalogs, classify_objects):
+        src = inspect.getsource(task_fn)
+        assert "NotImplementedError" not in src, (
+            f"{task_fn.name} still contains NotImplementedError — must be fully implemented"
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -711,3 +716,202 @@ def test_classify_objects_stores_feature_vector_jsonb():
     assert isinstance(fv, dict), f"feature_vector must be a dict, got {type(fv)}"
     assert len(fv) > 0, "feature_vector must not be empty"
     assert "feature_source" in fv
+
+
+# ---------------------------------------------------------------------------
+# Plan 3: detect_anomalies implementation tests
+# ---------------------------------------------------------------------------
+
+
+def test_detect_anomalies_importable():
+    from pipeline.tasks.detect_anomalies import detect_anomalies  # noqa: F401
+
+
+def test_detect_anomalies_has_isolation_forest():
+    import inspect
+    from pipeline.tasks.detect_anomalies import detect_anomalies
+
+    src = inspect.getsource(detect_anomalies)
+    assert "IsolationForest" in src, "detect_anomalies must use IsolationForest"
+    assert "n_estimators=200" in src, "IsolationForest must use 200 estimators"
+
+
+def test_detect_anomalies_has_all_five_signals():
+    import inspect
+    from pipeline.tasks import detect_anomalies as da_mod
+
+    src = inspect.getsource(da_mod)
+    for signal in (
+        "feature_outlier",
+        "catalog_disagreement",
+        "no_catalog_match",
+        "unusual_morphology",
+        "low_confidence",
+    ):
+        assert signal in src, f"Signal '{signal}' missing from detect_anomalies module"
+
+
+def test_detect_anomalies_excludes_artifacts():
+    import inspect
+    from pipeline.tasks.detect_anomalies import detect_anomalies
+
+    src = inspect.getsource(detect_anomalies)
+    assert "artifact" in src, "detect_anomalies must explicitly exclude artifact objects"
+
+
+def test_detect_anomalies_sets_pipeline_status_completed():
+    import inspect
+    from pipeline.tasks.detect_anomalies import detect_anomalies
+
+    src = inspect.getsource(detect_anomalies)
+    assert "PipelineStatus.completed" in src, (
+        "detect_anomalies must set PipelineStatus.completed (final pipeline task)"
+    )
+
+
+def test_detect_anomalies_skips_isolation_forest_for_small_observations():
+    """Observations with < 10 objects must skip IsolationForest gracefully."""
+    import uuid as _uuid
+    import unittest.mock as mock
+    from pipeline.tasks import detect_anomalies as da_mod
+    from pipeline.tasks.detect_anomalies import detect_anomalies
+    from shared.models import AstronomicalObject, ObjectClassification
+
+    obs_uuid = _uuid.uuid4()
+    obj_uuid = _uuid.uuid4()
+
+    astro_obj = mock.MagicMock(spec=AstronomicalObject)
+    astro_obj.object_uuid = obj_uuid
+    astro_obj.classified_object_type = "unknown"
+
+    clf_record = mock.MagicMock(spec=ObjectClassification)
+    clf_record.object_uuid = obj_uuid
+    clf_record.predicted_object_type = "star"
+    clf_record.classification_confidence_score = 0.1  # triggers low_confidence signal
+    clf_record.feature_vector = {"flag": 0, "concentration": 1.2}
+    clf_record.classified_at = None
+
+    call_count = [0]
+
+    def query_side_effect(*args):
+        q = mock.MagicMock()
+        call_count[0] += 1
+        n = call_count[0]
+        if n == 1:   # AstronomicalObject.filter().all()
+            q.filter.return_value.all.return_value = [astro_obj]
+        elif n == 2: # ObjectClassification.filter().order_by().all()
+            q.filter.return_value.order_by.return_value.all.return_value = [clf_record]
+        elif n == 3: # CatalogCrossMatch group-by query
+            q.filter.return_value.group_by.return_value.all.return_value = []
+        else:        # Observation for pipeline finalization
+            q.filter.return_value.first.return_value = mock.MagicMock()
+        return q
+
+    fake_session = mock.MagicMock()
+    fake_session.query.side_effect = query_side_effect
+
+    with mock.patch.object(da_mod, "SessionLocal", return_value=fake_session):
+        result = detect_anomalies.run({"observation_uuid": obs_uuid.hex})
+
+    assert result["objects_scored"] == 1
+    assert result["status"] == "completed"
+    assert clf_record.is_anomaly_flagged is True
+
+
+def test_detect_anomalies_artifact_never_flagged():
+    """Objects whose predicted_object_type == 'artifact' must NOT be flagged."""
+    import uuid as _uuid
+    import unittest.mock as mock
+    from pipeline.tasks import detect_anomalies as da_mod
+    from pipeline.tasks.detect_anomalies import detect_anomalies
+    from shared.models import AstronomicalObject, ObjectClassification
+
+    obs_uuid = _uuid.uuid4()
+    obj_uuid = _uuid.uuid4()
+
+    astro_obj = mock.MagicMock(spec=AstronomicalObject)
+    astro_obj.object_uuid = obj_uuid
+    astro_obj.classified_object_type = "artifact"
+
+    clf_record = mock.MagicMock(spec=ObjectClassification)
+    clf_record.object_uuid = obj_uuid
+    clf_record.predicted_object_type = "artifact"
+    clf_record.classification_confidence_score = 0.0  # low confidence — but artifact excluded
+    clf_record.feature_vector = {"flag": 3}           # morphology flag >= 2
+    clf_record.classified_at = None
+
+    call_count = [0]
+
+    def query_side_effect(*args):
+        q = mock.MagicMock()
+        call_count[0] += 1
+        n = call_count[0]
+        if n == 1:
+            q.filter.return_value.all.return_value = [astro_obj]
+        elif n == 2:
+            q.filter.return_value.order_by.return_value.all.return_value = [clf_record]
+        elif n == 3:
+            q.filter.return_value.group_by.return_value.all.return_value = []
+        else:
+            q.filter.return_value.first.return_value = mock.MagicMock()
+        return q
+
+    fake_session = mock.MagicMock()
+    fake_session.query.side_effect = query_side_effect
+
+    with mock.patch.object(da_mod, "SessionLocal", return_value=fake_session):
+        result = detect_anomalies.run({"observation_uuid": obs_uuid.hex})
+
+    assert clf_record.is_anomaly_flagged is False
+    assert result["anomalies_flagged"] == 0
+
+
+def test_detect_anomalies_anomaly_explanation_is_human_readable():
+    """anomaly_explanation must be a non-empty string when signals fire."""
+    import uuid as _uuid
+    import unittest.mock as mock
+    from pipeline.tasks import detect_anomalies as da_mod
+    from pipeline.tasks.detect_anomalies import detect_anomalies
+    from shared.models import AstronomicalObject, ObjectClassification
+
+    obs_uuid = _uuid.uuid4()
+    obj_uuid = _uuid.uuid4()
+
+    astro_obj = mock.MagicMock(spec=AstronomicalObject)
+    astro_obj.object_uuid = obj_uuid
+    astro_obj.classified_object_type = "star"
+
+    clf_record = mock.MagicMock(spec=ObjectClassification)
+    clf_record.object_uuid = obj_uuid
+    clf_record.predicted_object_type = "spiral_galaxy"  # disagrees with catalog "star"
+    clf_record.classification_confidence_score = 0.15   # low confidence
+    clf_record.feature_vector = {"flag": 0, "concentration": 1.0}
+    clf_record.classified_at = None
+
+    call_count = [0]
+
+    def query_side_effect(*args):
+        q = mock.MagicMock()
+        call_count[0] += 1
+        n = call_count[0]
+        if n == 1:
+            q.filter.return_value.all.return_value = [astro_obj]
+        elif n == 2:
+            q.filter.return_value.order_by.return_value.all.return_value = [clf_record]
+        elif n == 3:
+            q.filter.return_value.group_by.return_value.all.return_value = []
+        else:
+            q.filter.return_value.first.return_value = mock.MagicMock()
+        return q
+
+    fake_session = mock.MagicMock()
+    fake_session.query.side_effect = query_side_effect
+
+    with mock.patch.object(da_mod, "SessionLocal", return_value=fake_session):
+        detect_anomalies.run({"observation_uuid": obs_uuid.hex})
+
+    assert clf_record.is_anomaly_flagged is True
+    explanation = clf_record.anomaly_explanation
+    assert isinstance(explanation, str) and len(explanation) > 0, (
+        f"anomaly_explanation must be a non-empty string, got: {explanation!r}"
+    )
