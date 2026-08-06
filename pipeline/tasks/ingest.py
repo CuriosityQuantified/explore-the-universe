@@ -1,9 +1,13 @@
 """Pipeline orchestrator Celery task for JWST observations.
 
-Dispatches the full pipeline chain: download_fits -> validate_wcs ->
-generate_tiles -> detect_sources -> segment_sam -> generate_cutouts.
+Dispatches the full 9-task pipeline chain:
+  download_fits -> validate_wcs -> generate_tiles -> detect_sources ->
+  segment_sam -> generate_cutouts -> cross_match_catalogs ->
+  classify_objects -> detect_anomalies.
+
 The Observation record is created by the API endpoint before this task
-is dispatched.
+is dispatched.  PipelineStatus.completed is set by detect_anomalies
+(the final task), not by generate_cutouts.
 
 Usage:
     ingest_observation.delay(observation_uuid_hex, archive_observation_id, archive_program_id)
@@ -14,6 +18,9 @@ import logging
 from celery import chain
 
 from pipeline.celery_app import celery_app
+from pipeline.tasks.classify_objects import classify_objects
+from pipeline.tasks.cross_match_catalogs import cross_match_catalogs
+from pipeline.tasks.detect_anomalies import detect_anomalies
 from pipeline.tasks.detect_sources import detect_sources
 from pipeline.tasks.download import download_fits
 from pipeline.tasks.generate_cutouts import generate_cutouts
@@ -34,12 +41,15 @@ def ingest_observation(
     archive_observation_id: str,
     archive_program_id: str | None = None,
 ) -> dict:
-    """Dispatch the full pipeline chain for a pre-created Observation.
+    """Dispatch the full 9-task pipeline chain for a pre-created Observation.
 
     The Observation record must already exist in PostgreSQL (created by
     the API endpoint). This task builds and dispatches the Celery chain:
     download_fits -> validate_wcs -> generate_tiles -> detect_sources ->
-    segment_sam -> generate_cutouts.
+    segment_sam -> generate_cutouts -> cross_match_catalogs ->
+    classify_objects -> detect_anomalies.
+
+    PipelineStatus.completed is set by detect_anomalies (the final task).
 
     Args:
         observation_uuid_hex: UUID of the pre-created Observation record.
@@ -69,6 +79,9 @@ def ingest_observation(
         detect_sources.s(),
         segment_sam.s(),
         generate_cutouts.s(),
+        cross_match_catalogs.s(),
+        classify_objects.s(),
+        detect_anomalies.s(),
     )
     result = pipeline.apply_async()
 

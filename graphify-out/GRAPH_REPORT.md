@@ -1,16 +1,16 @@
-# Graph Report - explore-the-universe  (2026-08-05)
+# Graph Report - explore-the-universe  (2026-08-06)
 
 ## Corpus Check
-- 123 files · ~123,589 words
+- 133 files · ~126,440 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 602 nodes · 891 edges · 60 communities (39 shown, 21 thin omitted)
-- Extraction: 93% EXTRACTED · 6% INFERRED · 1% AMBIGUOUS · INFERRED: 54 edges (avg confidence: 0.64)
+- 685 nodes · 1008 edges · 75 communities (54 shown, 21 thin omitted)
+- Extraction: 94% EXTRACTED · 5% INFERRED · 0% AMBIGUOUS · INFERRED: 55 edges (avg confidence: 0.64)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `04a49e24`
+- Built from commit: `c436400f`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -21,17 +21,19 @@
 - Knowledge Graph With Spatial Hierarchy
 - devDependencies
 - TypeScript Config
-- _detect_and_store
+- detect_sources.py
 - Phase 5 Plan 01: Schema, Config, Catalog Clients
 - Phase 1-2 Planning Docs
 - Summary
+- tiles.py
 - segment_sam
-- detect_sources.py
+- segment_sam.py
 - Ingest Pipeline Tests
 - generate_cutouts
-- _process_fits_to_tiff
+- tile.py
 - Graphify Skill Docs
 - graph-refresh.sh
+- test_classification_schema.py
 - Coordinate Overlay UI
 - Phase 3 Viewer Planning Docs
 - Docker Compose Services
@@ -63,8 +65,21 @@
 - cross_match_all_catalogs
 - Phase 5 Plan 02: Cross-Match & Classification Tasks
 - Phase 5 Plan 03: Anomaly Detection & API Endpoints
+- ProcessingStep
 - Issue tracker: GitHub
+- tasks/ingest.py
+- Base
 - triage-labels.md
+- catalog_clients/__init__.py
+- query_simbad_region
+- query_gaia_region
+- query_ned_region
+- query_sdss_region
+- a1b2c3d4e5f6_add_classification_tables_and_columns.py
+- ingest_observation
+- classify_objects
+- cross_match_catalogs
+- detect_anomalies
 
 ## God Nodes (most connected - your core abstractions)
 1. `ProcessingStep` - 22 edges
@@ -105,35 +120,35 @@
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
 
-## Communities (60 total, 21 thin omitted)
+## Communities (75 total, 21 thin omitted)
 
 ### Community 0 - "Sky Viewer Pages"
 Cohesion: 0.07
 Nodes (42): ViewerPage(), ViewerPageProps, NOTE: Currently all bands share the same tile prefix in MinIO due to, ViewerClient(), ViewerClientProps, ViewerClient, ViewerLoader(), ViewerLoaderProps (+34 more)
 
 ### Community 1 - "Project Research Summary"
-Cohesion: 0.06
-Nodes (32): check_service_health(), get, Celery, FastAPI, healpix-alchemy, MinIO, Neo4j, Next.js (+24 more)
+Cohesion: 0.05
+Nodes (36): check_service_health(), get, Astropy, astroquery, Celery, FastAPI, healpix-alchemy, MinIO (+28 more)
 
 ### Community 2 - "Phase 5 Research: Classification & Cross-Matching"
 Cohesion: 0.10
 Nodes (25): Phase 5 Context: Classification & Cross-Matching, Anomaly Sensitivity Decisions, Classification Taxonomy Decisions, Cross-Match Behavior Decisions, Result Storage & API Decisions, Phase 5 Research: Classification & Cross-Matching, Gaia DR3 Catalog, joblib (+17 more)
 
 ### Community 3 - "Knowledge Graph With Spatial Hierarchy"
-Cohesion: 0.07
-Nodes (38): Astropy, astroquery, react-force-graph, openseadragon, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: 3D Universe Navigation, Anti-feature: Full Citizen Science Platform (+30 more)
+Cohesion: 0.08
+Nodes (35): react-force-graph, openseadragon, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: 3D Universe Navigation, Anti-feature: Full Citizen Science Platform, Anti-feature: Full LSST Real-time Ingestion, Anti-feature: Raw SQL/ADQL Query Interface (+27 more)
 
 ### Community 4 - "devDependencies"
 Cohesion: 0.06
-Nodes (35): eslint, eslint-config-next, next, react, react-dom, tailwindcss, @tailwindcss/postcss, @types/node (+27 more)
+Nodes (34): eslint, eslint-config-next, next, react, react-dom, tailwindcss, @tailwindcss/postcss, @types/node (+26 more)
 
 ### Community 5 - "TypeScript Config"
 Cohesion: 0.07
 Nodes (28): dom, dom.iterable, esnext, **/*.mts, .next/dev/types/**/*.ts, next-env.d.ts, .next/types/**/*.ts, node_modules (+20 more)
 
-### Community 6 - "_detect_and_store"
-Cohesion: 0.08
-Nodes (32): _find_sci_extension(), get_observation_detail(), get_wcs_params(), get, Session, Extract WCS parameters from the primary FITS file for client-side projection.…, Return observation provenance metadata and tile metadata. Queries the…, Find the SCI extension in a FITS HDU list. Same logic as pipeline/tasks/tile.py… (+24 more)
+### Community 6 - "detect_sources.py"
+Cohesion: 0.09
+Nodes (36): _assign_confidence_tiers(), _compute_kron_photometry(), _detect_and_store(), detect_sources(), _detect_sources_in_array(), _extract_sub_regions(), _find_sci_extension(), _fix_byte_order() (+28 more)
 
 ### Community 8 - "Phase 1-2 Planning Docs"
 Cohesion: 0.12
@@ -143,13 +158,17 @@ Nodes (19): Phase 1 UAT, Phase 2 Plan 01 (MAST download), Phase 2 Plan 01 Summar
 Cohesion: 0.25
 Nodes (7): Changes, Checklist, How was this tested?, Notes for the issue-worker, Screenshots, Summary, Type of change
 
+### Community 10 - "tiles.py"
+Cohesion: 0.13
+Nodes (19): get_database_session(), _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get (+11 more)
+
 ### Community 11 - "segment_sam"
 Cohesion: 0.11
 Nodes (21): _compute_normalization_parameters(), _encode_mask_to_rle(), _find_sci_extension(), _fits_to_sam_rgb(), _generate_elliptical_mask(), _generate_sam_masks(), _get_sam_processor(), _merge_boundary_masks() (+13 more)
 
-### Community 12 - "detect_sources.py"
-Cohesion: 0.06
-Nodes (68): get_database_session(), get_ingest_status(), IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, get, post (+60 more)
+### Community 12 - "segment_sam.py"
+Cohesion: 0.22
+Nodes (12): BaseSettings, MAST download Celery task for JWST observations. Queries the Mikulski Archive…, Cutout generation Celery task (sixth step in the 9-task pipeline chain).…, SAM 3 segmentation with SEP elliptical fallback Celery task. Generates pixel-…, WCS validation Celery task for FITS observations. Extracts World Coordinate…, Settings, PipelineStatus, StepStatus (+4 more)
 
 ### Community 13 - "Ingest Pipeline Tests"
 Cohesion: 0.16
@@ -159,13 +178,17 @@ Nodes (15): server_running, slow, Integration tests for the ingest pipeline. Tes
 Cohesion: 0.13
 Nodes (15): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Extract a WCS-preserving cutout from FITS data using Cutout2D. Computes a… (+7 more)
 
-### Community 15 - "_process_fits_to_tiff"
-Cohesion: 0.17
-Nodes (12): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), Compute ZScale normalization parameters from a subsample of the image. Samples…, Normalize a chunk of FITS data to 8-bit using pre-computed parameters. Applies… (+4 more)
+### Community 15 - "tile.py"
+Cohesion: 0.15
+Nodes (18): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), generate_tiles(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), task (+10 more)
 
 ### Community 16 - "Graphify Skill Docs"
 Cohesion: 0.22
 Nodes (10): .claude/CLAUDE.md (graphify trigger), graphify reference: add-watch, graphify reference: exports, graphify reference: extraction-spec, graphify reference: github-and-merge, graphify reference: hooks, graphify reference: query, graphify reference: transcribe (+2 more)
+
+### Community 18 - "test_classification_schema.py"
+Cohesion: 0.09
+Nodes (3): Unit tests for Phase 5 Plan 1: classification schema, catalog clients, and…, generate_cutouts must NOT assign pipeline_status = PipelineStatus.completed., test_generate_cutouts_does_not_set_pipeline_completed()
 
 ### Community 19 - "Coordinate Overlay UI"
 Cohesion: 0.36
@@ -219,9 +242,61 @@ Nodes (13): Caveats, How agents use it, If graph.json starts conflicting, Keepin
 Cohesion: 0.17
 Nodes (15): parametrize, _load(), Path, Guards on the committed graphify knowledge-graph integration. These are static…, graph.json is committed, so it must not embed this checkout's location., The graph only stays fresh if this hook survives; `graphify install` rewrites…, CI (.github/workflows/knowledge-graph.yml) shells out to this., `graphify install` hardcodes an absolute interpreter path here. That path only… (+7 more)
 
+### Community 60 - "ProcessingStep"
+Cohesion: 0.20
+Nodes (17): get_ingest_status(), IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, get, post, Session (+9 more)
+
 ### Community 61 - "Issue tracker: GitHub"
 Cohesion: 0.29
 Nodes (6): Blocking, Conventions, Issue tracker: GitHub, Pull requests as a triage surface, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
+
+### Community 62 - "tasks/ingest.py"
+Cohesion: 0.21
+Nodes (7): Stub Celery task: classify astronomical objects using ML. Implementation…, Stub Celery task: cross-match astronomical objects against external catalogs.…, Stub Celery task: score anomalies and flag novel objects. This is the final…, download_fits(), task, Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-…, Pipeline orchestrator Celery task for JWST observations. Dispatches the full…
+
+### Community 63 - "Base"
+Cohesion: 0.25
+Nodes (5): DeclarativeBase, Base, CatalogCrossMatch, ObjectClassification, Append-only ML classification record for a single pipeline run on one object.
+
+### Community 65 - "catalog_clients/__init__.py"
+Cohesion: 0.25
+Nodes (7): compute_search_radius_arcsec(), Catalog client package for cross-matching astronomical objects. Exports the…, Return an adaptive cross-match search radius in arcseconds. Compact sources…, Compact source (1 pixel × 0.1 arcsec/px = 0.1 arcsec extent) → ~2 arcsec., Extended source (200 px × 0.1 arcsec/px = 20 arcsec extent) → scales up., test_compute_search_radius_compact_source_returns_approx_2_arcsec(), test_compute_search_radius_extended_source_scales_up()
+
+### Community 66 - "query_simbad_region"
+Cohesion: 0.32
+Nodes (7): SkyCoord, query_simbad_region(), SIMBAD catalog client with exponential-backoff retry. Implements vectorized…, Query SIMBAD for all objects within *radius_arcsec* of *coordinate*. Returns a…, _table_to_dicts(), On repeated failure, query_simbad_region must return a not_queried sentinel., test_simbad_client_returns_not_queried_on_failure()
+
+### Community 67 - "query_gaia_region"
+Cohesion: 0.38
+Nodes (6): SkyCoord, query_gaia_region(), Gaia DR3 catalog client using astroquery.gaia cone-search. On final failure…, Query Gaia DR3 for sources within *radius_arcsec* of *coordinate*. Returns a…, _table_to_dicts(), test_gaia_client_returns_not_queried_on_failure()
+
+### Community 68 - "query_ned_region"
+Cohesion: 0.38
+Nodes (6): SkyCoord, query_ned_region(), NED (NASA/IPAC Extragalactic Database) catalog client. NED has no…, Query NED for all objects within *radius_arcsec* of *coordinate*. Returns a…, _table_to_dicts(), test_ned_client_returns_not_queried_on_failure()
+
+### Community 69 - "query_sdss_region"
+Cohesion: 0.38
+Nodes (6): SkyCoord, query_sdss_region(), SDSS (Sloan Digital Sky Survey) catalog client. Radius is hard-capped at 180…, Query SDSS for all objects within *radius_arcsec* of *coordinate*. Returns a…, _table_to_dicts(), test_sdss_client_returns_not_queried_on_failure()
+
+### Community 70 - "a1b2c3d4e5f6_add_classification_tables_and_columns.py"
+Cohesion: 0.40
+Nodes (4): downgrade(), Add object_classifications table and 3 catalog columns to astronomical_objects., Remove object_classifications table and 3 catalog columns., upgrade()
+
+### Community 71 - "ingest_observation"
+Cohesion: 0.50
+Nodes (4): ingest_observation(), task, Dispatch the full 9-task pipeline chain for a pre-created Observation. The…, test_ingest_observation_chain_has_9_tasks()
+
+### Community 72 - "classify_objects"
+Cohesion: 0.67
+Nodes (3): classify_objects(), task, Extract morphological features and classify objects using a trained ML model.…
+
+### Community 73 - "cross_match_catalogs"
+Cohesion: 0.67
+Nodes (3): cross_match_catalogs(), task, Cross-match detected objects against SIMBAD, NED, SDSS, and Gaia. Seventh step…
+
+### Community 74 - "detect_anomalies"
+Cohesion: 0.67
+Nodes (3): detect_anomalies(), task, Score objects for anomalies and flag novel detections. Ninth (final) step in…
 
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]
@@ -254,6 +329,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Next.js Web README` and `window.svg Icon`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `Project Research Summary` connect `Project Research Summary` to `Knowledge Graph With Spatial Hierarchy`?**
-  _High betweenness centrality (0.149) - this node is a cross-community bridge._
-- **Why does `MinIO` connect `Project Research Summary` to `detect_sources.py`?**
-  _High betweenness centrality (0.069) - this node is a cross-community bridge._
+  _High betweenness centrality (0.152) - this node is a cross-community bridge._
+- **Why does `MinIO` connect `Project Research Summary` to `tiles.py`?**
+  _High betweenness centrality (0.086) - this node is a cross-community bridge._

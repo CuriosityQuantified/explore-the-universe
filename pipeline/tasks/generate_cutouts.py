@@ -1,4 +1,4 @@
-"""Cutout generation and pipeline finalization Celery task.
+"""Cutout generation Celery task (sixth step in the 9-task pipeline chain).
 
 Extracts per-object cutout images from the original FITS data using bounding
 boxes with 10% padding. For each detected astronomical object, generates three
@@ -10,12 +10,13 @@ files:
 All cutout files are uploaded to the MinIO segmentation bucket under
 {observation_uuid}/{object_uuid}/.
 
-This is the sixth and final step in the pipeline chain:
+Sixth step in the 9-task pipeline chain:
   download_fits -> validate_wcs -> generate_tiles -> detect_sources
-  -> segment_sam -> generate_cutouts
+  -> segment_sam -> generate_cutouts -> cross_match_catalogs
+  -> classify_objects -> detect_anomalies
 
-After generating cutouts, this task sets the observation pipeline_status
-to PipelineStatus.completed, marking the entire ingestion pipeline as done.
+PipelineStatus.completed is set by detect_anomalies (the final task),
+not by this task.
 
 Usage:
     # Called as part of Celery chain (receives segment_sam output dict)
@@ -273,11 +274,11 @@ def _upload_cutout_files(
     acks_late=True,
 )
 def generate_cutouts(self, segmentation_result: dict) -> dict:
-    """Generate per-object cutout images and finalize pipeline status.
+    """Generate per-object cutout images (sixth pipeline step).
 
     Extracts per-object cutouts (dual PNG + FITS with WCS) from the original
-    FITS data, uploads them to MinIO, updates AstronomicalObject.cutout_s3_prefix,
-    and marks the observation as PipelineStatus.completed (final pipeline step).
+    FITS data, uploads them to MinIO, and updates AstronomicalObject.cutout_s3_prefix.
+    PipelineStatus.completed is set by detect_anomalies (the final task).
 
     Data flow:
         segmentation_result["observation_uuid"] -> observation UUID
@@ -354,14 +355,6 @@ def generate_cutouts(self, segmentation_result: dict) -> dict:
             processing_step.step_completed_at = sql_func.now()
             processing_step.step_output_metadata = {"cutouts_generated": 0}
 
-            # Mark observation as completed (final pipeline step)
-            observation_record = (
-                database_session.query(Observation)
-                .filter(Observation.observation_uuid == observation_uuid)
-                .first()
-            )
-            if observation_record is not None:
-                observation_record.pipeline_status = PipelineStatus.completed
             database_session.commit()
 
             logger.info(
@@ -508,21 +501,11 @@ def generate_cutouts(self, segmentation_result: dict) -> dict:
         processing_step.step_completed_at = sql_func.now()
         processing_step.step_output_metadata = step_output_metadata
 
-        # CRITICAL: Set observation pipeline_status to completed.
-        # This is the final task in the 6-task chain.
-        observation_record = (
-            database_session.query(Observation)
-            .filter(Observation.observation_uuid == observation_uuid)
-            .first()
-        )
-        if observation_record is not None:
-            observation_record.pipeline_status = PipelineStatus.completed
-
         database_session.commit()
 
         logger.info(
             "Cutout generation completed for observation %s: %d cutouts, "
-            "%.1f MB uploaded. Pipeline status: completed.",
+            "%.1f MB uploaded. Passing to cross_match_catalogs.",
             observation_uuid_hex,
             cutouts_generated,
             total_bytes_uploaded / (1024 * 1024) if total_bytes_uploaded else 0,
