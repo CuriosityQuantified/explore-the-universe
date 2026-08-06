@@ -231,8 +231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "alembic_env",
-      "community": 63,
-      "community_name": "Base",
+      "community": 1,
+      "community_name": "Project Research Summary",
       "norm_label": "env.py"
     },
     {
@@ -242,8 +242,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
-      "community": 63,
-      "community_name": "Base",
+      "community": 1,
+      "community_name": "Project Research Summary",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -253,8 +253,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
-      "community": 63,
-      "community_name": "Base",
+      "community": 1,
+      "community_name": "Project Research Summary",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -407,7 +407,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_db_session",
-      "community": 10,
+      "community": 75,
       "community_name": "tiles.py",
       "norm_label": "session.py"
     },
@@ -418,7 +418,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "api_db_session_get_database_session",
-      "community": 10,
+      "community": 75,
       "community_name": "tiles.py",
       "norm_label": "get_database_session()"
     },
@@ -429,7 +429,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_main",
-      "community": 10,
+      "community": 75,
       "community_name": "tiles.py",
       "norm_label": "main.py"
     },
@@ -495,8 +495,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_ingest",
-      "community": 60,
-      "community_name": "ProcessingStep",
+      "community": 75,
+      "community_name": "tiles.py",
       "norm_label": "routers/ingest.py"
     },
     {
@@ -507,7 +507,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestrequest",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "ingestrequest"
     },
     {
@@ -518,7 +518,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_basemodel",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "basemodel"
     },
     {
@@ -529,7 +529,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestresponse",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "ingestresponse"
     },
     {
@@ -540,7 +540,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingeststatusresponse",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "ingeststatusresponse"
     },
     {
@@ -551,7 +551,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_post",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "post"
     },
     {
@@ -562,7 +562,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_trigger_ingest",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "trigger_ingest()"
     },
     {
@@ -573,7 +573,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_session",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "session"
     },
     {
@@ -584,7 +584,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_get",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "get"
     },
     {
@@ -595,7 +595,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_get_ingest_status",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "get_ingest_status()"
     },
     {
@@ -605,8 +605,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_1",
-      "community": 60,
-      "community_name": "ProcessingStep",
+      "community": 75,
+      "community_name": "tiles.py",
       "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post..."
     },
     {
@@ -617,7 +617,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_25",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "request body for post /api/ingest."
     },
     {
@@ -628,7 +628,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_38",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "response body for post /api/ingest (202 accepted)."
     },
     {
@@ -639,7 +639,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_49",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "response body for get /api/ingest/{observation_uuid}/status."
     },
     {
@@ -650,7 +650,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_66",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "trigger the ingestion pipeline for a jwst observation. creates an observation..."
     },
     {
@@ -661,7 +661,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_140",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "check the status of an ingestion pipeline. returns the observation details..."
     },
     {
@@ -671,7 +671,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_test_upload",
-      "community": 10,
+      "community": 75,
       "community_name": "tiles.py",
       "norm_label": "test_upload.py"
     },
@@ -737,7 +737,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_tiles",
-      "community": 10,
+      "community": 75,
       "community_name": "tiles.py",
       "norm_label": "tiles.py"
     },
@@ -749,7 +749,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_wcsparamsresponse",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "wcsparamsresponse"
     },
     {
@@ -760,7 +760,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_py_basemodel",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "basemodel"
     },
     {
@@ -771,7 +771,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_tilemetadataresponse",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "tilemetadataresponse"
     },
     {
@@ -782,7 +782,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_observationdetailresponse",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "observationdetailresponse"
     },
     {
@@ -793,7 +793,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_find_sci_extension",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -804,7 +804,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_py_get",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "get"
     },
     {
@@ -815,7 +815,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_get_tile",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "get_tile()"
     },
     {
@@ -826,7 +826,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_get_wcs_params",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "get_wcs_params()"
     },
     {
@@ -837,7 +837,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_get_observation_detail",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "get_observation_detail()"
     },
     {
@@ -848,7 +848,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_py_session",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "session"
     },
     {
@@ -858,7 +858,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_1",
-      "community": 10,
+      "community": 75,
       "community_name": "tiles.py",
       "norm_label": "tile serving api endpoints for the sky viewer. get..."
     },
@@ -870,7 +870,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_34",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "wcs header parameters for client-side pixel-to-sky coordinate conversion."
     },
     {
@@ -881,7 +881,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_51",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "tile generation metadata from the generate_tiles processing step."
     },
     {
@@ -892,7 +892,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_66",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "observation provenance and tile metadata for the info panel."
     },
     {
@@ -903,7 +903,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_85",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "find the sci extension in a fits hdu list. same logic as pipeline/tasks/tile.py..."
     },
     {
@@ -914,7 +914,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_129",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "stream a tile jpeg from minio. proxies tile requests to minio to avoid cors..."
     },
     {
@@ -925,7 +925,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_163",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "extract wcs parameters from the primary fits file for client-side projection...."
     },
     {
@@ -936,7 +936,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_247",
       "community": 10,
-      "community_name": "tiles.py",
+      "community_name": "get_wcs_params",
       "norm_label": "return observation provenance metadata and tile metadata. queries the..."
     },
     {
@@ -1265,9 +1265,295 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_celery_app",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "celery_app.py"
+    },
+    {
+      "label": "feature_extraction.py",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "feature_extraction.py"
+    },
+    {
+      "label": "extract_feature_vector()",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_extract_feature_vector",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "extract_feature_vector()"
+    },
+    {
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_py_ndarray",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "ndarray"
+    },
+    {
+      "label": "_run_statmorph()",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_run_statmorph",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "_run_statmorph()"
+    },
+    {
+      "label": "_sep_fallback()",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_sep_fallback",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "_sep_fallback()"
+    },
+    {
+      "label": "_augment_with_sep()",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_augment_with_sep",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "_augment_with_sep()"
+    },
+    {
+      "label": "_safe_float()",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L140",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_safe_float",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "_safe_float()"
+    },
+    {
+      "label": "_sanitize()",
+      "file_type": "code",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L150",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_sanitize",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "_sanitize()"
+    },
+    {
+      "label": "Morphological feature extraction for astronomical objects. Path A (statmorph):\u2026",
+      "file_type": "rationale",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_rationale_1",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "morphological feature extraction for astronomical objects. path a (statmorph):..."
+    },
+    {
+      "label": "Compute a feature vector for one astronomical object. Returns a dict of named\u2026",
+      "file_type": "rationale",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_rationale_29",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "compute a feature vector for one astronomical object. returns a dict of named..."
+    },
+    {
+      "label": "Run statmorph on cutout+mask. Returns feature dict or None on failure.",
+      "file_type": "rationale",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_rationale_56",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "run statmorph on cutout+mask. returns feature dict or none on failure."
+    },
+    {
+      "label": "Build a SEP-only feature dict (statmorph fields set to sentinel).",
+      "file_type": "rationale",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L105",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_rationale_105",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "build a sep-only feature dict (statmorph fields set to sentinel)."
+    },
+    {
+      "label": "Merge SEP photometric properties into features (in-place).",
+      "file_type": "rationale",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L131",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_rationale_131",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "merge sep photometric properties into features (in-place)."
+    },
+    {
+      "label": "Replace any remaining NaN/Inf with sentinel; leave strings untouched.",
+      "file_type": "rationale",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "pipeline_feature_extraction_rationale_151",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "replace any remaining nan/inf with sentinel; leave strings untouched."
+    },
+    {
+      "label": "ml_models/__init__.py",
+      "file_type": "code",
+      "source_file": "pipeline/ml_models/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_init",
+      "community": 83,
+      "community_name": "ml_models/__init__.py",
+      "norm_label": "ml_models/__init__.py"
+    },
+    {
+      "label": "ML model loading/saving utilities for the classification pipeline.",
+      "file_type": "rationale",
+      "source_file": "pipeline/ml_models/__init__.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_init_rationale_1",
+      "community": 83,
+      "community_name": "ml_models/__init__.py",
+      "norm_label": "ml model loading/saving utilities for the classification pipeline."
+    },
+    {
+      "label": "classifier.py",
+      "file_type": "code",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "classifier.py"
+    },
+    {
+      "label": "load_or_create_classifier()",
+      "file_type": "code",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "load_or_create_classifier()"
+    },
+    {
+      "label": "RandomForestClassifier",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "randomforestclassifier",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "randomforestclassifier"
+    },
+    {
+      "label": "predict_object_types()",
+      "file_type": "code",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_predict_object_types",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "predict_object_types()"
+    },
+    {
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_py_ndarray",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "ndarray"
+    },
+    {
+      "label": "save_classifier()",
+      "file_type": "code",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_save_classifier",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "save_classifier()"
+    },
+    {
+      "label": "Random Forest classifier for astronomical object morphological type prediction.\u2026",
+      "file_type": "rationale",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_rationale_1",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "random forest classifier for astronomical object morphological type prediction...."
+    },
+    {
+      "label": "Download and deserialize the pre-trained RF classifier from S3. Returns None if\u2026",
+      "file_type": "rationale",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_rationale_65",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "download and deserialize the pre-trained rf classifier from s3. returns none if..."
+    },
+    {
+      "label": "Predict morphological types for a batch of objects. Sentinel values (-999.0)\u2026",
+      "file_type": "rationale",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_rationale_94",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "predict morphological types for a batch of objects. sentinel values (-999.0)..."
+    },
+    {
+      "label": "Serialize and upload a trained classifier to S3.",
+      "file_type": "rationale",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L122",
+      "_origin": "ast",
+      "id": "pipeline_ml_models_classifier_rationale_122",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "serialize and upload a trained classifier to s3."
     },
     {
       "label": "tasks/__init__.py",
@@ -1287,9 +1573,42 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "classify_objects.py"
+    },
+    {
+      "label": "_download_cutout()",
+      "file_type": "code",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "pipeline_tasks_classify_objects_download_cutout",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "_download_cutout()"
+    },
+    {
+      "label": "ndarray",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "pipeline_tasks_classify_objects_py_ndarray",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "ndarray"
+    },
+    {
+      "label": "_build_feature_matrix()",
+      "file_type": "code",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L78",
+      "_origin": "ast",
+      "id": "pipeline_tasks_classify_objects_build_feature_matrix",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "_build_feature_matrix()"
     },
     {
       "label": "task",
@@ -1306,7 +1625,7 @@
       "label": "classify_objects()",
       "file_type": "code",
       "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L10",
+      "source_location": "L100",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_classify_objects",
       "community": 72,
@@ -1314,23 +1633,45 @@
       "norm_label": "classify_objects()"
     },
     {
-      "label": "Stub Celery task: classify astronomical objects using ML. Implementation\u2026",
+      "label": "Classify Celery task: feature extraction + RF classification for every object.\u2026",
       "file_type": "rationale",
       "source_file": "pipeline/tasks/classify_objects.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_1",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
-      "norm_label": "stub celery task: classify astronomical objects using ml. implementation..."
+      "community": 63,
+      "community_name": "classify_objects.py",
+      "norm_label": "classify celery task: feature extraction + rf classification for every object...."
+    },
+    {
+      "label": "Download cutout.fits from MinIO and return its data as a float64 array.",
+      "file_type": "rationale",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "pipeline_tasks_classify_objects_rationale_62",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "download cutout.fits from minio and return its data as a float64 array."
+    },
+    {
+      "label": "Convert list of feature dicts to a numeric matrix (n_objects \u00d7 n_features).",
+      "file_type": "rationale",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "pipeline_tasks_classify_objects_rationale_79",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "convert list of feature dicts to a numeric matrix (n_objects \u00d7 n_features)."
     },
     {
       "label": "Extract morphological features and classify objects using a trained ML model.\u2026",
       "file_type": "rationale",
       "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L11",
+      "source_location": "L101",
       "_origin": "ast",
-      "id": "pipeline_tasks_classify_objects_rationale_11",
+      "id": "pipeline_tasks_classify_objects_rationale_101",
       "community": 72,
       "community_name": "classify_objects",
       "norm_label": "extract morphological features and classify objects using a trained ml model...."
@@ -1343,8 +1684,52 @@
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs",
       "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "cross_match_catalogs.py"
+    },
+    {
+      "label": "_get_pixel_scale()",
+      "file_type": "code",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
+      "norm_label": "_get_pixel_scale()"
+    },
+    {
+      "label": "UUID",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "pipeline_tasks_cross_match_catalogs_py_uuid",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
+      "norm_label": "uuid"
+    },
+    {
+      "label": "_query_one_catalog()",
+      "file_type": "code",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "pipeline_tasks_cross_match_catalogs_query_one_catalog",
+      "community": 73,
+      "community_name": "cross_match_catalogs",
+      "norm_label": "_query_one_catalog()"
+    },
+    {
+      "label": "SkyCoord",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "pipeline_tasks_cross_match_catalogs_py_skycoord",
+      "community": 73,
+      "community_name": "cross_match_catalogs",
+      "norm_label": "skycoord"
     },
     {
       "label": "task",
@@ -1361,7 +1746,7 @@
       "label": "cross_match_catalogs()",
       "file_type": "code",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
-      "source_location": "L10",
+      "source_location": "L146",
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
       "community": 73,
@@ -1369,23 +1754,34 @@
       "norm_label": "cross_match_catalogs()"
     },
     {
-      "label": "Stub Celery task: cross-match astronomical objects against external catalogs.\u2026",
+      "label": "Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh\u2026",
       "file_type": "rationale",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs_rationale_1",
       "community": 62,
-      "community_name": "tasks/ingest.py",
-      "norm_label": "stub celery task: cross-match astronomical objects against external catalogs...."
+      "community_name": "cross_match_catalogs.py",
+      "norm_label": "cross-match celery task: query all 4 catalogs in parallel per object. seventh..."
+    },
+    {
+      "label": "Return WCS pixel scale in arcsec/px for this observation. Recovers FITS S3 keys\u2026",
+      "file_type": "rationale",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "pipeline_tasks_cross_match_catalogs_rationale_74",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
+      "norm_label": "return wcs pixel scale in arcsec/px for this observation. recovers fits s3 keys..."
     },
     {
       "label": "Cross-match detected objects against SIMBAD, NED, SDSS, and Gaia. Seventh step\u2026",
       "file_type": "rationale",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
-      "source_location": "L11",
+      "source_location": "L147",
       "_origin": "ast",
-      "id": "pipeline_tasks_cross_match_catalogs_rationale_11",
+      "id": "pipeline_tasks_cross_match_catalogs_rationale_147",
       "community": 73,
       "community_name": "cross_match_catalogs",
       "norm_label": "cross-match detected objects against simbad, ned, sdss, and gaia. seventh step..."
@@ -1397,8 +1793,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "detect_anomalies.py"
     },
     {
@@ -1430,8 +1826,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_rationale_1",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "stub celery task: score anomalies and flag novel objects. this is the final..."
     },
     {
@@ -1739,7 +2135,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_download",
       "community": 12,
-      "community_name": "segment_sam.py",
+      "community_name": "ProcessingStep",
       "norm_label": "download.py"
     },
     {
@@ -1749,8 +2145,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_download_py_task",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "task"
     },
     {
@@ -1760,8 +2156,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "pipeline_tasks_download_download_fits",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "download_fits()"
     },
     {
@@ -1772,7 +2168,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_download_rationale_1",
       "community": 12,
-      "community_name": "segment_sam.py",
+      "community_name": "ProcessingStep",
       "norm_label": "mast download celery task for jwst observations. queries the mikulski archive..."
     },
     {
@@ -1782,8 +2178,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "pipeline_tasks_download_rationale_47",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "download calibrated fits files from mast and upload to minio. receives a pre-..."
     },
     {
@@ -1793,8 +2189,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "generate_cutouts.py"
     },
     {
@@ -1892,8 +2288,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_1",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "cutout generation celery task (sixth step in the 9-task pipeline chain)...."
     },
     {
@@ -1980,8 +2376,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "tasks/ingest.py"
     },
     {
@@ -2013,8 +2409,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_rationale_1",
-      "community": 62,
-      "community_name": "tasks/ingest.py",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "pipeline orchestrator celery task for jwst observations. dispatches the full..."
     },
     {
@@ -2036,7 +2432,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam",
       "community": 12,
-      "community_name": "segment_sam.py",
+      "community_name": "ProcessingStep",
       "norm_label": "segment_sam.py"
     },
     {
@@ -2179,7 +2575,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_1",
       "community": 12,
-      "community_name": "segment_sam.py",
+      "community_name": "ProcessingStep",
       "norm_label": "sam 3 segmentation with sep elliptical fallback celery task. generates pixel-..."
     },
     {
@@ -2541,8 +2937,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "validate_wcs.py"
     },
     {
@@ -2552,8 +2948,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_find_sci_extension",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -2563,8 +2959,8 @@
       "source_location": "L87",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_validate_wcs_round_trip",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "_validate_wcs_round_trip()"
     },
     {
@@ -2574,8 +2970,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_extract_fits_header_provenance",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "_extract_fits_header_provenance()"
     },
     {
@@ -2585,8 +2981,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_py_task",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "task"
     },
     {
@@ -2596,8 +2992,8 @@
       "source_location": "L191",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_validate_wcs",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "validate_wcs()"
     },
     {
@@ -2607,8 +3003,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_1",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "wcs validation celery task for fits observations. extracts world coordinate..."
     },
     {
@@ -2618,8 +3014,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_40",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "find the sci extension in a fits hdu list. checks for a named 'sci' extension..."
     },
     {
@@ -2629,8 +3025,8 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_88",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "validate wcs accuracy via pixel-to-world-to-pixel round-trip test. tests..."
     },
     {
@@ -2640,8 +3036,8 @@
       "source_location": "L137",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_137",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "extract provenance metadata from fits header fields. supplements mast metadata..."
     },
     {
@@ -2651,8 +3047,8 @@
       "source_location": "L192",
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_192",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 78,
+      "community_name": "validate_wcs.py",
       "norm_label": "extract and validate wcs from fits headers, update observation with pointing...."
     },
     {
@@ -2731,8 +3127,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "shared_config",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 75,
+      "community_name": "tiles.py",
       "norm_label": "config.py"
     },
     {
@@ -2742,8 +3138,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "shared_config_settings",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 75,
+      "community_name": "tiles.py",
       "norm_label": "settings"
     },
     {
@@ -2753,8 +3149,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "basesettings",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 75,
+      "community_name": "tiles.py",
       "norm_label": "basesettings"
     },
     {
@@ -2764,8 +3160,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "shared_models",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "models.py"
     },
     {
@@ -2776,7 +3172,7 @@
       "_origin": "ast",
       "id": "shared_models_base",
       "community": 63,
-      "community_name": "Base",
+      "community_name": "classify_objects.py",
       "norm_label": "base"
     },
     {
@@ -2787,7 +3183,7 @@
       "_origin": "ast",
       "id": "declarativebase",
       "community": 63,
-      "community_name": "Base",
+      "community_name": "classify_objects.py",
       "norm_label": "declarativebase"
     },
     {
@@ -2797,8 +3193,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "shared_models_pipelinestatus",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "pipelinestatus"
     },
     {
@@ -2808,8 +3204,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "str",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "str"
     },
     {
@@ -2819,8 +3215,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "shared_models_stepstatus",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "stepstatus"
     },
     {
@@ -2842,7 +3238,7 @@
       "_origin": "ast",
       "id": "shared_models_observation",
       "community": 60,
-      "community_name": "ProcessingStep",
+      "community_name": "Observation",
       "norm_label": "observation"
     },
     {
@@ -2852,7 +3248,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "shared_models_processingstep",
-      "community": 60,
+      "community": 12,
       "community_name": "ProcessingStep",
       "norm_label": "processingstep"
     },
@@ -2863,8 +3259,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "shared_models_astronomicalobject",
-      "community": 6,
-      "community_name": "detect_sources.py",
+      "community": 63,
+      "community_name": "classify_objects.py",
       "norm_label": "astronomicalobject"
     },
     {
@@ -2875,7 +3271,7 @@
       "_origin": "ast",
       "id": "shared_models_objectclassification",
       "community": 63,
-      "community_name": "Base",
+      "community_name": "classify_objects.py",
       "norm_label": "objectclassification"
     },
     {
@@ -2886,7 +3282,7 @@
       "_origin": "ast",
       "id": "shared_models_catalogcrossmatch",
       "community": 63,
-      "community_name": "Base",
+      "community_name": "classify_objects.py",
       "norm_label": "catalogcrossmatch"
     },
     {
@@ -2897,7 +3293,7 @@
       "_origin": "ast",
       "id": "shared_models_rationale_158",
       "community": 63,
-      "community_name": "Base",
+      "community_name": "classify_objects.py",
       "norm_label": "append-only ml classification record for a single pipeline run on one object."
     },
     {
@@ -2907,8 +3303,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "shared_s3",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "s3.py"
     },
     {
@@ -2918,8 +3314,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "shared_s3_get_s3_client",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "get_s3_client()"
     },
     {
@@ -2929,8 +3325,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "shared_s3_rationale_1",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "reusable s3 client singleton for minio access. provides a lazy-initialized..."
     },
     {
@@ -2940,8 +3336,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "shared_s3_rationale_16",
-      "community": 12,
-      "community_name": "segment_sam.py",
+      "community": 62,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "return a boto3 s3 client configured for minio. uses a module-level singleton --..."
     },
     {
@@ -3292,15 +3688,15 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_stub_tasks_raise_not_implemented",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 84,
+      "community_name": "test_stub_tasks_raise_not_implemented",
       "norm_label": "test_stub_tasks_raise_not_implemented()"
     },
     {
       "label": "test_pyproject_declares_scikit_learn()",
       "file_type": "code",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L306",
+      "source_location": "L301",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_pyproject_declares_scikit_learn",
       "community": 18,
@@ -3311,12 +3707,199 @@
       "label": "test_pyproject_declares_statmorph()",
       "file_type": "code",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L319",
+      "source_location": "L314",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_pyproject_declares_statmorph",
       "community": 18,
       "community_name": "test_classification_schema.py",
       "norm_label": "test_pyproject_declares_statmorph()"
+    },
+    {
+      "label": "test_feature_extraction_importable()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L332",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_feature_extraction_importable",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
+      "norm_label": "test_feature_extraction_importable()"
+    },
+    {
+      "label": "test_extract_feature_vector_sep_fallback_for_maskless()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L336",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_extract_feature_vector_sep_fallback_for_maskless",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "test_extract_feature_vector_sep_fallback_for_maskless()"
+    },
+    {
+      "label": "test_extract_feature_vector_no_mask_no_sep_returns_sentinels()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L350",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_extract_feature_vector_no_mask_no_sep_returns_sentinels",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "test_extract_feature_vector_no_mask_no_sep_returns_sentinels()"
+    },
+    {
+      "label": "test_extract_feature_vector_nan_replaced_by_sentinel()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L360",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_extract_feature_vector_nan_replaced_by_sentinel",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "test_extract_feature_vector_nan_replaced_by_sentinel()"
+    },
+    {
+      "label": "test_classifier_module_importable()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L376",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_classifier_module_importable",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
+      "norm_label": "test_classifier_module_importable()"
+    },
+    {
+      "label": "test_object_type_labels_include_required_types()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L385",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_object_type_labels_include_required_types",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
+      "norm_label": "test_object_type_labels_include_required_types()"
+    },
+    {
+      "label": "test_feature_columns_has_at_least_eight()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L400",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_feature_columns_has_at_least_eight",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
+      "norm_label": "test_feature_columns_has_at_least_eight()"
+    },
+    {
+      "label": "test_load_or_create_classifier_returns_none_when_no_s3_model()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L408",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "test_load_or_create_classifier_returns_none_when_no_s3_model()"
+    },
+    {
+      "label": "test_predict_object_types_imputes_sentinels()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L419",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "test_predict_object_types_imputes_sentinels()"
+    },
+    {
+      "label": "test_cross_match_catalogs_uses_thread_pool()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L446",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_cross_match_catalogs_uses_thread_pool",
+      "community": 73,
+      "community_name": "cross_match_catalogs",
+      "norm_label": "test_cross_match_catalogs_uses_thread_pool()"
+    },
+    {
+      "label": "test_cross_match_catalogs_not_implemented_removed()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L454",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_cross_match_catalogs_not_implemented_removed",
+      "community": 73,
+      "community_name": "cross_match_catalogs",
+      "norm_label": "test_cross_match_catalogs_not_implemented_removed()"
+    },
+    {
+      "label": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L464",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "community": 85,
+      "community_name": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "norm_label": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches()"
+    },
+    {
+      "label": "test_cross_match_catalogs_not_queried_on_catalog_failure()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L535",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_cross_match_catalogs_not_queried_on_catalog_failure",
+      "community": 86,
+      "community_name": "test_cross_match_catalogs_not_queried_on_catalog_failure",
+      "norm_label": "test_cross_match_catalogs_not_queried_on_catalog_failure()"
+    },
+    {
+      "label": "test_classify_objects_not_implemented_removed()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L585",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_classify_objects_not_implemented_removed",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "test_classify_objects_not_implemented_removed()"
+    },
+    {
+      "label": "test_classify_objects_creates_classification_for_maskless_object()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L593",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_classify_objects_creates_classification_for_maskless_object",
+      "community": 87,
+      "community_name": "test_classify_objects_creates_classification_for_maskless_object",
+      "norm_label": "test_classify_objects_creates_classification_for_maskless_object()"
+    },
+    {
+      "label": "test_classify_objects_no_model_classifies_as_unknown()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L637",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_classify_objects_no_model_classifies_as_unknown",
+      "community": 88,
+      "community_name": "test_classify_objects_no_model_classifies_as_unknown",
+      "norm_label": "test_classify_objects_no_model_classifies_as_unknown()"
+    },
+    {
+      "label": "test_classify_objects_stores_feature_vector_jsonb()",
+      "file_type": "code",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L678",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_test_classify_objects_stores_feature_vector_jsonb",
+      "community": 89,
+      "community_name": "test_classify_objects_stores_feature_vector_jsonb",
+      "norm_label": "test_classify_objects_stores_feature_vector_jsonb()"
     },
     {
       "label": "Unit tests for Phase 5 Plan 1: classification schema, catalog clients, and\u2026",
@@ -3372,6 +3955,127 @@
       "community": 18,
       "community_name": "test_classification_schema.py",
       "norm_label": "generate_cutouts must not assign pipeline_status = pipelinestatus.completed."
+    },
+    {
+      "label": "Only detect_anomalies remains a stub after Plan 2; cross_match and classify are\u2026",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L288",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_288",
+      "community": 84,
+      "community_name": "test_stub_tasks_raise_not_implemented",
+      "norm_label": "only detect_anomalies remains a stub after plan 2; cross_match and classify are..."
+    },
+    {
+      "label": "Maskless object (rle_mask=None) returns sep_fallback with ellipticity computed.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L337",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_337",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "maskless object (rle_mask=none) returns sep_fallback with ellipticity computed."
+    },
+    {
+      "label": "No mask, no SEP props \u2192 all statmorph features are -999.0 sentinels.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L351",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_351",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "no mask, no sep props \u2192 all statmorph features are -999.0 sentinels."
+    },
+    {
+      "label": "NaN/Inf values in sep_props propagate as -999.0 sentinel.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L361",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_361",
+      "community": 19,
+      "community_name": "extract_feature_vector",
+      "norm_label": "nan/inf values in sep_props propagate as -999.0 sentinel."
+    },
+    {
+      "label": "load_or_create_classifier returns None (not an exception) when S3 has no model.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L409",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_409",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "load_or_create_classifier returns none (not an exception) when s3 has no model."
+    },
+    {
+      "label": "predict_object_types handles -999.0 sentinels without crashing.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L420",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_420",
+      "community": 72,
+      "community_name": "classify_objects",
+      "norm_label": "predict_object_types handles -999.0 sentinels without crashing."
+    },
+    {
+      "label": "CatalogCrossMatch records are created for real catalog matches (mock session).",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L465",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_465",
+      "community": 85,
+      "community_name": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "norm_label": "catalogcrossmatch records are created for real catalog matches (mock session)."
+    },
+    {
+      "label": "Catalog failure \u2192 no CatalogCrossMatch, task continues without aborting.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L536",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_536",
+      "community": 86,
+      "community_name": "test_cross_match_catalogs_not_queried_on_catalog_failure",
+      "norm_label": "catalog failure \u2192 no catalogcrossmatch, task continues without aborting."
+    },
+    {
+      "label": "classify_objects creates ObjectClassification for objects without SAM masks.",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L594",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_594",
+      "community": 87,
+      "community_name": "test_classify_objects_creates_classification_for_maskless_object",
+      "norm_label": "classify_objects creates objectclassification for objects without sam masks."
+    },
+    {
+      "label": "When no ML model exists in S3, all objects get predicted_type='unknown',\u2026",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L638",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_638",
+      "community": 88,
+      "community_name": "test_classify_objects_no_model_classifies_as_unknown",
+      "norm_label": "when no ml model exists in s3, all objects get predicted_type='unknown',..."
+    },
+    {
+      "label": "ObjectClassification.feature_vector is a non-empty dict (JSONB payload).",
+      "file_type": "rationale",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L679",
+      "_origin": "ast",
+      "id": "tests_test_classification_schema_rationale_679",
+      "community": 89,
+      "community_name": "test_classify_objects_stores_feature_vector_jsonb",
+      "norm_label": "objectclassification.feature_vector is a non-empty dict (jsonb payload)."
     },
     {
       "label": "test_health.py",
@@ -4382,7 +5086,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclient.tsx"
     },
     {
@@ -4393,7 +5097,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient_viewerclientprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclientprops"
     },
     {
@@ -4404,7 +5108,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient_viewerclient",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclient()"
     },
     {
@@ -4415,7 +5119,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient_rationale_128",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "note: currently all bands share the same tile prefix in minio due to"
     },
     {
@@ -4426,7 +5130,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerloader.tsx"
     },
     {
@@ -4437,7 +5141,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerclient",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclient"
     },
     {
@@ -4448,7 +5152,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerloaderprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerloaderprops"
     },
     {
@@ -4459,7 +5163,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerloader",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerloader()"
     },
     {
@@ -4470,7 +5174,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "[uuid]/page.tsx"
     },
     {
@@ -4481,7 +5185,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page_viewerpageprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerpageprops"
     },
     {
@@ -4492,7 +5196,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page_viewerpage",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerpage()"
     },
     {
@@ -4503,7 +5207,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_bandselector",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "bandselector.tsx"
     },
     {
@@ -4514,7 +5218,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_bandselector_bandselectorprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "bandselectorprops"
     },
     {
@@ -4525,7 +5229,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_bandselector_bandselector",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "bandselector()"
     },
     {
@@ -4536,7 +5240,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinategrid.tsx"
     },
     {
@@ -4547,7 +5251,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_coordinategridprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinategridprops"
     },
     {
@@ -4558,7 +5262,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_nice_grid_arcsec",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "nice_grid_arcsec"
     },
     {
@@ -4569,7 +5273,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_gridline",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "gridline"
     },
     {
@@ -4580,7 +5284,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_coordinategrid",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinategrid()"
     },
     {
@@ -4591,7 +5295,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_formatralabel",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatralabel()"
     },
     {
@@ -4602,7 +5306,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_formatdeclabel",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatdeclabel()"
     },
     {
@@ -4612,8 +5316,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlay.tsx"
     },
     {
@@ -4623,8 +5327,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_coordinateoverlayprops",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlayprops"
     },
     {
@@ -4634,8 +5338,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_coordinateoverlay",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlay()"
     },
     {
@@ -4645,8 +5349,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_updatelivecoordinates",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "updatelivecoordinates()"
     },
     {
@@ -4656,8 +5360,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_coordinateoverlayhandle",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlayhandle"
     },
     {
@@ -4668,7 +5372,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustments.tsx"
     },
     {
@@ -4679,7 +5383,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_imageadjustmentvalues",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustmentvalues"
     },
     {
@@ -4690,7 +5394,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_defaults",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "defaults"
     },
     {
@@ -4701,7 +5405,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_preset",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "preset"
     },
     {
@@ -4712,7 +5416,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_presets",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "presets"
     },
     {
@@ -4723,7 +5427,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_imageadjustmentsprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustmentsprops"
     },
     {
@@ -4734,7 +5438,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_imageadjustments",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustments()"
     },
     {
@@ -4745,7 +5449,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_slidercontrol",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "slidercontrol()"
     },
     {
@@ -4756,7 +5460,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_buildcssfilter",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "buildcssfilter()"
     },
     {
@@ -4767,7 +5471,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationinfo.tsx"
     },
     {
@@ -4778,7 +5482,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_observationinfoprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationinfoprops"
     },
     {
@@ -4789,7 +5493,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_observationinfo",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationinfo()"
     },
     {
@@ -4800,7 +5504,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_infosection",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "infosection()"
     },
     {
@@ -4811,7 +5515,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_inforow",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "inforow()"
     },
     {
@@ -4822,7 +5526,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_tileinfosection",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "tileinfosection()"
     },
     {
@@ -4833,7 +5537,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "scalebar.tsx"
     },
     {
@@ -4844,7 +5548,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_scalebarprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "scalebarprops"
     },
     {
@@ -4855,7 +5559,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_nice_arcsec_values",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "nice_arcsec_values"
     },
     {
@@ -4866,7 +5570,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_formatangularsize",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatangularsize()"
     },
     {
@@ -4877,7 +5581,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_scalebar",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "scalebar()"
     },
     {
@@ -4888,7 +5592,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewer.tsx"
     },
     {
@@ -4899,7 +5603,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_osdmouseevent",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "osdmouseevent"
     },
     {
@@ -4910,7 +5614,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_skyviewerhandle",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewerhandle"
     },
     {
@@ -4921,7 +5625,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_skyviewerprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewerprops"
     },
     {
@@ -4932,7 +5636,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_skyviewer",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewer"
     },
     {
@@ -4943,7 +5647,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_viewertoolbar",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewertoolbar.tsx"
     },
     {
@@ -4954,7 +5658,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_viewertoolbar_viewertoolbarprops",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewertoolbarprops"
     },
     {
@@ -4965,7 +5669,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_viewertoolbar_viewertoolbar",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewertoolbar()"
     },
     {
@@ -4976,7 +5680,7 @@
       "_origin": "ast",
       "id": "web_src_lib_api",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "api.ts"
     },
     {
@@ -4987,7 +5691,7 @@
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobservation",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "fetchobservation()"
     },
     {
@@ -4998,7 +5702,7 @@
       "_origin": "ast",
       "id": "web_src_lib_api_fetchwcsparams",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "fetchwcsparams()"
     },
     {
@@ -5009,7 +5713,7 @@
       "_origin": "ast",
       "id": "web_src_lib_api_gettileurl",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "gettileurl()"
     },
     {
@@ -5019,8 +5723,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_lib_coordinates",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinates.ts"
     },
     {
@@ -5030,8 +5734,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "web_src_lib_coordinates_decimaldegreestohms",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "decimaldegreestohms()"
     },
     {
@@ -5041,8 +5745,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "web_src_lib_coordinates_decimaldegreestodms",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "decimaldegreestodms()"
     },
     {
@@ -5052,8 +5756,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "web_src_lib_coordinates_formatcoordinates",
-      "community": 19,
-      "community_name": "Coordinate Overlay UI",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatcoordinates()"
     },
     {
@@ -5064,7 +5768,7 @@
       "_origin": "ast",
       "id": "web_src_lib_wcs",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "wcs.ts"
     },
     {
@@ -5075,7 +5779,7 @@
       "_origin": "ast",
       "id": "web_src_lib_wcs_pixeltoradec",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "pixeltoradec()"
     },
     {
@@ -5086,7 +5790,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observation.ts"
     },
     {
@@ -5097,7 +5801,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_wcsparams",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "wcsparams"
     },
     {
@@ -5108,7 +5812,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_tilemetadata",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "tilemetadata"
     },
     {
@@ -5119,7 +5823,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_observationdetail",
       "community": 0,
-      "community_name": "Sky Viewer Pages",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationdetail"
     },
     {
@@ -5528,6 +6232,127 @@
       "community": 9,
       "community_name": "Summary",
       "norm_label": "notes for the issue-worker"
+    },
+    {
+      "label": "05-02-SUMMARY.md",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "05-02-summary.md"
+    },
+    {
+      "label": "Plan 02 Summary \u2014 Cross-match & ML Classification",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_plan_02_summary_cross_match_ml_classification",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "plan 02 summary \u2014 cross-match & ml classification"
+    },
+    {
+      "label": "What was built",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "what was built"
+    },
+    {
+      "label": "`pipeline/feature_extraction.py` (160 lines)",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_feature_extraction_py_160_lines",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "`pipeline/feature_extraction.py` (160 lines)"
+    },
+    {
+      "label": "`pipeline/ml_models/__init__.py` + `pipeline/ml_models/classifier.py` (131 lines)",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_ml_models_init_py_pipeline_ml_models_classifier_py_131_lines",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "`pipeline/ml_models/__init__.py` + `pipeline/ml_models/classifier.py` (131 lines)"
+    },
+    {
+      "label": "`pipeline/tasks/cross_match_catalogs.py` (361 lines)",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_tasks_cross_match_catalogs_py_361_lines",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "`pipeline/tasks/cross_match_catalogs.py` (361 lines)"
+    },
+    {
+      "label": "`pipeline/tasks/classify_objects.py` (281 lines)",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_tasks_classify_objects_py_281_lines",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "`pipeline/tasks/classify_objects.py` (281 lines)"
+    },
+    {
+      "label": "`tests/test_classification_schema.py` (updated)",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_tests_test_classification_schema_py_updated",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "`tests/test_classification_schema.py` (updated)"
+    },
+    {
+      "label": "Test results",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_test_results",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "test results"
+    },
+    {
+      "label": "Deviations from plan",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_deviations_from_plan",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "deviations from plan"
+    },
+    {
+      "label": "Remaining work (Plan 3 \u2014 issue #5)",
+      "file_type": "document",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L64",
+      "_origin": "ast",
+      "id": "planning_phases_05_classification_cross_matching_05_02_summary_remaining_work_plan_3_issue_5",
+      "community": 76,
+      "community_name": "What was built",
+      "norm_label": "remaining work (plan 3 \u2014 issue #5)"
     },
     {
       "label": "domain.md",
@@ -8488,6 +9313,30 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "api_db_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "api_db_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/detect_sources.py",
       "source_location": "L30",
       "weight": 1.0,
@@ -9926,6 +10775,30 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "pipeline_catalog_clients_init_compute_search_radius_arcsec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L224",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "target": "pipeline_catalog_clients_init_compute_search_radius_arcsec"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L150",
       "weight": 1.0,
@@ -9988,6 +10861,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "pipeline_catalog_clients_gaia_client_rationale_1",
+      "target": "pipeline_catalog_clients_gaia_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
       "target": "pipeline_catalog_clients_gaia_client",
       "confidence_score": 1.0
     },
@@ -10111,6 +10996,18 @@
       "relation": "imports_from",
       "context": "submodule_import",
       "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "pipeline_catalog_clients_ned_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L100",
       "weight": 1.0,
@@ -10220,6 +11117,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "pipeline_catalog_clients_sdss_client_rationale_1",
+      "target": "pipeline_catalog_clients_sdss_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
       "target": "pipeline_catalog_clients_sdss_client",
       "confidence_score": 1.0
     },
@@ -10343,6 +11252,18 @@
       "relation": "imports_from",
       "context": "submodule_import",
       "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "pipeline_catalog_clients_simbad_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L96",
       "weight": 1.0,
@@ -10439,7 +11360,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L6",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "pipeline_tasks_classify_objects",
@@ -10451,7 +11372,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
-      "source_location": "L6",
+      "source_location": "L44",
       "weight": 1.0,
       "_origin": "ast",
       "source": "pipeline_tasks_cross_match_catalogs",
@@ -10569,12 +11490,758 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction",
+      "target": "pipeline_feature_extraction_augment_with_sep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction",
+      "target": "pipeline_feature_extraction_run_statmorph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction",
+      "target": "pipeline_feature_extraction_safe_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction",
+      "target": "pipeline_feature_extraction_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction",
+      "target": "pipeline_feature_extraction_sep_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_rationale_1",
+      "target": "pipeline_feature_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L10",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_feature_extraction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_extract_feature_vector",
+      "target": "pipeline_feature_extraction_augment_with_sep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_extract_feature_vector",
+      "target": "pipeline_feature_extraction_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_extract_feature_vector",
+      "target": "pipeline_feature_extraction_run_statmorph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_extract_feature_vector",
+      "target": "pipeline_feature_extraction_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_extract_feature_vector",
+      "target": "pipeline_feature_extraction_sep_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_rationale_29",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "pipeline_feature_extraction_extract_feature_vector"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L333",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L366",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_extract_feature_vector_nan_replaced_by_sentinel",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L354",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_extract_feature_vector_no_mask_no_sep_returns_sentinels",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L342",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_extract_feature_vector_sep_fallback_for_maskless",
+      "target": "pipeline_feature_extraction_extract_feature_vector",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_run_statmorph",
+      "target": "pipeline_feature_extraction_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_rationale_56",
+      "target": "pipeline_feature_extraction_run_statmorph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_run_statmorph",
+      "target": "pipeline_feature_extraction_safe_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_rationale_105",
+      "target": "pipeline_feature_extraction_sep_fallback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_sep_fallback",
+      "target": "pipeline_feature_extraction_augment_with_sep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_sep_fallback",
+      "target": "pipeline_feature_extraction_safe_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_augment_with_sep",
+      "target": "pipeline_feature_extraction_safe_float",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_rationale_131",
+      "target": "pipeline_feature_extraction_augment_with_sep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/feature_extraction.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_feature_extraction_rationale_151",
+      "target": "pipeline_feature_extraction_sanitize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "pipeline/tasks/detect_sources.py",
+      "source_location": "L620",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_detect_sources_detect_and_store",
+      "target": "pipeline_feature_extraction_sanitize"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/__init__.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_init_rationale_1",
+      "target": "pipeline_ml_models_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier",
+      "target": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier",
+      "target": "pipeline_ml_models_classifier_predict_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier",
+      "target": "pipeline_ml_models_classifier_save_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_rationale_1",
+      "target": "pipeline_ml_models_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_ml_models_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "target": "randomforestclassifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_rationale_65",
+      "target": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "pipeline_ml_models_classifier_load_or_create_classifier"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L377",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L415",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
+      "target": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_predict_object_types",
+      "target": "randomforestclassifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_save_classifier",
+      "target": "randomforestclassifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L428",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
+      "target": "randomforestclassifier"
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_predict_object_types",
+      "target": "pipeline_ml_models_classifier_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_rationale_94",
+      "target": "pipeline_ml_models_classifier_predict_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_ml_models_classifier_predict_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "pipeline_ml_models_classifier_predict_object_types"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L377",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "pipeline_ml_models_classifier_predict_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L435",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
+      "target": "pipeline_ml_models_classifier_predict_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_ml_models_classifier_rationale_122",
+      "target": "pipeline_ml_models_classifier_save_classifier",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_tasks_classify_objects_build_feature_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L100",
       "weight": 1.0,
       "_origin": "ast",
       "source": "pipeline_tasks_classify_objects",
       "target": "pipeline_tasks_classify_objects_classify_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "pipeline_tasks_classify_objects_download_cutout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models_objectclassification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models_observation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models_pipelinestatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models_processingstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_models_stepstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_s3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects",
+      "target": "shared_s3_get_s3_client",
       "confidence_score": 1.0
     },
     {
@@ -10601,10 +12268,92 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L596",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "pipeline_tasks_classify_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "pipeline_tasks_classify_objects_download_cutout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_download_cutout",
+      "target": "pipeline_tasks_classify_objects_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_rationale_62",
+      "target": "pipeline_tasks_classify_objects_download_cutout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_build_feature_matrix",
+      "target": "pipeline_tasks_classify_objects_py_ndarray",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "pipeline_tasks_classify_objects_build_feature_matrix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_rationale_79",
+      "target": "pipeline_tasks_classify_objects_build_feature_matrix",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L9",
+      "source_location": "L99",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -10613,13 +12362,49 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L216",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "shared_models_objectclassification"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "shared_models_processingstep"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_classify_objects_classify_objects",
+      "target": "shared_s3_get_s3_client"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L11",
+      "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "pipeline_tasks_classify_objects_rationale_11",
+      "source": "pipeline_tasks_classify_objects_rationale_101",
       "target": "pipeline_tasks_classify_objects_classify_objects",
       "confidence_score": 1.0
     },
@@ -10640,7 +12425,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L289",
+      "source_location": "L587",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classification_schema",
@@ -10648,14 +12433,180 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L589",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_classify_objects_not_implemented_removed",
+      "target": "pipeline_tasks_classify_objects_classify_objects"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
-      "source_location": "L10",
+      "source_location": "L146",
       "weight": 1.0,
       "_origin": "ast",
       "source": "pipeline_tasks_cross_match_catalogs",
       "target": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "pipeline_tasks_cross_match_catalogs_py_uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "pipeline_tasks_cross_match_catalogs_query_one_catalog",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models_observation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models_pipelinestatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models_processingstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_models_stepstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_s3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs",
+      "target": "shared_s3_get_s3_client",
       "confidence_score": 1.0
     },
     {
@@ -10682,10 +12633,117 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "submodule_import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L467",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "pipeline_tasks_cross_match_catalogs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "target": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "target": "pipeline_tasks_cross_match_catalogs_py_uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "target": "shared_s3_get_s3_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "target": "wcs"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_rationale_74",
+      "target": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "target": "pipeline_tasks_cross_match_catalogs_query_one_catalog",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_query_one_catalog",
+      "target": "pipeline_tasks_cross_match_catalogs_py_skycoord",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L218",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "target": "pipeline_tasks_cross_match_catalogs_py_skycoord",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
-      "source_location": "L9",
+      "source_location": "L145",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -10694,13 +12752,37 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "target": "shared_models_catalogcrossmatch"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "pipeline/tasks/cross_match_catalogs.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
+      "target": "shared_models_processingstep"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
-      "source_location": "L11",
+      "source_location": "L147",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "pipeline_tasks_cross_match_catalogs_rationale_11",
+      "source": "pipeline_tasks_cross_match_catalogs_rationale_147",
       "target": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
       "confidence_score": 1.0
     },
@@ -10721,12 +12803,36 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L288",
+      "source_location": "L448",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classification_schema",
       "target": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L458",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_cross_match_catalogs_not_implemented_removed",
+      "target": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs"
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L450",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_test_cross_match_catalogs_uses_thread_pool",
+      "target": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs"
     },
     {
       "relation": "contains",
@@ -10802,7 +12908,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L290",
+      "source_location": "L289",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classification_schema",
@@ -13898,6 +16004,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L469",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "shared/s3.py",
@@ -14032,6 +16150,61 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
+      "source_location": "L376",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_classifier_module_importable",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L593",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_classify_objects_creates_classification_for_maskless_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L637",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_classify_objects_no_model_classifies_as_unknown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L585",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_classify_objects_not_implemented_removed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L678",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_classify_objects_stores_feature_vector_jsonb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
       "source_location": "L148",
       "weight": 1.0,
       "_origin": "ast",
@@ -14048,6 +16221,105 @@
       "_origin": "ast",
       "source": "tests_test_classification_schema",
       "target": "tests_test_classification_schema_test_compute_search_radius_extended_source_scales_up",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L464",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L454",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_cross_match_catalogs_not_implemented_removed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L535",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_cross_match_catalogs_not_queried_on_catalog_failure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L446",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_cross_match_catalogs_uses_thread_pool",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L360",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_extract_feature_vector_nan_replaced_by_sentinel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L350",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_extract_feature_vector_no_mask_no_sep_returns_sentinels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L336",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_extract_feature_vector_sep_fallback_for_maskless",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L400",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_feature_columns_has_at_least_eight",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L332",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_feature_extraction_importable",
       "confidence_score": 1.0
     },
     {
@@ -14103,6 +16375,17 @@
       "_origin": "ast",
       "source": "tests_test_classification_schema",
       "target": "tests_test_classification_schema_test_ingest_observation_chain_has_9_tasks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L408",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
       "confidence_score": 1.0
     },
     {
@@ -14186,7 +16469,29 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L306",
+      "source_location": "L385",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_object_type_labels_include_required_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L419",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema",
+      "target": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L301",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classification_schema",
@@ -14197,7 +16502,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_classification_schema.py",
-      "source_location": "L319",
+      "source_location": "L314",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classification_schema",
@@ -14334,6 +16639,127 @@
       "_origin": "ast",
       "source": "tests_test_classification_schema_rationale_276",
       "target": "tests_test_classification_schema_test_generate_cutouts_does_not_set_pipeline_completed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_288",
+      "target": "tests_test_classification_schema_test_stub_tasks_raise_not_implemented",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L337",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_337",
+      "target": "tests_test_classification_schema_test_extract_feature_vector_sep_fallback_for_maskless",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L351",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_351",
+      "target": "tests_test_classification_schema_test_extract_feature_vector_no_mask_no_sep_returns_sentinels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L361",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_361",
+      "target": "tests_test_classification_schema_test_extract_feature_vector_nan_replaced_by_sentinel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L409",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_409",
+      "target": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L420",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_420",
+      "target": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L465",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_465",
+      "target": "tests_test_classification_schema_test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L536",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_536",
+      "target": "tests_test_classification_schema_test_cross_match_catalogs_not_queried_on_catalog_failure",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L594",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_594",
+      "target": "tests_test_classification_schema_test_classify_objects_creates_classification_for_maskless_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L638",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_638",
+      "target": "tests_test_classification_schema_test_classify_objects_no_model_classifies_as_unknown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L679",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_classification_schema_rationale_679",
+      "target": "tests_test_classification_schema_test_classify_objects_stores_feature_vector_jsonb",
       "confidence_score": 1.0
     },
     {
@@ -17319,6 +19745,116 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_plan_02_summary_cross_match_ml_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_plan_02_summary_cross_match_ml_classification",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_deviations_from_plan",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_plan_02_summary_cross_match_ml_classification",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_remaining_work_plan_3_issue_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_plan_02_summary_cross_match_ml_classification",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_test_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_plan_02_summary_cross_match_ml_classification",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_feature_extraction_py_160_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L20",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_ml_models_init_py_pipeline_ml_models_classifier_py_131_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_tasks_classify_objects_py_281_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_pipeline_tasks_cross_match_catalogs_py_361_lines",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".planning/phases/05-classification-cross-matching/05-02-SUMMARY.md",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "planning_phases_05_classification_cross_matching_05_02_summary_what_was_built",
+      "target": "planning_phases_05_classification_cross_matching_05_02_summary_tests_test_classification_schema_py_updated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/agents/domain.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -19631,5 +22167,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "c436400f66abacfdecd061908cc61914d13934de"
+  "built_at_commit": "72fbd6417a0958730c5146428ca38c44bcbaa151"
 }
