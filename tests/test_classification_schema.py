@@ -253,7 +253,7 @@ def test_gaia_client_returns_not_queried_on_failure():
 # ---------------------------------------------------------------------------
 
 
-def test_ingest_observation_chain_has_9_tasks():
+def test_ingest_observation_chain_has_10_tasks():
     from pipeline.tasks.ingest import ingest_observation
 
     src = inspect.getsource(ingest_observation)
@@ -268,6 +268,7 @@ def test_ingest_observation_chain_has_9_tasks():
         "cross_match_catalogs.s()",
         "classify_objects.s()",
         "detect_anomalies.s()",
+        "load_graph.s()",
     ):
         assert task_name in src, f"Missing {task_name!r} in ingest_observation chain"
 
