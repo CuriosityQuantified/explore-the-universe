@@ -8,10 +8,29 @@
  * Uses standard fetch() -- no external HTTP library needed.
  */
 
-import type { ObservationDetail, WcsParams } from "@/types/observation";
+import type { ObservationDetail, ObservationSummary, WcsParams } from "@/types/observation";
 import type { ObjectDetail } from "@/types/object";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+
+/**
+ * Fetch the list of all ingested observations with pipeline status and counts.
+ *
+ * Calls GET /api/observations which returns all observations ordered by
+ * ingestion time (newest first), with object/classified/anomaly counts and
+ * the processing step timeline.
+ *
+ * @returns Array of ObservationSummary (empty array if none ingested)
+ * @throws Error if the response is not ok
+ */
+export async function fetchObservations(): Promise<ObservationSummary[]> {
+  const response = await fetch(`${API_BASE}/api/observations`);
+  if (!response.ok) {
+    const error = await response.json().catch(() => ({ detail: response.statusText }));
+    throw new Error(error.detail || `Failed to fetch observations: ${response.status}`);
+  }
+  return response.json();
+}
 
 /**
  * Fetch observation detail (provenance + tile metadata) from the backend.
