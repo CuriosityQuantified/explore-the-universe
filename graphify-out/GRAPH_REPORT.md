@@ -1,24 +1,24 @@
-# Graph Report - explore-the-universe  (2026-08-06)
+# Graph Report - explore-the-universe  (2026-08-07)
 
 ## Corpus Check
-- 140 files · ~133,997 words
+- 141 files · ~135,459 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 821 nodes · 1280 edges · 86 communities (57 shown, 29 thin omitted)
-- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 84 edges (avg confidence: 0.66)
+- 859 nodes · 1376 edges · 91 communities (64 shown, 27 thin omitted)
+- Extraction: 93% EXTRACTED · 7% INFERRED · 0% AMBIGUOUS · INFERRED: 92 edges (avg confidence: 0.65)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5e49a850`
+- Built from commit: `055acd85`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - ViewerClient.tsx
-- Project Research Summary
+- Phase 1: Foundation & Infrastructure Implementation Plan
 - Phase 5 Research: Classification & Cross-Matching
-- Knowledge Graph With Spatial Hierarchy
+- Automated SAM-based Object Segmentation
 - devDependencies
 - TypeScript Config
 - detect_sources.py
@@ -29,8 +29,8 @@
 - segment_sam
 - ProcessingStep
 - Ingest Pipeline Tests
-- generate_cutouts
-- tile.py
+- generate_cutouts.py
+- generate_tiles
 - Graphify Skill Docs
 - graph-refresh.sh
 - test_classification_schema.py
@@ -80,29 +80,34 @@
 - classify_objects
 - cross_match_catalogs
 - detect_anomalies
-- Settings
+- _make_app_with_mock_session
 - What was built
 - What was built
 - validate_wcs
-- Base
+- Project Research Summary
 - test_detect_anomalies_artifact_never_flagged
 - test_detect_anomalies_skips_isolation_forest_for_small_observations
 - test_detect_anomalies_anomaly_explanation_is_human_readable
 - ml_models/__init__.py
+- Catalog Cross-matching
 - test_cross_match_catalogs_creates_crossmatch_records_for_real_matches
+- Knowledge Graph With Spatial Hierarchy
 - test_classify_objects_creates_classification_for_maskless_object
+- Next.js Web README
+- Image Tiling (HiPS/HEALPix)
+- check_service_health
 
 ## God Nodes (most connected - your core abstractions)
 1. `ProcessingStep` - 29 edges
-2. `get_s3_client()` - 24 edges
+2. `get_s3_client()` - 26 edges
 3. `Observation` - 22 edges
-4. `detect_anomalies()` - 16 edges
-5. `PipelineStatus` - 16 edges
-6. `compilerOptions` - 16 edges
-7. `classify_objects()` - 15 edges
-8. `StepStatus` - 15 edges
-9. `AstronomicalObject` - 15 edges
-10. `Phase 5 Research: Classification & Cross-Matching` - 15 edges
+4. `AstronomicalObject` - 22 edges
+5. `_make_app_with_mock_session()` - 18 edges
+6. `detect_anomalies()` - 16 edges
+7. `PipelineStatus` - 16 edges
+8. `compilerOptions` - 16 edges
+9. `classify_objects()` - 15 edges
+10. `StepStatus` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Multi-wavelength Image Layers` --conceptually_related_to--> `openseadragon`  [INFERRED]
@@ -131,23 +136,23 @@
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
 
-## Communities (86 total, 29 thin omitted)
+## Communities (91 total, 27 thin omitted)
 
 ### Community 0 - "ViewerClient.tsx"
 Cohesion: 0.06
 Nodes (49): ViewerPage(), ViewerPageProps, NOTE: Currently all bands share the same tile prefix in MinIO due to, ViewerClient(), ViewerClientProps, ViewerClient, ViewerLoader(), ViewerLoaderProps (+41 more)
 
-### Community 1 - "Project Research Summary"
-Cohesion: 0.05
-Nodes (36): check_service_health(), get, Astropy, astroquery, Celery, FastAPI, healpix-alchemy, MinIO (+28 more)
+### Community 1 - "Phase 1: Foundation & Infrastructure Implementation Plan"
+Cohesion: 0.10
+Nodes (8): Phase 1: Foundation & Infrastructure Implementation Plan, task, No-op task that simulates pipeline processing. Accepts an observation UUID,…, test_pipeline_task(), Test the task works with any observation UUID., Test the no-op task executes synchronously and returns expected result., test_noop_task_handles_different_uuids(), test_noop_task_returns_completed_status()
 
 ### Community 2 - "Phase 5 Research: Classification & Cross-Matching"
 Cohesion: 0.10
 Nodes (25): Phase 5 Context: Classification & Cross-Matching, Anomaly Sensitivity Decisions, Classification Taxonomy Decisions, Cross-Match Behavior Decisions, Result Storage & API Decisions, Phase 5 Research: Classification & Cross-Matching, Gaia DR3 Catalog, joblib (+17 more)
 
-### Community 3 - "Knowledge Graph With Spatial Hierarchy"
-Cohesion: 0.08
-Nodes (35): react-force-graph, openseadragon, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: 3D Universe Navigation, Anti-feature: Full Citizen Science Platform, Anti-feature: Full LSST Real-time Ingestion, Anti-feature: Raw SQL/ADQL Query Interface (+27 more)
+### Community 3 - "Automated SAM-based Object Segmentation"
+Cohesion: 0.22
+Nodes (10): Anti-feature: Full LSST Real-time Ingestion, FITS Ingestion Pipeline, Automated SAM-based Object Segmentation, Temporal Change Tracking, Pitfall: SAM Produces Garbage Without Domain Adaptation, Pitfall: Storage Costs Explode Before Funding, MinIO, PyTorch (+2 more)
 
 ### Community 4 - "devDependencies"
 Cohesion: 0.06
@@ -178,20 +183,20 @@ Cohesion: 0.11
 Nodes (21): _compute_normalization_parameters(), _encode_mask_to_rle(), _find_sci_extension(), _fits_to_sam_rgb(), _generate_elliptical_mask(), _generate_sam_masks(), _get_sam_processor(), _merge_boundary_masks() (+13 more)
 
 ### Community 12 - "ProcessingStep"
-Cohesion: 0.28
-Nodes (8): _finalize_empty(), UUID, Anomaly detection Celery task: IsolationForest scoring + multi-signal flagging.…, Mark step and observation completed when there are no objects to score., download_fits(), task, Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-…, ProcessingStep
+Cohesion: 0.22
+Nodes (9): Random Forest classifier for astronomical object morphological type prediction.…, _finalize_empty(), UUID, Anomaly detection Celery task: IsolationForest scoring + multi-signal flagging.…, Mark step and observation completed when there are no objects to score., download_fits(), task, Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-… (+1 more)
 
 ### Community 13 - "Ingest Pipeline Tests"
 Cohesion: 0.16
 Nodes (15): server_running, slow, Integration tests for the ingest pipeline. Tests the POST /api/ingest and GET…, GET /api/ingest/{uuid}/status with unknown UUID should return 404., End-to-end test: ingest a real JWST observation through the full pipeline. This…, Check if the FastAPI server is reachable., POST /api/ingest should return 202 with observation_uuid and status., POST /api/ingest with empty body should return 422 validation error. (+7 more)
 
-### Community 14 - "generate_cutouts"
-Cohesion: 0.13
-Nodes (15): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Extract a WCS-preserving cutout from FITS data using Cutout2D. Computes a… (+7 more)
+### Community 14 - "generate_cutouts.py"
+Cohesion: 0.16
+Nodes (16): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Cutout generation Celery task (sixth step in the 9-task pipeline chain).… (+8 more)
 
-### Community 15 - "tile.py"
-Cohesion: 0.15
-Nodes (18): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), generate_tiles(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), task (+10 more)
+### Community 15 - "generate_tiles"
+Cohesion: 0.12
+Nodes (17): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), generate_tiles(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), task (+9 more)
 
 ### Community 16 - "Graphify Skill Docs"
 Cohesion: 0.22
@@ -262,12 +267,12 @@ Cohesion: 0.29
 Nodes (6): Blocking, Conventions, Issue tracker: GitHub, Pull requests as a triage surface, When a skill says "fetch the relevant ticket", When a skill says "publish to the issue tracker"
 
 ### Community 62 - "objects.py"
-Cohesion: 0.12
-Nodes (27): get_database_session(), AnomalyResponse, ClassificationResponse, CrossMatchResponse, get_object_classifications(), get_object_cross_matches(), get_observation_anomalies(), BaseModel (+19 more)
+Cohesion: 0.09
+Nodes (40): get_database_session(), _angular_separation_arcsec(), AnomalyResponse, ClassificationResponse, CrossMatchResponse, get_object_classifications(), get_object_cross_matches(), get_object_types() (+32 more)
 
 ### Community 63 - "cross_match_catalogs.py"
-Cohesion: 0.26
-Nodes (10): Classify Celery task: feature extraction + RF classification for every object.…, Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh…, MAST download Celery task for JWST observations. Queries the Mikulski Archive…, Cutout generation Celery task (sixth step in the 9-task pipeline chain).…, Pipeline orchestrator Celery task for JWST observations. Dispatches the full…, SAM 3 segmentation with SEP elliptical fallback Celery task. Generates pixel-…, WCS validation Celery task for FITS observations. Extracts World Coordinate…, AstronomicalObject (+2 more)
+Cohesion: 0.23
+Nodes (11): BaseSettings, Classify Celery task: feature extraction + RF classification for every object.…, Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh…, MAST download Celery task for JWST observations. Queries the Mikulski Archive…, Pipeline orchestrator Celery task for JWST observations. Dispatches the full…, SAM 3 segmentation with SEP elliptical fallback Celery task. Generates pixel-…, DZI tile pyramid generation Celery task for FITS observations. Converts FITS…, WCS validation Celery task for FITS observations. Extracts World Coordinate… (+3 more)
 
 ### Community 65 - "catalog_clients/__init__.py"
 Cohesion: 0.25
@@ -299,7 +304,7 @@ Nodes (4): ingest_observation(), task, Dispatch the full 9-task pipeline chain f
 
 ### Community 72 - "classify_objects"
 Cohesion: 0.11
-Nodes (22): load_or_create_classifier(), predict_object_types(), ndarray, Random Forest classifier for astronomical object morphological type prediction.…, Serialize and upload a trained classifier to S3., Download and deserialize the pre-trained RF classifier from S3. Returns None if…, Predict morphological types for a batch of objects. Sentinel values (-999.0)…, save_classifier() (+14 more)
+Nodes (21): load_or_create_classifier(), predict_object_types(), ndarray, Serialize and upload a trained classifier to S3., Download and deserialize the pre-trained RF classifier from S3. Returns None if…, Predict morphological types for a batch of objects. Sentinel values (-999.0)…, save_classifier(), _build_feature_matrix() (+13 more)
 
 ### Community 73 - "cross_match_catalogs"
 Cohesion: 0.18
@@ -308,6 +313,10 @@ Nodes (12): cross_match_catalogs(), _get_pixel_scale(), SkyCoord, task, UUID, _q
 ### Community 74 - "detect_anomalies"
 Cohesion: 0.16
 Nodes (14): IsolationForest, _build_feature_matrix(), detect_anomalies(), _impute_sentinels(), ndarray, task, Build a 2-D float array from a list of feature-vector dicts. Missing or…, Replace -999.0 sentinel and NaN values with column medians in-place copy. (+6 more)
+
+### Community 75 - "_make_app_with_mock_session"
+Cohesion: 0.16
+Nodes (10): _make_app_with_mock_session(), _make_obj(), Tests for cone-search and type-filter API endpoints. GET /api/objects/search —…, Return a TestClient wired with a mock DB session override., Object ~200 arcsec away should not appear when radius=60 arcsec., TestConeAndTypeFilter, TestConeSearch, TestObjectTypes (+2 more)
 
 ### Community 76 - "What was built"
 Cohesion: 0.18
@@ -320,6 +329,30 @@ Nodes (12): `api/main.py` (updated), `api/routers/objects.py` (new, 160 lines), 
 ### Community 78 - "validate_wcs"
 Cohesion: 0.22
 Nodes (9): _extract_fits_header_provenance(), _find_sci_extension(), task, Extract provenance metadata from FITS header fields. Supplements MAST metadata…, Extract and validate WCS from FITS headers, update Observation with pointing.…, Find the SCI extension in a FITS HDU list. Checks for a named 'SCI' extension…, Validate WCS accuracy via pixel-to-world-to-pixel round-trip test. Tests…, validate_wcs() (+1 more)
+
+### Community 79 - "Project Research Summary"
+Cohesion: 0.25
+Nodes (13): Celery, FastAPI, healpix-alchemy, MinIO, Neo4j, PostgreSQL, pyvips, Redis (+5 more)
+
+### Community 84 - "Catalog Cross-matching"
+Cohesion: 0.20
+Nodes (12): Astropy, astroquery, Anomaly Detection and Novel Object Flagging, Anti-feature: Full Citizen Science Platform, Anti-feature: Spectral Analysis Tools, Catalog Cross-matching, FITS File Support, Individual Object Detail Pages (+4 more)
+
+### Community 86 - "Knowledge Graph With Spatial Hierarchy"
+Cohesion: 0.25
+Nodes (9): react-force-graph, AI-assisted Natural Language Querying, Anti-feature: Raw SQL/ADQL Query Interface, Knowledge Graph With Spatial Hierarchy, Object Search, Visual Knowledge Graph Explorer, Pitfall: Knowledge Graph Schema Lock-in, Neo4j Community Edition (+1 more)
+
+### Community 88 - "Next.js Web README"
+Cohesion: 0.25
+Nodes (8): Next.js, React, file.svg Icon, globe.svg Icon, next.svg Logo, vercel.svg Logo, window.svg Icon, Next.js Web README
+
+### Community 89 - "Image Tiling (HiPS/HEALPix)"
+Cohesion: 0.32
+Nodes (8): openseadragon, Anti-feature: 3D Universe Navigation, Image Tiling (HiPS/HEALPix), Multi-wavelength Image Layers, Zoomable Sky Map / Image Viewer, Pitfall: Memory Exhaustion on Trillion-pixel FITS, pyvips, openseadragon
+
+### Community 90 - "check_service_health"
+Cohesion: 0.67
+Nodes (3): check_service_health(), get, Response
 
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]
@@ -336,7 +369,7 @@ Nodes (9): _extract_fits_header_provenance(), _find_sci_extension(), task, Extra
 ## Knowledge Gaps
 - **185 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `eslintConfig`, `nextConfig` (+180 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **29 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **27 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -351,7 +384,7 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **What is the exact relationship between `Next.js Web README` and `window.svg Icon`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
-- **Why does `Project Research Summary` connect `Project Research Summary` to `Knowledge Graph With Spatial Hierarchy`?**
-  _High betweenness centrality (0.141) - this node is a cross-community bridge._
+- **Why does `Project Research Summary` connect `Project Research Summary` to `Next.js Web README`, `Image Tiling (HiPS/HEALPix)`, `Catalog Cross-matching`, `Knowledge Graph With Spatial Hierarchy`?**
+  _High betweenness centrality (0.140) - this node is a cross-community bridge._
 - **Why does `MinIO` connect `Project Research Summary` to `Observation`?**
   _High betweenness centrality (0.071) - this node is a cross-community bridge._

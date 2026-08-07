@@ -1,23 +1,28 @@
-"""Classification, cross-match, and anomaly API endpoints.
+"""Classification, cross-match, anomaly, search, and type-filter API endpoints.
 
 GET /api/objects/{object_uuid}/classifications   — full append-only history, newest first
 GET /api/objects/{object_uuid}/cross-matches     — all catalog matches, by angular separation
 GET /api/observations/{observation_uuid}/anomalies — anomaly-flagged objects (empty list if none)
+GET /api/objects/search                          — cone search + type filter (combinable, paginated)
+GET /api/objects/types                           — distinct classified_object_type values in DB
 """
 
+import math
 from datetime import datetime
-from typing import Any, Optional
+from typing import Any, List, Optional
 
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query, Response
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
 from api.db.session import get_database_session
+from shared.config import settings
 from shared.models import (
     AstronomicalObject,
     CatalogCrossMatch,
     ObjectClassification,
 )
+from shared.s3 import get_s3_client
 
 router = APIRouter(tags=["objects"])
 
@@ -199,3 +204,138 @@ def get_observation_anomalies(
         )
 
     return results
+
+
+# ---------------------------------------------------------------------------
+# Cone search + type filter
+# ---------------------------------------------------------------------------
+
+# ADR: Coordinate filtering uses a Python-side haversine post-filter on top of a
+# SQL bounding-box pre-filter (±dec_margin, ±ra_margin). This avoids requiring the
+# PostgreSQL earthdistance or q3c extensions in the deployment environment while
+# keeping the DB scan bounded. For datasets >10M objects, migrate to the q3c
+# extension (q3c_radial_query) or earthdistance (earth_distance / ll_to_earth) for
+# index-accelerated filtering.
+
+def _angular_separation_arcsec(
+    ra1: float, dec1: float, ra2: float, dec2: float
+) -> float:
+    """Haversine angular separation between two sky coordinates, in arcseconds."""
+    ra1r, dec1r, ra2r, dec2r = map(math.radians, [ra1, dec1, ra2, dec2])
+    dra = ra2r - ra1r
+    ddec = dec2r - dec1r
+    a = math.sin(ddec / 2) ** 2 + math.cos(dec1r) * math.cos(dec2r) * math.sin(dra / 2) ** 2
+    return 2 * math.asin(math.sqrt(min(a, 1.0))) * (180.0 / math.pi) * 3600.0
+
+
+def _make_cutout_thumbnail_url(cutout_s3_prefix: Optional[str]) -> Optional[str]:
+    """Return a 1-hour signed MinIO URL for the cutout PNG, or None if no prefix."""
+    if not cutout_s3_prefix:
+        return None
+    s3 = get_s3_client()
+    key = cutout_s3_prefix.rstrip("/") + "/cutout_stretched.png"
+    try:
+        return s3.generate_presigned_url(
+            "get_object",
+            Params={"Bucket": settings.s3_bucket_segmentation, "Key": key},
+            ExpiresIn=3600,
+        )
+    except Exception:
+        return None
+
+
+class ObjectSearchResponse(BaseModel):
+    object_uuid: str
+    sky_coordinate_ra_degrees: float
+    sky_coordinate_dec_degrees: float
+    classified_object_type: Optional[str]
+    catalog_object_name: Optional[str]
+    is_anomaly_flagged: bool
+    cutout_thumbnail_url: Optional[str]
+
+
+@router.get("/api/objects/types", response_model=List[str])
+def get_object_types(
+    database_session: Session = Depends(get_database_session),
+):
+    """Return the list of distinct classified_object_type values present in the DB."""
+    rows = (
+        database_session.query(AstronomicalObject.classified_object_type)
+        .filter(AstronomicalObject.classified_object_type.isnot(None))
+        .distinct()
+        .all()
+    )
+    return [r[0] for r in rows]
+
+
+@router.get("/api/objects/search", response_model=List[ObjectSearchResponse])
+def search_objects(
+    response: Response,
+    ra: Optional[float] = Query(None, description="Right ascension (degrees)"),
+    dec: Optional[float] = Query(None, description="Declination (degrees)"),
+    radius_arcsec: Optional[float] = Query(None, description="Search radius (arcseconds)"),
+    type: Optional[List[str]] = Query(None, description="One or more classified_object_type values"),
+    limit: int = Query(50, ge=1, le=500),
+    offset: int = Query(0, ge=0),
+    database_session: Session = Depends(get_database_session),
+):
+    """Cone search and/or type filter over AstronomicalObject records.
+
+    Parameters are combinable: supply ra/dec/radius_arcsec for spatial search,
+    type for classification filter, or both together.
+    Returns paginated results with X-Total-Count header. Empty results return [].
+    """
+    is_cone = ra is not None and dec is not None and radius_arcsec is not None
+
+    if is_cone:
+        # Bounding-box pre-filter keeps the DB scan bounded (see ADR comment above).
+        dec_margin = radius_arcsec / 3600.0
+        cos_dec = math.cos(math.radians(dec))
+        ra_margin = dec_margin / cos_dec if cos_dec > 1e-9 else 360.0
+
+        query = database_session.query(AstronomicalObject).filter(
+            AstronomicalObject.sky_coordinate_dec_degrees.between(
+                dec - dec_margin, dec + dec_margin
+            ),
+            AstronomicalObject.sky_coordinate_ra_degrees.between(
+                ra - ra_margin, ra + ra_margin
+            ),
+        )
+        if type:
+            query = query.filter(AstronomicalObject.classified_object_type.in_(type))
+
+        candidates = query.all()
+
+        # Exact haversine filter + sort by angular separation
+        with_sep = [
+            (obj, _angular_separation_arcsec(ra, dec, obj.sky_coordinate_ra_degrees, obj.sky_coordinate_dec_degrees))
+            for obj in candidates
+        ]
+        with_sep = [(obj, sep) for obj, sep in with_sep if sep <= radius_arcsec]
+        with_sep.sort(key=lambda x: x[1])
+
+        total = len(with_sep)
+        page = with_sep[offset: offset + limit]
+        objs = [obj for obj, _ in page]
+    else:
+        query = database_session.query(AstronomicalObject)
+        if type:
+            query = query.filter(AstronomicalObject.classified_object_type.in_(type))
+
+        total = query.count()
+        objs = query.all()[offset: offset + limit]
+
+    response.headers["X-Total-Count"] = str(total)
+
+    return [
+        ObjectSearchResponse(
+            object_uuid=str(obj.object_uuid),
+            sky_coordinate_ra_degrees=obj.sky_coordinate_ra_degrees,
+            sky_coordinate_dec_degrees=obj.sky_coordinate_dec_degrees,
+            classified_object_type=obj.classified_object_type,
+            catalog_object_name=obj.catalog_object_name,
+            is_anomaly_flagged=obj.is_anomaly_flagged,
+            cutout_thumbnail_url=_make_cutout_thumbnail_url(obj.cutout_s3_prefix),
+        )
+        for obj in objs
+    ]

@@ -231,8 +231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "alembic_env",
-      "community": 79,
-      "community_name": "Base",
+      "community": 1,
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "env.py"
     },
     {
@@ -242,8 +242,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
-      "community": 79,
-      "community_name": "Base",
+      "community": 1,
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -253,8 +253,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
-      "community": 79,
-      "community_name": "Base",
+      "community": 1,
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -451,7 +451,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_health",
-      "community": 1,
+      "community": 79,
       "community_name": "Project Research Summary",
       "norm_label": "health.py"
     },
@@ -462,8 +462,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_health_py_get",
-      "community": 1,
-      "community_name": "Project Research Summary",
+      "community": 90,
+      "community_name": "check_service_health",
       "norm_label": "get"
     },
     {
@@ -473,8 +473,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "api_routers_health_check_service_health",
-      "community": 1,
-      "community_name": "Project Research Summary",
+      "community": 90,
+      "community_name": "check_service_health",
       "norm_label": "check_service_health()"
     },
     {
@@ -483,9 +483,9 @@
       "source_file": "",
       "source_location": "",
       "_origin": "ast",
-      "id": "response",
-      "community": 1,
-      "community_name": "Project Research Summary",
+      "id": "api_routers_health_py_response",
+      "community": 90,
+      "community_name": "check_service_health",
       "norm_label": "response"
     },
     {
@@ -679,7 +679,7 @@
       "label": "ClassificationResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L28",
+      "source_location": "L33",
       "_origin": "ast",
       "id": "api_routers_objects_classificationresponse",
       "community": 62,
@@ -701,7 +701,7 @@
       "label": "CrossMatchResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L41",
+      "source_location": "L46",
       "_origin": "ast",
       "id": "api_routers_objects_crossmatchresponse",
       "community": 62,
@@ -712,7 +712,7 @@
       "label": "AnomalyResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L50",
+      "source_location": "L55",
       "_origin": "ast",
       "id": "api_routers_objects_anomalyresponse",
       "community": 62,
@@ -734,7 +734,7 @@
       "label": "get_object_classifications()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L69",
+      "source_location": "L74",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_classifications",
       "community": 62,
@@ -756,7 +756,7 @@
       "label": "get_object_cross_matches()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L113",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_cross_matches",
       "community": 62,
@@ -767,7 +767,7 @@
       "label": "get_observation_anomalies()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L153",
+      "source_location": "L158",
       "_origin": "ast",
       "id": "api_routers_objects_get_observation_anomalies",
       "community": 62,
@@ -775,7 +775,73 @@
       "norm_label": "get_observation_anomalies()"
     },
     {
-      "label": "Classification, cross-match, and anomaly API endpoints. GET\u2026",
+      "label": "_angular_separation_arcsec()",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L220",
+      "_origin": "ast",
+      "id": "api_routers_objects_angular_separation_arcsec",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "_angular_separation_arcsec()"
+    },
+    {
+      "label": "_make_cutout_thumbnail_url()",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L231",
+      "_origin": "ast",
+      "id": "api_routers_objects_make_cutout_thumbnail_url",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "_make_cutout_thumbnail_url()"
+    },
+    {
+      "label": "ObjectSearchResponse",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L247",
+      "_origin": "ast",
+      "id": "api_routers_objects_objectsearchresponse",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "objectsearchresponse"
+    },
+    {
+      "label": "get_object_types()",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "api_routers_objects_get_object_types",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "get_object_types()"
+    },
+    {
+      "label": "search_objects()",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L272",
+      "_origin": "ast",
+      "id": "api_routers_objects_search_objects",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "search_objects()"
+    },
+    {
+      "label": "Response",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "api_routers_objects_py_response",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "response"
+    },
+    {
+      "label": "Classification, cross-match, anomaly, search, and type-filter API endpoints.\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
       "source_location": "L1",
@@ -783,15 +849,15 @@
       "id": "api_routers_objects_rationale_1",
       "community": 62,
       "community_name": "objects.py",
-      "norm_label": "classification, cross-match, and anomaly api endpoints. get..."
+      "norm_label": "classification, cross-match, anomaly, search, and type-filter api endpoints...."
     },
     {
       "label": "Return full append-only classification history for an object, newest first.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L73",
+      "source_location": "L78",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_73",
+      "id": "api_routers_objects_rationale_78",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return full append-only classification history for an object, newest first."
@@ -800,9 +866,9 @@
       "label": "Return all catalog cross-match records for an object, ordered by angular\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L117",
+      "source_location": "L122",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_117",
+      "id": "api_routers_objects_rationale_122",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return all catalog cross-match records for an object, ordered by angular..."
@@ -811,12 +877,56 @@
       "label": "Return all anomaly-flagged objects for an observation. Returns an empty list\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L157",
+      "source_location": "L162",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_157",
+      "id": "api_routers_objects_rationale_162",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return all anomaly-flagged objects for an observation. returns an empty list..."
+    },
+    {
+      "label": "Haversine angular separation between two sky coordinates, in arcseconds.",
+      "file_type": "rationale",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L223",
+      "_origin": "ast",
+      "id": "api_routers_objects_rationale_223",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "haversine angular separation between two sky coordinates, in arcseconds."
+    },
+    {
+      "label": "Return a 1-hour signed MinIO URL for the cutout PNG, or None if no prefix.",
+      "file_type": "rationale",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L232",
+      "_origin": "ast",
+      "id": "api_routers_objects_rationale_232",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "return a 1-hour signed minio url for the cutout png, or none if no prefix."
+    },
+    {
+      "label": "Return the list of distinct classified_object_type values present in the DB.",
+      "file_type": "rationale",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L261",
+      "_origin": "ast",
+      "id": "api_routers_objects_rationale_261",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "return the list of distinct classified_object_type values present in the db."
+    },
+    {
+      "label": "Cone search and/or type filter over AstronomicalObject records. Parameters are\u2026",
+      "file_type": "rationale",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L282",
+      "_origin": "ast",
+      "id": "api_routers_objects_rationale_282",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "cone search and/or type filter over astronomicalobject records. parameters are..."
     },
     {
       "label": "test_upload.py",
@@ -1606,8 +1716,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier",
-      "community": 72,
-      "community_name": "classify_objects",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "classifier.py"
     },
     {
@@ -1672,8 +1782,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_1",
-      "community": 72,
-      "community_name": "classify_objects",
+      "community": 12,
+      "community_name": "ProcessingStep",
       "norm_label": "random forest classifier for astronomical object morphological type prediction...."
     },
     {
@@ -2464,8 +2574,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts",
-      "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community": 14,
+      "community_name": "generate_cutouts.py",
       "norm_label": "generate_cutouts.py"
     },
     {
@@ -2476,7 +2586,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_find_sci_extension",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -2487,7 +2597,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_extract_cutout_data",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "_extract_cutout_data()"
     },
     {
@@ -2498,7 +2608,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_stretched_png",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "_create_stretched_png()"
     },
     {
@@ -2509,7 +2619,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_raw_png",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "_create_raw_png()"
     },
     {
@@ -2520,7 +2630,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_fits_cutout",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "_create_fits_cutout()"
     },
     {
@@ -2531,7 +2641,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_upload_cutout_files",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "_upload_cutout_files()"
     },
     {
@@ -2542,7 +2652,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_py_task",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "task"
     },
     {
@@ -2553,7 +2663,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_generate_cutouts",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "generate_cutouts()"
     },
     {
@@ -2563,8 +2673,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_1",
-      "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community": 14,
+      "community_name": "generate_cutouts.py",
       "norm_label": "cutout generation celery task (sixth step in the 9-task pipeline chain)...."
     },
     {
@@ -2575,7 +2685,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_60",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -2586,7 +2696,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_106",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "extract a wcs-preserving cutout from fits data using cutout2d. computes a..."
     },
     {
@@ -2597,7 +2707,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_148",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "create auto-stretched png using asinh stretch (same as tile.py). applies zscale..."
     },
     {
@@ -2608,7 +2718,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_180",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "create raw linear png (no stretch, percentile-clipped linear mapping). maps the..."
     },
     {
@@ -2619,7 +2729,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_207",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "create a fits file with the cutout data and preserved wcs. writes a minimal..."
     },
     {
@@ -2630,7 +2740,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_223",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "upload all cutout files for one object to minio segmentation bucket. uploads..."
     },
     {
@@ -2641,7 +2751,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_277",
       "community": 14,
-      "community_name": "generate_cutouts",
+      "community_name": "generate_cutouts.py",
       "norm_label": "generate per-object cutout images (sixth pipeline step). extracts per-object..."
     },
     {
@@ -2960,7 +3070,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_test_noop",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_noop.py"
     },
     {
@@ -2971,7 +3081,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_test_noop_py_task",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "task"
     },
     {
@@ -2982,7 +3092,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_test_noop_test_pipeline_task",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_pipeline_task()"
     },
     {
@@ -2993,7 +3103,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_test_noop_rationale_6",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "no-op task that simulates pipeline processing. accepts an observation uuid,..."
     },
     {
@@ -3003,8 +3113,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_tile",
-      "community": 15,
-      "community_name": "tile.py",
+      "community": 63,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "tile.py"
     },
     {
@@ -3015,7 +3125,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_get_pyvips",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_get_pyvips()"
     },
     {
@@ -3026,7 +3136,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_find_sci_extension",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -3037,7 +3147,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_compute_normalization_parameters",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_compute_normalization_parameters()"
     },
     {
@@ -3048,7 +3158,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_normalize_chunk",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_normalize_chunk()"
     },
     {
@@ -3059,7 +3169,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_process_fits_to_tiff",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_process_fits_to_tiff()"
     },
     {
@@ -3070,7 +3180,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_dzi_pyramid",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_generate_dzi_pyramid()"
     },
     {
@@ -3081,7 +3191,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_upload_tiles_to_minio",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "_upload_tiles_to_minio()"
     },
     {
@@ -3092,7 +3202,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_py_task",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "task"
     },
     {
@@ -3103,7 +3213,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_tiles",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "generate_tiles()"
     },
     {
@@ -3113,8 +3223,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_1",
-      "community": 15,
-      "community_name": "tile.py",
+      "community": 63,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "dzi tile pyramid generation celery task for fits observations. converts fits..."
     },
     {
@@ -3125,7 +3235,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_55",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "lazily import pyvips, setting dyld_library_path for macos homebrew."
     },
     {
@@ -3136,7 +3246,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_84",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -3147,7 +3257,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_123",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "compute zscale normalization parameters from a subsample of the image. samples..."
     },
     {
@@ -3158,7 +3268,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_162",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "normalize a chunk of fits data to 8-bit using pre-computed parameters. applies..."
     },
     {
@@ -3169,7 +3279,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_194",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "process a fits file into a tiled, pyramidal tiff using chunked reads. memory..."
     },
     {
@@ -3180,7 +3290,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_295",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "generate dzi tile pyramid from a pyramidal tiff. uses pyvips dzsave to create a..."
     },
     {
@@ -3191,7 +3301,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_348",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi..."
     },
     {
@@ -3202,7 +3312,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_433",
       "community": 15,
-      "community_name": "tile.py",
+      "community_name": "generate_tiles",
       "norm_label": "generate dzi tile pyramids from fits data and upload to minio. receives the..."
     },
     {
@@ -3413,8 +3523,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "shared_config_settings",
-      "community": 75,
-      "community_name": "Settings",
+      "community": 63,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "settings"
     },
     {
@@ -3424,8 +3534,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "basesettings",
-      "community": 75,
-      "community_name": "Settings",
+      "community": 63,
+      "community_name": "cross_match_catalogs.py",
       "norm_label": "basesettings"
     },
     {
@@ -3446,8 +3556,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "shared_models_base",
-      "community": 79,
-      "community_name": "Base",
+      "community": 62,
+      "community_name": "objects.py",
       "norm_label": "base"
     },
     {
@@ -3457,8 +3567,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "declarativebase",
-      "community": 79,
-      "community_name": "Base",
+      "community": 62,
+      "community_name": "objects.py",
       "norm_label": "declarativebase"
     },
     {
@@ -3534,8 +3644,8 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "shared_models_astronomicalobject",
-      "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community": 62,
+      "community_name": "objects.py",
       "norm_label": "astronomicalobject"
     },
     {
@@ -3766,7 +3876,7 @@
       "_origin": "ast",
       "id": "tests_test_celery",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_celery.py"
     },
     {
@@ -3777,7 +3887,7 @@
       "_origin": "ast",
       "id": "tests_test_celery_test_noop_task_returns_completed_status",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_noop_task_returns_completed_status()"
     },
     {
@@ -3788,7 +3898,7 @@
       "_origin": "ast",
       "id": "tests_test_celery_test_noop_task_handles_different_uuids",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_noop_task_handles_different_uuids()"
     },
     {
@@ -3799,7 +3909,7 @@
       "_origin": "ast",
       "id": "tests_test_celery_rationale_2",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test the no-op task executes synchronously and returns expected result."
     },
     {
@@ -3810,7 +3920,7 @@
       "_origin": "ast",
       "id": "tests_test_celery_rationale_14",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test the task works with any observation uuid."
     },
     {
@@ -4613,7 +4723,7 @@
       "_origin": "ast",
       "id": "tests_test_health",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_health.py"
     },
     {
@@ -4624,7 +4734,7 @@
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_returns_200_when_all_services_connected",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_health_endpoint_returns_200_when_all_services_connected()"
     },
     {
@@ -4635,7 +4745,7 @@
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_postgresql_connected",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_health_endpoint_reports_postgresql_connected()"
     },
     {
@@ -4646,7 +4756,7 @@
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_redis_connected",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_health_endpoint_reports_redis_connected()"
     },
     {
@@ -4657,7 +4767,7 @@
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_minio_connected",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_health_endpoint_reports_minio_connected()"
     },
     {
@@ -4668,7 +4778,7 @@
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_neo4j_connected",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_health_endpoint_reports_neo4j_connected()"
     },
     {
@@ -5031,7 +5141,7 @@
       "_origin": "ast",
       "id": "tests_test_minio_upload",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_minio_upload.py"
     },
     {
@@ -5042,7 +5152,7 @@
       "_origin": "ast",
       "id": "tests_test_minio_upload_test_upload_returns_observation_uuid_and_object_key",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_upload_returns_observation_uuid_and_object_key()"
     },
     {
@@ -5053,8 +5163,316 @@
       "_origin": "ast",
       "id": "tests_test_minio_upload_test_upload_creates_metadata_record_in_postgresql",
       "community": 1,
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_upload_creates_metadata_record_in_postgresql()"
+    },
+    {
+      "label": "test_search_api.py",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_search_api",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "test_search_api.py"
+    },
+    {
+      "label": "_make_app_with_mock_session()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "tests_test_search_api_make_app_with_mock_session",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "_make_app_with_mock_session()"
+    },
+    {
+      "label": "_make_obj()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "tests_test_search_api_make_obj",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "_make_obj()"
+    },
+    {
+      "label": "TestConeSearch",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "testconesearch"
+    },
+    {
+      "label": "._cone_mock()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L62",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_cone_mock",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "._cone_mock()"
+    },
+    {
+      "label": ".test_object_within_radius_is_returned()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L67",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_test_object_within_radius_is_returned",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_object_within_radius_is_returned()"
+    },
+    {
+      "label": ".test_object_far_outside_radius_is_excluded()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_test_object_far_outside_radius_is_excluded",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_object_far_outside_radius_is_excluded()"
+    },
+    {
+      "label": ".test_results_ordered_by_angular_separation_ascending()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L101",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_test_results_ordered_by_angular_separation_ascending",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_results_ordered_by_angular_separation_ascending()"
+    },
+    {
+      "label": ".test_empty_result_returns_empty_list_not_404()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_test_empty_result_returns_empty_list_not_404",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_empty_result_returns_empty_list_not_404()"
+    },
+    {
+      "label": ".test_x_total_count_header_present()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L130",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_test_x_total_count_header_present",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_x_total_count_header_present()"
+    },
+    {
+      "label": ".test_pagination_limit_and_offset()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L141",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconesearch_test_pagination_limit_and_offset",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_pagination_limit_and_offset()"
+    },
+    {
+      "label": "TestTypeFilter",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L158",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testtypefilter",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "testtypefilter"
+    },
+    {
+      "label": ".test_type_filter_returns_matching_objects()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testtypefilter_test_type_filter_returns_matching_objects",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_type_filter_returns_matching_objects()"
+    },
+    {
+      "label": ".test_multi_value_type_filter()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testtypefilter_test_multi_value_type_filter",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_multi_value_type_filter()"
+    },
+    {
+      "label": ".test_type_filter_empty_result_returns_list()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L190",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testtypefilter_test_type_filter_empty_result_returns_list",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_type_filter_empty_result_returns_list()"
+    },
+    {
+      "label": ".test_type_filter_x_total_count_header()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testtypefilter_test_type_filter_x_total_count_header",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_type_filter_x_total_count_header()"
+    },
+    {
+      "label": "TestConeAndTypeFilter",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L221",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconeandtypefilter",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "testconeandtypefilter"
+    },
+    {
+      "label": ".test_combined_cone_and_type()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L222",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testconeandtypefilter_test_combined_cone_and_type",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_combined_cone_and_type()"
+    },
+    {
+      "label": "TestSearchResponseShape",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testsearchresponseshape",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "testsearchresponseshape"
+    },
+    {
+      "label": ".test_response_includes_required_fields()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L246",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testsearchresponseshape_test_response_includes_required_fields",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_response_includes_required_fields()"
+    },
+    {
+      "label": ".test_cutout_thumbnail_url_is_signed_when_prefix_present()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L268",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_signed_when_prefix_present",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_cutout_thumbnail_url_is_signed_when_prefix_present()"
+    },
+    {
+      "label": ".test_cutout_thumbnail_url_is_null_when_no_prefix()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L283",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_null_when_no_prefix",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_cutout_thumbnail_url_is_null_when_no_prefix()"
+    },
+    {
+      "label": "TestObjectTypes",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L303",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testobjecttypes",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "testobjecttypes"
+    },
+    {
+      "label": ".test_returns_distinct_types()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L304",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testobjecttypes_test_returns_distinct_types",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_returns_distinct_types()"
+    },
+    {
+      "label": ".test_returns_empty_list_when_no_types()",
+      "file_type": "code",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L322",
+      "_origin": "ast",
+      "id": "tests_test_search_api_testobjecttypes_test_returns_empty_list_when_no_types",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_returns_empty_list_when_no_types()"
+    },
+    {
+      "label": "Tests for cone-search and type-filter API endpoints. GET /api/objects/search \u2014\u2026",
+      "file_type": "rationale",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_search_api_rationale_1",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "tests for cone-search and type-filter api endpoints. get /api/objects/search \u2014..."
+    },
+    {
+      "label": "Return a TestClient wired with a mock DB session override.",
+      "file_type": "rationale",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "tests_test_search_api_rationale_27",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "return a testclient wired with a mock db session override."
+    },
+    {
+      "label": "Object ~200 arcsec away should not appear when radius=60 arcsec.",
+      "file_type": "rationale",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "tests_test_search_api_rationale_83",
+      "community": 75,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": "object ~200 arcsec away should not appear when radius=60 arcsec."
     },
     {
       "label": "eslint.config.mjs",
@@ -5239,8 +5657,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "web_package_dependencies_openseadragon",
-      "community": 3,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community": 89,
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "norm_label": "openseadragon"
     },
     {
@@ -5250,8 +5668,8 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "openseadragon",
-      "community": 3,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community": 89,
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "norm_label": "openseadragon"
     },
     {
@@ -8750,9 +9168,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 89,
       "norm_label": "zoomable sky map / image viewer",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "id": "planning_research_features_zoomable_sky_map"
     },
     {
@@ -8764,9 +9182,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 84,
       "norm_label": "fits file support",
-      "community_name": "Project Research Summary",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_fits_support"
     },
     {
@@ -8778,9 +9196,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 89,
       "norm_label": "multi-wavelength image layers",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "id": "planning_research_features_multi_wavelength_layers"
     },
     {
@@ -8792,9 +9210,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "catalog cross-matching",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_catalog_cross_matching"
     },
     {
@@ -8806,7 +9224,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "object search",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_object_search"
@@ -8820,9 +9238,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "individual object detail pages",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_object_detail_pages"
     },
     {
@@ -8848,9 +9266,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "coordinate system support (wcs)",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_wcs_coordinate_support"
     },
     {
@@ -8878,7 +9296,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "automated sam-based object segmentation",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_features_sam_segmentation"
     },
     {
@@ -8890,7 +9308,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "knowledge graph with spatial hierarchy",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_knowledge_graph"
@@ -8904,7 +9322,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "ai-assisted natural language querying",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_ai_nl_querying"
@@ -8918,9 +9336,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "anomaly detection and novel object flagging",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_anomaly_detection"
     },
     {
@@ -8934,7 +9352,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "temporal change tracking",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_features_temporal_tracking"
     },
     {
@@ -8946,7 +9364,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "visual knowledge graph explorer",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_visual_graph_explorer"
@@ -8974,9 +9392,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 89,
       "norm_label": "image tiling (hips/healpix)",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "id": "planning_research_features_image_tiling"
     },
     {
@@ -8990,7 +9408,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "fits ingestion pipeline",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_features_fits_ingestion"
     },
     {
@@ -9004,7 +9422,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "anti-feature: full lsst real-time ingestion",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_features_anti_full_lsst_ingestion"
     },
     {
@@ -9044,9 +9462,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "anti-feature: full citizen science platform",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_anti_citizen_science_platform"
     },
     {
@@ -9058,7 +9476,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "anti-feature: raw sql/adql query interface",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_anti_raw_sql_interface"
@@ -9086,9 +9504,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 89,
       "norm_label": "anti-feature: 3d universe navigation",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "id": "planning_research_features_anti_3d_navigation"
     },
     {
@@ -9100,9 +9518,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "anti-feature: spectral analysis tools",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_features_anti_spectral_tools"
     },
     {
@@ -9116,7 +9534,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "pitfall: sam produces garbage without domain adaptation",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_pitfalls_sam_domain_mismatch"
     },
     {
@@ -9128,9 +9546,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "pitfall: wcs coordinate errors corrupt cross-matching",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_pitfalls_wcs_errors"
     },
     {
@@ -9142,9 +9560,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 89,
       "norm_label": "pitfall: memory exhaustion on trillion-pixel fits",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "id": "planning_research_pitfalls_memory_exhaustion"
     },
     {
@@ -9156,9 +9574,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 84,
       "norm_label": "pitfall: catalog cross-matching false associations",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_pitfalls_cross_match_false_associations"
     },
     {
@@ -9172,7 +9590,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "pitfall: storage costs explode before funding",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_pitfalls_storage_costs"
     },
     {
@@ -9184,7 +9602,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "pitfall: knowledge graph schema lock-in",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_pitfalls_kg_schema_lock_in"
@@ -9198,9 +9616,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 84,
       "norm_label": "reproject",
-      "community_name": "Project Research Summary",
+      "community_name": "Catalog Cross-matching",
       "id": "planning_research_stack_reproject"
     },
     {
@@ -9212,9 +9630,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 89,
       "norm_label": "pyvips",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Image Tiling (HiPS/HEALPix)",
       "id": "planning_research_stack_pyvips"
     },
     {
@@ -9228,7 +9646,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "sam 2.1",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_stack_sam2"
     },
     {
@@ -9242,7 +9660,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "pytorch",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_stack_pytorch"
     },
     {
@@ -9256,7 +9674,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "timm",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_stack_timm"
     },
     {
@@ -9282,7 +9700,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "neo4j community edition",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_stack_neo4j"
@@ -9296,7 +9714,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "neo4j python driver",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_stack_neo4j_driver"
@@ -9312,7 +9730,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "minio",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "id": "planning_research_stack_minio"
     },
     {
@@ -9352,7 +9770,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "pydantic",
       "community_name": "Project Research Summary",
       "id": "planning_research_stack_pydantic"
@@ -9366,7 +9784,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "sqlalchemy",
       "community_name": "Project Research Summary",
       "id": "planning_research_stack_sqlalchemy"
@@ -9380,9 +9798,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "react",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "planning_research_stack_react"
     },
     {
@@ -9408,7 +9826,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "project research summary",
       "community_name": "Project Research Summary",
       "id": "planning_research_summary"
@@ -9422,7 +9840,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "phase 1: foundation & infrastructure design",
       "community_name": "Project Research Summary",
       "id": "docs_plans_2026_02_21_phase1_foundation_infrastructure_design"
@@ -9438,7 +9856,7 @@
       "contributor": null,
       "community": 1,
       "norm_label": "phase 1: foundation & infrastructure implementation plan",
-      "community_name": "Project Research Summary",
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "id": "docs_plans_2026_02_21_phase1_implementation_plan"
     },
     {
@@ -9450,9 +9868,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "next.js web readme",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "web_readme"
     },
     {
@@ -9464,9 +9882,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "file.svg icon",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "web_public_file"
     },
     {
@@ -9478,9 +9896,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "globe.svg icon",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "web_public_globe"
     },
     {
@@ -9492,9 +9910,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "next.svg logo",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "web_public_next"
     },
     {
@@ -9506,9 +9924,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "vercel.svg logo",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "web_public_vercel"
     },
     {
@@ -9520,9 +9938,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "window.svg icon",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "web_public_window"
     },
     {
@@ -9534,7 +9952,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "sam 2.1 segmentation",
       "community_name": "Project Research Summary",
       "id": "concept_sam"
@@ -9548,9 +9966,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 84,
       "norm_label": "astropy",
-      "community_name": "Project Research Summary",
+      "community_name": "Catalog Cross-matching",
       "id": "concept_astropy"
     },
     {
@@ -9562,9 +9980,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 84,
       "norm_label": "astroquery",
-      "community_name": "Project Research Summary",
+      "community_name": "Catalog Cross-matching",
       "id": "concept_astroquery"
     },
     {
@@ -9576,7 +9994,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "pyvips",
       "community_name": "Project Research Summary",
       "id": "concept_pyvips"
@@ -9590,7 +10008,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "postgresql",
       "community_name": "Project Research Summary",
       "id": "concept_postgresql"
@@ -9604,7 +10022,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "neo4j",
       "community_name": "Project Research Summary",
       "id": "concept_neo4j"
@@ -9618,7 +10036,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "celery",
       "community_name": "Project Research Summary",
       "id": "concept_celery"
@@ -9632,7 +10050,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "redis",
       "community_name": "Project Research Summary",
       "id": "concept_redis"
@@ -9646,7 +10064,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "minio",
       "community_name": "Project Research Summary",
       "id": "concept_minio"
@@ -9660,7 +10078,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "fastapi",
       "community_name": "Project Research Summary",
       "id": "concept_fastapi"
@@ -9674,9 +10092,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 88,
       "norm_label": "next.js",
-      "community_name": "Project Research Summary",
+      "community_name": "Next.js Web README",
       "id": "concept_nextjs"
     },
     {
@@ -9688,7 +10106,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 1,
+      "community": 79,
       "norm_label": "healpix-alchemy",
       "community_name": "Project Research Summary",
       "id": "concept_healpix_alchemy"
@@ -9702,7 +10120,7 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "react-force-graph",
       "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "concept_react_force_graph"
@@ -9951,7 +10369,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L15",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10101,6 +10519,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "api_db_session",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10117,7 +10547,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L15",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10243,6 +10673,18 @@
       "_origin": "ast",
       "source": "tests_test_anomaly_api_test_cross_matches_returns_404_for_unknown_object",
       "target": "api_db_session_get_database_session"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "api_db_session_get_database_session",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -10408,7 +10850,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_health_check_service_health",
-      "target": "response",
+      "target": "api_routers_health_py_response",
       "confidence_score": 1.0
     },
     {
@@ -10836,7 +11278,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L50",
+      "source_location": "L220",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_angular_separation_arcsec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10847,7 +11300,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L28",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10858,7 +11311,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10869,7 +11322,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L69",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10880,7 +11333,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L113",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10891,7 +11344,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L153",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_get_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10899,11 +11363,56 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_make_cutout_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L247",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_objectsearchresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_search_objects",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "shared_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10915,7 +11424,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10927,7 +11436,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10939,11 +11448,35 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
       "target": "shared_models_objectclassification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "shared_s3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "shared_s3_get_s3_client",
       "confidence_score": 1.0
     },
     {
@@ -10958,10 +11491,22 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "api_routers_objects",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L28",
+      "source_location": "L33",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -10972,7 +11517,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -10983,7 +11528,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -10994,7 +11539,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -11006,7 +11551,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L93",
+      "source_location": "L98",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_classifications",
@@ -11017,7 +11562,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L50",
+      "source_location": "L55",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11028,7 +11573,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L41",
+      "source_location": "L46",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11036,10 +11581,21 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L247",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectsearchresponse",
+      "target": "api_routers_objects_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11050,7 +11606,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11061,7 +11617,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11073,7 +11629,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L137",
+      "source_location": "L142",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_cross_matches",
@@ -11084,7 +11640,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11095,7 +11651,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11106,7 +11662,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L16",
+      "source_location": "L20",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11118,7 +11674,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L184",
+      "source_location": "L189",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_observation_anomalies",
@@ -11129,7 +11685,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L65",
+      "source_location": "L70",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11141,7 +11697,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L109",
+      "source_location": "L114",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11153,7 +11709,19 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L149",
+      "source_location": "L257",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_types",
+      "target": "api_routers_objects_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L154",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11163,10 +11731,22 @@
     },
     {
       "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L271",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "source": "api_routers_objects_search_objects",
+      "target": "api_routers_objects_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L69",
+      "source_location": "L74",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_classifications",
@@ -11177,10 +11757,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L73",
+      "source_location": "L78",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_73",
+      "source": "api_routers_objects_rationale_78",
       "target": "api_routers_objects_get_object_classifications",
       "confidence_score": 1.0
     },
@@ -11189,7 +11769,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L113",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_cross_matches",
@@ -11201,7 +11781,19 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L153",
+      "source_location": "L258",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_types",
+      "target": "api_routers_objects_py_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L158",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_observation_anomalies",
@@ -11209,13 +11801,25 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_search_objects",
+      "target": "api_routers_objects_py_session",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L117",
+      "source_location": "L122",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_117",
+      "source": "api_routers_objects_rationale_122",
       "target": "api_routers_objects_get_object_cross_matches",
       "confidence_score": 1.0
     },
@@ -11223,11 +11827,148 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L157",
+      "source_location": "L162",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_157",
+      "source": "api_routers_objects_rationale_162",
       "target": "api_routers_objects_get_observation_anomalies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_rationale_223",
+      "target": "api_routers_objects_angular_separation_arcsec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L311",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_search_objects",
+      "target": "api_routers_objects_angular_separation_arcsec",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L235",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_make_cutout_thumbnail_url",
+      "target": "shared_s3_get_s3_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_rationale_232",
+      "target": "api_routers_objects_make_cutout_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L338",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_search_objects",
+      "target": "api_routers_objects_make_cutout_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L20",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectsearchresponse",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L20",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectsearchresponse",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L20",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectsearchresponse",
+      "target": "shared_models_objectclassification",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L331",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_search_objects",
+      "target": "api_routers_objects_objectsearchresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L261",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_rationale_261",
+      "target": "api_routers_objects_get_object_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L282",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_rationale_282",
+      "target": "api_routers_objects_search_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_search_objects",
+      "target": "api_routers_objects_py_response",
       "confidence_score": 1.0
     },
     {
@@ -17555,6 +18296,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "shared_models",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "shared/models.py",
@@ -17676,6 +18429,73 @@
       "source": "tests_test_classification_schema",
       "target": "shared_models_astronomicalobject",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconeandtypefilter",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testobjecttypes",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L19",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
     },
     {
       "relation": "rationale_for",
@@ -19262,6 +20082,711 @@
       "_origin": "ast",
       "source": "tests_test_minio_upload",
       "target": "tests_test_minio_upload_test_upload_returns_observation_uuid_and_object_key",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L221",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_testconeandtypefilter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_testconesearch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L303",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_testobjecttypes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_testsearchresponseshape",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api",
+      "target": "tests_test_search_api_testtypefilter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_rationale_1",
+      "target": "tests_test_search_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_rationale_27",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L230",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconeandtypefilter_test_combined_cone_and_type",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_empty_result_returns_empty_list_not_404",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_object_far_outside_radius_is_excluded",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_object_within_radius_is_returned",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_pagination_limit_and_offset",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_results_ordered_by_angular_separation_ascending",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_x_total_count_header_present",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L312",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testobjecttypes_test_returns_distinct_types",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L326",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testobjecttypes_test_returns_empty_list_when_no_types",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L291",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_null_when_no_prefix",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L276",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_signed_when_prefix_present",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L255",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape_test_response_includes_required_fields",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L184",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_multi_value_type_filter",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L197",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_type_filter_empty_result_returns_list",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_type_filter_returns_matching_objects",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_type_filter_x_total_count_header",
+      "target": "tests_test_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconeandtypefilter_test_combined_cone_and_type",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_object_far_outside_radius_is_excluded",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_object_within_radius_is_returned",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_pagination_limit_and_offset",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_results_ordered_by_angular_separation_ascending",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_x_total_count_header_present",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L284",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_null_when_no_prefix",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L269",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_signed_when_prefix_present",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L247",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape_test_response_includes_required_fields",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_multi_value_type_filter",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_type_filter_returns_matching_objects",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter_test_type_filter_x_total_count_header",
+      "target": "tests_test_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_test_empty_result_returns_empty_list_not_404",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_test_object_far_outside_radius_is_excluded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_test_object_within_radius_is_returned",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_test_pagination_limit_and_offset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_test_results_ordered_by_angular_separation_ascending",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L130",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch",
+      "target": "tests_test_search_api_testconesearch_test_x_total_count_header_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_empty_result_returns_empty_list_not_404",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L89",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_object_far_outside_radius_is_excluded",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L69",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_object_within_radius_is_returned",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_pagination_limit_and_offset",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_results_ordered_by_angular_separation_ascending",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconesearch_test_x_total_count_header_present",
+      "target": "tests_test_search_api_testconesearch_cone_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_rationale_83",
+      "target": "tests_test_search_api_testconesearch_test_object_far_outside_radius_is_excluded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter",
+      "target": "tests_test_search_api_testtypefilter_test_multi_value_type_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L190",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter",
+      "target": "tests_test_search_api_testtypefilter_test_type_filter_empty_result_returns_list",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L159",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter",
+      "target": "tests_test_search_api_testtypefilter_test_type_filter_returns_matching_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L203",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testtypefilter",
+      "target": "tests_test_search_api_testtypefilter_test_type_filter_x_total_count_header",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L222",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testconeandtypefilter",
+      "target": "tests_test_search_api_testconeandtypefilter_test_combined_cone_and_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L283",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape",
+      "target": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_null_when_no_prefix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L268",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape",
+      "target": "tests_test_search_api_testsearchresponseshape_test_cutout_thumbnail_url_is_signed_when_prefix_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testsearchresponseshape",
+      "target": "tests_test_search_api_testsearchresponseshape_test_response_includes_required_fields",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L304",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testobjecttypes",
+      "target": "tests_test_search_api_testobjecttypes_test_returns_distinct_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L322",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_testobjecttypes",
+      "target": "tests_test_search_api_testobjecttypes_test_returns_empty_list_when_no_types",
       "confidence_score": 1.0
     },
     {
@@ -24262,5 +25787,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "5e49a85070dbd497c8eb81170ae830c5defd2016"
+  "built_at_commit": "055acd852f1a9fac704cc79604be50c485a10058"
 }
