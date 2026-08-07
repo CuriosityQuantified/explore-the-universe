@@ -55,4 +55,6 @@ packages = ["shared", "pipeline", "api"]
 testpaths = ["tests"]
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "neo4j_integration: requires a live Neo4j instance (docker stack)",
+    "neo4j_unit: tests neo4j module internals directly, bypasses lifespan mock",
 ]
