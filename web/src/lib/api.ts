@@ -9,6 +9,7 @@
  */
 
 import type { ObservationDetail, WcsParams } from "@/types/observation";
+import type { ObjectDetail } from "@/types/object";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -64,4 +65,27 @@ export async function fetchWcsParams(uuid: string): Promise<WcsParams> {
  */
 export function getTileUrl(uuid: string): string {
   return `${API_BASE}/api/tiles/${uuid}/`;
+}
+
+/**
+ * Fetch full detail for a single astronomical object.
+ *
+ * Calls GET /api/objects/{uuid} which returns the object record including
+ * sky coordinates, classification, cross-matches, physical properties,
+ * segmentation mask RLE, and a signed cutout URL.
+ *
+ * @param uuid - Object UUID
+ * @returns ObjectDetail with all aggregated data for the object
+ * @throws Error with message "NOT_FOUND" for 404, or a description for other errors
+ */
+export async function fetchObjectDetail(uuid: string): Promise<ObjectDetail> {
+  const response = await fetch(`${API_BASE}/api/objects/${uuid}`);
+  if (!response.ok) {
+    if (response.status === 404) {
+      throw new Error("NOT_FOUND");
+    }
+    const error = await response.json().catch(() => ({ detail: response.statusText }));
+    throw new Error(error.detail || `Failed to fetch object: ${response.status}`);
+  }
+  return response.json();
 }

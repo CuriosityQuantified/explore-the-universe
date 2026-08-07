@@ -8,6 +8,7 @@ GET /api/objects/types                           — distinct classified_object_
 """
 
 import math
+import urllib.parse
 from datetime import datetime
 from typing import Any, List, Optional
 
@@ -339,3 +340,136 @@ def search_objects(
         )
         for obj in objs
     ]
+
+
+# ---------------------------------------------------------------------------
+# Object detail
+# ---------------------------------------------------------------------------
+
+_CATALOG_URL_TEMPLATES: dict[str, str] = {
+    "SIMBAD": "https://simbad.u-strasbg.fr/simbad/sim-id?Ident={}",
+    "NED": "https://ned.ipac.caltech.edu/byname?objname={}",
+    "Gaia": "https://gea.esac.esa.int/archive/#search;table=gaiadr3.gaia_source;qstring=source_id={}",
+    "2MASS": "https://irsa.ipac.caltech.edu/cgi-bin/Gator/nph-query?catalog=fp_psc&constraints=designation+like+%27{}%27",
+    "SDSS": "https://skyserver.sdss.org/dr18/SearchTools/IQS?name={}",
+}
+
+
+def _catalog_external_url(catalog_name: str, source_id: str) -> Optional[str]:
+    tmpl = _CATALOG_URL_TEMPLATES.get(catalog_name)
+    if tmpl is None:
+        return None
+    return tmpl.format(urllib.parse.quote(str(source_id), safe=""))
+
+
+class CrossMatchDetailResponse(BaseModel):
+    match_uuid: str
+    catalog_name: str
+    catalog_source_id: str
+    angular_separation_arcseconds: float
+    match_probability_score: Optional[float]
+    external_url: Optional[str]
+
+
+class ClassificationDetailResponse(BaseModel):
+    classification_uuid: str
+    predicted_object_type: str
+    classification_confidence_score: float
+    ml_model_version: str
+    classified_at: Optional[datetime]
+    is_anomaly_flagged: bool
+    anomaly_score: Optional[float]
+    anomaly_explanation: Optional[str]
+
+
+class ObjectDetailResponse(BaseModel):
+    object_uuid: str
+    source_observation_uuid: str
+    sky_coordinate_ra_degrees: float
+    sky_coordinate_dec_degrees: float
+    bounding_box_pixels: Optional[dict[str, Any]]
+    classified_object_type: Optional[str]
+    catalog_object_name: Optional[str]
+    catalog_magnitude: Optional[float]
+    catalog_redshift: Optional[float]
+    is_anomaly_flagged: bool
+    physical_properties: Optional[dict[str, Any]]
+    segmentation_mask_rle: Optional[dict[str, Any]]
+    cutout_url: Optional[str]
+    cross_matches: list[CrossMatchDetailResponse]
+    latest_classification: Optional[ClassificationDetailResponse]
+
+
+@router.get("/api/objects/{object_uuid}", response_model=ObjectDetailResponse)
+def get_object_detail(
+    object_uuid: str,
+    database_session: Session = Depends(get_database_session),
+):
+    """Return the full record for a single astronomical object.
+
+    Includes a signed cutout URL, segmentation mask RLE, all catalog cross-matches
+    ordered by angular separation with external catalog links, and the latest ML
+    classification. Returns 404 for unknown UUIDs.
+    """
+    obj = (
+        database_session.query(AstronomicalObject)
+        .filter(AstronomicalObject.object_uuid == object_uuid)
+        .first()
+    )
+    if obj is None:
+        raise HTTPException(status_code=404, detail=f"Object {object_uuid} not found")
+
+    matches = (
+        database_session.query(CatalogCrossMatch)
+        .filter(CatalogCrossMatch.object_uuid == object_uuid)
+        .order_by(CatalogCrossMatch.angular_separation_arcseconds.asc())
+        .all()
+    )
+
+    latest_clf = (
+        database_session.query(ObjectClassification)
+        .filter(ObjectClassification.object_uuid == object_uuid)
+        .order_by(ObjectClassification.classified_at.desc())
+        .first()
+    )
+
+    return ObjectDetailResponse(
+        object_uuid=str(obj.object_uuid),
+        source_observation_uuid=str(obj.source_observation_uuid),
+        sky_coordinate_ra_degrees=obj.sky_coordinate_ra_degrees,
+        sky_coordinate_dec_degrees=obj.sky_coordinate_dec_degrees,
+        bounding_box_pixels=obj.bounding_box_pixels,
+        classified_object_type=obj.classified_object_type,
+        catalog_object_name=obj.catalog_object_name,
+        catalog_magnitude=obj.catalog_magnitude,
+        catalog_redshift=obj.catalog_redshift,
+        is_anomaly_flagged=obj.is_anomaly_flagged,
+        physical_properties=obj.physical_properties,
+        segmentation_mask_rle=obj.segmentation_mask_rle,
+        cutout_url=_make_cutout_thumbnail_url(obj.cutout_s3_prefix),
+        cross_matches=[
+            CrossMatchDetailResponse(
+                match_uuid=str(m.match_uuid),
+                catalog_name=m.catalog_name,
+                catalog_source_id=m.catalog_source_id,
+                angular_separation_arcseconds=m.angular_separation_arcseconds,
+                match_probability_score=m.match_probability_score,
+                external_url=_catalog_external_url(m.catalog_name, m.catalog_source_id),
+            )
+            for m in matches
+        ],
+        latest_classification=(
+            ClassificationDetailResponse(
+                classification_uuid=str(latest_clf.classification_uuid),
+                predicted_object_type=latest_clf.predicted_object_type,
+                classification_confidence_score=latest_clf.classification_confidence_score,
+                ml_model_version=latest_clf.ml_model_version,
+                classified_at=latest_clf.classified_at,
+                is_anomaly_flagged=latest_clf.is_anomaly_flagged,
+                anomaly_score=latest_clf.anomaly_score,
+                anomaly_explanation=latest_clf.anomaly_explanation,
+            )
+            if latest_clf
+            else None
+        ),
+    )
