@@ -231,8 +231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "alembic_env",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 91,
+      "community_name": "env.py",
       "norm_label": "env.py"
     },
     {
@@ -242,8 +242,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 91,
+      "community_name": "env.py",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -253,8 +253,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 91,
+      "community_name": "env.py",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -408,7 +408,7 @@
       "_origin": "ast",
       "id": "api_db_session",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "session.py"
     },
     {
@@ -418,8 +418,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "api_db_session_get_database_session",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "get_database_session()"
     },
     {
@@ -429,8 +429,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_main",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 10,
+      "community_name": "get_s3_client",
       "norm_label": "main.py"
     },
     {
@@ -496,7 +496,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "routers/ingest.py"
     },
     {
@@ -507,7 +507,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestrequest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingestrequest"
     },
     {
@@ -518,7 +518,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_basemodel",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "basemodel"
     },
     {
@@ -529,7 +529,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestresponse",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingestresponse"
     },
     {
@@ -540,7 +540,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingeststatusresponse",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingeststatusresponse"
     },
     {
@@ -551,7 +551,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_post",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "post"
     },
     {
@@ -562,7 +562,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_trigger_ingest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "trigger_ingest()"
     },
     {
@@ -573,7 +573,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_session",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "session"
     },
     {
@@ -584,7 +584,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_get",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "get"
     },
     {
@@ -595,7 +595,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_get_ingest_status",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "get_ingest_status()"
     },
     {
@@ -606,7 +606,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_1",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post..."
     },
     {
@@ -617,7 +617,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_25",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "request body for post /api/ingest."
     },
     {
@@ -628,7 +628,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_38",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "response body for post /api/ingest (202 accepted)."
     },
     {
@@ -639,7 +639,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_49",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "response body for get /api/ingest/{observation_uuid}/status."
     },
     {
@@ -650,7 +650,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_66",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "trigger the ingestion pipeline for a jwst observation. creates an observation..."
     },
     {
@@ -661,7 +661,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_140",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "check the status of an ingestion pipeline. returns the observation details..."
     },
     {
@@ -679,7 +679,7 @@
       "label": "ClassificationResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L33",
+      "source_location": "L34",
       "_origin": "ast",
       "id": "api_routers_objects_classificationresponse",
       "community": 62,
@@ -701,7 +701,7 @@
       "label": "CrossMatchResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L46",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "api_routers_objects_crossmatchresponse",
       "community": 62,
@@ -712,7 +712,7 @@
       "label": "AnomalyResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L55",
+      "source_location": "L56",
       "_origin": "ast",
       "id": "api_routers_objects_anomalyresponse",
       "community": 62,
@@ -734,7 +734,7 @@
       "label": "get_object_classifications()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L74",
+      "source_location": "L75",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_classifications",
       "community": 62,
@@ -756,7 +756,7 @@
       "label": "get_object_cross_matches()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L118",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_cross_matches",
       "community": 62,
@@ -767,7 +767,7 @@
       "label": "get_observation_anomalies()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L158",
+      "source_location": "L159",
       "_origin": "ast",
       "id": "api_routers_objects_get_observation_anomalies",
       "community": 62,
@@ -778,7 +778,7 @@
       "label": "_angular_separation_arcsec()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L220",
+      "source_location": "L221",
       "_origin": "ast",
       "id": "api_routers_objects_angular_separation_arcsec",
       "community": 62,
@@ -789,7 +789,7 @@
       "label": "_make_cutout_thumbnail_url()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L231",
+      "source_location": "L232",
       "_origin": "ast",
       "id": "api_routers_objects_make_cutout_thumbnail_url",
       "community": 62,
@@ -800,7 +800,7 @@
       "label": "ObjectSearchResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L247",
+      "source_location": "L248",
       "_origin": "ast",
       "id": "api_routers_objects_objectsearchresponse",
       "community": 62,
@@ -811,7 +811,7 @@
       "label": "get_object_types()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L258",
+      "source_location": "L259",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_types",
       "community": 62,
@@ -822,7 +822,7 @@
       "label": "search_objects()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L272",
+      "source_location": "L273",
       "_origin": "ast",
       "id": "api_routers_objects_search_objects",
       "community": 62,
@@ -841,6 +841,61 @@
       "norm_label": "response"
     },
     {
+      "label": "_catalog_external_url()",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L358",
+      "_origin": "ast",
+      "id": "api_routers_objects_catalog_external_url",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "_catalog_external_url()"
+    },
+    {
+      "label": "CrossMatchDetailResponse",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L365",
+      "_origin": "ast",
+      "id": "api_routers_objects_crossmatchdetailresponse",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "crossmatchdetailresponse"
+    },
+    {
+      "label": "ClassificationDetailResponse",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L374",
+      "_origin": "ast",
+      "id": "api_routers_objects_classificationdetailresponse",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "classificationdetailresponse"
+    },
+    {
+      "label": "ObjectDetailResponse",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L385",
+      "_origin": "ast",
+      "id": "api_routers_objects_objectdetailresponse",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "objectdetailresponse"
+    },
+    {
+      "label": "get_object_detail()",
+      "file_type": "code",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L404",
+      "_origin": "ast",
+      "id": "api_routers_objects_get_object_detail",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "get_object_detail()"
+    },
+    {
       "label": "Classification, cross-match, anomaly, search, and type-filter API endpoints.\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
@@ -855,9 +910,9 @@
       "label": "Return full append-only classification history for an object, newest first.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L78",
+      "source_location": "L79",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_78",
+      "id": "api_routers_objects_rationale_79",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return full append-only classification history for an object, newest first."
@@ -866,9 +921,9 @@
       "label": "Return all catalog cross-match records for an object, ordered by angular\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L122",
+      "source_location": "L123",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_122",
+      "id": "api_routers_objects_rationale_123",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return all catalog cross-match records for an object, ordered by angular..."
@@ -877,9 +932,9 @@
       "label": "Return all anomaly-flagged objects for an observation. Returns an empty list\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L162",
+      "source_location": "L163",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_162",
+      "id": "api_routers_objects_rationale_163",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return all anomaly-flagged objects for an observation. returns an empty list..."
@@ -888,9 +943,9 @@
       "label": "Haversine angular separation between two sky coordinates, in arcseconds.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L223",
+      "source_location": "L224",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_223",
+      "id": "api_routers_objects_rationale_224",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "haversine angular separation between two sky coordinates, in arcseconds."
@@ -899,9 +954,9 @@
       "label": "Return a 1-hour signed MinIO URL for the cutout PNG, or None if no prefix.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L232",
+      "source_location": "L233",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_232",
+      "id": "api_routers_objects_rationale_233",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return a 1-hour signed minio url for the cutout png, or none if no prefix."
@@ -910,9 +965,9 @@
       "label": "Return the list of distinct classified_object_type values present in the DB.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L261",
+      "source_location": "L262",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_261",
+      "id": "api_routers_objects_rationale_262",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "return the list of distinct classified_object_type values present in the db."
@@ -921,12 +976,23 @@
       "label": "Cone search and/or type filter over AstronomicalObject records. Parameters are\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L282",
+      "source_location": "L283",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_282",
+      "id": "api_routers_objects_rationale_283",
       "community": 62,
       "community_name": "objects.py",
       "norm_label": "cone search and/or type filter over astronomicalobject records. parameters are..."
+    },
+    {
+      "label": "Return the full record for a single astronomical object. Includes a signed\u2026",
+      "file_type": "rationale",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L408",
+      "_origin": "ast",
+      "id": "api_routers_objects_rationale_408",
+      "community": 62,
+      "community_name": "objects.py",
+      "norm_label": "return the full record for a single astronomical object. includes a signed..."
     },
     {
       "label": "test_upload.py",
@@ -935,8 +1001,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_test_upload",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "detect_sources.py",
       "norm_label": "test_upload.py"
     },
     {
@@ -1530,7 +1596,7 @@
       "_origin": "ast",
       "id": "pipeline_celery_app",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "celery_app.py"
     },
     {
@@ -1716,8 +1782,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier",
-      "community": 12,
-      "community_name": "ProcessingStep",
+      "community": 72,
+      "community_name": "predict_object_types",
       "norm_label": "classifier.py"
     },
     {
@@ -1728,7 +1794,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_load_or_create_classifier",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "load_or_create_classifier()"
     },
     {
@@ -1739,7 +1805,7 @@
       "_origin": "ast",
       "id": "randomforestclassifier",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "randomforestclassifier"
     },
     {
@@ -1750,7 +1816,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_predict_object_types",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "predict_object_types()"
     },
     {
@@ -1761,7 +1827,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_py_ndarray",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "ndarray"
     },
     {
@@ -1772,7 +1838,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_save_classifier",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "save_classifier()"
     },
     {
@@ -1782,8 +1848,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_1",
-      "community": 12,
-      "community_name": "ProcessingStep",
+      "community": 72,
+      "community_name": "predict_object_types",
       "norm_label": "random forest classifier for astronomical object morphological type prediction...."
     },
     {
@@ -1794,7 +1860,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_65",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "download and deserialize the pre-trained rf classifier from s3. returns none if..."
     },
     {
@@ -1805,7 +1871,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_94",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "predict morphological types for a batch of objects. sentinel values (-999.0)..."
     },
     {
@@ -1816,7 +1882,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_122",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "serialize and upload a trained classifier to s3."
     },
     {
@@ -1838,7 +1904,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "classify_objects.py"
     },
     {
@@ -1848,7 +1914,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_download_cutout",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "_download_cutout()"
     },
@@ -1859,7 +1925,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_py_ndarray",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "ndarray"
     },
@@ -1870,7 +1936,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_build_feature_matrix",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "_build_feature_matrix()"
     },
@@ -1881,7 +1947,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_py_task",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "task"
     },
@@ -1892,7 +1958,7 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_classify_objects",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "classify_objects()"
     },
@@ -1904,7 +1970,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "classify celery task: feature extraction + rf classification for every object...."
     },
     {
@@ -1914,7 +1980,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_62",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "download cutout.fits from minio and return its data as a float64 array."
     },
@@ -1925,7 +1991,7 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_79",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "convert list of feature dicts to a numeric matrix (n_objects \u00d7 n_features)."
     },
@@ -1936,7 +2002,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_101",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "extract morphological features and classify objects using a trained ml model...."
     },
@@ -1948,7 +2014,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "cross_match_catalogs.py"
     },
     {
@@ -2025,7 +2091,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "cross-match celery task: query all 4 catalogs in parallel per object. seventh..."
     },
     {
@@ -2058,7 +2124,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies",
       "community": 12,
-      "community_name": "ProcessingStep",
+      "community_name": "detect_anomalies.py",
       "norm_label": "detect_anomalies.py"
     },
     {
@@ -2146,7 +2212,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_finalize_empty",
       "community": 12,
-      "community_name": "ProcessingStep",
+      "community_name": "detect_anomalies.py",
       "norm_label": "_finalize_empty()"
     },
     {
@@ -2157,7 +2223,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_py_uuid",
       "community": 12,
-      "community_name": "ProcessingStep",
+      "community_name": "detect_anomalies.py",
       "norm_label": "uuid"
     },
     {
@@ -2168,7 +2234,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_rationale_1",
       "community": 12,
-      "community_name": "ProcessingStep",
+      "community_name": "detect_anomalies.py",
       "norm_label": "anomaly detection celery task: isolationforest scoring + multi-signal flagging...."
     },
     {
@@ -2223,7 +2289,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_rationale_357",
       "community": 12,
-      "community_name": "ProcessingStep",
+      "community_name": "detect_anomalies.py",
       "norm_label": "mark step and observation completed when there are no objects to score."
     },
     {
@@ -2233,7 +2299,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources",
-      "community": 6,
+      "community": 63,
       "community_name": "detect_sources.py",
       "norm_label": "detect_sources.py"
     },
@@ -2245,7 +2311,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_find_sci_extension",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -2256,7 +2322,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_fix_byte_order",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_fix_byte_order()"
     },
     {
@@ -2267,7 +2333,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_ndarray",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "ndarray"
     },
     {
@@ -2278,7 +2344,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_sources_in_array",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_detect_sources_in_array()"
     },
     {
@@ -2289,7 +2355,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_compute_kron_photometry",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_compute_kron_photometry()"
     },
     {
@@ -2300,7 +2366,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_assign_confidence_tiers",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_assign_confidence_tiers()"
     },
     {
@@ -2311,7 +2377,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_flag_edge_detections",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_flag_edge_detections()"
     },
     {
@@ -2322,7 +2388,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_extract_sub_regions",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_extract_sub_regions()"
     },
     {
@@ -2333,7 +2399,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_run_multi_scale_detection",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_run_multi_scale_detection()"
     },
     {
@@ -2344,7 +2410,7 @@
       "_origin": "ast",
       "id": "wcs",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "wcs"
     },
     {
@@ -2355,7 +2421,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_uuid",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "uuid"
     },
     {
@@ -2366,7 +2432,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_and_store",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "_detect_and_store()"
     },
     {
@@ -2377,7 +2443,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_task",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "task"
     },
     {
@@ -2388,7 +2454,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_sources",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "detect_sources()"
     },
     {
@@ -2398,7 +2464,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_1",
-      "community": 6,
+      "community": 63,
       "community_name": "detect_sources.py",
       "norm_label": "multi-scale sep source detection celery task. runs sep (source extractor as a..."
     },
@@ -2410,7 +2476,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_53",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -2421,7 +2487,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_93",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "ensure data is in native byte order and float32 for sep. fits files are big-..."
     },
     {
@@ -2432,7 +2498,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_116",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "run sep background estimation and source extraction on a 2d array. args: data:..."
     },
     {
@@ -2443,7 +2509,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_150",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "compute kron radius photometry for better flux/snr estimates. args:..."
     },
     {
@@ -2454,7 +2520,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_195",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "assign detection confidence tiers based on signal-to-noise ratio. snr = flux /..."
     },
     {
@@ -2465,7 +2531,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_238",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "flag detections whose bounding boxes touch sub-region or image boundaries. an..."
     },
     {
@@ -2476,7 +2542,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_299",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "generate list of sub-region coordinates for tiled detection. returns (y_start,..."
     },
     {
@@ -2487,7 +2553,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_343",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "core multi-scale detection loop across three scale levels. scale 1: full field..."
     },
     {
@@ -2498,7 +2564,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_519",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "run sep detection on a data array and store results in the database. runs..."
     },
     {
@@ -2509,7 +2575,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_666",
       "community": 6,
-      "community_name": "detect_sources.py",
+      "community_name": "_detect_and_store",
       "norm_label": "run multi-scale sep source detection on a fits observation. receives the output..."
     },
     {
@@ -2520,7 +2586,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_download",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "download.py"
     },
     {
@@ -2530,7 +2596,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_download_py_task",
-      "community": 12,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "task"
     },
@@ -2541,7 +2607,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "pipeline_tasks_download_download_fits",
-      "community": 12,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "download_fits()"
     },
@@ -2553,7 +2619,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_download_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "mast download celery task for jwst observations. queries the mikulski archive..."
     },
     {
@@ -2563,7 +2629,7 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "pipeline_tasks_download_rationale_47",
-      "community": 12,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "download calibrated fits files from mast and upload to minio. receives a pre-..."
     },
@@ -2574,8 +2640,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts",
-      "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community": 63,
+      "community_name": "detect_sources.py",
       "norm_label": "generate_cutouts.py"
     },
     {
@@ -2586,7 +2652,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_find_sci_extension",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -2597,7 +2663,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_extract_cutout_data",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "_extract_cutout_data()"
     },
     {
@@ -2608,7 +2674,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_stretched_png",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "_create_stretched_png()"
     },
     {
@@ -2619,7 +2685,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_raw_png",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "_create_raw_png()"
     },
     {
@@ -2630,7 +2696,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_create_fits_cutout",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "_create_fits_cutout()"
     },
     {
@@ -2641,7 +2707,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_upload_cutout_files",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "_upload_cutout_files()"
     },
     {
@@ -2652,7 +2718,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_py_task",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "task"
     },
     {
@@ -2663,7 +2729,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_generate_cutouts",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "generate_cutouts()"
     },
     {
@@ -2673,8 +2739,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_1",
-      "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community": 63,
+      "community_name": "detect_sources.py",
       "norm_label": "cutout generation celery task (sixth step in the 9-task pipeline chain)...."
     },
     {
@@ -2685,7 +2751,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_60",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -2696,7 +2762,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_106",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "extract a wcs-preserving cutout from fits data using cutout2d. computes a..."
     },
     {
@@ -2707,7 +2773,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_148",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "create auto-stretched png using asinh stretch (same as tile.py). applies zscale..."
     },
     {
@@ -2718,7 +2784,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_180",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "create raw linear png (no stretch, percentile-clipped linear mapping). maps the..."
     },
     {
@@ -2729,7 +2795,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_207",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "create a fits file with the cutout data and preserved wcs. writes a minimal..."
     },
     {
@@ -2740,7 +2806,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_223",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "upload all cutout files for one object to minio segmentation bucket. uploads..."
     },
     {
@@ -2751,7 +2817,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_generate_cutouts_rationale_277",
       "community": 14,
-      "community_name": "generate_cutouts.py",
+      "community_name": "generate_cutouts",
       "norm_label": "generate per-object cutout images (sixth pipeline step). extracts per-object..."
     },
     {
@@ -2762,7 +2828,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_ingest",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "tasks/ingest.py"
     },
     {
@@ -2795,7 +2861,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "pipeline orchestrator celery task for jwst observations. dispatches the full..."
     },
     {
@@ -2817,7 +2883,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "segment_sam.py"
     },
     {
@@ -2960,7 +3026,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "sam 3 segmentation with sep elliptical fallback celery task. generates pixel-..."
     },
     {
@@ -3114,7 +3180,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "tile.py"
     },
     {
@@ -3125,7 +3191,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_get_pyvips",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_get_pyvips()"
     },
     {
@@ -3136,7 +3202,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_find_sci_extension",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -3147,7 +3213,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_compute_normalization_parameters",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_compute_normalization_parameters()"
     },
     {
@@ -3158,7 +3224,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_normalize_chunk",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_normalize_chunk()"
     },
     {
@@ -3169,7 +3235,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_process_fits_to_tiff",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_process_fits_to_tiff()"
     },
     {
@@ -3180,7 +3246,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_dzi_pyramid",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_generate_dzi_pyramid()"
     },
     {
@@ -3190,8 +3256,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_upload_tiles_to_minio",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 10,
+      "community_name": "get_s3_client",
       "norm_label": "_upload_tiles_to_minio()"
     },
     {
@@ -3201,8 +3267,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_py_task",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 10,
+      "community_name": "get_s3_client",
       "norm_label": "task"
     },
     {
@@ -3212,8 +3278,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_tiles",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 10,
+      "community_name": "get_s3_client",
       "norm_label": "generate_tiles()"
     },
     {
@@ -3224,7 +3290,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "dzi tile pyramid generation celery task for fits observations. converts fits..."
     },
     {
@@ -3235,7 +3301,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_55",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "lazily import pyvips, setting dyld_library_path for macos homebrew."
     },
     {
@@ -3246,7 +3312,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_84",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -3257,7 +3323,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_123",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "compute zscale normalization parameters from a subsample of the image. samples..."
     },
     {
@@ -3268,7 +3334,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_162",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "normalize a chunk of fits data to 8-bit using pre-computed parameters. applies..."
     },
     {
@@ -3279,7 +3345,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_194",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "process a fits file into a tiled, pyramidal tiff using chunked reads. memory..."
     },
     {
@@ -3290,7 +3356,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_295",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "generate dzi tile pyramid from a pyramidal tiff. uses pyvips dzsave to create a..."
     },
     {
@@ -3300,8 +3366,8 @@
       "source_location": "L348",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_348",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 10,
+      "community_name": "get_s3_client",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi..."
     },
     {
@@ -3311,8 +3377,8 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_433",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 10,
+      "community_name": "get_s3_client",
       "norm_label": "generate dzi tile pyramids from fits data and upload to minio. receives the..."
     },
     {
@@ -3323,7 +3389,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "validate_wcs.py"
     },
     {
@@ -3389,7 +3455,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_validate_wcs_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "wcs validation celery task for fits observations. extracts world coordinate..."
     },
     {
@@ -3513,7 +3579,7 @@
       "_origin": "ast",
       "id": "shared_config",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "config.py"
     },
     {
@@ -3523,8 +3589,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "shared_config_settings",
-      "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community": 92,
+      "community_name": "Settings",
       "norm_label": "settings"
     },
     {
@@ -3534,8 +3600,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "basesettings",
-      "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community": 92,
+      "community_name": "Settings",
       "norm_label": "basesettings"
     },
     {
@@ -3546,7 +3612,7 @@
       "_origin": "ast",
       "id": "shared_models",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "models.py"
     },
     {
@@ -3578,8 +3644,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "shared_models_pipelinestatus",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "detect_sources.py",
       "norm_label": "pipelinestatus"
     },
     {
@@ -3589,8 +3655,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "str",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "detect_sources.py",
       "norm_label": "str"
     },
     {
@@ -3601,7 +3667,7 @@
       "_origin": "ast",
       "id": "shared_models_stepstatus",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "stepstatus"
     },
     {
@@ -3611,7 +3677,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "shared_models_detectionconfidencetier",
-      "community": 6,
+      "community": 63,
       "community_name": "detect_sources.py",
       "norm_label": "detectionconfidencetier"
     },
@@ -3622,8 +3688,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "shared_models_observation",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "detect_sources.py",
       "norm_label": "observation"
     },
     {
@@ -3633,7 +3699,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "shared_models_processingstep",
-      "community": 12,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "processingstep"
     },
@@ -3689,7 +3755,7 @@
       "_origin": "ast",
       "id": "shared_s3",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "s3.py"
     },
     {
@@ -3711,7 +3777,7 @@
       "_origin": "ast",
       "id": "shared_s3_rationale_1",
       "community": 63,
-      "community_name": "cross_match_catalogs.py",
+      "community_name": "detect_sources.py",
       "norm_label": "reusable s3 client singleton for minio access. provides a lazy-initialized..."
     },
     {
@@ -3743,8 +3809,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_anomaly_api",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_anomaly_api.py"
     },
     {
@@ -3754,8 +3820,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_make_app_with_mock_session",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "_make_app_with_mock_session()"
     },
     {
@@ -3765,8 +3831,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_classifications_returns_404_for_unknown_object",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_classifications_returns_404_for_unknown_object()"
     },
     {
@@ -3776,8 +3842,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_classifications_returns_history_newest_first",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_classifications_returns_history_newest_first()"
     },
     {
@@ -3787,8 +3853,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_cross_matches_returns_404_for_unknown_object",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_cross_matches_returns_404_for_unknown_object()"
     },
     {
@@ -3798,8 +3864,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_cross_matches_ordered_by_angular_separation",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_cross_matches_ordered_by_angular_separation()"
     },
     {
@@ -3809,8 +3875,8 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_anomalies_returns_empty_list_when_none_found",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_anomalies_returns_empty_list_when_none_found()"
     },
     {
@@ -3820,8 +3886,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_anomalies_returns_flagged_objects_with_explanation",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_anomalies_returns_flagged_objects_with_explanation()"
     },
     {
@@ -3831,8 +3897,8 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_objects_router_registered_in_app",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "test_objects_router_registered_in_app()"
     },
     {
@@ -3842,8 +3908,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_rationale_1",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "regression suite: phase 5 plan 3 \u2014 anomaly api endpoints. all tests are offline..."
     },
     {
@@ -3853,8 +3919,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_rationale_21",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "return a testclient wired with a mock db session override."
     },
     {
@@ -3864,8 +3930,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_rationale_197",
-      "community": 62,
-      "community_name": "objects.py",
+      "community": 82,
+      "community_name": "get_database_session",
       "norm_label": "returns [] (not 404) when no anomaly-flagged objects exist."
     },
     {
@@ -4205,8 +4271,8 @@
       "source_location": "L287",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_no_stub_tasks_remain",
-      "community": 73,
-      "community_name": "cross_match_catalogs",
+      "community": 85,
+      "community_name": "classify_objects",
       "norm_label": "test_no_stub_tasks_remain()"
     },
     {
@@ -4316,7 +4382,7 @@
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "test_load_or_create_classifier_returns_none_when_no_s3_model()"
     },
     {
@@ -4327,7 +4393,7 @@
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "test_predict_object_types_imputes_sentinels()"
     },
     {
@@ -4359,8 +4425,8 @@
       "source_location": "L469",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
-      "community": 85,
-      "community_name": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches()"
     },
     {
@@ -4381,7 +4447,7 @@
       "source_location": "L590",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_classify_objects_not_implemented_removed",
-      "community": 72,
+      "community": 85,
       "community_name": "classify_objects",
       "norm_label": "test_classify_objects_not_implemented_removed()"
     },
@@ -4392,8 +4458,8 @@
       "source_location": "L598",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_classify_objects_creates_classification_for_maskless_object",
-      "community": 87,
-      "community_name": "test_classify_objects_creates_classification_for_maskless_object",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "test_classify_objects_creates_classification_for_maskless_object()"
     },
     {
@@ -4480,8 +4546,8 @@
       "source_location": "L772",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_detect_anomalies_skips_isolation_forest_for_small_observations",
-      "community": 81,
-      "community_name": "test_detect_anomalies_skips_isolation_forest_for_small_observations",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "test_detect_anomalies_skips_isolation_forest_for_small_observations()"
     },
     {
@@ -4491,8 +4557,8 @@
       "source_location": "L821",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_detect_anomalies_artifact_never_flagged",
-      "community": 80,
-      "community_name": "test_detect_anomalies_artifact_never_flagged",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "test_detect_anomalies_artifact_never_flagged()"
     },
     {
@@ -4502,8 +4568,8 @@
       "source_location": "L869",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_detect_anomalies_anomaly_explanation_is_human_readable",
-      "community": 82,
-      "community_name": "test_detect_anomalies_anomaly_explanation_is_human_readable",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "test_detect_anomalies_anomaly_explanation_is_human_readable()"
     },
     {
@@ -4568,8 +4634,8 @@
       "source_location": "L288",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_288",
-      "community": 73,
-      "community_name": "cross_match_catalogs",
+      "community": 85,
+      "community_name": "classify_objects",
       "norm_label": "after plan 3, all 9 pipeline tasks are fully implemented \u2014 no..."
     },
     {
@@ -4613,7 +4679,7 @@
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_414",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "load_or_create_classifier returns none (not an exception) when s3 has no model."
     },
     {
@@ -4624,7 +4690,7 @@
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_425",
       "community": 72,
-      "community_name": "classify_objects",
+      "community_name": "predict_object_types",
       "norm_label": "predict_object_types handles -999.0 sentinels without crashing."
     },
     {
@@ -4634,8 +4700,8 @@
       "source_location": "L470",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_470",
-      "community": 85,
-      "community_name": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "catalogcrossmatch records are created for real catalog matches (mock session)."
     },
     {
@@ -4656,8 +4722,8 @@
       "source_location": "L599",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_599",
-      "community": 87,
-      "community_name": "test_classify_objects_creates_classification_for_maskless_object",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "classify_objects creates objectclassification for objects without sam masks."
     },
     {
@@ -4689,8 +4755,8 @@
       "source_location": "L773",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_773",
-      "community": 81,
-      "community_name": "test_detect_anomalies_skips_isolation_forest_for_small_observations",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "observations with < 10 objects must skip isolationforest gracefully."
     },
     {
@@ -4700,8 +4766,8 @@
       "source_location": "L822",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_822",
-      "community": 80,
-      "community_name": "test_detect_anomalies_artifact_never_flagged",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "objects whose predicted_object_type == 'artifact' must not be flagged."
     },
     {
@@ -4711,8 +4777,8 @@
       "source_location": "L870",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_870",
-      "community": 82,
-      "community_name": "test_detect_anomalies_anomaly_explanation_is_human_readable",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "anomaly_explanation must be a non-empty string when signals fire."
     },
     {
@@ -4722,8 +4788,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_health",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 87,
+      "community_name": "test_health.py",
       "norm_label": "test_health.py"
     },
     {
@@ -4733,8 +4799,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_returns_200_when_all_services_connected",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 87,
+      "community_name": "test_health.py",
       "norm_label": "test_health_endpoint_returns_200_when_all_services_connected()"
     },
     {
@@ -4744,8 +4810,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_postgresql_connected",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 87,
+      "community_name": "test_health.py",
       "norm_label": "test_health_endpoint_reports_postgresql_connected()"
     },
     {
@@ -4755,8 +4821,8 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_redis_connected",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 87,
+      "community_name": "test_health.py",
       "norm_label": "test_health_endpoint_reports_redis_connected()"
     },
     {
@@ -4766,8 +4832,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_minio_connected",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 87,
+      "community_name": "test_health.py",
       "norm_label": "test_health_endpoint_reports_minio_connected()"
     },
     {
@@ -4777,8 +4843,8 @@
       "source_location": "L43",
       "_origin": "ast",
       "id": "tests_test_health_test_health_endpoint_reports_neo4j_connected",
-      "community": 1,
-      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
+      "community": 87,
+      "community_name": "test_health.py",
       "norm_label": "test_health_endpoint_reports_neo4j_connected()"
     },
     {
@@ -5165,6 +5231,259 @@
       "community": 1,
       "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "test_upload_creates_metadata_record_in_postgresql()"
+    },
+    {
+      "label": "test_object_detail_api.py",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_api.py"
+    },
+    {
+      "label": "_make_app()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_make_app",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "_make_app()"
+    },
+    {
+      "label": "_teardown()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_teardown",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "_teardown()"
+    },
+    {
+      "label": "_make_obj()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_make_obj",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "_make_obj()"
+    },
+    {
+      "label": "_make_match()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_make_match",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "_make_match()"
+    },
+    {
+      "label": "_make_clf()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_make_clf",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "_make_clf()"
+    },
+    {
+      "label": "_session_for()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_session_for",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "_session_for()"
+    },
+    {
+      "label": "test_object_detail_404_for_unknown_uuid()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L133",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_404_for_unknown_uuid",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_404_for_unknown_uuid()"
+    },
+    {
+      "label": "test_object_detail_returns_full_record()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L151",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_returns_full_record()"
+    },
+    {
+      "label": "test_object_detail_cross_matches_ordered_by_separation()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L194",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_cross_matches_ordered_by_separation()"
+    },
+    {
+      "label": "test_object_detail_simbad_external_url()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L223",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_simbad_external_url()"
+    },
+    {
+      "label": "test_object_detail_ned_external_url()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L243",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_ned_external_url()"
+    },
+    {
+      "label": "test_object_detail_unknown_catalog_has_null_url()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L263",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_unknown_catalog_has_null_url()"
+    },
+    {
+      "label": "test_object_detail_classification_panel()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L287",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_classification_panel()"
+    },
+    {
+      "label": "test_object_detail_anomaly_explanation_present_when_flagged()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L322",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_anomaly_explanation_present_when_flagged()"
+    },
+    {
+      "label": "test_object_detail_no_classification_returns_null()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L354",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_no_classification_returns_null()"
+    },
+    {
+      "label": "test_object_detail_cutout_url_signed_when_prefix_present()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L376",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_cutout_url_signed_when_prefix_present()"
+    },
+    {
+      "label": "test_object_detail_cutout_url_null_when_no_prefix()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L394",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_cutout_url_null_when_no_prefix()"
+    },
+    {
+      "label": "test_object_detail_physical_properties_included()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L417",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_physical_properties_included()"
+    },
+    {
+      "label": "test_object_detail_source_observation_uuid_present()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L442",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_source_observation_uuid_present()"
+    },
+    {
+      "label": "test_object_detail_endpoint_registered_in_openapi()",
+      "file_type": "code",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L465",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_test_object_detail_endpoint_registered_in_openapi",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "test_object_detail_endpoint_registered_in_openapi()"
+    },
+    {
+      "label": "Regression suite: Phase 6 \u2014 object detail API endpoint. GET /api/objects/{uuid}\u2026",
+      "file_type": "rationale",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_rationale_1",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "regression suite: phase 6 \u2014 object detail api endpoint. get /api/objects/{uuid}..."
+    },
+    {
+      "label": "Return a mock session that dispatches correctly for the detail endpoint.",
+      "file_type": "rationale",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L111",
+      "_origin": "ast",
+      "id": "tests_test_object_detail_api_rationale_111",
+      "community": 80,
+      "community_name": "test_object_detail_api.py",
+      "norm_label": "return a mock session that dispatches correctly for the detail endpoint."
     },
     {
       "label": "test_search_api.py",
@@ -6003,6 +6322,116 @@
       "norm_label": "rootlayout()"
     },
     {
+      "label": "MaskOverlay.tsx",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_maskoverlay",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "maskoverlay.tsx"
+    },
+    {
+      "label": "decompressCocoRle()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_maskoverlay_decompresscocorle",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "decompresscocorle()"
+    },
+    {
+      "label": "maskToSvgPath()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L40",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_maskoverlay_masktosvgpath",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "masktosvgpath()"
+    },
+    {
+      "label": "MaskOverlayProps",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_maskoverlay_maskoverlayprops",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "maskoverlayprops"
+    },
+    {
+      "label": "MaskOverlay()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_maskoverlay_maskoverlay",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "maskoverlay()"
+    },
+    {
+      "label": "not-found.tsx",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/not-found.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_not_found",
+      "community": 93,
+      "community_name": "not-found.tsx",
+      "norm_label": "not-found.tsx"
+    },
+    {
+      "label": "ObjectNotFound()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/not-found.tsx",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_not_found_objectnotfound",
+      "community": 93,
+      "community_name": "not-found.tsx",
+      "norm_label": "objectnotfound()"
+    },
+    {
+      "label": "objects/[uuid]/page.tsx",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_page",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "objects/[uuid]/page.tsx"
+    },
+    {
+      "label": "ObjectPageProps",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_page_objectpageprops",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "objectpageprops"
+    },
+    {
+      "label": "ObjectPage()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_page_objectpage",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "objectpage()"
+    },
+    {
       "label": "app/page.tsx",
       "file_type": "code",
       "source_file": "web/src/app/page.tsx",
@@ -6108,20 +6537,20 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerloader",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "viewerloader()"
     },
     {
-      "label": "[uuid]/page.tsx",
+      "label": "viewer/[uuid]/page.tsx",
       "file_type": "code",
       "source_file": "web/src/app/viewer/[uuid]/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
-      "norm_label": "[uuid]/page.tsx"
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "viewer/[uuid]/page.tsx"
     },
     {
       "label": "ViewerPageProps",
@@ -6130,8 +6559,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page_viewerpageprops",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "viewerpageprops"
     },
     {
@@ -6141,8 +6570,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page_viewerpage",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "viewerpage()"
     },
     {
@@ -6625,42 +7054,53 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_lib_api",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "api.ts"
     },
     {
       "label": "fetchObservation()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L25",
+      "source_location": "L26",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobservation",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "fetchobservation()"
     },
     {
       "label": "fetchWcsParams()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L46",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchwcsparams",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "fetchwcsparams()"
     },
     {
       "label": "getTileUrl()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L65",
+      "source_location": "L66",
       "_origin": "ast",
       "id": "web_src_lib_api_gettileurl",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 81,
+      "community_name": "api.ts",
       "norm_label": "gettileurl()"
+    },
+    {
+      "label": "fetchObjectDetail()",
+      "file_type": "code",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L81",
+      "_origin": "ast",
+      "id": "web_src_lib_api_fetchobjectdetail",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "fetchobjectdetail()"
     },
     {
       "label": "coordinates.ts",
@@ -6727,6 +7167,61 @@
       "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "pixeltoradec()"
+    },
+    {
+      "label": "object.ts",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "web_src_types_object",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "object.ts"
+    },
+    {
+      "label": "CrossMatchDetail",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L6",
+      "_origin": "ast",
+      "id": "web_src_types_object_crossmatchdetail",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "crossmatchdetail"
+    },
+    {
+      "label": "ClassificationDetail",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "web_src_types_object_classificationdetail",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "classificationdetail"
+    },
+    {
+      "label": "CocoRle",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "web_src_types_object_cocorle",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "cocorle"
+    },
+    {
+      "label": "ObjectDetail",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "web_src_types_object_objectdetail",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "objectdetail"
     },
     {
       "label": "observation.ts",
@@ -9238,9 +9733,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 84,
+      "community": 86,
       "norm_label": "individual object detail pages",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_object_detail_pages"
     },
     {
@@ -9294,9 +9789,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "automated sam-based object segmentation",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_sam_segmentation"
     },
     {
@@ -9336,9 +9831,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 84,
+      "community": 86,
       "norm_label": "anomaly detection and novel object flagging",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_anomaly_detection"
     },
     {
@@ -9350,9 +9845,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "temporal change tracking",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_temporal_tracking"
     },
     {
@@ -9406,9 +9901,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "fits ingestion pipeline",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_fits_ingestion"
     },
     {
@@ -9420,9 +9915,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "anti-feature: full lsst real-time ingestion",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_anti_full_lsst_ingestion"
     },
     {
@@ -9462,9 +9957,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 84,
+      "community": 86,
       "norm_label": "anti-feature: full citizen science platform",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_anti_citizen_science_platform"
     },
     {
@@ -9518,9 +10013,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 84,
+      "community": 86,
       "norm_label": "anti-feature: spectral analysis tools",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_anti_spectral_tools"
     },
     {
@@ -9532,9 +10027,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "pitfall: sam produces garbage without domain adaptation",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_pitfalls_sam_domain_mismatch"
     },
     {
@@ -9588,9 +10083,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "pitfall: storage costs explode before funding",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_pitfalls_storage_costs"
     },
     {
@@ -9646,7 +10141,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "sam 2.1",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "PyTorch",
       "id": "planning_research_stack_sam2"
     },
     {
@@ -9660,7 +10155,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "pytorch",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "PyTorch",
       "id": "planning_research_stack_pytorch"
     },
     {
@@ -9674,7 +10169,7 @@
       "contributor": null,
       "community": 3,
       "norm_label": "timm",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "PyTorch",
       "id": "planning_research_stack_timm"
     },
     {
@@ -9728,9 +10223,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 3,
+      "community": 86,
       "norm_label": "minio",
-      "community_name": "Automated SAM-based Object Segmentation",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_stack_minio"
     },
     {
@@ -10369,7 +10864,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10547,7 +11042,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -10672,6 +11167,30 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_anomaly_api_test_cross_matches_returns_404_for_unknown_object",
+      "target": "api_db_session_get_database_session"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "api_db_session_get_database_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "argument",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_teardown",
       "target": "api_db_session_get_database_session"
     },
     {
@@ -11278,7 +11797,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L220",
+      "source_location": "L221",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11289,7 +11808,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11300,7 +11819,29 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L33",
+      "source_location": "L358",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_catalog_external_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_classificationdetailresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11311,7 +11852,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L46",
+      "source_location": "L365",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_crossmatchdetailresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11322,7 +11874,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L74",
+      "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11333,7 +11885,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11344,7 +11896,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L258",
+      "source_location": "L404",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_get_object_detail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L259",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11355,7 +11918,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L158",
+      "source_location": "L159",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11366,7 +11929,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L231",
+      "source_location": "L232",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11377,7 +11940,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L247",
+      "source_location": "L385",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects",
+      "target": "api_routers_objects_objectdetailresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L248",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11388,7 +11962,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L272",
+      "source_location": "L273",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11400,7 +11974,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11412,7 +11986,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11424,7 +11998,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11436,7 +12010,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11448,7 +12022,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11460,7 +12034,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11472,7 +12046,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L25",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -11506,7 +12080,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L33",
+      "source_location": "L34",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -11517,7 +12091,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -11528,7 +12102,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -11539,7 +12113,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_classificationresponse",
@@ -11551,7 +12125,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L98",
+      "source_location": "L99",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_classifications",
@@ -11562,7 +12136,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L55",
+      "source_location": "L56",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11573,7 +12147,29 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L46",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_classificationdetailresponse",
+      "target": "api_routers_objects_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L365",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_crossmatchdetailresponse",
+      "target": "api_routers_objects_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11584,7 +12180,18 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L247",
+      "source_location": "L385",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectdetailresponse",
+      "target": "api_routers_objects_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L248",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_objectsearchresponse",
@@ -11595,7 +12202,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11606,7 +12213,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11617,7 +12224,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchresponse",
@@ -11629,7 +12236,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L142",
+      "source_location": "L143",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_cross_matches",
@@ -11640,7 +12247,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11651,7 +12258,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11662,7 +12269,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_anomalyresponse",
@@ -11674,7 +12281,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L189",
+      "source_location": "L190",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_observation_anomalies",
@@ -11682,10 +12289,22 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L359",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_catalog_external_url",
+      "target": "api_routers_objects_py_get",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L70",
+      "source_location": "L71",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11697,7 +12316,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L114",
+      "source_location": "L115",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11709,7 +12328,19 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L257",
+      "source_location": "L403",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L258",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11721,7 +12352,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L154",
+      "source_location": "L155",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11733,7 +12364,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L271",
+      "source_location": "L272",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -11746,7 +12377,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L74",
+      "source_location": "L75",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_classifications",
@@ -11757,10 +12388,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L78",
+      "source_location": "L79",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_78",
+      "source": "api_routers_objects_rationale_79",
       "target": "api_routers_objects_get_object_classifications",
       "confidence_score": 1.0
     },
@@ -11769,7 +12400,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L118",
+      "source_location": "L119",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_cross_matches",
@@ -11781,7 +12412,19 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L258",
+      "source_location": "L404",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_py_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L259",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_types",
@@ -11793,7 +12436,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L158",
+      "source_location": "L159",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_observation_anomalies",
@@ -11805,7 +12448,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L272",
+      "source_location": "L273",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -11816,10 +12459,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L122",
+      "source_location": "L123",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_122",
+      "source": "api_routers_objects_rationale_123",
       "target": "api_routers_objects_get_object_cross_matches",
       "confidence_score": 1.0
     },
@@ -11827,10 +12470,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L162",
+      "source_location": "L163",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_162",
+      "source": "api_routers_objects_rationale_163",
       "target": "api_routers_objects_get_observation_anomalies",
       "confidence_score": 1.0
     },
@@ -11838,10 +12481,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L223",
+      "source_location": "L224",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_223",
+      "source": "api_routers_objects_rationale_224",
       "target": "api_routers_objects_angular_separation_arcsec",
       "confidence_score": 1.0
     },
@@ -11850,7 +12493,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L311",
+      "source_location": "L312",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -11862,7 +12505,19 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L235",
+      "source_location": "L449",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_make_cutout_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L236",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_make_cutout_thumbnail_url",
@@ -11873,10 +12528,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L232",
+      "source_location": "L233",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_232",
+      "source": "api_routers_objects_rationale_233",
       "target": "api_routers_objects_make_cutout_thumbnail_url",
       "confidence_score": 1.0
     },
@@ -11885,7 +12540,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L338",
+      "source_location": "L339",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -11896,7 +12551,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_objectsearchresponse",
@@ -11907,7 +12562,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_objectsearchresponse",
@@ -11918,7 +12573,7 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 0.8,
       "_origin": "ast",
       "source": "api_routers_objects_objectsearchresponse",
@@ -11930,7 +12585,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L331",
+      "source_location": "L332",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -11941,10 +12596,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L261",
+      "source_location": "L262",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_261",
+      "source": "api_routers_objects_rationale_262",
       "target": "api_routers_objects_get_object_types",
       "confidence_score": 1.0
     },
@@ -11952,10 +12607,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L282",
+      "source_location": "L283",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_282",
+      "source": "api_routers_objects_rationale_283",
       "target": "api_routers_objects_search_objects",
       "confidence_score": 1.0
     },
@@ -11964,11 +12619,169 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L272",
+      "source_location": "L273",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
       "target": "api_routers_objects_py_response",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L457",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_catalog_external_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_crossmatchdetailresponse",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_crossmatchdetailresponse",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_crossmatchdetailresponse",
+      "target": "shared_models_objectclassification",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L451",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_crossmatchdetailresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_classificationdetailresponse",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_classificationdetailresponse",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_classificationdetailresponse",
+      "target": "shared_models_objectclassification",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L462",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_classificationdetailresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L436",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_get_object_detail",
+      "target": "api_routers_objects_objectdetailresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectdetailresponse",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectdetailresponse",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L21",
+      "weight": 0.8,
+      "_origin": "ast",
+      "source": "api_routers_objects_objectdetailresponse",
+      "target": "shared_models_objectclassification",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L408",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_objects_rationale_408",
+      "target": "api_routers_objects_get_object_detail",
       "confidence_score": 1.0
     },
     {
@@ -18299,6 +19112,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "shared_models",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_search_api.py",
       "source_location": "L19",
       "weight": 1.0,
@@ -18434,6 +19259,18 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "shared_models_astronomicalobject",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_search_api.py",
       "source_location": "L19",
       "weight": 1.0,
@@ -18536,6 +19373,18 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "shared_models_objectclassification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_anomaly_api.py",
       "source_location": "L141",
       "weight": 1.0,
@@ -18553,6 +19402,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_classification_schema",
+      "target": "shared_models_catalogcrossmatch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
       "target": "shared_models_catalogcrossmatch",
       "confidence_score": 1.0
     },
@@ -20087,6 +20948,1028 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_make_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L133",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_404_for_unknown_uuid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L322",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L287",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L394",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L376",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L465",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_endpoint_registered_in_openapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L243",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L354",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L417",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L223",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L442",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L263",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api",
+      "target": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_rationale_1",
+      "target": "tests_test_object_detail_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_404_for_unknown_uuid",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L331",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L297",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L200",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L398",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L380",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L358",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L422",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L228",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L447",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L268",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "tests_test_object_detail_api_make_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_404_for_unknown_uuid",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L346",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L314",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L215",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L409",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L391",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L260",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L368",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L434",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L186",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L457",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L279",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "tests_test_object_detail_api_teardown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L323",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L288",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L395",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L377",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L244",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L355",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L419",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L224",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L444",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L264",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "tests_test_object_detail_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L196",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "tests_test_object_detail_api_make_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "tests_test_object_detail_api_make_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L225",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "tests_test_object_detail_api_make_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "tests_test_object_detail_api_make_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L324",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L289",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L198",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L396",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L378",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L420",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L445",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "tests_test_object_detail_api_make_clf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L111",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_rationale_111",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L329",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L295",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L198",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L396",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L378",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L246",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L356",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L420",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L226",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L445",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L266",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "tests_test_object_detail_api_session_for",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_search_api.py",
       "source_location": "L26",
       "weight": 1.0,
@@ -21304,6 +23187,203 @@
       "source": "web_src_app_layout",
       "target": "web_src_app_layout_rootlayout",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay",
+      "target": "web_src_app_objects_uuid_maskoverlay_decompresscocorle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay",
+      "target": "web_src_app_objects_uuid_maskoverlay_maskoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L57",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay",
+      "target": "web_src_app_objects_uuid_maskoverlay_maskoverlayprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L40",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay",
+      "target": "web_src_app_objects_uuid_maskoverlay_masktosvgpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay",
+      "target": "web_src_types_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay",
+      "target": "web_src_types_object_cocorle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_app_objects_uuid_maskoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay_maskoverlay",
+      "target": "web_src_app_objects_uuid_maskoverlay_decompresscocorle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L66",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay_maskoverlay",
+      "target": "web_src_app_objects_uuid_maskoverlay_masktosvgpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
+      "source_location": "L58",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_maskoverlay_maskoverlayprops",
+      "target": "web_src_types_object_cocorle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_app_objects_uuid_maskoverlay_maskoverlay",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/not-found.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_not_found",
+      "target": "web_src_app_objects_uuid_not_found_objectnotfound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_app_objects_uuid_page_objectpage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_app_objects_uuid_page_objectpageprops",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_lib_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_lib_api_fetchobjectdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page_objectpage",
+      "target": "web_src_lib_api_fetchobjectdetail"
     },
     {
       "relation": "contains",
@@ -22645,7 +24725,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L25",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_lib_api",
+      "target": "web_src_lib_api_fetchobjectdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L26",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -22656,7 +24747,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -22667,11 +24758,35 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L65",
+      "source_location": "L66",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
       "target": "web_src_lib_api_gettileurl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_lib_api",
+      "target": "web_src_types_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_lib_api",
+      "target": "web_src_types_object_objectdetail",
       "confidence_score": 1.0
     },
     {
@@ -22800,6 +24915,50 @@
       "_origin": "ast",
       "source": "web_src_lib_wcs",
       "target": "web_src_types_observation_wcsparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_classificationdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_cocorle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_crossmatchdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_objectdetail",
       "confidence_score": 1.0
     },
     {
@@ -25787,5 +27946,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "055acd852f1a9fac704cc79604be50c485a10058"
+  "built_at_commit": "2134db8e8fae50c04f7d1c1b3ae881df067cd7dc"
 }
