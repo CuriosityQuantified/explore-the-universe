@@ -45,6 +45,32 @@ export interface TileMetadata {
   files_processed: number;
 }
 
+/** Single processing step in the pipeline timeline.
+ *
+ * Matches ProcessingStepSummary from api/routers/observations.py.
+ */
+export interface ObservationStep {
+  step_name: string;
+  step_status: string | null;
+  step_started_at: string | null;
+  step_completed_at: string | null;
+}
+
+/** Observation summary for the pipeline dashboard.
+ *
+ * Matches ObservationSummaryResponse from api/routers/observations.py.
+ */
+export interface ObservationSummary {
+  observation_uuid: string;
+  archive_observation_id: string;
+  pipeline_status: string;
+  ingested_at: string;
+  object_count: number;
+  classified_count: number;
+  anomaly_count: number;
+  steps: ObservationStep[];
+}
+
 /** Observation provenance and tile metadata for the info panel.
  *
  * Matches ObservationDetailResponse from api/routers/tiles.py.

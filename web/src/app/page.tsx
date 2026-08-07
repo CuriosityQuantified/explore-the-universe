@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center">
@@ -12,6 +14,14 @@ export default function Home() {
           </code>{" "}
           with an observation UUID to begin exploring.
         </p>
+        <nav className="flex gap-4 text-sm">
+          <Link
+            href="/dashboard"
+            className="rounded bg-zinc-800 px-4 py-2 font-medium hover:bg-zinc-700"
+          >
+            Pipeline dashboard
+          </Link>
+        </nav>
       </main>
     </div>
   );
