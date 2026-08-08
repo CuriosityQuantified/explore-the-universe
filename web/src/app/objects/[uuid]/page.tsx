@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { fetchObjectDetail } from "@/lib/api";
+import { GraphPanel } from "./GraphPanel";
 import { MaskOverlay } from "./MaskOverlay";
 
 interface ObjectPageProps {
@@ -232,6 +233,12 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
             Download VOTable
           </a>
         </div>
+      </section>
+
+      {/* Knowledge graph */}
+      <section className="space-y-3">
+        <h2 className="text-lg font-semibold">In the knowledge graph</h2>
+        <GraphPanel uuid={uuid} />
       </section>
     </main>
   );

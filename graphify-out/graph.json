@@ -231,8 +231,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "alembic_env",
-      "community": 89,
-      "community_name": "env.py",
+      "community": 1,
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "env.py"
     },
     {
@@ -242,8 +242,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
-      "community": 89,
-      "community_name": "env.py",
+      "community": 1,
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -253,8 +253,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
-      "community": 89,
-      "community_name": "env.py",
+      "community": 1,
+      "community_name": "Phase 1: Foundation & Infrastructure Implementation Plan",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -462,8 +462,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "api_db_neo4j_get_neo4j_session",
-      "community": 84,
-      "community_name": "test_load_graph.py",
+      "community": 3,
+      "community_name": "graph_client",
       "norm_label": "get_neo4j_session()"
     },
     {
@@ -473,8 +473,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_db_neo4j_py_session",
-      "community": 84,
-      "community_name": "test_load_graph.py",
+      "community": 3,
+      "community_name": "graph_client",
       "norm_label": "session"
     },
     {
@@ -528,8 +528,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "api_db_neo4j_rationale_66",
-      "community": 84,
-      "community_name": "test_load_graph.py",
+      "community": 3,
+      "community_name": "graph_client",
       "norm_label": "fastapi dependency yielding a neo4j session from the singleton driver."
     },
     {
@@ -550,8 +550,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "api_db_session_get_database_session",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "get_database_session()"
     },
     {
@@ -561,19 +561,19 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_main",
-      "community": 10,
-      "community_name": "tiles.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "main.py"
     },
     {
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "api/main.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "_origin": "ast",
       "id": "api_main_lifespan",
-      "community": 10,
-      "community_name": "tiles.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "lifespan()"
     },
     {
@@ -583,8 +583,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "fastapi",
-      "community": 10,
-      "community_name": "tiles.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "fastapi"
     },
     {
@@ -597,6 +597,204 @@
       "community": 38,
       "community_name": "Routers Package Init",
       "norm_label": "routers/__init__.py"
+    },
+    {
+      "label": "graph.py",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_routers_graph",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graph.py"
+    },
+    {
+      "label": "GraphQueryResult",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "api_routers_graph_graphqueryresult",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graphqueryresult"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "api_routers_graph_py_basemodel",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "basemodel"
+    },
+    {
+      "label": "GraphQueryResponse",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "api_routers_graph_graphqueryresponse",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graphqueryresponse"
+    },
+    {
+      "label": "GraphNeighborNode",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "api_routers_graph_graphneighbornode",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graphneighbornode"
+    },
+    {
+      "label": "GraphCatalogEntry",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "api_routers_graph_graphcatalogentry",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graphcatalogentry"
+    },
+    {
+      "label": "GraphNeighborsResponse",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L82",
+      "_origin": "ast",
+      "id": "api_routers_graph_graphneighborsresponse",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graphneighborsresponse"
+    },
+    {
+      "label": "_thumbnail_url()",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "api_routers_graph_thumbnail_url",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "_thumbnail_url()"
+    },
+    {
+      "label": "_build_neighbors()",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "api_routers_graph_build_neighbors",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "_build_neighbors()"
+    },
+    {
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "api_routers_graph_py_get",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "get"
+    },
+    {
+      "label": "query_graph()",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L135",
+      "_origin": "ast",
+      "id": "api_routers_graph_query_graph",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "query_graph()"
+    },
+    {
+      "label": "Session",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "api_routers_graph_py_session",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "session"
+    },
+    {
+      "label": "get_graph_neighbors()",
+      "file_type": "code",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L175",
+      "_origin": "ast",
+      "id": "api_routers_graph_get_graph_neighbors",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "get_graph_neighbors()"
+    },
+    {
+      "label": "Graph property query and neighborhood API. GET /api/graph/query \u2014 filter\u2026",
+      "file_type": "rationale",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_routers_graph_rationale_1",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "graph property query and neighborhood api. get /api/graph/query \u2014 filter..."
+    },
+    {
+      "label": "Return a 1-hour presigned MinIO URL for the cutout thumbnail, or None.",
+      "file_type": "rationale",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L98",
+      "_origin": "ast",
+      "id": "api_routers_graph_rationale_98",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "return a 1-hour presigned minio url for the cutout thumbnail, or none."
+    },
+    {
+      "label": "Convert a raw Neo4j neighbor list to GraphNeighborNode, dropping null-uuid\u2026",
+      "file_type": "rationale",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "api_routers_graph_rationale_117",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "convert a raw neo4j neighbor list to graphneighbornode, dropping null-uuid..."
+    },
+    {
+      "label": "Query AstronomicalObject nodes in Neo4j by property filters. All filter\u2026",
+      "file_type": "rationale",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L146",
+      "_origin": "ast",
+      "id": "api_routers_graph_rationale_146",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "query astronomicalobject nodes in neo4j by property filters. all filter..."
+    },
+    {
+      "label": "Return 1-hop neighbors for an AstronomicalObject in the knowledge graph.\u2026",
+      "file_type": "rationale",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L179",
+      "_origin": "ast",
+      "id": "api_routers_graph_rationale_179",
+      "community": 65,
+      "community_name": "graph.py",
+      "norm_label": "return 1-hop neighbors for an astronomicalobject in the knowledge graph...."
     },
     {
       "label": "health.py",
@@ -650,7 +848,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "routers/ingest.py"
     },
     {
@@ -661,7 +859,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestrequest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "ingestrequest"
     },
     {
@@ -672,7 +870,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_basemodel",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "basemodel"
     },
     {
@@ -683,7 +881,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestresponse",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "ingestresponse"
     },
     {
@@ -694,7 +892,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingeststatusresponse",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "ingeststatusresponse"
     },
     {
@@ -705,7 +903,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_post",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "post"
     },
     {
@@ -716,7 +914,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_trigger_ingest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "trigger_ingest()"
     },
     {
@@ -727,7 +925,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_session",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "session"
     },
     {
@@ -738,7 +936,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_get",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "get"
     },
     {
@@ -749,7 +947,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_get_ingest_status",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "get_ingest_status()"
     },
     {
@@ -760,7 +958,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_1",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post..."
     },
     {
@@ -771,7 +969,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_25",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "request body for post /api/ingest."
     },
     {
@@ -782,7 +980,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_38",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "response body for post /api/ingest (202 accepted)."
     },
     {
@@ -793,7 +991,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_49",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "response body for get /api/ingest/{observation_uuid}/status."
     },
     {
@@ -804,7 +1002,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_66",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "trigger the ingestion pipeline for a jwst observation. creates an observation..."
     },
     {
@@ -815,7 +1013,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_140",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "routers/ingest.py",
       "norm_label": "check the status of an ingestion pipeline. returns the observation details..."
     },
     {
@@ -825,7 +1023,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_objects",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "objects.py"
     },
@@ -836,7 +1034,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "api_routers_objects_classificationresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "classificationresponse"
     },
@@ -847,7 +1045,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_objects_py_basemodel",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "basemodel"
     },
@@ -858,7 +1056,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "api_routers_objects_crossmatchresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "crossmatchresponse"
     },
@@ -869,7 +1067,7 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "api_routers_objects_anomalyresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "anomalyresponse"
     },
@@ -881,7 +1079,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_py_get",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "get"
     },
     {
@@ -891,7 +1089,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_classifications",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "get_object_classifications()"
     },
@@ -903,7 +1101,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_py_session",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "session"
     },
     {
@@ -914,7 +1112,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_get_object_cross_matches",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "get_object_cross_matches()"
     },
     {
@@ -925,7 +1123,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_get_observation_anomalies",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "get_observation_anomalies()"
     },
     {
@@ -936,7 +1134,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_angular_separation_arcsec",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "_angular_separation_arcsec()"
     },
     {
@@ -946,7 +1144,7 @@
       "source_location": "L243",
       "_origin": "ast",
       "id": "api_routers_objects_make_cutout_thumbnail_url",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "_make_cutout_thumbnail_url()"
     },
@@ -957,7 +1155,7 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "api_routers_objects_objectsearchresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "objectsearchresponse"
     },
@@ -968,7 +1166,7 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "api_routers_objects_namesearchresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "namesearchresponse"
     },
@@ -980,7 +1178,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_get_object_types",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "get_object_types()"
     },
     {
@@ -991,7 +1189,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_search_objects",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "search_objects()"
     },
     {
@@ -1002,7 +1200,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_py_response",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "response"
     },
     {
@@ -1012,7 +1210,7 @@
       "source_location": "L448",
       "_origin": "ast",
       "id": "api_routers_objects_catalog_external_url",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "_catalog_external_url()"
     },
@@ -1023,7 +1221,7 @@
       "source_location": "L455",
       "_origin": "ast",
       "id": "api_routers_objects_crossmatchdetailresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "crossmatchdetailresponse"
     },
@@ -1034,7 +1232,7 @@
       "source_location": "L464",
       "_origin": "ast",
       "id": "api_routers_objects_classificationdetailresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "classificationdetailresponse"
     },
@@ -1045,7 +1243,7 @@
       "source_location": "L475",
       "_origin": "ast",
       "id": "api_routers_objects_objectdetailresponse",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "objectdetailresponse"
     },
@@ -1056,7 +1254,7 @@
       "source_location": "L494",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_detail",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "get_object_detail()"
     },
@@ -1068,7 +1266,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_safe_filename",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "_safe_filename()"
     },
     {
@@ -1079,7 +1277,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_export_filename",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "_export_filename()"
     },
     {
@@ -1090,7 +1288,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_get_object_or_404",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "_get_object_or_404()"
     },
     {
@@ -1101,7 +1299,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_get_latest_classification",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "_get_latest_classification()"
     },
     {
@@ -1112,7 +1310,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_export_fits",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "export_fits()"
     },
     {
@@ -1123,7 +1321,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_export_csv",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "export_csv()"
     },
     {
@@ -1134,7 +1332,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_export_votable",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "export_votable()"
     },
     {
@@ -1144,7 +1342,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_objects_rationale_1",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "classification, cross-match, anomaly, search, and type-filter api endpoints...."
     },
@@ -1155,7 +1353,7 @@
       "source_location": "L90",
       "_origin": "ast",
       "id": "api_routers_objects_rationale_90",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "return full append-only classification history for an object, newest first."
     },
@@ -1167,7 +1365,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_134",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return all catalog cross-match records for an object, ordered by angular..."
     },
     {
@@ -1178,7 +1376,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_174",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return all anomaly-flagged objects for an observation. returns an empty list..."
     },
     {
@@ -1189,7 +1387,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_235",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "haversine angular separation between two sky coordinates, in arcseconds."
     },
     {
@@ -1199,7 +1397,7 @@
       "source_location": "L244",
       "_origin": "ast",
       "id": "api_routers_objects_rationale_244",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "return a 1-hour signed minio url for the cutout png, or none if no prefix."
     },
@@ -1211,7 +1409,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_280",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return the list of distinct classified_object_type values present in the db."
     },
     {
@@ -1222,7 +1420,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_302",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "cone search, type filter, or simbad name search over astronomicalobject..."
     },
     {
@@ -1232,7 +1430,7 @@
       "source_location": "L498",
       "_origin": "ast",
       "id": "api_routers_objects_rationale_498",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "return the full record for a single astronomical object. includes a signed..."
     },
@@ -1244,7 +1442,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_574",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "sanitize a string for use in a content-disposition filename token. strips..."
     },
     {
@@ -1255,7 +1453,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_582",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return a safe content-disposition filename for an object export."
     },
     {
@@ -1266,7 +1464,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_588",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "fetch astronomicalobject by uuid or raise 404."
     },
     {
@@ -1277,7 +1475,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_600",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return latest objectclassification for an object, or none."
     },
     {
@@ -1288,7 +1486,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_614",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "stream the cutout fits file for an object from minio. returns 404 if the uuid..."
     },
     {
@@ -1299,7 +1497,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_655",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return a single-row csv with the object's key attributes. returns 404 if the..."
     },
     {
@@ -1310,7 +1508,7 @@
       "_origin": "ast",
       "id": "api_routers_objects_rationale_701",
       "community": 71,
-      "community_name": "get",
+      "community_name": "objects.py",
       "norm_label": "return a votable xml document with the object's key attributes. returns 404 if..."
     },
     {
@@ -1419,8 +1617,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_test_upload",
-      "community": 10,
-      "community_name": "tiles.py",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "test_upload.py"
     },
     {
@@ -1540,8 +1738,8 @@
       "source_location": "L84",
       "_origin": "ast",
       "id": "api_routers_tiles_find_sci_extension",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -1551,8 +1749,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_tiles_py_get",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "get"
     },
     {
@@ -1573,8 +1771,8 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "api_routers_tiles_get_wcs_params",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "get_wcs_params()"
     },
     {
@@ -1650,8 +1848,8 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_85",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "find the sci extension in a fits hdu list. same logic as pipeline/tasks/tile.py..."
     },
     {
@@ -1672,8 +1870,8 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_163",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "extract wcs parameters from the primary fits file for client-side projection...."
     },
     {
@@ -1980,8 +2178,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "pipeline_catalog_clients_simbad_client_resolve_object_name",
-      "community": 66,
-      "community_name": "simbad_client.py",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "resolve_object_name()"
     },
     {
@@ -2024,8 +2222,8 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "pipeline_catalog_clients_simbad_client_rationale_70",
-      "community": 66,
-      "community_name": "simbad_client.py",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "resolve an object name to (ra_deg, dec_deg, canonical_name) via simbad. returns..."
     },
     {
@@ -2222,8 +2420,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 72,
+      "community_name": "classify_objects",
       "norm_label": "classifier.py"
     },
     {
@@ -2234,7 +2432,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_load_or_create_classifier",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "load_or_create_classifier()"
     },
     {
@@ -2245,7 +2443,7 @@
       "_origin": "ast",
       "id": "randomforestclassifier",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "randomforestclassifier"
     },
     {
@@ -2256,7 +2454,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_predict_object_types",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "predict_object_types()"
     },
     {
@@ -2267,7 +2465,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_py_ndarray",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "ndarray"
     },
     {
@@ -2278,7 +2476,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_save_classifier",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "save_classifier()"
     },
     {
@@ -2288,8 +2486,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_1",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 72,
+      "community_name": "classify_objects",
       "norm_label": "random forest classifier for astronomical object morphological type prediction...."
     },
     {
@@ -2300,7 +2498,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_65",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "download and deserialize the pre-trained rf classifier from s3. returns none if..."
     },
     {
@@ -2311,7 +2509,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_94",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "predict morphological types for a batch of objects. sentinel values (-999.0)..."
     },
     {
@@ -2322,7 +2520,7 @@
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_122",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "serialize and upload a trained classifier to s3."
     },
     {
@@ -2354,7 +2552,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_download_cutout",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "_download_cutout()"
     },
@@ -2365,7 +2563,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_py_ndarray",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "ndarray"
     },
@@ -2376,7 +2574,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_build_feature_matrix",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "_build_feature_matrix()"
     },
@@ -2387,7 +2585,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_py_task",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "task"
     },
@@ -2398,7 +2596,7 @@
       "source_location": "L100",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_classify_objects",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "classify_objects()"
     },
@@ -2420,7 +2618,7 @@
       "source_location": "L62",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_62",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "download cutout.fits from minio and return its data as a float64 array."
     },
@@ -2431,7 +2629,7 @@
       "source_location": "L79",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_79",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "convert list of feature dicts to a numeric matrix (n_objects \u00d7 n_features)."
     },
@@ -2442,7 +2640,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "pipeline_tasks_classify_objects_rationale_101",
-      "community": 85,
+      "community": 72,
       "community_name": "classify_objects",
       "norm_label": "extract morphological features and classify objects using a trained ml model...."
     },
@@ -2464,8 +2662,8 @@
       "source_location": "L71",
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "_get_pixel_scale()"
     },
     {
@@ -2475,8 +2673,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs_py_uuid",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "uuid"
     },
     {
@@ -2541,8 +2739,8 @@
       "source_location": "L74",
       "_origin": "ast",
       "id": "pipeline_tasks_cross_match_catalogs_rationale_74",
-      "community": 6,
-      "community_name": "_detect_and_store",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "return wcs pixel scale in arcsec/px for this observation. recovers fits s3 keys..."
     },
     {
@@ -2739,8 +2937,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 6,
+      "community_name": "detect_sources.py",
       "norm_label": "detect_sources.py"
     },
     {
@@ -2751,7 +2949,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_find_sci_extension",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -2762,7 +2960,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_fix_byte_order",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_fix_byte_order()"
     },
     {
@@ -2773,7 +2971,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_ndarray",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "ndarray"
     },
     {
@@ -2784,7 +2982,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_sources_in_array",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_detect_sources_in_array()"
     },
     {
@@ -2795,7 +2993,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_compute_kron_photometry",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_compute_kron_photometry()"
     },
     {
@@ -2806,7 +3004,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_assign_confidence_tiers",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_assign_confidence_tiers()"
     },
     {
@@ -2817,7 +3015,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_flag_edge_detections",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_flag_edge_detections()"
     },
     {
@@ -2828,7 +3026,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_extract_sub_regions",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_extract_sub_regions()"
     },
     {
@@ -2839,7 +3037,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_run_multi_scale_detection",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_run_multi_scale_detection()"
     },
     {
@@ -2850,7 +3048,7 @@
       "_origin": "ast",
       "id": "wcs",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "wcs"
     },
     {
@@ -2861,7 +3059,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_uuid",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "uuid"
     },
     {
@@ -2872,7 +3070,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_and_store",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "_detect_and_store()"
     },
     {
@@ -2883,7 +3081,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_py_task",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "task"
     },
     {
@@ -2894,7 +3092,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_detect_sources",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "detect_sources()"
     },
     {
@@ -2904,8 +3102,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_1",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 6,
+      "community_name": "detect_sources.py",
       "norm_label": "multi-scale sep source detection celery task. runs sep (source extractor as a..."
     },
     {
@@ -2916,7 +3114,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_53",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -2927,7 +3125,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_93",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "ensure data is in native byte order and float32 for sep. fits files are big-..."
     },
     {
@@ -2938,7 +3136,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_116",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "run sep background estimation and source extraction on a 2d array. args: data:..."
     },
     {
@@ -2949,7 +3147,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_150",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "compute kron radius photometry for better flux/snr estimates. args:..."
     },
     {
@@ -2960,7 +3158,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_195",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "assign detection confidence tiers based on signal-to-noise ratio. snr = flux /..."
     },
     {
@@ -2971,7 +3169,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_238",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "flag detections whose bounding boxes touch sub-region or image boundaries. an..."
     },
     {
@@ -2982,7 +3180,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_299",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "generate list of sub-region coordinates for tiled detection. returns (y_start,..."
     },
     {
@@ -2993,7 +3191,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_343",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "core multi-scale detection loop across three scale levels. scale 1: full field..."
     },
     {
@@ -3004,7 +3202,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_519",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "run sep detection on a data array and store results in the database. runs..."
     },
     {
@@ -3015,7 +3213,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_detect_sources_rationale_666",
       "community": 6,
-      "community_name": "_detect_and_store",
+      "community_name": "detect_sources.py",
       "norm_label": "run multi-scale sep source detection on a fits observation. receives the output..."
     },
     {
@@ -3036,8 +3234,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_download_py_task",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "task"
     },
     {
@@ -3047,8 +3245,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "pipeline_tasks_download_download_fits",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "download_fits()"
     },
     {
@@ -3069,8 +3267,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "pipeline_tasks_download_rationale_47",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "download calibrated fits files from mast and upload to minio. receives a pre-..."
     },
     {
@@ -3322,8 +3520,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "load_graph.py"
     },
     {
@@ -3366,8 +3564,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph_rationale_1",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "bulk-load observation objects into the neo4j knowledge graph. tenth (final)..."
     },
     {
@@ -3773,8 +3971,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_upload_tiles_to_minio",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "_upload_tiles_to_minio()"
     },
     {
@@ -3883,8 +4081,8 @@
       "source_location": "L348",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_348",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi..."
     },
     {
@@ -4139,7 +4337,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "shared_models_base",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "base"
     },
@@ -4150,7 +4348,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "declarativebase",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "declarativebase"
     },
@@ -4194,8 +4392,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "shared_models_detectionconfidencetier",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 6,
+      "community_name": "detect_sources.py",
       "norm_label": "detectionconfidencetier"
     },
     {
@@ -4205,8 +4403,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "shared_models_observation",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "observation"
     },
     {
@@ -4227,7 +4425,7 @@
       "source_location": "L108",
       "_origin": "ast",
       "id": "shared_models_astronomicalobject",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "astronomicalobject"
     },
@@ -4238,7 +4436,7 @@
       "source_location": "L157",
       "_origin": "ast",
       "id": "shared_models_objectclassification",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "objectclassification"
     },
@@ -4249,7 +4447,7 @@
       "source_location": "L186",
       "_origin": "ast",
       "id": "shared_models_catalogcrossmatch",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "catalogcrossmatch"
     },
@@ -4260,7 +4458,7 @@
       "source_location": "L158",
       "_origin": "ast",
       "id": "shared_models_rationale_158",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "append-only ml classification record for a single pipeline run on one object."
     },
@@ -4282,8 +4480,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "shared_s3_get_s3_client",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "get_s3_client()"
     },
     {
@@ -4304,8 +4502,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "shared_s3_rationale_16",
-      "community": 63,
-      "community_name": "models.py",
+      "community": 85,
+      "community_name": "get_s3_client",
       "norm_label": "return a boto3 s3 client configured for minio. uses a module-level singleton --..."
     },
     {
@@ -4381,8 +4579,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_anomaly_api",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_anomaly_api.py"
     },
     {
@@ -4392,8 +4590,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_make_app_with_mock_session",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "_make_app_with_mock_session()"
     },
     {
@@ -4403,8 +4601,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_classifications_returns_404_for_unknown_object",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_classifications_returns_404_for_unknown_object()"
     },
     {
@@ -4414,8 +4612,8 @@
       "source_location": "L52",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_classifications_returns_history_newest_first",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_classifications_returns_history_newest_first()"
     },
     {
@@ -4425,8 +4623,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_cross_matches_returns_404_for_unknown_object",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_cross_matches_returns_404_for_unknown_object()"
     },
     {
@@ -4436,8 +4634,8 @@
       "source_location": "L138",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_cross_matches_ordered_by_angular_separation",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_cross_matches_ordered_by_angular_separation()"
     },
     {
@@ -4447,8 +4645,8 @@
       "source_location": "L196",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_anomalies_returns_empty_list_when_none_found",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_anomalies_returns_empty_list_when_none_found()"
     },
     {
@@ -4458,8 +4656,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_anomalies_returns_flagged_objects_with_explanation",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_anomalies_returns_flagged_objects_with_explanation()"
     },
     {
@@ -4469,8 +4667,8 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_test_objects_router_registered_in_app",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "test_objects_router_registered_in_app()"
     },
     {
@@ -4480,8 +4678,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_rationale_1",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "regression suite: phase 5 plan 3 \u2014 anomaly api endpoints. all tests are offline..."
     },
     {
@@ -4491,8 +4689,8 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_rationale_21",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "return a testclient wired with a mock db session override."
     },
     {
@@ -4502,8 +4700,8 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "tests_test_anomaly_api_rationale_197",
-      "community": 82,
-      "community_name": "get_database_session",
+      "community": 12,
+      "community_name": "TestClient",
       "norm_label": "returns [] (not 404) when no anomaly-flagged objects exist."
     },
     {
@@ -4832,8 +5030,8 @@
       "source_location": "L276",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_generate_cutouts_does_not_set_pipeline_completed",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 89,
+      "community_name": "test_generate_cutouts_does_not_set_pipeline_completed",
       "norm_label": "test_generate_cutouts_does_not_set_pipeline_completed()"
     },
     {
@@ -4953,8 +5151,8 @@
       "source_location": "L414",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
-      "community": 72,
-      "community_name": "predict_object_types",
+      "community": 91,
+      "community_name": "test_load_or_create_classifier_returns_none_when_no_s3_model",
       "norm_label": "test_load_or_create_classifier_returns_none_when_no_s3_model()"
     },
     {
@@ -4965,7 +5163,7 @@
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "test_predict_object_types_imputes_sentinels()"
     },
     {
@@ -4997,8 +5195,8 @@
       "source_location": "L470",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 96,
+      "community_name": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
       "norm_label": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches()"
     },
     {
@@ -5008,8 +5206,8 @@
       "source_location": "L541",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_cross_match_catalogs_not_queried_on_catalog_failure",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 100,
+      "community_name": "test_cross_match_catalogs_not_queried_on_catalog_failure",
       "norm_label": "test_cross_match_catalogs_not_queried_on_catalog_failure()"
     },
     {
@@ -5019,8 +5217,8 @@
       "source_location": "L591",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_classify_objects_not_implemented_removed",
-      "community": 85,
-      "community_name": "classify_objects",
+      "community": 18,
+      "community_name": "test_classification_schema.py",
       "norm_label": "test_classify_objects_not_implemented_removed()"
     },
     {
@@ -5030,8 +5228,8 @@
       "source_location": "L599",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_classify_objects_creates_classification_for_maskless_object",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 101,
+      "community_name": "test_classify_objects_creates_classification_for_maskless_object",
       "norm_label": "test_classify_objects_creates_classification_for_maskless_object()"
     },
     {
@@ -5118,8 +5316,8 @@
       "source_location": "L773",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_detect_anomalies_skips_isolation_forest_for_small_observations",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 102,
+      "community_name": "test_detect_anomalies_skips_isolation_forest_for_small_observations",
       "norm_label": "test_detect_anomalies_skips_isolation_forest_for_small_observations()"
     },
     {
@@ -5129,8 +5327,8 @@
       "source_location": "L822",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_detect_anomalies_artifact_never_flagged",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 103,
+      "community_name": "test_detect_anomalies_artifact_never_flagged",
       "norm_label": "test_detect_anomalies_artifact_never_flagged()"
     },
     {
@@ -5195,8 +5393,8 @@
       "source_location": "L277",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_277",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 89,
+      "community_name": "test_generate_cutouts_does_not_set_pipeline_completed",
       "norm_label": "generate_cutouts must not assign pipeline_status = pipelinestatus.completed."
     },
     {
@@ -5250,8 +5448,8 @@
       "source_location": "L415",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_415",
-      "community": 72,
-      "community_name": "predict_object_types",
+      "community": 91,
+      "community_name": "test_load_or_create_classifier_returns_none_when_no_s3_model",
       "norm_label": "load_or_create_classifier returns none (not an exception) when s3 has no model."
     },
     {
@@ -5262,7 +5460,7 @@
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_426",
       "community": 72,
-      "community_name": "predict_object_types",
+      "community_name": "classify_objects",
       "norm_label": "predict_object_types handles -999.0 sentinels without crashing."
     },
     {
@@ -5272,8 +5470,8 @@
       "source_location": "L471",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_471",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 96,
+      "community_name": "test_cross_match_catalogs_creates_crossmatch_records_for_real_matches",
       "norm_label": "catalogcrossmatch records are created for real catalog matches (mock session)."
     },
     {
@@ -5283,8 +5481,8 @@
       "source_location": "L542",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_542",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 100,
+      "community_name": "test_cross_match_catalogs_not_queried_on_catalog_failure",
       "norm_label": "catalog failure \u2192 no catalogcrossmatch, task continues without aborting."
     },
     {
@@ -5294,8 +5492,8 @@
       "source_location": "L600",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_600",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 101,
+      "community_name": "test_classify_objects_creates_classification_for_maskless_object",
       "norm_label": "classify_objects creates objectclassification for objects without sam masks."
     },
     {
@@ -5327,8 +5525,8 @@
       "source_location": "L774",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_774",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 102,
+      "community_name": "test_detect_anomalies_skips_isolation_forest_for_small_observations",
       "norm_label": "observations with < 10 objects must skip isolationforest gracefully."
     },
     {
@@ -5338,8 +5536,8 @@
       "source_location": "L823",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_823",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 103,
+      "community_name": "test_detect_anomalies_artifact_never_flagged",
       "norm_label": "objects whose predicted_object_type == 'artifact' must not be flagged."
     },
     {
@@ -5361,7 +5559,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_export_api.py"
     },
     {
@@ -5372,7 +5570,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_make_app",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "_make_app()"
     },
     {
@@ -5383,7 +5581,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_teardown",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "_teardown()"
     },
     {
@@ -5394,7 +5592,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_make_obj",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "_make_obj()"
     },
     {
@@ -5405,7 +5603,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_make_clf",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "_make_clf()"
     },
     {
@@ -5416,7 +5614,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_session_for",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "_session_for()"
     },
     {
@@ -5427,7 +5625,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_session_not_found",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "_session_not_found()"
     },
     {
@@ -5438,7 +5636,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_fits_export_200_with_content_type",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_fits_export_200_with_content_type()"
     },
     {
@@ -5449,7 +5647,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_fits_export_content_disposition_uses_catalog_name",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_fits_export_content_disposition_uses_catalog_name()"
     },
     {
@@ -5460,7 +5658,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_fits_export_filename_falls_back_to_uuid",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_fits_export_filename_falls_back_to_uuid()"
     },
     {
@@ -5471,7 +5669,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_fits_export_streams_body",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_fits_export_streams_body()"
     },
     {
@@ -5482,7 +5680,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_fits_export_404_for_unknown_uuid",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_fits_export_404_for_unknown_uuid()"
     },
     {
@@ -5493,7 +5691,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_fits_export_404_when_no_cutout_prefix",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_fits_export_404_when_no_cutout_prefix()"
     },
     {
@@ -5504,7 +5702,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_200_with_content_type",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_200_with_content_type()"
     },
     {
@@ -5515,7 +5713,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_has_correct_columns",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_has_correct_columns()"
     },
     {
@@ -5526,7 +5724,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_data_row_matches_object",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_data_row_matches_object()"
     },
     {
@@ -5537,7 +5735,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_content_disposition_uses_catalog_name",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_content_disposition_uses_catalog_name()"
     },
     {
@@ -5548,7 +5746,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_content_disposition_falls_back_to_uuid",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_content_disposition_falls_back_to_uuid()"
     },
     {
@@ -5559,7 +5757,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_404_for_unknown_uuid",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_404_for_unknown_uuid()"
     },
     {
@@ -5570,7 +5768,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_csv_export_classification_fields_none_when_no_classification",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_csv_export_classification_fields_none_when_no_classification()"
     },
     {
@@ -5581,7 +5779,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_votable_export_200_with_content_type",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_votable_export_200_with_content_type()"
     },
     {
@@ -5592,7 +5790,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_votable_export_parseable_by_astropy",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_votable_export_parseable_by_astropy()"
     },
     {
@@ -5603,7 +5801,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_votable_export_contains_correct_data",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_votable_export_contains_correct_data()"
     },
     {
@@ -5614,7 +5812,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_votable_export_404_for_unknown_uuid",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_votable_export_404_for_unknown_uuid()"
     },
     {
@@ -5625,7 +5823,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_votable_export_content_disposition_uses_catalog_name",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_votable_export_content_disposition_uses_catalog_name()"
     },
     {
@@ -5636,7 +5834,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_votable_export_content_disposition_falls_back_to_uuid",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_votable_export_content_disposition_falls_back_to_uuid()"
     },
     {
@@ -5647,7 +5845,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_classification_scores_populated_from_latest_classification",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_classification_scores_populated_from_latest_classification()"
     },
     {
@@ -5658,7 +5856,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_test_classification_scores_none_when_no_classification",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "test_classification_scores_none_when_no_classification()"
     },
     {
@@ -5669,7 +5867,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_1",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "regression suite: issue #11 \u2014 data export api endpoints. get..."
     },
     {
@@ -5680,7 +5878,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_73",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "return a mock session that dispatches for export endpoints. export endpoints..."
     },
     {
@@ -5691,7 +5889,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_93",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "return a mock session where astronomicalobject lookup returns none."
     },
     {
@@ -5702,7 +5900,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_118",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "fits endpoint returns 200 with application/fits content type."
     },
     {
@@ -5713,7 +5911,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_139",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "content-disposition filename uses catalog_object_name when available."
     },
     {
@@ -5724,7 +5922,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_161",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "content-disposition filename falls back to uuid when no catalog_object_name."
     },
     {
@@ -5735,7 +5933,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_184",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "fits endpoint streams the s3 body bytes."
     },
     {
@@ -5746,7 +5944,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_205",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "fits endpoint returns 404 for an unknown uuid."
     },
     {
@@ -5757,7 +5955,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_219",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "fits endpoint returns 404 with json body when object has no cutout_s3_prefix."
     },
     {
@@ -5768,7 +5966,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_242",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv endpoint returns 200 with text/csv content type."
     },
     {
@@ -5779,7 +5977,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_258",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv response has the required header row with all 10 columns."
     },
     {
@@ -5790,7 +5988,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_282",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv data row contains the correct values from the object."
     },
     {
@@ -5801,7 +5999,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_319",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv content-disposition uses catalog_object_name when available."
     },
     {
@@ -5812,7 +6010,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_336",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv content-disposition falls back to uuid when catalog_object_name is absent."
     },
     {
@@ -5823,7 +6021,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_354",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv endpoint returns 404 for an unknown uuid."
     },
     {
@@ -5834,7 +6032,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_367",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv classification fields are empty when no classification exists."
     },
     {
@@ -5845,7 +6043,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_392",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "votable endpoint returns 200 with application/x-votable+xml content type."
     },
     {
@@ -5856,7 +6054,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_408",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "votable response content is parseable by astropy.io.votable.parse."
     },
     {
@@ -5867,7 +6065,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_428",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "votable response contains the expected field values."
     },
     {
@@ -5878,7 +6076,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_463",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "votable endpoint returns 404 for an unknown uuid."
     },
     {
@@ -5889,7 +6087,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_476",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "votable content-disposition uses catalog_object_name when available."
     },
     {
@@ -5900,7 +6098,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_493",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "votable content-disposition falls back to uuid when catalog_object_name is..."
     },
     {
@@ -5911,7 +6109,7 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_516",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv export populates confidence/anomaly from latest objectclassification."
     },
     {
@@ -5922,8 +6120,327 @@
       "_origin": "ast",
       "id": "tests_test_export_api_rationale_536",
       "community": 12,
-      "community_name": "test_export_api.py",
+      "community_name": "TestClient",
       "norm_label": "csv export populates none for scores when no objectclassification exists."
+    },
+    {
+      "label": "test_graph_query_api.py",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_api.py"
+    },
+    {
+      "label": "_mock_neo4j_session()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_mock_neo4j_session",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "_mock_neo4j_session()"
+    },
+    {
+      "label": "graph_client",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_graph_client",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "graph_client"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_graph_client_init",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".__enter__()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L43",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_graph_client_enter",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": ".__enter__()"
+    },
+    {
+      "label": "TestClient",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "testclient",
+      "community": 12,
+      "community_name": "TestClient",
+      "norm_label": "testclient"
+    },
+    {
+      "label": ".__exit__()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L46",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_graph_client_exit",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": ".__exit__()"
+    },
+    {
+      "label": "test_graph_query_returns_matching_objects()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_returns_matching_objects",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_returns_matching_objects()"
+    },
+    {
+      "label": "test_graph_query_all_filters_optional()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_all_filters_optional",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_all_filters_optional()"
+    },
+    {
+      "label": "test_graph_query_magnitude_max_filter()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L79",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_magnitude_max_filter",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_magnitude_max_filter()"
+    },
+    {
+      "label": "test_graph_query_is_parameterized_not_interpolated()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_is_parameterized_not_interpolated",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_is_parameterized_not_interpolated()"
+    },
+    {
+      "label": "test_graph_query_pagination()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L104",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_pagination",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_pagination()"
+    },
+    {
+      "label": "test_graph_query_is_anomaly_filter()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_is_anomaly_filter",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_is_anomaly_filter()"
+    },
+    {
+      "label": "test_graph_neighbors_returns_contains_children()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L134",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_neighbors_returns_contains_children",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_neighbors_returns_contains_children()"
+    },
+    {
+      "label": "test_graph_neighbors_returns_contained_by()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_neighbors_returns_contained_by",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_neighbors_returns_contained_by()"
+    },
+    {
+      "label": "test_graph_neighbors_returns_catalog_entries()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L172",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_neighbors_returns_catalog_entries",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_neighbors_returns_catalog_entries()"
+    },
+    {
+      "label": "test_graph_neighbors_not_in_graph()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L192",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_neighbors_not_in_graph",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_neighbors_not_in_graph()"
+    },
+    {
+      "label": "test_graph_neighbors_filters_null_entries()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L201",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_neighbors_filters_null_entries",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_neighbors_filters_null_entries()"
+    },
+    {
+      "label": "test_graph_query_returns_503_on_neo4j_error()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L227",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_query_returns_503_on_neo4j_error",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_query_returns_503_on_neo4j_error()"
+    },
+    {
+      "label": "test_graph_neighbors_returns_503_on_neo4j_error()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L237",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_neighbors_returns_503_on_neo4j_error",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_neighbors_returns_503_on_neo4j_error()"
+    },
+    {
+      "label": "test_graph_endpoints_registered_in_openapi()",
+      "file_type": "code",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L252",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_test_graph_endpoints_registered_in_openapi",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "test_graph_endpoints_registered_in_openapi()"
+    },
+    {
+      "label": "Regression suite: Issue #12 \u2014 graph query and neighborhood API. GET\u2026",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_1",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "regression suite: issue #12 \u2014 graph query and neighborhood api. get..."
+    },
+    {
+      "label": "Return a mock neo4j Session whose .run().data() returns *data*.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_23",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "return a mock neo4j session whose .run().data() returns *data*."
+    },
+    {
+      "label": "Context manager: installs a mock neo4j session and yields a TestClient.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_32",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "context manager: installs a mock neo4j session and yields a testclient."
+    },
+    {
+      "label": "The endpoint must call session.run() \u2014 not do string formatting.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L91",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_91",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "the endpoint must call session.run() \u2014 not do string formatting."
+    },
+    {
+      "label": "Empty Cypher result \u2192 in_graph: false.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_193",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "empty cypher result \u2192 in_graph: false."
+    },
+    {
+      "label": "OPTIONAL MATCH produces {uuid: null, ...} rows \u2014 these should be dropped.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L202",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_202",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "optional match produces {uuid: null, ...} rows \u2014 these should be dropped."
+    },
+    {
+      "label": "Neo4j driver exception must surface as 503, not a raw 500.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L228",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_228",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "neo4j driver exception must surface as 503, not a raw 500."
+    },
+    {
+      "label": "Neo4j driver exception in neighbors endpoint must surface as 503.",
+      "file_type": "rationale",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "tests_test_graph_query_api_rationale_238",
+      "community": 3,
+      "community_name": "graph_client",
+      "norm_label": "neo4j driver exception in neighbors endpoint must surface as 503."
     },
     {
       "label": "test_health.py",
@@ -6372,8 +6889,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_get_neo4j_session_is_generator",
-      "community": 84,
-      "community_name": "test_load_graph.py",
+      "community": 3,
+      "community_name": "graph_client",
       "norm_label": "test_get_neo4j_session_is_generator()"
     },
     {
@@ -6658,8 +7175,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "tests_test_load_graph_rationale_31",
-      "community": 84,
-      "community_name": "test_load_graph.py",
+      "community": 3,
+      "community_name": "graph_client",
       "norm_label": "get_neo4j_session must be a generator function so fastapi depends works."
     },
     {
@@ -6911,7 +7428,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_name_search_api",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "test_name_search_api.py"
     },
@@ -6922,8 +7439,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_name_search_api_make_app_with_mock_session",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "_make_app_with_mock_session()"
     },
     {
@@ -6933,8 +7450,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_name_search_api_make_obj",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "_make_obj()"
     },
     {
@@ -6944,8 +7461,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "tests_test_name_search_api_mock_session_with_objects",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "_mock_session_with_objects()"
     },
     {
@@ -6955,8 +7472,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "testnamesearch"
     },
     {
@@ -6966,8 +7483,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_resolves_and_local_match_returned",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_name_resolves_and_local_match_returned()"
     },
     {
@@ -6977,8 +7494,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_resolves_but_no_local_match",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_name_resolves_but_no_local_match()"
     },
     {
@@ -6988,8 +7505,8 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_not_found_in_simbad",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_name_not_found_in_simbad()"
     },
     {
@@ -6999,8 +7516,8 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_simbad_unreachable_returns_503",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_simbad_unreachable_returns_503()"
     },
     {
@@ -7010,8 +7527,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_multiple_matches_all_returned",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_multiple_matches_all_returned()"
     },
     {
@@ -7021,8 +7538,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_search_response_includes_anomaly_and_type_fields",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_name_search_response_includes_anomaly_and_type_fields()"
     },
     {
@@ -7032,8 +7549,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_search_pagination",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_name_search_pagination()"
     },
     {
@@ -7043,8 +7560,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_search_offset_beyond_results",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": ".test_name_search_offset_beyond_results()"
     },
     {
@@ -7054,7 +7571,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_1",
-      "community": 3,
+      "community": 71,
       "community_name": "objects.py",
       "norm_label": "tests for simbad name-search mode of get /api/objects/search. covers: -..."
     },
@@ -7065,8 +7582,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_27",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "return a testclient wired with a mock db session override."
     },
     {
@@ -7076,8 +7593,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_55",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "mock session whose .query().filter().all() returns objects."
     },
     {
@@ -7087,8 +7604,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_68",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "ac1: simbad resolves name \u2192 local object within 5 arcsec \u2192 returned."
     },
     {
@@ -7098,8 +7615,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_96",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "ac2: simbad resolves but no local objects within 5 arcsec \u2192 empty results, not..."
     },
     {
@@ -7109,8 +7626,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_122",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "ac2 variant: simbad returns none (name not found) \u2192 empty results with null..."
     },
     {
@@ -7120,8 +7637,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_140",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "ac3: simbad raises runtimeerror (unreachable) \u2192 503 with error detail."
     },
     {
@@ -7131,8 +7648,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_156",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "multiple local objects within 5 arcsec are all returned."
     },
     {
@@ -7142,8 +7659,8 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_180",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "result items include is_anomaly_flagged and classified_object_type."
     },
     {
@@ -7153,8 +7670,8 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_205",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "pagination parameters limit/offset work for name search."
     },
     {
@@ -7164,8 +7681,8 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_231",
-      "community": 65,
-      "community_name": "_make_app_with_mock_session",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "offset beyond total count returns empty results."
     },
     {
@@ -7429,7 +7946,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "test_observations_api.py"
     },
     {
@@ -7440,7 +7957,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_make_app",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "_make_app()"
     },
     {
@@ -7451,7 +7968,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_teardown",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "_teardown()"
     },
     {
@@ -7462,7 +7979,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_make_obs",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "_make_obs()"
     },
     {
@@ -7473,7 +7990,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_make_step",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "_make_step()"
     },
     {
@@ -7484,7 +8001,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_session_for",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "_session_for()"
     },
     {
@@ -7495,7 +8012,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "testobservationslist"
     },
     {
@@ -7506,7 +8023,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_empty_list_returns_200_empty_array",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_empty_list_returns_200_empty_array()"
     },
     {
@@ -7517,7 +8034,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_single_observation_structure",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_single_observation_structure()"
     },
     {
@@ -7528,7 +8045,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_steps_included_in_response",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_steps_included_in_response()"
     },
     {
@@ -7539,7 +8056,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_pipeline_status_values_preserved",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_pipeline_status_values_preserved()"
     },
     {
@@ -7550,7 +8067,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_observation_with_no_steps",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_observation_with_no_steps()"
     },
     {
@@ -7561,7 +8078,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_multiple_observations_returned",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_multiple_observations_returned()"
     },
     {
@@ -7572,7 +8089,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_testobservationslist_test_required_fields_present",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": ".test_required_fields_present()"
     },
     {
@@ -7583,7 +8100,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_rationale_1",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "regression suite: phase 6 \u2014 observations list api endpoint. get..."
     },
     {
@@ -7594,7 +8111,7 @@
       "_origin": "ast",
       "id": "tests_test_observations_api_rationale_78",
       "community": 82,
-      "community_name": "get_database_session",
+      "community_name": "test_observations_api.py",
       "norm_label": "build a mock session routing query() calls by model class. astronomicalobject..."
     },
     {
@@ -8522,6 +9039,39 @@
       "norm_label": "rootlayout()"
     },
     {
+      "label": "GraphPanel.tsx",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_graphpanel",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "graphpanel.tsx"
+    },
+    {
+      "label": "NeighborCard()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_graphpanel_neighborcard",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "neighborcard()"
+    },
+    {
+      "label": "GraphPanel()",
+      "file_type": "code",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "web_src_app_objects_uuid_graphpanel_graphpanel",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "graphpanel()"
+    },
+    {
       "label": "MaskOverlay.tsx",
       "file_type": "code",
       "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
@@ -8613,7 +9163,7 @@
       "label": "ObjectPageProps",
       "file_type": "code",
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_page_objectpageprops",
       "community": 81,
@@ -8624,7 +9174,7 @@
       "label": "ObjectPage()",
       "file_type": "code",
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_page_objectpage",
       "community": 81,
@@ -9457,6 +10007,17 @@
       "norm_label": "searchbytype()"
     },
     {
+      "label": "fetchGraphNeighbors()",
+      "file_type": "code",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "web_src_lib_api_fetchgraphneighbors",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "fetchgraphneighbors()"
+    },
+    {
       "label": "coordinates.ts",
       "file_type": "code",
       "source_file": "web/src/lib/coordinates.ts",
@@ -9576,6 +10137,39 @@
       "community": 81,
       "community_name": "api.ts",
       "norm_label": "objectdetail"
+    },
+    {
+      "label": "GraphNeighborNode",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L49",
+      "_origin": "ast",
+      "id": "web_src_types_object_graphneighbornode",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "graphneighbornode"
+    },
+    {
+      "label": "GraphCatalogEntry",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L55",
+      "_origin": "ast",
+      "id": "web_src_types_object_graphcatalogentry",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "graphcatalogentry"
+    },
+    {
+      "label": "GraphNeighbors",
+      "file_type": "code",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "web_src_types_object_graphneighbors",
+      "community": 81,
+      "community_name": "api.ts",
+      "norm_label": "graphneighbors"
     },
     {
       "label": "observation.ts",
@@ -12088,7 +12682,7 @@
       "contributor": null,
       "community": 35,
       "norm_label": "fits file support",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_features_fits_support"
     },
     {
@@ -12114,9 +12708,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 86,
       "norm_label": "catalog cross-matching",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_features_catalog_cross_matching"
     },
     {
@@ -12172,7 +12766,7 @@
       "contributor": null,
       "community": 35,
       "norm_label": "coordinate system support (wcs)",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_features_wcs_coordinate_support"
     },
     {
@@ -12310,9 +12904,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 35,
       "norm_label": "fits ingestion pipeline",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_features_fits_ingestion"
     },
     {
@@ -12324,9 +12918,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 35,
       "norm_label": "anti-feature: full lsst real-time ingestion",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_features_anti_full_lsst_ingestion"
     },
     {
@@ -12452,7 +13046,7 @@
       "contributor": null,
       "community": 35,
       "norm_label": "pitfall: wcs coordinate errors corrupt cross-matching",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_pitfalls_wcs_errors"
     },
     {
@@ -12478,9 +13072,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 35,
+      "community": 86,
       "norm_label": "pitfall: catalog cross-matching false associations",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
       "id": "planning_research_pitfalls_cross_match_false_associations"
     },
     {
@@ -12492,9 +13086,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 35,
       "norm_label": "pitfall: storage costs explode before funding",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_pitfalls_storage_costs"
     },
     {
@@ -12522,7 +13116,7 @@
       "contributor": null,
       "community": 35,
       "norm_label": "reproject",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_stack_reproject"
     },
     {
@@ -12632,9 +13226,9 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 86,
+      "community": 35,
       "norm_label": "minio",
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "planning_research_stack_minio"
     },
     {
@@ -12872,7 +13466,7 @@
       "contributor": null,
       "community": 35,
       "norm_label": "astropy",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "concept_astropy"
     },
     {
@@ -12886,7 +13480,7 @@
       "contributor": null,
       "community": 35,
       "norm_label": "astroquery",
-      "community_name": "Catalog Cross-matching",
+      "community_name": "FITS Ingestion Pipeline",
       "id": "concept_astroquery"
     },
     {
@@ -13304,6 +13898,18 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_db_neo4j",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "api/routers/health.py",
       "source_location": "L4",
       "weight": 1.0,
@@ -13377,7 +13983,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/main.py",
-      "source_location": "L16",
+      "source_location": "L17",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main_lifespan",
@@ -13424,7 +14030,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main_lifespan",
@@ -13535,6 +14141,42 @@
       "source": "api_db_neo4j_rationale_66",
       "target": "api_db_neo4j_get_neo4j_session",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_db_neo4j_get_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "api_db_neo4j_get_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "indirect_call",
+      "context": "assignment",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_graph_client_init",
+      "target": "api_db_neo4j_get_neo4j_session"
     },
     {
       "relation": "imports",
@@ -14065,7 +14707,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/main.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
@@ -14081,7 +14723,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
-      "target": "api_routers_health",
+      "target": "api_routers_graph",
       "confidence_score": 1.0
     },
     {
@@ -14093,7 +14735,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
-      "target": "api_routers_ingest",
+      "target": "api_routers_health",
       "confidence_score": 1.0
     },
     {
@@ -14105,7 +14747,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
-      "target": "api_routers_objects",
+      "target": "api_routers_ingest",
       "confidence_score": 1.0
     },
     {
@@ -14117,7 +14759,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
-      "target": "api_routers_observations",
+      "target": "api_routers_objects",
       "confidence_score": 1.0
     },
     {
@@ -14129,7 +14771,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
-      "target": "api_routers_test_upload",
+      "target": "api_routers_observations",
       "confidence_score": 1.0
     },
     {
@@ -14138,6 +14780,18 @@
       "confidence": "EXTRACTED",
       "source_file": "api/main.py",
       "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_main",
+      "target": "api_routers_test_upload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/main.py",
+      "source_location": "L12",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
@@ -14161,10 +14815,22 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/main.py",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main_lifespan",
+      "target": "fastapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
       "target": "fastapi",
       "confidence_score": 1.0
     },
@@ -14287,6 +14953,407 @@
       "_origin": "ast",
       "source": "tests_test_search_api_make_app_with_mock_session",
       "target": "fastapi"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_build_neighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_get_graph_neighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_graphcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_graphneighbornode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_graphneighborsresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_graphqueryresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_graphqueryresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_query_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "api_routers_graph_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "shared_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "shared_s3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph",
+      "target": "shared_s3_get_s3_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_rationale_1",
+      "target": "api_routers_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_graphqueryresult",
+      "target": "api_routers_graph_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_query_graph",
+      "target": "api_routers_graph_graphqueryresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L77",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_graphcatalogentry",
+      "target": "api_routers_graph_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_graphneighbornode",
+      "target": "api_routers_graph_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_graphneighborsresponse",
+      "target": "api_routers_graph_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L65",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_graphqueryresponse",
+      "target": "api_routers_graph_py_basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_query_graph",
+      "target": "api_routers_graph_graphqueryresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "generic_arg",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_build_neighbors",
+      "target": "api_routers_graph_graphneighbornode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_get_graph_neighbors",
+      "target": "api_routers_graph_graphcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_get_graph_neighbors",
+      "target": "api_routers_graph_graphneighborsresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L122",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_build_neighbors",
+      "target": "api_routers_graph_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L98",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_rationale_98",
+      "target": "api_routers_graph_thumbnail_url",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_thumbnail_url",
+      "target": "shared_s3_get_s3_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_build_neighbors",
+      "target": "api_routers_graph_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_get_graph_neighbors",
+      "target": "api_routers_graph_build_neighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_rationale_117",
+      "target": "api_routers_graph_build_neighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "decorator",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L174",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_get_graph_neighbors",
+      "target": "api_routers_graph_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "source": "api_routers_graph_query_graph",
+      "target": "api_routers_graph_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_query_graph",
+      "target": "api_routers_graph_py_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L146",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_rationale_146",
+      "target": "api_routers_graph_query_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_get_graph_neighbors",
+      "target": "api_routers_graph_py_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_graph_rationale_179",
+      "target": "api_routers_graph_get_graph_neighbors",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -23845,6 +24912,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_make_app_with_mock_session",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_anomaly_api.py",
@@ -23856,6 +24935,54 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_classifications_returns_404_for_unknown_object",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_classifications_returns_history_newest_first",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_cross_matches_returns_404_for_unknown_object",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_cross_matches_ordered_by_angular_separation",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_anomaly_api.py",
@@ -23865,6 +24992,42 @@
       "source": "tests_test_anomaly_api_rationale_197",
       "target": "tests_test_anomaly_api_test_anomalies_returns_empty_list_when_none_found",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L206",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_anomalies_returns_empty_list_when_none_found",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L249",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_anomalies_returns_flagged_objects_with_explanation",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_anomaly_api.py",
+      "source_location": "L273",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_anomaly_api_test_objects_router_registered_in_app",
+      "target": "testclient"
     },
     {
       "relation": "references",
@@ -26195,6 +27358,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_fits_export_200_with_content_type",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26204,6 +27379,18 @@
       "source": "tests_test_export_api_rationale_139",
       "target": "tests_test_export_api_test_fits_export_content_disposition_uses_catalog_name",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_fits_export_content_disposition_uses_catalog_name",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26217,6 +27404,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_fits_export_filename_falls_back_to_uuid",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26226,6 +27425,18 @@
       "source": "tests_test_export_api_rationale_184",
       "target": "tests_test_export_api_test_fits_export_streams_body",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L195",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_fits_export_streams_body",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26239,6 +27450,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L210",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_fits_export_404_for_unknown_uuid",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26248,6 +27471,18 @@
       "source": "tests_test_export_api_rationale_219",
       "target": "tests_test_export_api_test_fits_export_404_when_no_cutout_prefix",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_fits_export_404_when_no_cutout_prefix",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26261,6 +27496,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L249",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_200_with_content_type",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26270,6 +27517,18 @@
       "source": "tests_test_export_api_rationale_258",
       "target": "tests_test_export_api_test_csv_export_has_correct_columns",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L265",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_has_correct_columns",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26283,6 +27542,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L299",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_data_row_matches_object",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26292,6 +27563,18 @@
       "source": "tests_test_export_api_rationale_319",
       "target": "tests_test_export_api_test_csv_export_content_disposition_uses_catalog_name",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L326",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_content_disposition_uses_catalog_name",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26305,6 +27588,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L344",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_content_disposition_falls_back_to_uuid",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26314,6 +27609,18 @@
       "source": "tests_test_export_api_rationale_354",
       "target": "tests_test_export_api_test_csv_export_404_for_unknown_uuid",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L359",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_404_for_unknown_uuid",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26327,6 +27634,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L374",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_csv_export_classification_fields_none_when_no_classification",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26336,6 +27655,18 @@
       "source": "tests_test_export_api_rationale_392",
       "target": "tests_test_export_api_test_votable_export_200_with_content_type",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L399",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_votable_export_200_with_content_type",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26349,6 +27680,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L417",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_votable_export_parseable_by_astropy",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26358,6 +27701,18 @@
       "source": "tests_test_export_api_rationale_428",
       "target": "tests_test_export_api_test_votable_export_contains_correct_data",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L447",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_votable_export_contains_correct_data",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26371,6 +27726,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L468",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_votable_export_404_for_unknown_uuid",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26380,6 +27747,18 @@
       "source": "tests_test_export_api_rationale_476",
       "target": "tests_test_export_api_test_votable_export_content_disposition_uses_catalog_name",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L483",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_votable_export_content_disposition_uses_catalog_name",
+      "target": "testclient"
     },
     {
       "relation": "rationale_for",
@@ -26393,6 +27772,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L501",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_votable_export_content_disposition_falls_back_to_uuid",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26404,6 +27795,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L524",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_classification_scores_populated_from_latest_classification",
+      "target": "testclient"
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_export_api.py",
@@ -26412,6 +27815,927 @@
       "_origin": "ast",
       "source": "tests_test_export_api_rationale_536",
       "target": "tests_test_export_api_test_classification_scores_none_when_no_classification",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_export_api.py",
+      "source_location": "L543",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_export_api_test_classification_scores_none_when_no_classification",
+      "target": "testclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L252",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_endpoints_registered_in_openapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L201",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_filters_null_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L192",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_not_in_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_returns_503_on_neo4j_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L172",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_returns_catalog_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_returns_contained_by",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_returns_contains_children",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_all_filters_optional",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_is_anomaly_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_is_parameterized_not_interpolated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_magnitude_max_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_pagination",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_returns_503_on_neo4j_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api",
+      "target": "tests_test_graph_query_api_test_graph_query_returns_matching_objects",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_1",
+      "target": "tests_test_graph_query_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_23",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_endpoints_registered_in_openapi",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_filters_null_entries",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_not_in_graph",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_catalog_entries",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_contained_by",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_contains_children",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_all_filters_optional",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_is_anomaly_filter",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L92",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_is_parameterized_not_interpolated",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_magnitude_max_filter",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_pagination",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_returns_matching_objects",
+      "target": "tests_test_graph_query_api_mock_neo4j_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_graph_client",
+      "target": "tests_test_graph_query_api_graph_client_enter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_graph_client",
+      "target": "tests_test_graph_query_api_graph_client_exit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_graph_client",
+      "target": "tests_test_graph_query_api_graph_client_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_32",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_endpoints_registered_in_openapi",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L211",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_filters_null_entries",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_not_in_graph",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_503_on_neo4j_error",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_catalog_entries",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_contained_by",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_neighbors_returns_contains_children",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_all_filters_optional",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_is_anomaly_filter",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_is_parameterized_not_interpolated",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_magnitude_max_filter",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_pagination",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_returns_503_on_neo4j_error",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_test_graph_query_returns_matching_objects",
+      "target": "tests_test_graph_query_api_graph_client",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_graph_client_init",
+      "target": "testclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_graph_client_enter",
+      "target": "testclient",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_name_search_api.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_name_search_api_make_app_with_mock_session",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_404_for_unknown_uuid",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L335",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_anomaly_explanation_present_when_flagged",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L301",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_classification_panel",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L204",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cross_matches_ordered_by_separation",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L402",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_null_when_no_prefix",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L384",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_cutout_url_signed_when_prefix_present",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L468",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_endpoint_registered_in_openapi",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L252",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_ned_external_url",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L362",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_no_classification_returns_null",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L426",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_physical_properties_included",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_returns_full_record",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_simbad_external_url",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L451",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_source_observation_uuid_present",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_object_detail_api.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_object_detail_api_test_object_detail_unknown_catalog_has_null_url",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_empty_list_returns_200_empty_array",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L218",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_multiple_observations_returned",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_observation_with_no_steps",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L187",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_pipeline_status_values_preserved",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_required_fields_present",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_single_observation_structure",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_observations_api.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_observations_api_testobservationslist_test_steps_included_in_response",
+      "target": "testclient"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_search_api.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_search_api_make_app_with_mock_session",
+      "target": "testclient"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L91",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_91",
+      "target": "tests_test_graph_query_api_test_graph_query_is_parameterized_not_interpolated",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L193",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_193",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_not_in_graph",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L202",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_202",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_filters_null_entries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L228",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_228",
+      "target": "tests_test_graph_query_api_test_graph_query_returns_503_on_neo4j_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_graph_query_api_rationale_238",
+      "target": "tests_test_graph_query_api_test_graph_neighbors_returns_503_on_neo4j_error",
       "confidence_score": 1.0
     },
     {
@@ -31247,6 +33571,124 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L36",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_app_objects_uuid_graphpanel_graphpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_app_objects_uuid_graphpanel_neighborcard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_lib_api",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_lib_api_fetchgraphneighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_types_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_types_object_graphneighbornode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel",
+      "target": "web_src_types_object_graphneighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_app_objects_uuid_graphpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/app/objects/[uuid]/GraphPanel.tsx",
+      "source_location": "L42",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_graphpanel_graphpanel",
+      "target": "web_src_lib_api_fetchgraphneighbors"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/app/objects/[uuid]/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_app_objects_uuid_page",
+      "target": "web_src_app_objects_uuid_graphpanel_graphpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "web/src/app/objects/[uuid]/MaskOverlay.tsx",
       "source_location": "L11",
       "weight": 1.0,
@@ -31317,7 +33759,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_app_objects_uuid_page",
@@ -31365,7 +33807,7 @@
       "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L4",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_app_objects_uuid_page",
@@ -31387,7 +33829,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_app_objects_uuid_page",
@@ -31398,7 +33840,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L6",
+      "source_location": "L7",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_app_objects_uuid_page",
@@ -31435,7 +33877,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/app/objects/[uuid]/page.tsx",
-      "source_location": "L15",
+      "source_location": "L16",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_app_objects_uuid_page_objectpage",
@@ -33039,6 +35481,17 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_lib_api",
+      "target": "web_src_lib_api_fetchgraphneighbors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/lib/api.ts",
       "source_location": "L101",
       "weight": 1.0,
       "_origin": "ast",
@@ -33155,6 +35608,18 @@
       "_origin": "ast",
       "source": "web_src_lib_api",
       "target": "web_src_types_object",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_lib_api",
+      "target": "web_src_types_object_graphneighbors",
       "confidence_score": 1.0
     },
     {
@@ -33424,6 +35889,39 @@
       "_origin": "ast",
       "source": "web_src_types_object",
       "target": "web_src_types_object_crossmatchdetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L55",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_graphcatalogentry",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_graphneighbornode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/src/types/object.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_src_types_object",
+      "target": "web_src_types_object_graphneighbors",
       "confidence_score": 1.0
     },
     {
@@ -36466,5 +38964,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "c1f875179177317f3fae3c1f0585b5ff16a4d53b"
+  "built_at_commit": "736c43ff9422555fb93e784599a7f3d855b9d972"
 }
