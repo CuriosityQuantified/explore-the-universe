@@ -284,6 +284,7 @@ class StructuredSearchFilters(BaseModel):
     type: Optional[List[_TypeStr]] = Field(None, max_length=50, description="One or more classified_object_type values (OR within list, max 50)")
     magnitude_min: Optional[float] = Field(None, description="Minimum catalog_magnitude (inclusive)")
     magnitude_max: Optional[float] = Field(None, description="Maximum catalog_magnitude (inclusive)")
+    redshift_min: Optional[float] = Field(None, description="Minimum catalog_redshift (inclusive)")
     redshift_max: Optional[float] = Field(None, description="Maximum catalog_redshift (inclusive)")
     is_anomaly: Optional[bool] = Field(None, description="When true, restrict to anomaly-flagged objects only")
     observation_uuid: Optional[str] = Field(None, description="Scope results to one observation UUID")
@@ -337,6 +338,8 @@ def structured_search_objects(
         query = query.filter(AstronomicalObject.catalog_magnitude >= filters.magnitude_min)
     if filters.magnitude_max is not None:
         query = query.filter(AstronomicalObject.catalog_magnitude <= filters.magnitude_max)
+    if filters.redshift_min is not None:
+        query = query.filter(AstronomicalObject.catalog_redshift >= filters.redshift_min)
     if filters.redshift_max is not None:
         query = query.filter(AstronomicalObject.catalog_redshift <= filters.redshift_max)
     if filters.is_anomaly is not None:

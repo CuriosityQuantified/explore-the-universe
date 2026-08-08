@@ -38,6 +38,7 @@ export default function QueryBuilder({ onResults, onLoading, onError, offset = 0
   const [selectedTypes, setSelectedTypes] = useState<string[]>([]);
   const [magnitudeMin, setMagnitudeMin] = useState("");
   const [magnitudeMax, setMagnitudeMax] = useState("");
+  const [redshiftMin, setRedshiftMin] = useState("");
   const [redshiftMax, setRedshiftMax] = useState("");
   const [anomalyOnly, setAnomalyOnly] = useState(false);
   const [observationUuid, setObservationUuid] = useState("");
@@ -91,6 +92,7 @@ export default function QueryBuilder({ onResults, onLoading, onError, offset = 0
     if (selectedTypes.length > 0) filters.type = selectedTypes;
     if (magnitudeMin !== "") filters.magnitude_min = parseFloat(magnitudeMin);
     if (magnitudeMax !== "") filters.magnitude_max = parseFloat(magnitudeMax);
+    if (redshiftMin !== "") filters.redshift_min = parseFloat(redshiftMin);
     if (redshiftMax !== "") filters.redshift_max = parseFloat(redshiftMax);
     if (anomalyOnly) filters.is_anomaly = true;
     if (observationUuid !== "") filters.observation_uuid = observationUuid;
@@ -125,7 +127,7 @@ export default function QueryBuilder({ onResults, onLoading, onError, offset = 0
       >
         <span className="flex items-center gap-2">
           <span>Filters</span>
-          {(selectedTypes.length > 0 || magnitudeMin || magnitudeMax || redshiftMax || anomalyOnly || observationUuid) && (
+          {(selectedTypes.length > 0 || magnitudeMin || magnitudeMax || redshiftMin || redshiftMax || anomalyOnly || observationUuid) && (
             <span className="inline-block rounded-full bg-indigo-600 px-2 py-0.5 text-xs text-white">
               active
             </span>
@@ -191,20 +193,32 @@ export default function QueryBuilder({ onResults, onLoading, onError, offset = 0
             </div>
           </div>
 
-          {/* Redshift max */}
+          {/* Redshift range */}
           <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-zinc-400">
-              Redshift Max
+              Redshift
             </p>
-            <input
-              type="number"
-              step="0.001"
-              min="0"
-              placeholder="e.g. 0.5"
-              value={redshiftMax}
-              onChange={(e) => setRedshiftMax(e.target.value)}
-              className="w-32 rounded bg-zinc-900 border border-zinc-600 px-2 py-1 text-sm text-zinc-200 placeholder-zinc-500 focus:border-indigo-400 focus:outline-none"
-            />
+            <div className="flex items-center gap-2">
+              <input
+                type="number"
+                step="0.001"
+                min="0"
+                placeholder="Min"
+                value={redshiftMin}
+                onChange={(e) => setRedshiftMin(e.target.value)}
+                className="w-24 rounded bg-zinc-900 border border-zinc-600 px-2 py-1 text-sm text-zinc-200 placeholder-zinc-500 focus:border-indigo-400 focus:outline-none"
+              />
+              <span className="text-zinc-500 text-sm">–</span>
+              <input
+                type="number"
+                step="0.001"
+                min="0"
+                placeholder="Max"
+                value={redshiftMax}
+                onChange={(e) => setRedshiftMax(e.target.value)}
+                className="w-24 rounded bg-zinc-900 border border-zinc-600 px-2 py-1 text-sm text-zinc-200 placeholder-zinc-500 focus:border-indigo-400 focus:outline-none"
+              />
+            </div>
           </div>
 
           {/* Anomaly toggle */}
@@ -285,6 +299,7 @@ export default function QueryBuilder({ onResults, onLoading, onError, offset = 0
                 setSelectedTypes([]);
                 setMagnitudeMin("");
                 setMagnitudeMax("");
+                setRedshiftMin("");
                 setRedshiftMax("");
                 setAnomalyOnly(false);
                 setObservationUuid("");

@@ -30,6 +30,7 @@ export interface StructuredSearchFilters {
   type?: string[];
   magnitude_min?: number;
   magnitude_max?: number;
+  redshift_min?: number;
   redshift_max?: number;
   is_anomaly?: boolean;
   observation_uuid?: string;

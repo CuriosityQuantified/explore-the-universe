@@ -232,7 +232,7 @@
       "_origin": "ast",
       "id": "alembic_env",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "env.py",
       "norm_label": "env.py"
     },
     {
@@ -243,7 +243,7 @@
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "env.py",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -254,7 +254,7 @@
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
       "community": 14,
-      "community_name": "ProcessingStep",
+      "community_name": "env.py",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -848,7 +848,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "routers/ingest.py"
     },
     {
@@ -859,7 +859,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestrequest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingestrequest"
     },
     {
@@ -870,7 +870,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_basemodel",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "basemodel"
     },
     {
@@ -881,7 +881,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestresponse",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingestresponse"
     },
     {
@@ -892,7 +892,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingeststatusresponse",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingeststatusresponse"
     },
     {
@@ -903,7 +903,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_post",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "post"
     },
     {
@@ -914,7 +914,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_trigger_ingest",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "trigger_ingest()"
     },
     {
@@ -925,7 +925,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_session",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "session"
     },
     {
@@ -936,7 +936,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_get",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "get"
     },
     {
@@ -947,7 +947,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_get_ingest_status",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "get_ingest_status()"
     },
     {
@@ -958,7 +958,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_1",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post..."
     },
     {
@@ -969,7 +969,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_25",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "request body for post /api/ingest."
     },
     {
@@ -980,7 +980,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_38",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "response body for post /api/ingest (202 accepted)."
     },
     {
@@ -991,7 +991,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_49",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "response body for get /api/ingest/{observation_uuid}/status."
     },
     {
@@ -1002,7 +1002,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_66",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "trigger the ingestion pipeline for a jwst observation. creates an observation..."
     },
     {
@@ -1013,7 +1013,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_140",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "check the status of an ingestion pipeline. returns the observation details..."
     },
     {
@@ -1185,7 +1185,7 @@
       "label": "StructuredSearchResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L296",
+      "source_location": "L297",
       "_origin": "ast",
       "id": "api_routers_objects_structuredsearchresponse",
       "community": 71,
@@ -1207,7 +1207,7 @@
       "label": "structured_search_objects()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L302",
+      "source_location": "L303",
       "_origin": "ast",
       "id": "api_routers_objects_structured_search_objects",
       "community": 71,
@@ -1229,7 +1229,7 @@
       "label": "get_object_types()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L380",
+      "source_location": "L383",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_types",
       "community": 71,
@@ -1240,7 +1240,7 @@
       "label": "search_objects()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L394",
+      "source_location": "L397",
       "_origin": "ast",
       "id": "api_routers_objects_search_objects",
       "community": 71,
@@ -1251,7 +1251,7 @@
       "label": "_catalog_external_url()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L551",
+      "source_location": "L554",
       "_origin": "ast",
       "id": "api_routers_objects_catalog_external_url",
       "community": 71,
@@ -1262,7 +1262,7 @@
       "label": "CrossMatchDetailResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L558",
+      "source_location": "L561",
       "_origin": "ast",
       "id": "api_routers_objects_crossmatchdetailresponse",
       "community": 71,
@@ -1273,7 +1273,7 @@
       "label": "ClassificationDetailResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L567",
+      "source_location": "L570",
       "_origin": "ast",
       "id": "api_routers_objects_classificationdetailresponse",
       "community": 71,
@@ -1284,7 +1284,7 @@
       "label": "ObjectDetailResponse",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L578",
+      "source_location": "L581",
       "_origin": "ast",
       "id": "api_routers_objects_objectdetailresponse",
       "community": 71,
@@ -1295,7 +1295,7 @@
       "label": "get_object_detail()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L597",
+      "source_location": "L600",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_detail",
       "community": 71,
@@ -1306,7 +1306,7 @@
       "label": "_safe_filename()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L676",
+      "source_location": "L679",
       "_origin": "ast",
       "id": "api_routers_objects_safe_filename",
       "community": 71,
@@ -1317,7 +1317,7 @@
       "label": "_export_filename()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L684",
+      "source_location": "L687",
       "_origin": "ast",
       "id": "api_routers_objects_export_filename",
       "community": 71,
@@ -1328,7 +1328,7 @@
       "label": "_get_object_or_404()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L690",
+      "source_location": "L693",
       "_origin": "ast",
       "id": "api_routers_objects_get_object_or_404",
       "community": 71,
@@ -1339,7 +1339,7 @@
       "label": "_get_latest_classification()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L702",
+      "source_location": "L705",
       "_origin": "ast",
       "id": "api_routers_objects_get_latest_classification",
       "community": 71,
@@ -1350,7 +1350,7 @@
       "label": "export_fits()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L713",
+      "source_location": "L716",
       "_origin": "ast",
       "id": "api_routers_objects_export_fits",
       "community": 71,
@@ -1361,7 +1361,7 @@
       "label": "export_csv()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L754",
+      "source_location": "L757",
       "_origin": "ast",
       "id": "api_routers_objects_export_csv",
       "community": 71,
@@ -1372,7 +1372,7 @@
       "label": "export_votable()",
       "file_type": "code",
       "source_file": "api/routers/objects.py",
-      "source_location": "L800",
+      "source_location": "L803",
       "_origin": "ast",
       "id": "api_routers_objects_export_votable",
       "community": 71,
@@ -1460,9 +1460,9 @@
       "label": "Structured query over AstronomicalObject records with optional filters. All\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L307",
+      "source_location": "L308",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_307",
+      "id": "api_routers_objects_rationale_308",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "structured query over astronomicalobject records with optional filters. all..."
@@ -1471,9 +1471,9 @@
       "label": "Return the list of distinct classified_object_type values present in the DB.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L383",
+      "source_location": "L386",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_383",
+      "id": "api_routers_objects_rationale_386",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "return the list of distinct classified_object_type values present in the db."
@@ -1482,9 +1482,9 @@
       "label": "Cone search, type filter, or SIMBAD name search over AstronomicalObject\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L405",
+      "source_location": "L408",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_405",
+      "id": "api_routers_objects_rationale_408",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "cone search, type filter, or simbad name search over astronomicalobject..."
@@ -1493,9 +1493,9 @@
       "label": "Return the full record for a single astronomical object. Includes a signed\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L601",
+      "source_location": "L604",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_601",
+      "id": "api_routers_objects_rationale_604",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "return the full record for a single astronomical object. includes a signed..."
@@ -1504,9 +1504,9 @@
       "label": "Sanitize a string for use in a Content-Disposition filename token. Strips\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L677",
+      "source_location": "L680",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_677",
+      "id": "api_routers_objects_rationale_680",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "sanitize a string for use in a content-disposition filename token. strips..."
@@ -1515,9 +1515,9 @@
       "label": "Return a safe Content-Disposition filename for an object export.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L685",
+      "source_location": "L688",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_685",
+      "id": "api_routers_objects_rationale_688",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "return a safe content-disposition filename for an object export."
@@ -1526,9 +1526,9 @@
       "label": "Fetch AstronomicalObject by UUID or raise 404.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L691",
+      "source_location": "L694",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_691",
+      "id": "api_routers_objects_rationale_694",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "fetch astronomicalobject by uuid or raise 404."
@@ -1537,9 +1537,9 @@
       "label": "Return latest ObjectClassification for an object, or None.",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L703",
+      "source_location": "L706",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_703",
+      "id": "api_routers_objects_rationale_706",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "return latest objectclassification for an object, or none."
@@ -1548,9 +1548,9 @@
       "label": "Stream the cutout FITS file for an object from MinIO. Returns 404 if the UUID\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L717",
+      "source_location": "L720",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_717",
+      "id": "api_routers_objects_rationale_720",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "stream the cutout fits file for an object from minio. returns 404 if the uuid..."
@@ -1559,9 +1559,9 @@
       "label": "Return a single-row CSV with the object's key attributes. Returns 404 if the\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L758",
+      "source_location": "L761",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_758",
+      "id": "api_routers_objects_rationale_761",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "return a single-row csv with the object's key attributes. returns 404 if the..."
@@ -1570,9 +1570,9 @@
       "label": "Return a VOTable XML document with the object's key attributes. Returns 404 if\u2026",
       "file_type": "rationale",
       "source_file": "api/routers/objects.py",
-      "source_location": "L804",
+      "source_location": "L807",
       "_origin": "ast",
-      "id": "api_routers_objects_rationale_804",
+      "id": "api_routers_objects_rationale_807",
       "community": 71,
       "community_name": "objects.py",
       "norm_label": "return a votable xml document with the object's key attributes. returns 404 if..."
@@ -1584,7 +1584,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_observations",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "observations.py"
     },
@@ -1595,7 +1595,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "api_routers_observations_processingstepsummary",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "processingstepsummary"
     },
@@ -1606,7 +1606,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_observations_py_basemodel",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "basemodel"
     },
@@ -1617,7 +1617,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "api_routers_observations_observationsummaryresponse",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "observationsummaryresponse"
     },
@@ -1628,7 +1628,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_observations_py_get",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "get"
     },
@@ -1639,7 +1639,7 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "api_routers_observations_list_observations",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "list_observations()"
     },
@@ -1650,7 +1650,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_observations_py_session",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "session"
     },
@@ -1661,7 +1661,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_observations_rationale_1",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "observations list api endpoint. get /api/observations \u2014 all ingested..."
     },
@@ -1672,7 +1672,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "api_routers_observations_rationale_41",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "return all ingested observations with pipeline status and object counts."
     },
@@ -1683,8 +1683,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_test_upload",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "test_upload.py"
     },
     {
@@ -1694,8 +1694,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_test_upload_py_post",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 89,
+      "community_name": "upload_test_file",
       "norm_label": "post"
     },
     {
@@ -1705,8 +1705,8 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "api_routers_test_upload_upload_test_file",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 89,
+      "community_name": "upload_test_file",
       "norm_label": "upload_test_file()"
     },
     {
@@ -1716,8 +1716,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "uploadfile",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 89,
+      "community_name": "upload_test_file",
       "norm_label": "uploadfile"
     },
     {
@@ -1727,8 +1727,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_test_upload_py_session",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 89,
+      "community_name": "upload_test_file",
       "norm_label": "session"
     },
     {
@@ -1738,8 +1738,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "api_routers_test_upload_rationale_20",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 89,
+      "community_name": "upload_test_file",
       "norm_label": "temporary test endpoint: uploads a file to minio and creates an observation..."
     },
     {
@@ -1782,8 +1782,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "api_routers_tiles_tilemetadataresponse",
-      "community": 10,
-      "community_name": "tiles.py",
+      "community": 60,
+      "community_name": "ProcessingStep",
       "norm_label": "tilemetadataresponse"
     },
     {
@@ -1892,8 +1892,8 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_51",
-      "community": 10,
-      "community_name": "tiles.py",
+      "community": 60,
+      "community_name": "ProcessingStep",
       "norm_label": "tile generation metadata from the generate_tiles processing step."
     },
     {
@@ -2486,8 +2486,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier",
-      "community": 105,
-      "community_name": "load_or_create_classifier",
+      "community": 101,
+      "community_name": "predict_object_types",
       "norm_label": "classifier.py"
     },
     {
@@ -2497,8 +2497,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_load_or_create_classifier",
-      "community": 105,
-      "community_name": "load_or_create_classifier",
+      "community": 101,
+      "community_name": "predict_object_types",
       "norm_label": "load_or_create_classifier()"
     },
     {
@@ -2552,8 +2552,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_1",
-      "community": 105,
-      "community_name": "load_or_create_classifier",
+      "community": 101,
+      "community_name": "predict_object_types",
       "norm_label": "random forest classifier for astronomical object morphological type prediction...."
     },
     {
@@ -2563,8 +2563,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "pipeline_ml_models_classifier_rationale_65",
-      "community": 105,
-      "community_name": "load_or_create_classifier",
+      "community": 101,
+      "community_name": "predict_object_types",
       "norm_label": "download and deserialize the pre-trained rf classifier from s3. returns none if..."
     },
     {
@@ -2915,7 +2915,7 @@
       "source_location": "L351",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_finalize_empty",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "_finalize_empty()"
     },
@@ -2926,7 +2926,7 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_py_uuid",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "uuid"
     },
@@ -2992,7 +2992,7 @@
       "source_location": "L357",
       "_origin": "ast",
       "id": "pipeline_tasks_detect_anomalies_rationale_357",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "mark step and observation completed when there are no objects to score."
     },
@@ -3300,8 +3300,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_download_py_task",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "task"
     },
     {
@@ -3311,8 +3311,8 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "pipeline_tasks_download_download_fits",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "download_fits()"
     },
     {
@@ -3333,8 +3333,8 @@
       "source_location": "L47",
       "_origin": "ast",
       "id": "pipeline_tasks_download_rationale_47",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "download calibrated fits files from mast and upload to minio. receives a pre-..."
     },
     {
@@ -3663,8 +3663,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam",
-      "community": 11,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "segment_sam.py"
     },
     {
@@ -3675,7 +3675,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_find_sci_extension",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -3686,7 +3686,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_get_sam_processor",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_get_sam_processor()"
     },
     {
@@ -3697,7 +3697,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_fits_to_sam_rgb",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_fits_to_sam_rgb()"
     },
     {
@@ -3708,7 +3708,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_py_ndarray",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "ndarray"
     },
     {
@@ -3719,7 +3719,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_generate_sam_masks",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_generate_sam_masks()"
     },
     {
@@ -3730,7 +3730,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_generate_elliptical_mask",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_generate_elliptical_mask()"
     },
     {
@@ -3741,7 +3741,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_encode_mask_to_rle",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_encode_mask_to_rle()"
     },
     {
@@ -3752,7 +3752,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_merge_boundary_masks",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_merge_boundary_masks()"
     },
     {
@@ -3763,7 +3763,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_py_uuid",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "uuid"
     },
     {
@@ -3774,7 +3774,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_compute_normalization_parameters",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "_compute_normalization_parameters()"
     },
     {
@@ -3785,7 +3785,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_py_task",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "task"
     },
     {
@@ -3796,7 +3796,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_segment_sam",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "segment_sam()"
     },
     {
@@ -3806,8 +3806,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_1",
-      "community": 11,
-      "community_name": "segment_sam.py",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "sam 3 segmentation with sep elliptical fallback celery task. generates pixel-..."
     },
     {
@@ -3818,7 +3818,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_60",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -3829,7 +3829,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_99",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "lazily initialize sam 3 model and processor. returns sam3processor if cuda is..."
     },
     {
@@ -3840,7 +3840,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_151",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "convert fits float32 data to sam-compatible uint8 rgb. applies zscale + asinh..."
     },
     {
@@ -3851,7 +3851,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_188",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "generate sam 3 masks for a batch of detections. uses point prompts (centroids)..."
     },
     {
@@ -3862,7 +3862,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_261",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "generate a binary elliptical aperture mask from sep parameters. creates a..."
     },
     {
@@ -3873,7 +3873,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_308",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "encode a binary mask to coco rle format. uses pycocotools for standard coco rle..."
     },
     {
@@ -3884,7 +3884,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_331",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "merge masks for duplicate objects in overlapping sub-region zones. after all..."
     },
     {
@@ -3895,7 +3895,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_478",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "compute zscale normalization parameters from a subsample of the image. same..."
     },
     {
@@ -3906,7 +3906,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_segment_sam_rationale_508",
       "community": 11,
-      "community_name": "segment_sam.py",
+      "community_name": "segment_sam",
       "norm_label": "generate segmentation masks for all detected astronomical objects. attempts sam..."
     },
     {
@@ -3972,7 +3972,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_get_pyvips",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_get_pyvips()"
     },
     {
@@ -3983,7 +3983,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_find_sci_extension",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -3994,7 +3994,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_compute_normalization_parameters",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_compute_normalization_parameters()"
     },
     {
@@ -4005,7 +4005,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_normalize_chunk",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_normalize_chunk()"
     },
     {
@@ -4016,7 +4016,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_process_fits_to_tiff",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_process_fits_to_tiff()"
     },
     {
@@ -4026,8 +4026,8 @@
       "source_location": "L294",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_dzi_pyramid",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "_generate_dzi_pyramid()"
     },
     {
@@ -4037,8 +4037,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_upload_tiles_to_minio",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "_upload_tiles_to_minio()"
     },
     {
@@ -4048,8 +4048,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_py_task",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "task"
     },
     {
@@ -4059,8 +4059,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_tiles",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "generate_tiles()"
     },
     {
@@ -4082,7 +4082,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_55",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "lazily import pyvips, setting dyld_library_path for macos homebrew."
     },
     {
@@ -4093,7 +4093,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_84",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -4104,7 +4104,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_123",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "compute zscale normalization parameters from a subsample of the image. samples..."
     },
     {
@@ -4115,7 +4115,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_162",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "normalize a chunk of fits data to 8-bit using pre-computed parameters. applies..."
     },
     {
@@ -4126,7 +4126,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_194",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "process a fits file into a tiled, pyramidal tiff using chunked reads. memory..."
     },
     {
@@ -4136,8 +4136,8 @@
       "source_location": "L295",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_295",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "generate dzi tile pyramid from a pyramidal tiff. uses pyvips dzsave to create a..."
     },
     {
@@ -4147,8 +4147,8 @@
       "source_location": "L348",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_348",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi..."
     },
     {
@@ -4158,8 +4158,8 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_433",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "generate dzi tile pyramids from fits data and upload to minio. receives the..."
     },
     {
@@ -4370,8 +4370,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "shared_config_settings",
-      "community": 92,
-      "community_name": "Settings",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "settings"
     },
     {
@@ -4381,8 +4381,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "basesettings",
-      "community": 92,
-      "community_name": "Settings",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "basesettings"
     },
     {
@@ -4403,8 +4403,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "shared_models_base",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "base"
     },
     {
@@ -4414,8 +4414,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "declarativebase",
-      "community": 14,
-      "community_name": "ProcessingStep",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "declarativebase"
     },
     {
@@ -4425,8 +4425,8 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "shared_models_pipelinestatus",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "pipelinestatus"
     },
     {
@@ -4436,8 +4436,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "str",
-      "community": 60,
-      "community_name": "Observation",
+      "community": 63,
+      "community_name": "models.py",
       "norm_label": "str"
     },
     {
@@ -4470,7 +4470,7 @@
       "_origin": "ast",
       "id": "shared_models_observation",
       "community": 60,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "norm_label": "observation"
     },
     {
@@ -4480,7 +4480,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "shared_models_processingstep",
-      "community": 14,
+      "community": 60,
       "community_name": "ProcessingStep",
       "norm_label": "processingstep"
     },
@@ -5217,8 +5217,8 @@
       "source_location": "L414",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 101,
+      "community_name": "predict_object_types",
       "norm_label": "test_load_or_create_classifier_returns_none_when_no_s3_model()"
     },
     {
@@ -5514,8 +5514,8 @@
       "source_location": "L415",
       "_origin": "ast",
       "id": "tests_test_classification_schema_rationale_415",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
+      "community": 101,
+      "community_name": "predict_object_types",
       "norm_label": "load_or_create_classifier returns none (not an exception) when s3 has no model."
     },
     {
@@ -7505,8 +7505,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "tests_test_name_search_api_make_app_with_mock_session",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "_make_app_with_mock_session()"
     },
     {
@@ -7516,8 +7516,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_name_search_api_make_obj",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "_make_obj()"
     },
     {
@@ -7527,8 +7527,8 @@
       "source_location": "L54",
       "_origin": "ast",
       "id": "tests_test_name_search_api_mock_session_with_objects",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "_mock_session_with_objects()"
     },
     {
@@ -7538,8 +7538,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "testnamesearch"
     },
     {
@@ -7549,8 +7549,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_resolves_and_local_match_returned",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_name_resolves_and_local_match_returned()"
     },
     {
@@ -7560,8 +7560,8 @@
       "source_location": "L95",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_resolves_but_no_local_match",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_name_resolves_but_no_local_match()"
     },
     {
@@ -7571,8 +7571,8 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_not_found_in_simbad",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_name_not_found_in_simbad()"
     },
     {
@@ -7582,8 +7582,8 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_simbad_unreachable_returns_503",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_simbad_unreachable_returns_503()"
     },
     {
@@ -7593,8 +7593,8 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_multiple_matches_all_returned",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_multiple_matches_all_returned()"
     },
     {
@@ -7604,8 +7604,8 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_search_response_includes_anomaly_and_type_fields",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_name_search_response_includes_anomaly_and_type_fields()"
     },
     {
@@ -7615,8 +7615,8 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_search_pagination",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_name_search_pagination()"
     },
     {
@@ -7626,8 +7626,8 @@
       "source_location": "L230",
       "_origin": "ast",
       "id": "tests_test_name_search_api_testnamesearch_test_name_search_offset_beyond_results",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": ".test_name_search_offset_beyond_results()"
     },
     {
@@ -7648,8 +7648,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_27",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "return a testclient wired with a mock db session override."
     },
     {
@@ -7659,8 +7659,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_55",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "mock session whose .query().filter().all() returns objects."
     },
     {
@@ -7670,8 +7670,8 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_68",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "ac1: simbad resolves name \u2192 local object within 5 arcsec \u2192 returned."
     },
     {
@@ -7681,8 +7681,8 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_96",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "ac2: simbad resolves but no local objects within 5 arcsec \u2192 empty results, not..."
     },
     {
@@ -7692,8 +7692,8 @@
       "source_location": "L122",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_122",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "ac2 variant: simbad returns none (name not found) \u2192 empty results with null..."
     },
     {
@@ -7703,8 +7703,8 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_140",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "ac3: simbad raises runtimeerror (unreachable) \u2192 503 with error detail."
     },
     {
@@ -7714,8 +7714,8 @@
       "source_location": "L156",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_156",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "multiple local objects within 5 arcsec are all returned."
     },
     {
@@ -7725,8 +7725,8 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_180",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "result items include is_anomaly_flagged and classified_object_type."
     },
     {
@@ -7736,8 +7736,8 @@
       "source_location": "L205",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_205",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "pagination parameters limit/offset work for name search."
     },
     {
@@ -7747,8 +7747,8 @@
       "source_location": "L231",
       "_origin": "ast",
       "id": "tests_test_name_search_api_rationale_231",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 81,
+      "community_name": "_make_app_with_mock_session",
       "norm_label": "offset beyond total count returns empty results."
     },
     {
@@ -8632,10 +8632,32 @@
       "norm_label": ".test_redshift_max_filter()"
     },
     {
-      "label": ".test_is_anomaly_true_filter()",
+      "label": ".test_redshift_min_filter()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
       "source_location": "L239",
+      "_origin": "ast",
+      "id": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_filter",
+      "community": 85,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_redshift_min_filter()"
+    },
+    {
+      "label": ".test_redshift_min_and_max_filter()",
+      "file_type": "code",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L251",
+      "_origin": "ast",
+      "id": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_and_max_filter",
+      "community": 85,
+      "community_name": "_make_app_with_mock_session",
+      "norm_label": ".test_redshift_min_and_max_filter()"
+    },
+    {
+      "label": ".test_is_anomaly_true_filter()",
+      "file_type": "code",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L269",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_true_filter",
       "community": 85,
@@ -8646,7 +8668,7 @@
       "label": ".test_is_anomaly_false_filter()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L253",
+      "source_location": "L283",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_false_filter",
       "community": 85,
@@ -8657,7 +8679,7 @@
       "label": ".test_observation_uuid_filter()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L269",
+      "source_location": "L299",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_filter",
       "community": 85,
@@ -8668,7 +8690,7 @@
       "label": ".test_observation_uuid_invalid_returns_422()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L282",
+      "source_location": "L312",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_invalid_returns_422",
       "community": 85,
@@ -8679,7 +8701,7 @@
       "label": ".test_combined_filters_and_together()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L298",
+      "source_location": "L328",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_combined_filters_and_together",
       "community": 85,
@@ -8690,7 +8712,7 @@
       "label": ".test_total_count_in_json_body()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L332",
+      "source_location": "L362",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_total_count_in_json_body",
       "community": 85,
@@ -8701,7 +8723,7 @@
       "label": ".test_x_total_count_header_present()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L346",
+      "source_location": "L376",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_x_total_count_header_present",
       "community": 85,
@@ -8712,7 +8734,7 @@
       "label": ".test_sort_by_magnitude_asc()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L362",
+      "source_location": "L392",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_magnitude_asc",
       "community": 85,
@@ -8723,7 +8745,7 @@
       "label": ".test_sort_by_magnitude_desc()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L374",
+      "source_location": "L404",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_magnitude_desc",
       "community": 85,
@@ -8734,7 +8756,7 @@
       "label": ".test_sort_by_type()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L386",
+      "source_location": "L416",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_type",
       "community": 85,
@@ -8745,7 +8767,7 @@
       "label": ".test_sort_by_angular_separation_falls_back_gracefully()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L398",
+      "source_location": "L428",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_angular_separation_falls_back_gracefully",
       "community": 85,
@@ -8756,7 +8778,7 @@
       "label": ".test_invalid_sort_by_returns_422()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L411",
+      "source_location": "L441",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_invalid_sort_by_returns_422",
       "community": 85,
@@ -8767,7 +8789,7 @@
       "label": ".test_invalid_sort_order_returns_422()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L423",
+      "source_location": "L453",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_invalid_sort_order_returns_422",
       "community": 85,
@@ -8778,7 +8800,7 @@
       "label": ".test_pagination_limit()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L439",
+      "source_location": "L469",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_pagination_limit",
       "community": 85,
@@ -8789,7 +8811,7 @@
       "label": ".test_pagination_offset()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L449",
+      "source_location": "L479",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_pagination_offset",
       "community": 85,
@@ -8800,7 +8822,7 @@
       "label": ".test_pagination_total_count_reflects_full_count_not_page()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L459",
+      "source_location": "L489",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_pagination_total_count_reflects_full_count_not_page",
       "community": 85,
@@ -8811,7 +8833,7 @@
       "label": ".test_limit_out_of_range_returns_422()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L475",
+      "source_location": "L505",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_limit_out_of_range_returns_422",
       "community": 85,
@@ -8822,7 +8844,7 @@
       "label": ".test_limit_max_boundary_accepted()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L485",
+      "source_location": "L515",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_limit_max_boundary_accepted",
       "community": 85,
@@ -8833,7 +8855,7 @@
       "label": ".test_result_item_has_expected_fields()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L499",
+      "source_location": "L529",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_result_item_has_expected_fields",
       "community": 85,
@@ -8844,7 +8866,7 @@
       "label": ".test_empty_results_returns_200_not_404()",
       "file_type": "code",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L525",
+      "source_location": "L555",
       "_origin": "ast",
       "id": "tests_test_structured_search_api_teststructuredsearch_test_empty_results_returns_200_not_404",
       "community": 85,
@@ -8888,9 +8910,9 @@
       "label": "angular_separation sort in pure-filter mode falls back to magnitude sort \u2014\u2026",
       "file_type": "rationale",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L399",
+      "source_location": "L429",
       "_origin": "ast",
-      "id": "tests_test_structured_search_api_rationale_399",
+      "id": "tests_test_structured_search_api_rationale_429",
       "community": 85,
       "community_name": "_make_app_with_mock_session",
       "norm_label": "angular_separation sort in pure-filter mode falls back to magnitude sort \u2014..."
@@ -8899,9 +8921,9 @@
       "label": "Endpoint accepts limit param without error.",
       "file_type": "rationale",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L440",
+      "source_location": "L470",
       "_origin": "ast",
-      "id": "tests_test_structured_search_api_rationale_440",
+      "id": "tests_test_structured_search_api_rationale_470",
       "community": 85,
       "community_name": "_make_app_with_mock_session",
       "norm_label": "endpoint accepts limit param without error."
@@ -8910,9 +8932,9 @@
       "label": "Endpoint accepts offset param without error.",
       "file_type": "rationale",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L450",
+      "source_location": "L480",
       "_origin": "ast",
-      "id": "tests_test_structured_search_api_rationale_450",
+      "id": "tests_test_structured_search_api_rationale_480",
       "community": 85,
       "community_name": "_make_app_with_mock_session",
       "norm_label": "endpoint accepts offset param without error."
@@ -8921,9 +8943,9 @@
       "label": "total_count is the unsliced count (from .count()), not len(results).",
       "file_type": "rationale",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L460",
+      "source_location": "L490",
       "_origin": "ast",
-      "id": "tests_test_structured_search_api_rationale_460",
+      "id": "tests_test_structured_search_api_rationale_490",
       "community": 85,
       "community_name": "_make_app_with_mock_session",
       "norm_label": "total_count is the unsliced count (from .count()), not len(results)."
@@ -8932,9 +8954,9 @@
       "label": "limit=0 is below minimum (ge=1) and should return 422.",
       "file_type": "rationale",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L476",
+      "source_location": "L506",
       "_origin": "ast",
-      "id": "tests_test_structured_search_api_rationale_476",
+      "id": "tests_test_structured_search_api_rationale_506",
       "community": 85,
       "community_name": "_make_app_with_mock_session",
       "norm_label": "limit=0 is below minimum (ge=1) and should return 422."
@@ -8943,9 +8965,9 @@
       "label": "limit=500 (maximum) should be accepted.",
       "file_type": "rationale",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L486",
+      "source_location": "L516",
       "_origin": "ast",
-      "id": "tests_test_structured_search_api_rationale_486",
+      "id": "tests_test_structured_search_api_rationale_516",
       "community": 85,
       "community_name": "_make_app_with_mock_session",
       "norm_label": "limit=500 (maximum) should be accepted."
@@ -9430,8 +9452,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_dashboard_dashboardclient",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "dashboardclient.tsx"
     },
     {
@@ -9441,8 +9463,8 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "web_src_app_dashboard_dashboardclient_status_styles",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "status_styles"
     },
     {
@@ -9452,8 +9474,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "web_src_app_dashboard_dashboardclient_statusbadge",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "statusbadge()"
     },
     {
@@ -9463,8 +9485,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "web_src_app_dashboard_dashboardclient_dashboardclientprops",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "dashboardclientprops"
     },
     {
@@ -9474,8 +9496,8 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "web_src_app_dashboard_dashboardclient_dashboardclient",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "dashboardclient()"
     },
     {
@@ -9485,8 +9507,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_dashboard_page",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "dashboard/page.tsx"
     },
     {
@@ -9496,8 +9518,8 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "web_src_app_dashboard_page_metadata",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "metadata"
     },
     {
@@ -9507,8 +9529,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "web_src_app_dashboard_page_dashboardpage",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "dashboardpage()"
     },
     {
@@ -9573,8 +9595,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_graphpanel",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "graphpanel.tsx"
     },
     {
@@ -9584,8 +9606,8 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_graphpanel_neighborcard",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "neighborcard()"
     },
     {
@@ -9595,8 +9617,8 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_graphpanel_graphpanel",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "graphpanel()"
     },
     {
@@ -9606,8 +9628,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_maskoverlay",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "maskoverlay.tsx"
     },
     {
@@ -9617,8 +9639,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_maskoverlay_decompresscocorle",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "decompresscocorle()"
     },
     {
@@ -9628,8 +9650,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_maskoverlay_masktosvgpath",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "masktosvgpath()"
     },
     {
@@ -9639,8 +9661,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_maskoverlay_maskoverlayprops",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "maskoverlayprops"
     },
     {
@@ -9650,8 +9672,8 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_maskoverlay_maskoverlay",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "maskoverlay()"
     },
     {
@@ -9683,8 +9705,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_page",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "objects/[uuid]/page.tsx"
     },
     {
@@ -9694,8 +9716,8 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_page_objectpageprops",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "objectpageprops"
     },
     {
@@ -9705,8 +9727,8 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "web_src_app_objects_uuid_page_objectpage",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "objectpage()"
     },
     {
@@ -9793,7 +9815,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclient.tsx"
     },
@@ -9805,7 +9827,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient_viewerclientprops",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclientprops"
     },
     {
@@ -9815,7 +9837,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient_viewerclient",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclient()"
     },
@@ -9826,7 +9848,7 @@
       "source_location": "L128",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerclient_rationale_128",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "note: currently all bands share the same tile prefix in minio due to"
     },
@@ -9838,7 +9860,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerloader.tsx"
     },
     {
@@ -9849,7 +9871,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerclient",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerclient"
     },
     {
@@ -9860,7 +9882,7 @@
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerloaderprops",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerloaderprops"
     },
     {
@@ -9870,8 +9892,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerloader",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "viewerloader()"
     },
     {
@@ -9881,8 +9903,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "viewer/[uuid]/page.tsx"
     },
     {
@@ -9892,8 +9914,8 @@
       "source_location": "L4",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page_viewerpageprops",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "viewerpageprops"
     },
     {
@@ -9903,8 +9925,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_page_viewerpage",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "viewerpage()"
     },
     {
@@ -9980,7 +10002,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_components_viewer_bandselector",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "bandselector.tsx"
     },
@@ -9991,7 +10013,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "web_src_components_viewer_bandselector_bandselectorprops",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "bandselectorprops"
     },
@@ -10002,7 +10024,7 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "web_src_components_viewer_bandselector_bandselector",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "bandselector()"
     },
@@ -10014,7 +10036,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinategrid.tsx"
     },
     {
@@ -10025,7 +10047,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_coordinategridprops",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinategridprops"
     },
     {
@@ -10036,7 +10058,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_nice_grid_arcsec",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "nice_grid_arcsec"
     },
     {
@@ -10047,7 +10069,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_gridline",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "gridline"
     },
     {
@@ -10058,7 +10080,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_coordinategrid",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinategrid()"
     },
     {
@@ -10069,7 +10091,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_formatralabel",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatralabel()"
     },
     {
@@ -10080,7 +10102,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinategrid_formatdeclabel",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatdeclabel()"
     },
     {
@@ -10090,8 +10112,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlay.tsx"
     },
     {
@@ -10101,8 +10123,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_coordinateoverlayprops",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlayprops"
     },
     {
@@ -10112,8 +10134,8 @@
       "source_location": "L17",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_coordinateoverlay",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlay()"
     },
     {
@@ -10123,8 +10145,8 @@
       "source_location": "L118",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_updatelivecoordinates",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "updatelivecoordinates()"
     },
     {
@@ -10134,8 +10156,8 @@
       "source_location": "L136",
       "_origin": "ast",
       "id": "web_src_components_viewer_coordinateoverlay_coordinateoverlayhandle",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinateoverlayhandle"
     },
     {
@@ -10145,7 +10167,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustments.tsx"
     },
@@ -10156,7 +10178,7 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_imageadjustmentvalues",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustmentvalues"
     },
@@ -10167,7 +10189,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_defaults",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "defaults"
     },
@@ -10178,7 +10200,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_preset",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "preset"
     },
@@ -10189,7 +10211,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_presets",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "presets"
     },
@@ -10200,7 +10222,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_imageadjustmentsprops",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustmentsprops"
     },
@@ -10211,7 +10233,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_imageadjustments",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "imageadjustments()"
     },
@@ -10222,7 +10244,7 @@
       "source_location": "L206",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_slidercontrol",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "slidercontrol()"
     },
@@ -10233,7 +10255,7 @@
       "source_location": "L255",
       "_origin": "ast",
       "id": "web_src_components_viewer_imageadjustments_buildcssfilter",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "buildcssfilter()"
     },
@@ -10245,7 +10267,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationinfo.tsx"
     },
     {
@@ -10256,7 +10278,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_observationinfoprops",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationinfoprops"
     },
     {
@@ -10267,7 +10289,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_observationinfo",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationinfo()"
     },
     {
@@ -10278,7 +10300,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_infosection",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "infosection()"
     },
     {
@@ -10289,7 +10311,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_inforow",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "inforow()"
     },
     {
@@ -10300,7 +10322,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_observationinfo_tileinfosection",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "tileinfosection()"
     },
     {
@@ -10310,7 +10332,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "scalebar.tsx"
     },
@@ -10321,7 +10343,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_scalebarprops",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "scalebarprops"
     },
@@ -10332,7 +10354,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_nice_arcsec_values",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "nice_arcsec_values"
     },
@@ -10343,7 +10365,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_formatangularsize",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "formatangularsize()"
     },
@@ -10354,7 +10376,7 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "web_src_components_viewer_scalebar_scalebar",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "scalebar()"
     },
@@ -10366,7 +10388,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewer.tsx"
     },
     {
@@ -10377,7 +10399,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_osdmouseevent",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "osdmouseevent"
     },
     {
@@ -10388,7 +10410,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_skyviewerhandle",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewerhandle"
     },
     {
@@ -10399,7 +10421,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_skyviewerprops",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewerprops"
     },
     {
@@ -10410,7 +10432,7 @@
       "_origin": "ast",
       "id": "web_src_components_viewer_skyviewer_skyviewer",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "skyviewer"
     },
     {
@@ -10420,7 +10442,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_components_viewer_viewertoolbar",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "viewertoolbar.tsx"
     },
@@ -10431,7 +10453,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "web_src_components_viewer_viewertoolbar_viewertoolbarprops",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "viewertoolbarprops"
     },
@@ -10442,7 +10464,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "web_src_components_viewer_viewertoolbar_viewertoolbar",
-      "community": 89,
+      "community": 0,
       "community_name": "ViewerClient.tsx",
       "norm_label": "viewertoolbar()"
     },
@@ -10464,8 +10486,8 @@
       "source_location": "L27",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobservations",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "fetchobservations()"
     },
     {
@@ -10475,8 +10497,8 @@
       "source_location": "L46",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobservation",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "fetchobservation()"
     },
     {
@@ -10486,8 +10508,8 @@
       "source_location": "L67",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchwcsparams",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "fetchwcsparams()"
     },
     {
@@ -10497,8 +10519,8 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "web_src_lib_api_gettileurl",
-      "community": 102,
-      "community_name": "viewer/[uuid]/page.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "gettileurl()"
     },
     {
@@ -10508,8 +10530,8 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobjectdetail",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "fetchobjectdetail()"
     },
     {
@@ -10585,8 +10607,8 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchgraphneighbors",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "fetchgraphneighbors()"
     },
     {
@@ -10596,8 +10618,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_lib_coordinates",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "coordinates.ts"
     },
     {
@@ -10607,8 +10629,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "web_src_lib_coordinates_decimaldegreestohms",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "decimaldegreestohms()"
     },
     {
@@ -10618,8 +10640,8 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "web_src_lib_coordinates_decimaldegreestodms",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "decimaldegreestodms()"
     },
     {
@@ -10629,8 +10651,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "web_src_lib_coordinates_formatcoordinates",
-      "community": 100,
-      "community_name": "formatCoordinates",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
       "norm_label": "formatcoordinates()"
     },
     {
@@ -10641,7 +10663,7 @@
       "_origin": "ast",
       "id": "web_src_lib_wcs",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "wcs.ts"
     },
     {
@@ -10652,7 +10674,7 @@
       "_origin": "ast",
       "id": "web_src_lib_wcs_pixeltoradec",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "pixeltoradec()"
     },
     {
@@ -10662,8 +10684,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "web_src_types_object",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "object.ts"
     },
     {
@@ -10673,8 +10695,8 @@
       "source_location": "L6",
       "_origin": "ast",
       "id": "web_src_types_object_crossmatchdetail",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "crossmatchdetail"
     },
     {
@@ -10684,8 +10706,8 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "web_src_types_object_classificationdetail",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "classificationdetail"
     },
     {
@@ -10695,8 +10717,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "web_src_types_object_cocorle",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "cocorle"
     },
     {
@@ -10706,8 +10728,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "web_src_types_object_objectdetail",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "objectdetail"
     },
     {
@@ -10717,8 +10739,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "web_src_types_object_graphneighbornode",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "graphneighbornode"
     },
     {
@@ -10728,8 +10750,8 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "web_src_types_object_graphcatalogentry",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "graphcatalogentry"
     },
     {
@@ -10739,8 +10761,8 @@
       "source_location": "L60",
       "_origin": "ast",
       "id": "web_src_types_object_graphneighbors",
-      "community": 81,
-      "community_name": "object.ts",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "graphneighbors"
     },
     {
@@ -10751,7 +10773,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observation.ts"
     },
     {
@@ -10762,7 +10784,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_wcsparams",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "wcsparams"
     },
     {
@@ -10773,7 +10795,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_tilemetadata",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "tilemetadata"
     },
     {
@@ -10784,7 +10806,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_observationstep",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationstep"
     },
     {
@@ -10794,8 +10816,8 @@
       "source_location": "L63",
       "_origin": "ast",
       "id": "web_src_types_observation_observationsummary",
-      "community": 99,
-      "community_name": "DashboardClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "observationsummary"
     },
     {
@@ -10806,7 +10828,7 @@
       "_origin": "ast",
       "id": "web_src_types_observation_observationdetail",
       "community": 0,
-      "community_name": "observation.ts",
+      "community_name": "ViewerClient.tsx",
       "norm_label": "observationdetail"
     },
     {
@@ -10857,7 +10879,7 @@
       "label": "StructuredSearchResult",
       "file_type": "code",
       "source_file": "web/src/types/search.ts",
-      "source_location": "L46",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "web_src_types_search_structuredsearchresult",
       "community": 87,
@@ -16551,7 +16573,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L551",
+      "source_location": "L554",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16562,7 +16584,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L567",
+      "source_location": "L570",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16584,7 +16606,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L558",
+      "source_location": "L561",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16606,7 +16628,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L754",
+      "source_location": "L757",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16617,7 +16639,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L684",
+      "source_location": "L687",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16628,7 +16650,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L713",
+      "source_location": "L716",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16639,7 +16661,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L800",
+      "source_location": "L803",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16650,7 +16672,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L702",
+      "source_location": "L705",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16683,7 +16705,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L597",
+      "source_location": "L600",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16694,7 +16716,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L690",
+      "source_location": "L693",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16705,7 +16727,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L380",
+      "source_location": "L383",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16749,7 +16771,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L578",
+      "source_location": "L581",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16771,7 +16793,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L676",
+      "source_location": "L679",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16782,7 +16804,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L394",
+      "source_location": "L397",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16793,7 +16815,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L302",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -16815,7 +16837,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L296",
+      "source_location": "L297",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects",
@@ -17048,7 +17070,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L567",
+      "source_location": "L570",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_classificationdetailresponse",
@@ -17059,7 +17081,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L558",
+      "source_location": "L561",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_crossmatchdetailresponse",
@@ -17092,7 +17114,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L578",
+      "source_location": "L581",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_objectdetailresponse",
@@ -17125,7 +17147,7 @@
       "relation": "inherits",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L296",
+      "source_location": "L297",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structuredsearchresponse",
@@ -17227,7 +17249,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L552",
+      "source_location": "L555",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_catalog_external_url",
@@ -17238,7 +17260,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L753",
+      "source_location": "L756",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17250,7 +17272,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L712",
+      "source_location": "L715",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17262,7 +17284,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L799",
+      "source_location": "L802",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17298,7 +17320,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L596",
+      "source_location": "L599",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17310,7 +17332,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L379",
+      "source_location": "L382",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17334,7 +17356,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L393",
+      "source_location": "L396",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17370,7 +17392,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L754",
+      "source_location": "L757",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_csv",
@@ -17382,7 +17404,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L713",
+      "source_location": "L716",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_fits",
@@ -17394,7 +17416,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L800",
+      "source_location": "L803",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_votable",
@@ -17418,7 +17440,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L597",
+      "source_location": "L600",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_detail",
@@ -17430,7 +17452,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L380",
+      "source_location": "L383",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_types",
@@ -17454,7 +17476,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L394",
+      "source_location": "L397",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17466,7 +17488,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L302",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structured_search_objects",
@@ -17511,7 +17533,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L449",
+      "source_location": "L452",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17523,7 +17545,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L642",
+      "source_location": "L645",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_detail",
@@ -17558,7 +17580,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L469",
+      "source_location": "L472",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17570,7 +17592,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L371",
+      "source_location": "L374",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structured_search_objects",
@@ -17615,7 +17637,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L462",
+      "source_location": "L465",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17627,7 +17649,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L364",
+      "source_location": "L367",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structured_search_objects",
@@ -17672,7 +17694,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L424",
+      "source_location": "L427",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17695,7 +17717,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L302",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structured_search_objects",
@@ -17740,7 +17762,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L376",
+      "source_location": "L379",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structured_search_objects",
@@ -17784,7 +17806,7 @@
       "relation": "references",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L301",
+      "source_location": "L302",
       "weight": 1.0,
       "context": "decorator",
       "_origin": "ast",
@@ -17796,10 +17818,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L307",
+      "source_location": "L308",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_307",
+      "source": "api_routers_objects_rationale_308",
       "target": "api_routers_objects_structured_search_objects",
       "confidence_score": 1.0
     },
@@ -17808,7 +17830,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L302",
+      "source_location": "L303",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_structured_search_objects",
@@ -17820,7 +17842,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L394",
+      "source_location": "L397",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17831,10 +17853,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L383",
+      "source_location": "L386",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_383",
+      "source": "api_routers_objects_rationale_386",
       "target": "api_routers_objects_get_object_types",
       "confidence_score": 1.0
     },
@@ -17842,10 +17864,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L405",
+      "source_location": "L408",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_405",
+      "source": "api_routers_objects_rationale_408",
       "target": "api_routers_objects_search_objects",
       "confidence_score": 1.0
     },
@@ -17855,7 +17877,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/routers/objects.py",
-      "source_location": "L415",
+      "source_location": "L418",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_search_objects",
@@ -17866,7 +17888,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L650",
+      "source_location": "L653",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_detail",
@@ -17911,7 +17933,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L644",
+      "source_location": "L647",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_detail",
@@ -17956,7 +17978,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L655",
+      "source_location": "L658",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_detail",
@@ -17968,7 +17990,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L629",
+      "source_location": "L632",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_get_object_detail",
@@ -18012,10 +18034,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L601",
+      "source_location": "L604",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_601",
+      "source": "api_routers_objects_rationale_604",
       "target": "api_routers_objects_get_object_detail",
       "confidence_score": 1.0
     },
@@ -18024,7 +18046,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L687",
+      "source_location": "L690",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_filename",
@@ -18035,10 +18057,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L677",
+      "source_location": "L680",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_677",
+      "source": "api_routers_objects_rationale_680",
       "target": "api_routers_objects_safe_filename",
       "confidence_score": 1.0
     },
@@ -18047,7 +18069,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L795",
+      "source_location": "L798",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_csv",
@@ -18059,7 +18081,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L749",
+      "source_location": "L752",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_fits",
@@ -18071,7 +18093,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L844",
+      "source_location": "L847",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_votable",
@@ -18082,10 +18104,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L685",
+      "source_location": "L688",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_685",
+      "source": "api_routers_objects_rationale_688",
       "target": "api_routers_objects_export_filename",
       "confidence_score": 1.0
     },
@@ -18094,7 +18116,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L762",
+      "source_location": "L765",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_csv",
@@ -18106,7 +18128,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L721",
+      "source_location": "L724",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_fits",
@@ -18118,7 +18140,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L808",
+      "source_location": "L811",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_votable",
@@ -18129,10 +18151,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L691",
+      "source_location": "L694",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_691",
+      "source": "api_routers_objects_rationale_694",
       "target": "api_routers_objects_get_object_or_404",
       "confidence_score": 1.0
     },
@@ -18141,7 +18163,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L763",
+      "source_location": "L766",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_csv",
@@ -18153,7 +18175,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L809",
+      "source_location": "L812",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_votable",
@@ -18164,10 +18186,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L703",
+      "source_location": "L706",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_703",
+      "source": "api_routers_objects_rationale_706",
       "target": "api_routers_objects_get_latest_classification",
       "confidence_score": 1.0
     },
@@ -18177,7 +18199,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/routers/objects.py",
-      "source_location": "L730",
+      "source_location": "L733",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_objects_export_fits",
@@ -18187,10 +18209,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L717",
+      "source_location": "L720",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_717",
+      "source": "api_routers_objects_rationale_720",
       "target": "api_routers_objects_export_fits",
       "confidence_score": 1.0
     },
@@ -18198,10 +18220,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L758",
+      "source_location": "L761",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_758",
+      "source": "api_routers_objects_rationale_761",
       "target": "api_routers_objects_export_csv",
       "confidence_score": 1.0
     },
@@ -18209,10 +18231,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "api/routers/objects.py",
-      "source_location": "L804",
+      "source_location": "L807",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "api_routers_objects_rationale_804",
+      "source": "api_routers_objects_rationale_807",
       "target": "api_routers_objects_export_votable",
       "confidence_score": 1.0
     },
@@ -33829,7 +33851,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L311",
+      "source_location": "L341",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_combined_filters_and_together",
@@ -33853,7 +33875,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L529",
+      "source_location": "L559",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_empty_results_returns_200_not_404",
@@ -33865,7 +33887,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L415",
+      "source_location": "L445",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_invalid_sort_by_returns_422",
@@ -33877,7 +33899,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L427",
+      "source_location": "L457",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_invalid_sort_order_returns_422",
@@ -33889,7 +33911,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L259",
+      "source_location": "L289",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_false_filter",
@@ -33901,7 +33923,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L245",
+      "source_location": "L275",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_true_filter",
@@ -33913,7 +33935,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L490",
+      "source_location": "L520",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_limit_max_boundary_accepted",
@@ -33925,7 +33947,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L480",
+      "source_location": "L510",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_limit_out_of_range_returns_422",
@@ -33985,7 +34007,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L276",
+      "source_location": "L306",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_filter",
@@ -33997,7 +34019,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L286",
+      "source_location": "L316",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_invalid_returns_422",
@@ -34009,7 +34031,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L444",
+      "source_location": "L474",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_limit",
@@ -34021,7 +34043,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L454",
+      "source_location": "L484",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_offset",
@@ -34033,7 +34055,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L467",
+      "source_location": "L497",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_total_count_reflects_full_count_not_page",
@@ -34069,7 +34091,31 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L505",
+      "source_location": "L257",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_and_max_filter",
+      "target": "tests_test_structured_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L245",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_filter",
+      "target": "tests_test_structured_search_api_make_app_with_mock_session",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L535",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_result_item_has_expected_fields",
@@ -34093,7 +34139,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L403",
+      "source_location": "L433",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_angular_separation_falls_back_gracefully",
@@ -34105,7 +34151,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L366",
+      "source_location": "L396",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_magnitude_asc",
@@ -34117,7 +34163,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L378",
+      "source_location": "L408",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_magnitude_desc",
@@ -34129,7 +34175,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L390",
+      "source_location": "L420",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_type",
@@ -34141,7 +34187,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L338",
+      "source_location": "L368",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_total_count_in_json_body",
@@ -34153,7 +34199,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L352",
+      "source_location": "L382",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_x_total_count_header_present",
@@ -34165,7 +34211,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L300",
+      "source_location": "L330",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_combined_filters_and_together",
@@ -34189,7 +34235,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L254",
+      "source_location": "L284",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_false_filter",
@@ -34201,7 +34247,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L240",
+      "source_location": "L270",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_true_filter",
@@ -34261,7 +34307,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L271",
+      "source_location": "L301",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_filter",
@@ -34273,7 +34319,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L461",
+      "source_location": "L491",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_total_count_reflects_full_count_not_page",
@@ -34309,7 +34355,31 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L500",
+      "source_location": "L252",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_and_max_filter",
+      "target": "tests_test_structured_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L240",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_filter",
+      "target": "tests_test_structured_search_api_make_obj",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L530",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_result_item_has_expected_fields",
@@ -34333,7 +34403,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L333",
+      "source_location": "L363",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_total_count_in_json_body",
@@ -34345,7 +34415,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L347",
+      "source_location": "L377",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_x_total_count_header_present",
@@ -34368,7 +34438,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L307",
+      "source_location": "L337",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_combined_filters_and_together",
@@ -34392,7 +34462,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L526",
+      "source_location": "L556",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_empty_results_returns_200_not_404",
@@ -34404,7 +34474,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L412",
+      "source_location": "L442",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_invalid_sort_by_returns_422",
@@ -34416,7 +34486,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L424",
+      "source_location": "L454",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_invalid_sort_order_returns_422",
@@ -34428,7 +34498,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L255",
+      "source_location": "L285",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_false_filter",
@@ -34440,7 +34510,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L241",
+      "source_location": "L271",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_is_anomaly_true_filter",
@@ -34452,7 +34522,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L487",
+      "source_location": "L517",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_limit_max_boundary_accepted",
@@ -34464,7 +34534,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L477",
+      "source_location": "L507",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_limit_out_of_range_returns_422",
@@ -34524,7 +34594,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L272",
+      "source_location": "L302",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_filter",
@@ -34536,7 +34606,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L283",
+      "source_location": "L313",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_observation_uuid_invalid_returns_422",
@@ -34548,7 +34618,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L441",
+      "source_location": "L471",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_limit",
@@ -34560,7 +34630,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L451",
+      "source_location": "L481",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_offset",
@@ -34572,7 +34642,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L463",
+      "source_location": "L493",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_pagination_total_count_reflects_full_count_not_page",
@@ -34608,7 +34678,31 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L501",
+      "source_location": "L253",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_and_max_filter",
+      "target": "tests_test_structured_search_api_make_chained_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L241",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_filter",
+      "target": "tests_test_structured_search_api_make_chained_mock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L531",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_result_item_has_expected_fields",
@@ -34632,7 +34726,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L400",
+      "source_location": "L430",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_angular_separation_falls_back_gracefully",
@@ -34644,7 +34738,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L363",
+      "source_location": "L393",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_magnitude_asc",
@@ -34656,7 +34750,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L375",
+      "source_location": "L405",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_magnitude_desc",
@@ -34668,7 +34762,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L387",
+      "source_location": "L417",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_type",
@@ -34680,7 +34774,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L334",
+      "source_location": "L364",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_total_count_in_json_body",
@@ -34692,7 +34786,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L348",
+      "source_location": "L378",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch_test_x_total_count_header_present",
@@ -34703,7 +34797,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L298",
+      "source_location": "L328",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34725,7 +34819,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L525",
+      "source_location": "L555",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34736,7 +34830,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L411",
+      "source_location": "L441",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34747,7 +34841,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L423",
+      "source_location": "L453",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34758,7 +34852,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L253",
+      "source_location": "L283",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34769,7 +34863,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L239",
+      "source_location": "L269",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34780,7 +34874,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L485",
+      "source_location": "L515",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34791,7 +34885,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L475",
+      "source_location": "L505",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34846,7 +34940,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L269",
+      "source_location": "L299",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34857,7 +34951,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L282",
+      "source_location": "L312",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34868,7 +34962,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L439",
+      "source_location": "L469",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34879,7 +34973,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L449",
+      "source_location": "L479",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34890,7 +34984,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L459",
+      "source_location": "L489",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34923,7 +35017,29 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L499",
+      "source_location": "L251",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch",
+      "target": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_and_max_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_structured_search_api_teststructuredsearch",
+      "target": "tests_test_structured_search_api_teststructuredsearch_test_redshift_min_filter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L529",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34945,7 +35061,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L398",
+      "source_location": "L428",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34956,7 +35072,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L362",
+      "source_location": "L392",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34967,7 +35083,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L374",
+      "source_location": "L404",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34978,7 +35094,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L386",
+      "source_location": "L416",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -34989,7 +35105,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L332",
+      "source_location": "L362",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -35000,7 +35116,7 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L346",
+      "source_location": "L376",
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_structured_search_api_teststructuredsearch",
@@ -35011,10 +35127,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L399",
+      "source_location": "L429",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "tests_test_structured_search_api_rationale_399",
+      "source": "tests_test_structured_search_api_rationale_429",
       "target": "tests_test_structured_search_api_teststructuredsearch_test_sort_by_angular_separation_falls_back_gracefully",
       "confidence_score": 1.0
     },
@@ -35022,10 +35138,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L440",
+      "source_location": "L470",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "tests_test_structured_search_api_rationale_440",
+      "source": "tests_test_structured_search_api_rationale_470",
       "target": "tests_test_structured_search_api_teststructuredsearch_test_pagination_limit",
       "confidence_score": 1.0
     },
@@ -35033,10 +35149,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L450",
+      "source_location": "L480",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "tests_test_structured_search_api_rationale_450",
+      "source": "tests_test_structured_search_api_rationale_480",
       "target": "tests_test_structured_search_api_teststructuredsearch_test_pagination_offset",
       "confidence_score": 1.0
     },
@@ -35044,10 +35160,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L460",
+      "source_location": "L490",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "tests_test_structured_search_api_rationale_460",
+      "source": "tests_test_structured_search_api_rationale_490",
       "target": "tests_test_structured_search_api_teststructuredsearch_test_pagination_total_count_reflects_full_count_not_page",
       "confidence_score": 1.0
     },
@@ -35055,10 +35171,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L476",
+      "source_location": "L506",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "tests_test_structured_search_api_rationale_476",
+      "source": "tests_test_structured_search_api_rationale_506",
       "target": "tests_test_structured_search_api_teststructuredsearch_test_limit_out_of_range_returns_422",
       "confidence_score": 1.0
     },
@@ -35066,10 +35182,10 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L486",
+      "source_location": "L516",
       "weight": 1.0,
       "_origin": "ast",
-      "source": "tests_test_structured_search_api_rationale_486",
+      "source": "tests_test_structured_search_api_rationale_516",
       "target": "tests_test_structured_search_api_teststructuredsearch_test_limit_max_boundary_accepted",
       "confidence_score": 1.0
     },
@@ -37113,7 +37229,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/components/QueryBuilder.tsx",
-      "source_location": "L52",
+      "source_location": "L53",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_components_querybuilder_querybuilder",
@@ -37125,7 +37241,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/components/QueryBuilder.tsx",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_components_querybuilder_querybuilder",
@@ -37137,7 +37253,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/components/QueryBuilder.tsx",
-      "source_location": "L62",
+      "source_location": "L63",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_components_querybuilder_querybuilder",
@@ -38519,7 +38635,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/types/search.ts",
-      "source_location": "L46",
+      "source_location": "L47",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_types_search",
@@ -41478,5 +41594,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "5662ea2f1fba21e57a4ea15e232c0dce84922734"
+  "built_at_commit": "1baa6f6b17d7361c6e5156b380c06cfae62cf956"
 }

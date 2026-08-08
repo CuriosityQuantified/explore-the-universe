@@ -233,6 +233,36 @@ class TestStructuredSearch:
         assert resp.json()["total_count"] == 1
 
     # ------------------------------------------------------------------
+    # 5b. redshift_min filter
+    # ------------------------------------------------------------------
+
+    def test_redshift_min_filter(self):
+        obj = _make_obj(redshift=0.5)
+        mock_session = _make_chained_mock([obj], count=1)
+
+        with mock.patch("api.routers.objects.get_s3_client") as mock_s3:
+            mock_s3.return_value.generate_presigned_url.return_value = None
+            client = _make_app_with_mock_session(mock_session)
+            resp = client.post("/api/objects/search", json={"redshift_min": 0.3})
+
+        assert resp.status_code == 200
+        assert resp.json()["total_count"] == 1
+
+    def test_redshift_min_and_max_filter(self):
+        obj = _make_obj(redshift=0.4)
+        mock_session = _make_chained_mock([obj], count=1)
+
+        with mock.patch("api.routers.objects.get_s3_client") as mock_s3:
+            mock_s3.return_value.generate_presigned_url.return_value = None
+            client = _make_app_with_mock_session(mock_session)
+            resp = client.post(
+                "/api/objects/search", json={"redshift_min": 0.2, "redshift_max": 0.6}
+            )
+
+        assert resp.status_code == 200
+        assert resp.json()["total_count"] == 1
+
+    # ------------------------------------------------------------------
     # 6. is_anomaly: true filters to only flagged objects
     # ------------------------------------------------------------------
 
