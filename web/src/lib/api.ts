@@ -9,7 +9,7 @@
  */
 
 import type { ObservationDetail, ObservationSummary, WcsParams } from "@/types/observation";
-import type { ObjectDetail } from "@/types/object";
+import type { GraphNeighbors, ObjectDetail } from "@/types/object";
 import type { NameSearchResult, ObjectSearchItem } from "@/types/search";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
@@ -187,4 +187,21 @@ export async function searchByType(
   const total = Number(response.headers.get("x-total-count") ?? "0");
   const results: ObjectSearchItem[] = await response.json();
   return { results, total };
+}
+
+/**
+ * Fetch 1-hop knowledge graph neighbors for an astronomical object.
+ *
+ * Calls GET /api/objects/{uuid}/graph-neighbors which returns CONTAINS
+ * children, CONTAINS parents, and SAME_AS catalog entries for the object's
+ * Neo4j node.  Returns ``{ in_graph: false }`` when no node exists.
+ *
+ * @param uuid - Object UUID
+ * @returns GraphNeighbors with in_graph flag and neighbor lists
+ * @throws Error if the response is not ok
+ */
+export async function fetchGraphNeighbors(uuid: string): Promise<GraphNeighbors> {
+  const response = await fetch(`${API_BASE}/api/objects/${uuid}/graph-neighbors`);
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
 }

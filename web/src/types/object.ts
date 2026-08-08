@@ -45,3 +45,21 @@ export interface ObjectDetail {
   cross_matches: CrossMatchDetail[];
   latest_classification: ClassificationDetail | null;
 }
+
+export interface GraphNeighborNode {
+  uuid: string;
+  type?: string | null;
+  thumbnail_url?: string | null;
+}
+
+export interface GraphCatalogEntry {
+  catalog: string;
+  source_id: string;
+}
+
+export interface GraphNeighbors {
+  in_graph: boolean;
+  contains_children: GraphNeighborNode[];
+  contained_by: GraphNeighborNode[];
+  catalog_entries: GraphCatalogEntry[];
+}
