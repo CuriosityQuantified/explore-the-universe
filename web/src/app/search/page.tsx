@@ -5,6 +5,7 @@ import { useEffect, useState, Suspense } from "react";
 import Link from "next/link";
 import { searchByName, searchByCone, searchByType } from "@/lib/api";
 import type { ObjectSearchItem, NameSearchResult } from "@/types/search";
+import QueryBuilder from "@/components/QueryBuilder";
 
 const PAGE_SIZE = 24;
 
@@ -127,6 +128,13 @@ function SearchResults() {
     name: string | null;
   } | null>(null);
 
+  // Structured (QueryBuilder) search results — override URL-driven results when set
+  const [builderResults, setBuilderResults] = useState<ObjectSearchItem[] | null>(null);
+  const [builderTotal, setBuilderTotal] = useState(0);
+  const [builderOffset, setBuilderOffset] = useState(0);
+  const [builderLoading, setBuilderLoading] = useState(false);
+  const [builderError, setBuilderError] = useState<string | null>(null);
+
   // Reset offset when query changes
   useEffect(() => {
     setOffset(0);
@@ -185,6 +193,13 @@ function SearchResults() {
   else if (type) title = `Type: ${type}`;
   else if (ra && dec) title = `Cone search RA=${ra} Dec=${dec} r=${radiusArcsec}″`;
 
+  // Determine which result set to display: builder takes priority when active
+  const showBuilder = builderResults !== null;
+  const displayResults = showBuilder ? builderResults : results;
+  const displayTotal = showBuilder ? builderTotal : total;
+  const displayLoading = showBuilder ? builderLoading : loading;
+  const displayError = showBuilder ? builderError : error;
+
   return (
     <main className="max-w-6xl mx-auto px-4 py-8">
       {/* Header */}
@@ -195,11 +210,23 @@ function SearchResults() {
         >
           ← Back
         </button>
-        <h1 className="text-2xl font-semibold">{title}</h1>
+        <h1 className="text-2xl font-semibold">{showBuilder ? "Filter Results" : title}</h1>
       </div>
 
-      {/* Resolved coordinates banner (name search) */}
-      {resolvedInfo?.ra !== undefined && resolvedInfo.ra !== null && (
+      {/* QueryBuilder — always visible, results override URL-driven results when used */}
+      <QueryBuilder
+        onResults={(r, count) => {
+          setBuilderResults(r);
+          setBuilderTotal(count);
+        }}
+        onLoading={setBuilderLoading}
+        onError={setBuilderError}
+        offset={builderOffset}
+        onOffsetReset={() => setBuilderOffset(0)}
+      />
+
+      {/* Resolved coordinates banner (name search, URL-driven only) */}
+      {!showBuilder && resolvedInfo?.ra !== undefined && resolvedInfo.ra !== null && (
         <div className="mb-4 text-sm text-zinc-400 bg-zinc-800 rounded px-4 py-2">
           SIMBAD resolved{" "}
           <span className="text-zinc-200 font-medium">{resolvedInfo.name}</span>
@@ -209,22 +236,22 @@ function SearchResults() {
       )}
 
       {/* Loading */}
-      {loading && (
+      {displayLoading && (
         <p className="text-zinc-500 text-sm">Searching…</p>
       )}
 
       {/* Error */}
-      {!loading && error && (
+      {!displayLoading && displayError && (
         <div className="rounded bg-red-900/40 border border-red-700 px-4 py-3 text-sm text-red-300">
-          {error}
+          {displayError}
         </div>
       )}
 
       {/* Empty state */}
-      {!loading && !error && results.length === 0 && (
+      {!displayLoading && !displayError && displayResults.length === 0 && (
         <div className="text-center py-16">
           <p className="text-zinc-400 text-lg">No objects found.</p>
-          {name && resolvedInfo?.ra === null && (
+          {!showBuilder && name && resolvedInfo?.ra === null && (
             <p className="text-zinc-500 text-sm mt-2">
               SIMBAD could not resolve &quot;{name}&quot;. Try a different name.
             </p>
@@ -233,20 +260,24 @@ function SearchResults() {
       )}
 
       {/* Results grid */}
-      {!loading && !error && results.length > 0 && (
+      {!displayLoading && !displayError && displayResults.length > 0 && (
         <>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {results.map((obj) => (
+            {displayResults.map((obj) => (
               <ObjectCard key={obj.object_uuid} obj={obj} />
             ))}
           </div>
 
           <Pagination
-            offset={offset}
-            total={total}
+            offset={showBuilder ? builderOffset : offset}
+            total={displayTotal}
             limit={PAGE_SIZE}
-            onPrev={() => setOffset(Math.max(0, offset - PAGE_SIZE))}
-            onNext={() => setOffset(offset + PAGE_SIZE)}
+            onPrev={() => showBuilder
+              ? setBuilderOffset(Math.max(0, builderOffset - PAGE_SIZE))
+              : setOffset(Math.max(0, offset - PAGE_SIZE))}
+            onNext={() => showBuilder
+              ? setBuilderOffset(builderOffset + PAGE_SIZE)
+              : setOffset(offset + PAGE_SIZE)}
           />
         </>
       )}
