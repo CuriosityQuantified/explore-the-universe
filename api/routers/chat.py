@@ -5,6 +5,7 @@ catalog into a structured query using Claude's tool-use API, executes the
 query against the database, and returns an answer with matching object cards.
 """
 
+import logging
 import uuid as _uuid_module
 from typing import Any, Dict, List, Optional
 
@@ -22,6 +23,7 @@ from api.routers.objects import (
 from shared.config import settings
 from shared.models import AstronomicalObject
 
+logger = logging.getLogger(__name__)
 router = APIRouter()
 
 
@@ -68,8 +70,9 @@ SEARCH_OBJECTS_TOOL: Dict[str, Any] = {
         "properties": {
             "type": {
                 "type": "array",
-                "items": {"type": "string"},
-                "description": "One or more classified_object_type values (OR-combined).",
+                "maxItems": 50,
+                "items": {"type": "string", "maxLength": 200},
+                "description": "One or more classified_object_type values (OR-combined, max 50).",
             },
             "magnitude_min": {
                 "type": "number",
@@ -97,8 +100,8 @@ SEARCH_OBJECTS_TOOL: Dict[str, Any] = {
             },
             "sort_by": {
                 "type": "string",
-                "enum": ["magnitude", "type"],
-                "description": "Sort field (magnitude or type).",
+                "enum": ["magnitude", "type", "angular_separation"],
+                "description": "Sort field (magnitude, type, or angular separation).",
             },
             "sort_order": {
                 "type": "string",
@@ -214,10 +217,9 @@ def chat_query(
     if tool_input is None:
         return ChatResponse(answer=answer, objects=[], query_executed=None)
 
-    # Server-enforce context observation scoping: if the caller supplied a valid
-    # observation UUID but Claude omitted it from the tool call, inject it so the
-    # context selector reliably narrows results.
-    if context_obs_uuid and not tool_input.get("observation_uuid"):
+    # Server-enforce context observation scoping: Claude cannot broaden a query
+    # beyond the observation selected by the caller.
+    if context_obs_uuid:
         tool_input = {**tool_input, "observation_uuid": context_obs_uuid}
 
     # Filter tool_input through known StructuredSearchFilters fields before
@@ -234,6 +236,8 @@ def chat_query(
         filters = StructuredSearchFilters(**tool_input)
     except Exception:
         return ChatResponse(answer=answer, objects=[], query_executed=query_executed)
+
+    logger.info("AI chat executed structured object query: %s", query_executed)
 
     # Execute the structured query
     query = database_session.query(AstronomicalObject)

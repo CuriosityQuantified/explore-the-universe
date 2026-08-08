@@ -21,7 +21,8 @@ from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
 from api.db.session import get_database_session
-from api.routers.chat import router
+from api.routers.chat import SEARCH_OBJECTS_TOOL, router
+from api.routers.objects import StructuredSearchFilters
 from shared.models import AstronomicalObject
 
 
@@ -156,6 +157,39 @@ def _make_anthropic_response(text: str = None, tool_input: dict = None):
 
 
 class TestChatApi:
+
+    def test_search_objects_tool_matches_structured_schema(self):
+        properties = SEARCH_OBJECTS_TOOL["input_schema"]["properties"]
+
+        assert set(properties) == set(StructuredSearchFilters.model_fields)
+        assert properties["type"]["maxItems"] == 50
+        assert properties["type"]["items"]["maxLength"] == 200
+        assert properties["sort_by"]["enum"] == [
+            "magnitude",
+            "type",
+            "angular_separation",
+        ]
+
+    def test_chat_logs_executed_query(self, caplog):
+        mock_session = _make_chained_mock_with_objects([_make_obj()])
+        anthropic_response = _make_anthropic_response(
+            text="Found galaxies.",
+            tool_input={"type": ["spiral_galaxy"], "limit": 5},
+        )
+
+        with mock.patch("api.routers.chat.anthropic.Anthropic") as MockClient:
+            MockClient.return_value.messages.create.return_value = anthropic_response
+            with mock.patch("api.routers.chat.settings") as mock_settings:
+                mock_settings.anthropic_api_key = "test-key"
+                client = _make_app_with_mock_session(mock_session)
+                with caplog.at_level("INFO", logger="api.routers.chat"):
+                    resp = client.post("/api/chat", json={"message": "Find galaxies"})
+
+        assert resp.status_code == 200
+        assert any(
+            "AI chat executed structured object query" in record.message
+            for record in caplog.records
+        )
 
     # ------------------------------------------------------------------
     # 1. Claude returns tool_use block → objects populated
@@ -390,6 +424,31 @@ class TestChatApi:
         data = resp.json()
         # Server must have injected the observation_uuid into query_executed
         assert data["query_executed"]["observation_uuid"] == obs_uuid
+
+    def test_context_uuid_cannot_be_overridden_by_claude(self):
+        selected_obs_uuid = "bbbbbbbb-0000-0000-0000-000000000001"
+        claude_obs_uuid = "bbbbbbbb-0000-0000-0000-000000000002"
+        mock_session = _make_chained_mock_with_objects([_make_obj(obs_uuid=selected_obs_uuid)])
+        anthropic_response = _make_anthropic_response(
+            text="Found galaxies.",
+            tool_input={"observation_uuid": claude_obs_uuid, "limit": 5},
+        )
+
+        with mock.patch("api.routers.chat.anthropic.Anthropic") as MockClient:
+            MockClient.return_value.messages.create.return_value = anthropic_response
+            with mock.patch("api.routers.chat.settings") as mock_settings:
+                mock_settings.anthropic_api_key = "test-key"
+                client = _make_app_with_mock_session(mock_session)
+                resp = client.post(
+                    "/api/chat",
+                    json={
+                        "message": "Show galaxies",
+                        "context": {"observation_uuid": selected_obs_uuid},
+                    },
+                )
+
+        assert resp.status_code == 200
+        assert resp.json()["query_executed"]["observation_uuid"] == selected_obs_uuid
 
     # ------------------------------------------------------------------
     # 10. observation_uuid exceeding 36 chars is rejected with 422

@@ -1,16 +1,16 @@
 # Graph Report - explore-the-universe  (2026-08-08)
 
 ## Corpus Check
-- 170 files · ~155,685 words
+- 170 files · ~155,840 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1279 nodes · 2500 edges · 102 communities (79 shown, 23 thin omitted)
-- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 198 edges (avg confidence: 0.67)
+- 1282 nodes · 2514 edges · 103 communities (80 shown, 23 thin omitted)
+- Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 199 edges (avg confidence: 0.67)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `e06cdd19`
+- Built from commit: `8bd47b9e`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -25,7 +25,7 @@
 - Phase 5 Plan 01: Schema, Config, Catalog Clients
 - Phase 1-2 Planning Docs
 - Summary
-- get_s3_client
+- get_wcs_params
 - segment_sam
 - TestClient
 - Ingest Pipeline Tests
@@ -77,7 +77,7 @@
 - query_sdss_region
 - a1b2c3d4e5f6_add_classification_tables_and_columns.py
 - objects.py
-- trigger_ingest
+- routers/ingest.py
 - cross_match_catalogs
 - detect_anomalies
 - _make_app_with_mock_session
@@ -103,6 +103,7 @@
 - check_service_health
 - _mock_neo4j_lifecycle
 - Settings
+- observations.py
 - classify_objects
 - ingest_observation
 
@@ -145,7 +146,7 @@
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
 
-## Communities (102 total, 23 thin omitted)
+## Communities (103 total, 23 thin omitted)
 
 ### Community 0 - "ViewerClient.tsx"
 Cohesion: 0.06
@@ -183,9 +184,9 @@ Nodes (19): Phase 1 UAT, Phase 2 Plan 01 (MAST download), Phase 2 Plan 01 Summar
 Cohesion: 0.25
 Nodes (7): Changes, Checklist, How was this tested?, Notes for the issue-worker, Screenshots, Summary, Type of change
 
-### Community 10 - "get_s3_client"
-Cohesion: 0.11
-Nodes (26): _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get, Session (+18 more)
+### Community 10 - "get_wcs_params"
+Cohesion: 0.15
+Nodes (15): _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get, Session (+7 more)
 
 ### Community 11 - "segment_sam"
 Cohesion: 0.11
@@ -236,7 +237,7 @@ Cohesion: 0.40
 Nodes (6): download_fits Celery task, S3 client singleton (shared/s3.py), generate_tiles Celery task, validate_wcs Celery task, ingest_observation orchestrator task, MAST ingestion pipeline pattern
 
 ### Community 25 - "_make_app_with_mock_session"
-Cohesion: 0.23
+Cohesion: 0.21
 Nodes (11): _make_anthropic_response(), _make_app_with_mock_session(), _make_chained_mock(), _make_chained_mock_with_objects(), _make_obj(), Tests for the AI chat API endpoint. POST /api/chat — translates natural-…, Variant where .all() returns object list (not types). We configure .all() to…, Build a mock Anthropic Messages response. (+3 more)
 
 ### Community 26 - "Next.js Root Layout"
@@ -268,8 +269,8 @@ Cohesion: 0.17
 Nodes (15): parametrize, _load(), Path, Guards on the committed graphify knowledge-graph integration. These are static…, graph.json is committed, so it must not embed this checkout's location., The graph only stays fresh if this hook survives; `graphify install` rewrites…, CI (.github/workflows/knowledge-graph.yml) shells out to this., `graphify install` hardcodes an absolute interpreter path here. That path only… (+7 more)
 
 ### Community 60 - "AstronomicalObject"
-Cohesion: 0.13
-Nodes (25): chat_query(), ChatContext, ChatObjectResult, ChatRequest, ChatResponse, BaseModel, post, Session (+17 more)
+Cohesion: 0.21
+Nodes (17): chat_query(), ChatContext, ChatObjectResult, ChatRequest, ChatResponse, BaseModel, post, Session (+9 more)
 
 ### Community 61 - "Issue tracker: GitHub"
 Cohesion: 0.29
@@ -281,7 +282,7 @@ Nodes (13): _clean_test_nodes(), _make_catalog_match(), _make_mock_db(), _make_o
 
 ### Community 63 - "ProcessingStep"
 Cohesion: 0.14
-Nodes (28): IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, Ingest API endpoints for triggering and monitoring the pipeline. POST…, Request body for POST /api/ingest., Response body for POST /api/ingest (202 Accepted)., Response body for GET /api/ingest/{observation_uuid}/status. (+20 more)
+Nodes (28): Tile serving API endpoints for the sky viewer. GET…, WCS header parameters for client-side pixel-to-sky coordinate conversion., WcsParamsResponse, Random Forest classifier for astronomical object morphological type prediction.…, Classify Celery task: feature extraction + RF classification for every object.…, _get_pixel_scale(), UUID, Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh… (+20 more)
 
 ### Community 65 - "graph.py"
 Cohesion: 0.20
@@ -311,17 +312,17 @@ Nodes (4): downgrade(), Add object_classifications table and 3 catalog columns t
 Cohesion: 0.09
 Nodes (51): _angular_separation_arcsec(), AnomalyResponse, _catalog_external_url(), ClassificationDetailResponse, ClassificationResponse, CrossMatchDetailResponse, CrossMatchResponse, export_csv() (+43 more)
 
-### Community 72 - "trigger_ingest"
-Cohesion: 0.29
-Nodes (7): get_ingest_status(), get, post, Session, Check the status of an ingestion pipeline. Returns the observation details…, Trigger the ingestion pipeline for a JWST observation. Creates an Observation…, trigger_ingest()
+### Community 72 - "routers/ingest.py"
+Cohesion: 0.17
+Nodes (15): get_ingest_status(), IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, get, post, Session (+7 more)
 
 ### Community 73 - "cross_match_catalogs"
 Cohesion: 0.25
 Nodes (9): cross_match_catalogs(), SkyCoord, task, _query_one_catalog(), Cross-match detected objects against SIMBAD, NED, SDSS, and Gaia. Seventh step…, After Plan 3, all 9 pipeline tasks are fully implemented — no…, test_cross_match_catalogs_not_implemented_removed(), test_cross_match_catalogs_uses_thread_pool() (+1 more)
 
 ### Community 74 - "detect_anomalies"
-Cohesion: 0.16
-Nodes (14): IsolationForest, _build_feature_matrix(), detect_anomalies(), _impute_sentinels(), ndarray, task, Build a 2-D float array from a list of feature-vector dicts. Missing or…, Replace -999.0 sentinel and NaN values with column medians in-place copy. (+6 more)
+Cohesion: 0.13
+Nodes (17): IsolationForest, _build_feature_matrix(), detect_anomalies(), _finalize_empty(), _impute_sentinels(), ndarray, task, UUID (+9 more)
 
 ### Community 75 - "_make_app_with_mock_session"
 Cohesion: 0.16
@@ -407,6 +408,10 @@ Nodes (3): check_service_health(), get, Response
 Cohesion: 0.40
 Nodes (4): _mock_neo4j_lifecycle(), fixture, Shared pytest fixtures for the offline test suite. Any test that brings up the…, Patch Neo4j driver lifecycle for tests that don't need a live instance.
 
+### Community 100 - "observations.py"
+Cohesion: 0.31
+Nodes (8): list_observations(), ObservationSummaryResponse, ProcessingStepSummary, BaseModel, get, Session, Observations list API endpoint. GET /api/observations — all ingested…, Return all ingested observations with pipeline status and object counts.
+
 ### Community 101 - "classify_objects"
 Cohesion: 0.11
 Nodes (21): load_or_create_classifier(), predict_object_types(), ndarray, Serialize and upload a trained classifier to S3., Download and deserialize the pre-trained RF classifier from S3. Returns None if…, Predict morphological types for a batch of objects. Sentinel values (-999.0)…, save_classifier(), _build_feature_matrix() (+13 more)
@@ -446,6 +451,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Next.js Web README` and `window.svg Icon`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `Project Research Summary` connect `Project Research Summary` to `Next.js Web README`, `Image Tiling (HiPS/HEALPix)`, `Catalog Cross-matching`, `Knowledge Graph With Spatial Hierarchy`?**
-  _High betweenness centrality (0.132) - this node is a cross-community bridge._
-- **Why does `AstronomicalObject` connect `AstronomicalObject` to `detect_sources.py`, `objects.py`, `_make_app_with_mock_session`, `TestClient`, `test_object_detail_api.py`, `_make_app_with_mock_session`, `test_classification_schema.py`, `test_observations_api.py`, `_make_app_with_mock_session`, `_make_app_with_mock_session`, `ProcessingStep`?**
-  _High betweenness centrality (0.109) - this node is a cross-community bridge._
+  _High betweenness centrality (0.119) - this node is a cross-community bridge._
+- **Why does `AstronomicalObject` connect `AstronomicalObject` to `observations.py`, `detect_sources.py`, `objects.py`, `_make_app_with_mock_session`, `TestClient`, `test_object_detail_api.py`, `_make_app_with_mock_session`, `test_classification_schema.py`, `test_observations_api.py`, `_make_app_with_mock_session`, `_make_app_with_mock_session`, `ProcessingStep`?**
+  _High betweenness centrality (0.107) - this node is a cross-community bridge._
