@@ -10,6 +10,7 @@
 
 import type { ObservationDetail, ObservationSummary, WcsParams } from "@/types/observation";
 import type { ObjectDetail } from "@/types/object";
+import type { NameSearchResult, ObjectSearchItem } from "@/types/search";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -107,4 +108,83 @@ export async function fetchObjectDetail(uuid: string): Promise<ObjectDetail> {
     throw new Error(error.detail || `Failed to fetch object: ${response.status}`);
   }
   return response.json();
+}
+
+/** Throw a descriptive Error from a non-ok API response. */
+async function throwApiError(response: Response, label: string): Promise<never> {
+  const body = await response.json().catch(() => ({ detail: response.statusText }));
+  throw new Error(body.detail || `${label}: ${response.status}`);
+}
+
+/** Fetch the list of distinct classified_object_type values from the DB. */
+export async function fetchObjectTypes(): Promise<string[]> {
+  const response = await fetch(`${API_BASE}/api/objects/types`);
+  if (!response.ok) await throwApiError(response, "Failed to fetch object types");
+  return response.json();
+}
+
+/**
+ * Search objects by SIMBAD name. Resolves the name to sky coordinates via
+ * SIMBAD, then performs a 5-arcsec cone search against the local catalog.
+ *
+ * @param name - Astronomical object name (e.g. "NGC 1300")
+ * @throws Error with status 503 message when SIMBAD is unreachable
+ */
+export async function searchByName(
+  name: string,
+  limit = 50,
+  offset = 0,
+): Promise<NameSearchResult> {
+  const params = new URLSearchParams({ name, limit: String(limit), offset: String(offset) });
+  const response = await fetch(`${API_BASE}/api/objects/search?${params}`);
+  if (!response.ok) await throwApiError(response, "Name search failed");
+  const total = Number(response.headers.get("x-total-count") ?? "0");
+  const body: Omit<NameSearchResult, "total"> = await response.json();
+  return { ...body, total };
+}
+
+/**
+ * Cone search: return objects within radius_arcsec of the given RA/Dec.
+ *
+ * @param ra - Right ascension in degrees
+ * @param dec - Declination in degrees
+ * @param radiusArcsec - Search radius in arcseconds
+ */
+export async function searchByCone(
+  ra: number,
+  dec: number,
+  radiusArcsec: number,
+  limit = 50,
+  offset = 0,
+): Promise<{ results: ObjectSearchItem[]; total: number }> {
+  const params = new URLSearchParams({
+    ra: String(ra),
+    dec: String(dec),
+    radius_arcsec: String(radiusArcsec),
+    limit: String(limit),
+    offset: String(offset),
+  });
+  const response = await fetch(`${API_BASE}/api/objects/search?${params}`);
+  if (!response.ok) await throwApiError(response, "Cone search failed");
+  const total = Number(response.headers.get("x-total-count") ?? "0");
+  const results: ObjectSearchItem[] = await response.json();
+  return { results, total };
+}
+
+/**
+ * Filter objects by classified_object_type.
+ *
+ * @param type - Classified object type string (e.g. "spiral_galaxy")
+ */
+export async function searchByType(
+  type: string,
+  limit = 50,
+  offset = 0,
+): Promise<{ results: ObjectSearchItem[]; total: number }> {
+  const params = new URLSearchParams({ type, limit: String(limit), offset: String(offset) });
+  const response = await fetch(`${API_BASE}/api/objects/search?${params}`);
+  if (!response.ok) await throwApiError(response, "Type search failed");
+  const total = Number(response.headers.get("x-total-count") ?? "0");
+  const results: ObjectSearchItem[] = await response.json();
+  return { results, total };
 }

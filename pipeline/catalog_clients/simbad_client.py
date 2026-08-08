@@ -62,6 +62,52 @@ def query_simbad_region(
     return [{"status": "not_queried", "catalog": "simbad", "error": str(last_exc)}]
 
 
+def resolve_object_name(
+    name: str,
+    max_retries: int = 3,
+    timeout: int = 30,
+) -> tuple[float, float, str] | None:
+    """Resolve an object name to (ra_deg, dec_deg, canonical_name) via SIMBAD.
+
+    Returns None if the name is not found in SIMBAD.
+    Raises RuntimeError if SIMBAD is unreachable after all retries.
+    """
+    simbad = Simbad()
+    simbad.TIMEOUT = timeout
+
+    last_exc: Exception | None = None
+    for attempt in range(max_retries):
+        try:
+            result = simbad.query_object(name)
+            if result is None:
+                return None
+            row = result[0]
+            # SIMBAD returns RA/Dec as sexagesimal strings (e.g. "49 53 22.12")
+            coord = SkyCoord(
+                ra=str(row["RA"]),
+                dec=str(row["DEC"]),
+                unit=(u.hourangle, u.deg),
+            )
+            canonical = str(row["MAIN_ID"])
+            return (float(coord.ra.deg), float(coord.dec.deg), canonical)
+        except Exception as exc:
+            last_exc = exc
+            wait = 2 ** attempt
+            logger.warning(
+                "SIMBAD name resolve attempt %d/%d failed (%s); retrying in %ds",
+                attempt + 1,
+                max_retries,
+                exc,
+                wait,
+            )
+            if attempt < max_retries - 1:
+                time.sleep(wait)
+
+    raise RuntimeError(
+        f"SIMBAD unreachable after {max_retries} retries: {last_exc}"
+    )
+
+
 def _table_to_dicts(table, reference_coord: SkyCoord, catalog: str) -> list[dict]:
     rows: list[dict] = []
     for row in table:
