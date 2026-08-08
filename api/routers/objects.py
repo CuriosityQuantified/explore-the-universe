@@ -7,12 +7,16 @@ GET /api/objects/search                          — cone search + type filter (
 GET /api/objects/types                           — distinct classified_object_type values in DB
 """
 
+import logging
 import math
 import urllib.parse
 from datetime import datetime
-from typing import Any, List, Optional
+from typing import Any, List, Optional, Union
+
+logger = logging.getLogger(__name__)
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Response
+from fastapi.responses import JSONResponse
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -24,6 +28,7 @@ from shared.models import (
     ObjectClassification,
 )
 from shared.s3 import get_s3_client
+from pipeline.catalog_clients.simbad_client import resolve_object_name
 
 router = APIRouter(tags=["objects"])
 
@@ -255,6 +260,13 @@ class ObjectSearchResponse(BaseModel):
     cutout_thumbnail_url: Optional[str]
 
 
+class NameSearchResponse(BaseModel):
+    results: List[ObjectSearchResponse]
+    resolved_ra: Optional[float]
+    resolved_dec: Optional[float]
+    simbad_name: Optional[str]
+
+
 @router.get("/api/objects/types", response_model=List[str])
 def get_object_types(
     database_session: Session = Depends(get_database_session),
@@ -269,23 +281,95 @@ def get_object_types(
     return [r[0] for r in rows]
 
 
-@router.get("/api/objects/search", response_model=List[ObjectSearchResponse])
+@router.get("/api/objects/search", response_model=Union[NameSearchResponse, List[ObjectSearchResponse]])
 def search_objects(
     response: Response,
     ra: Optional[float] = Query(None, description="Right ascension (degrees)"),
     dec: Optional[float] = Query(None, description="Declination (degrees)"),
     radius_arcsec: Optional[float] = Query(None, description="Search radius (arcseconds)"),
     type: Optional[List[str]] = Query(None, description="One or more classified_object_type values"),
+    name: Optional[str] = Query(None, max_length=200, description="Object name to resolve via SIMBAD"),
     limit: int = Query(50, ge=1, le=500),
     offset: int = Query(0, ge=0),
     database_session: Session = Depends(get_database_session),
 ):
-    """Cone search and/or type filter over AstronomicalObject records.
+    """Cone search, type filter, or SIMBAD name search over AstronomicalObject records.
 
     Parameters are combinable: supply ra/dec/radius_arcsec for spatial search,
     type for classification filter, or both together.
+    Supply name to resolve via SIMBAD then perform a 5-arcsec cone search.
     Returns paginated results with X-Total-Count header. Empty results return [].
     """
+    # --- SIMBAD name search mode ---
+    if name is not None:
+        try:
+            resolved = resolve_object_name(name)
+        except RuntimeError as exc:
+            logger.error("SIMBAD name resolution failed for %r: %s", name, exc)
+            return JSONResponse(
+                status_code=503,
+                content={"detail": "Name resolution service temporarily unavailable. Please try again later."},
+            )
+
+        if resolved is None:
+            return NameSearchResponse(
+                results=[],
+                resolved_ra=None,
+                resolved_dec=None,
+                simbad_name=None,
+            )
+
+        resolved_ra, resolved_dec, simbad_name = resolved
+        name_radius = 5.0  # arcseconds
+
+        dec_margin = name_radius / 3600.0
+        cos_dec = math.cos(math.radians(resolved_dec))
+        ra_margin = dec_margin / cos_dec if cos_dec > 1e-9 else 360.0
+
+        query = database_session.query(AstronomicalObject).filter(
+            AstronomicalObject.sky_coordinate_dec_degrees.between(
+                resolved_dec - dec_margin, resolved_dec + dec_margin
+            ),
+            AstronomicalObject.sky_coordinate_ra_degrees.between(
+                resolved_ra - ra_margin, resolved_ra + ra_margin
+            ),
+        )
+        candidates = query.all()
+
+        with_sep = [
+            (obj, _angular_separation_arcsec(resolved_ra, resolved_dec, obj.sky_coordinate_ra_degrees, obj.sky_coordinate_dec_degrees))
+            for obj in candidates
+        ]
+        with_sep = [(obj, sep) for obj, sep in with_sep if sep <= name_radius]
+        with_sep.sort(key=lambda x: x[1])
+
+        total = len(with_sep)
+        page = with_sep[offset: offset + limit]
+        objs = [obj for obj, _ in page]
+
+        response.headers["X-Total-Count"] = str(total)
+
+        results = [
+            ObjectSearchResponse(
+                object_uuid=str(obj.object_uuid),
+                sky_coordinate_ra_degrees=obj.sky_coordinate_ra_degrees,
+                sky_coordinate_dec_degrees=obj.sky_coordinate_dec_degrees,
+                classified_object_type=obj.classified_object_type,
+                catalog_object_name=obj.catalog_object_name,
+                is_anomaly_flagged=obj.is_anomaly_flagged,
+                cutout_thumbnail_url=_make_cutout_thumbnail_url(obj.cutout_s3_prefix),
+            )
+            for obj in objs
+        ]
+
+        return NameSearchResponse(
+            results=results,
+            resolved_ra=resolved_ra,
+            resolved_dec=resolved_dec,
+            simbad_name=simbad_name,
+        )
+
+    # --- Cone / type search mode ---
     is_cone = ra is not None and dec is not None and radius_arcsec is not None
 
     if is_cone:
