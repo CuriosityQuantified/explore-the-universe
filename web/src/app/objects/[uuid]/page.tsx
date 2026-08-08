@@ -205,6 +205,34 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
           ← View parent observation in sky viewer
         </Link>
       </section>
+
+      {/* Export Data */}
+      <section className="space-y-3">
+        <h2 className="text-lg font-semibold">Export Data</h2>
+        <div className="flex flex-wrap gap-3">
+          <a
+            href={`/api/objects/${object.object_uuid}/export/fits`}
+            download={`${object.catalog_object_name ?? object.object_uuid}.fits`}
+            className="inline-block rounded bg-zinc-800 px-4 py-2 text-sm hover:bg-zinc-700 transition-colors"
+          >
+            Download FITS
+          </a>
+          <a
+            href={`/api/objects/${object.object_uuid}/export/csv`}
+            download={`${object.catalog_object_name ?? object.object_uuid}.csv`}
+            className="inline-block rounded bg-zinc-800 px-4 py-2 text-sm hover:bg-zinc-700 transition-colors"
+          >
+            Download CSV
+          </a>
+          <a
+            href={`/api/objects/${object.object_uuid}/export/votable`}
+            download={`${object.catalog_object_name ?? object.object_uuid}.votable`}
+            className="inline-block rounded bg-zinc-800 px-4 py-2 text-sm hover:bg-zinc-700 transition-colors"
+          >
+            Download VOTable
+          </a>
+        </div>
+      </section>
     </main>
   );
 }
