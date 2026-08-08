@@ -5,6 +5,7 @@ GET /api/objects/{object_uuid}/cross-matches     — all catalog matches, by ang
 GET /api/observations/{observation_uuid}/anomalies — anomaly-flagged objects (empty list if none)
 GET /api/objects/search                          — cone search + type filter (combinable, paginated)
 GET /api/objects/types                           — distinct classified_object_type values in DB
+POST /api/objects/search                         — structured query with magnitude/redshift/anomaly/sort filters
 """
 
 import csv
@@ -12,8 +13,9 @@ import io
 import logging
 import math
 import urllib.parse
+import uuid as _uuid_module
 from datetime import datetime
-from typing import Any, List, Optional, Union
+from typing import Annotated, Any, List, Literal, Optional, Union
 
 import astropy.io.votable
 import astropy.table
@@ -21,9 +23,9 @@ from botocore.exceptions import ClientError
 
 logger = logging.getLogger(__name__)
 
-from fastapi import APIRouter, Depends, HTTPException, Path, Query, Response
+from fastapi import APIRouter, Body, Depends, HTTPException, Path, Query, Response
 from fastapi.responses import JSONResponse, StreamingResponse
-from pydantic import BaseModel
+from pydantic import BaseModel, Field, StringConstraints
 from sqlalchemy.orm import Session
 
 from api.db.session import get_database_session
@@ -271,6 +273,107 @@ class NameSearchResponse(BaseModel):
     resolved_ra: Optional[float]
     resolved_dec: Optional[float]
     simbad_name: Optional[str]
+
+
+_TypeStr = Annotated[str, StringConstraints(max_length=200)]
+
+
+class StructuredSearchFilters(BaseModel):
+    """Request body for POST /api/objects/search structured query."""
+
+    type: Optional[List[_TypeStr]] = Field(None, max_length=50, description="One or more classified_object_type values (OR within list, max 50)")
+    magnitude_min: Optional[float] = Field(None, description="Minimum catalog_magnitude (inclusive)")
+    magnitude_max: Optional[float] = Field(None, description="Maximum catalog_magnitude (inclusive)")
+    redshift_max: Optional[float] = Field(None, description="Maximum catalog_redshift (inclusive)")
+    is_anomaly: Optional[bool] = Field(None, description="When true, restrict to anomaly-flagged objects only")
+    observation_uuid: Optional[str] = Field(None, description="Scope results to one observation UUID")
+    sort_by: Optional[Literal["magnitude", "type", "angular_separation"]] = Field("magnitude", description="Sort field")
+    sort_order: Optional[Literal["asc", "desc"]] = Field("asc", description="Sort direction")
+    limit: Optional[int] = Field(24, ge=1, le=500, description="Page size (1–500, default 24)")
+    offset: Optional[int] = Field(0, ge=0, description="Page offset (default 0)")
+
+
+class StructuredSearchResponse(BaseModel):
+    results: List[ObjectSearchResponse]
+    total_count: int
+
+
+@router.post("/api/objects/search", response_model=StructuredSearchResponse)
+def structured_search_objects(
+    response: Response,
+    filters: StructuredSearchFilters = Body(...),
+    database_session: Session = Depends(get_database_session),
+):
+    """Structured query over AstronomicalObject records with optional filters.
+
+    All filter fields are optional; providing multiple fields ANDs them together.
+    Returns paginated results with total_count in the response body and an
+    X-Total-Count header for consistency with the GET endpoint.
+
+    Sort options: magnitude (default), type, angular_separation.
+    Note: angular_separation sort requires spatial context (cone search) and
+    degrades to magnitude sort when used in pure-filter mode.
+    """
+    sort_by = filters.sort_by or "magnitude"
+    sort_order = filters.sort_order or "asc"
+
+    limit = filters.limit if filters.limit is not None else 24
+    offset = filters.offset if filters.offset is not None else 0
+
+    # Validate observation_uuid format before use
+    obs_uuid = None
+    if filters.observation_uuid is not None:
+        try:
+            obs_uuid = _uuid_module.UUID(filters.observation_uuid)
+        except ValueError:
+            raise HTTPException(status_code=422, detail="observation_uuid is not a valid UUID")
+
+    # Build parameterized SQLAlchemy query — no string interpolation of user values
+    query = database_session.query(AstronomicalObject)
+
+    if filters.type:
+        query = query.filter(AstronomicalObject.classified_object_type.in_(filters.type))
+    if filters.magnitude_min is not None:
+        query = query.filter(AstronomicalObject.catalog_magnitude >= filters.magnitude_min)
+    if filters.magnitude_max is not None:
+        query = query.filter(AstronomicalObject.catalog_magnitude <= filters.magnitude_max)
+    if filters.redshift_max is not None:
+        query = query.filter(AstronomicalObject.catalog_redshift <= filters.redshift_max)
+    if filters.is_anomaly is not None:
+        query = query.filter(AstronomicalObject.is_anomaly_flagged.is_(filters.is_anomaly))
+    if obs_uuid is not None:
+        query = query.filter(AstronomicalObject.source_observation_uuid == obs_uuid)
+
+    # Apply SQL-level sort (angular_separation falls back to magnitude sort in pure-filter mode)
+    if sort_by == "type":
+        sort_col = AstronomicalObject.classified_object_type
+    else:
+        sort_col = AstronomicalObject.catalog_magnitude
+
+    if sort_order == "desc":
+        query = query.order_by(sort_col.desc())
+    else:
+        query = query.order_by(sort_col.asc())
+
+    total_count = query.count()
+    objs = query.offset(offset).limit(limit).all()
+
+    response.headers["X-Total-Count"] = str(total_count)
+
+    results = [
+        ObjectSearchResponse(
+            object_uuid=str(obj.object_uuid),
+            sky_coordinate_ra_degrees=obj.sky_coordinate_ra_degrees,
+            sky_coordinate_dec_degrees=obj.sky_coordinate_dec_degrees,
+            classified_object_type=obj.classified_object_type,
+            catalog_object_name=obj.catalog_object_name,
+            is_anomaly_flagged=obj.is_anomaly_flagged,
+            cutout_thumbnail_url=_make_cutout_thumbnail_url(obj.cutout_s3_prefix),
+        )
+        for obj in objs
+    ]
+
+    return StructuredSearchResponse(results=results, total_count=total_count)
 
 
 @router.get("/api/objects/types", response_model=List[str])

@@ -10,7 +10,7 @@
 
 import type { ObservationDetail, ObservationSummary, WcsParams } from "@/types/observation";
 import type { GraphNeighbors, ObjectDetail } from "@/types/object";
-import type { NameSearchResult, ObjectSearchItem } from "@/types/search";
+import type { NameSearchResult, ObjectSearchItem, StructuredSearchFilters, StructuredSearchResult } from "@/types/search";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -187,6 +187,28 @@ export async function searchByType(
   const total = Number(response.headers.get("x-total-count") ?? "0");
   const results: ObjectSearchItem[] = await response.json();
   return { results, total };
+}
+
+/**
+ * Structured filter query — POST /api/objects/search
+ *
+ * All filter fields are optional. The backend ANDs every supplied filter.
+ * Returns results and total_count for pagination.
+ *
+ * @param filters - StructuredSearchFilters (all optional)
+ * @returns StructuredSearchResult with results array and total_count
+ * @throws Error if the response is not ok
+ */
+export async function searchByFilters(
+  filters: StructuredSearchFilters,
+): Promise<StructuredSearchResult> {
+  const response = await fetch(`${API_BASE}/api/objects/search`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(filters),
+  });
+  if (!response.ok) await throwApiError(response, "Structured search failed");
+  return response.json() as Promise<StructuredSearchResult>;
 }
 
 /**
