@@ -22,6 +22,12 @@ export default function Home() {
           >
             Pipeline dashboard
           </Link>
+          <Link
+            href="/chat"
+            className="rounded bg-zinc-800 px-4 py-2 font-medium hover:bg-zinc-700"
+          >
+            AI Chat
+          </Link>
         </nav>
       </main>
     </div>

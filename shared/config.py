@@ -56,6 +56,9 @@ class Settings(BaseSettings):
     classification_anomaly_model_s3_key: str = "models/anomaly_detector_v1.joblib"
     s3_bucket_models: str = "models"
 
+    # AI chat interface (Phase 8)
+    anthropic_api_key: str = ""
+
     model_config = {"env_file": ".env", "env_file_encoding": "utf-8"}
 
 

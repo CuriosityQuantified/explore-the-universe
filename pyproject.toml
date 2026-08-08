@@ -27,6 +27,8 @@ dependencies = [
     # Classification stack (Phase 5)
     "scikit-learn>=1.4.0",
     "statmorph>=0.7.1",
+    # AI chat interface (Phase 8)
+    "anthropic>=0.40.0,<1.0",
     # NOTE: torch/torchvision/sam3 are optional GPU dependencies installed separately.
     # They are not declared here because they require CUDA-specific pip index URLs
     # and are only needed for the SAM segmentation task (Plan 04-02).

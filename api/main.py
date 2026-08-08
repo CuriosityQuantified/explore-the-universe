@@ -3,6 +3,7 @@ from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
 from api.db.neo4j import close_driver, init_driver
+from api.routers.chat import router as chat_router
 from api.routers.graph import router as graph_router
 from api.routers.health import router as health_router
 from api.routers.ingest import router as ingest_router
@@ -26,6 +27,7 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.include_router(chat_router)
 app.include_router(graph_router)
 app.include_router(health_router)
 app.include_router(ingest_router)
