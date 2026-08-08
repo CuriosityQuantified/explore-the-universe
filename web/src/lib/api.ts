@@ -11,6 +11,7 @@
 import type { ObservationDetail, ObservationSummary, WcsParams } from "@/types/observation";
 import type { GraphNeighbors, ObjectDetail } from "@/types/object";
 import type { NameSearchResult, ObjectSearchItem, StructuredSearchFilters, StructuredSearchResult } from "@/types/search";
+import type { ChatResponse } from "@/types/chat";
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
 
@@ -225,5 +226,33 @@ export async function searchByFilters(
 export async function fetchGraphNeighbors(uuid: string): Promise<GraphNeighbors> {
   const response = await fetch(`${API_BASE}/api/objects/${uuid}/graph-neighbors`);
   if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  return response.json();
+}
+
+/**
+ * Send a natural-language question to the AI chat endpoint.
+ *
+ * POST /api/chat — Claude translates the message into a structured catalog
+ * query using tool use, executes it, and returns an answer with object cards.
+ *
+ * @param message - User's natural-language question (max 2000 chars)
+ * @param observationUuid - Optional: scope results to a specific observation
+ * @returns ChatResponse with answer text, matching objects, and the executed query
+ * @throws Error with descriptive message on non-ok response
+ */
+export async function chatQuery(
+  message: string,
+  observationUuid?: string,
+): Promise<ChatResponse> {
+  const body: { message: string; context?: { observation_uuid: string } } = { message };
+  if (observationUuid) {
+    body.context = { observation_uuid: observationUuid };
+  }
+  const response = await fetch(`${API_BASE}/api/chat`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
+  });
+  if (!response.ok) await throwApiError(response, "Chat request failed");
   return response.json();
 }

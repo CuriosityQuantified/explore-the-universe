@@ -211,6 +211,12 @@ function SearchResults() {
           ← Back
         </button>
         <h1 className="text-2xl font-semibold">{showBuilder ? "Filter Results" : title}</h1>
+        <Link
+          href="/chat"
+          className="ml-auto text-sm rounded bg-zinc-800 px-3 py-1 font-medium hover:bg-zinc-700"
+        >
+          AI Chat
+        </Link>
       </div>
 
       {/* QueryBuilder — always visible, results override URL-driven results when used */}
