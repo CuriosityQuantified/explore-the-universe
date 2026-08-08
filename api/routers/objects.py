@@ -7,16 +7,22 @@ GET /api/objects/search                          — cone search + type filter (
 GET /api/objects/types                           — distinct classified_object_type values in DB
 """
 
+import csv
+import io
 import logging
 import math
 import urllib.parse
 from datetime import datetime
 from typing import Any, List, Optional, Union
 
+import astropy.io.votable
+import astropy.table
+from botocore.exceptions import ClientError
+
 logger = logging.getLogger(__name__)
 
-from fastapi import APIRouter, Depends, HTTPException, Query, Response
-from fastapi.responses import JSONResponse
+from fastapi import APIRouter, Depends, HTTPException, Path, Query, Response
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -556,4 +562,181 @@ def get_object_detail(
             if latest_clf
             else None
         ),
+    )
+
+
+# ---------------------------------------------------------------------------
+# Export endpoints
+# ---------------------------------------------------------------------------
+
+
+def _safe_filename(name: str) -> str:
+    """Sanitize a string for use in a Content-Disposition filename token.
+
+    Strips double-quotes and ASCII control characters to prevent header injection.
+    """
+    return "".join(c for c in name if c != '"' and ord(c) >= 32)
+
+
+def _export_filename(obj, extension: str) -> str:
+    """Return a safe Content-Disposition filename for an object export."""
+    base = obj.catalog_object_name or str(obj.object_uuid)
+    return f"{_safe_filename(base)}.{extension}"
+
+
+def _get_object_or_404(object_uuid: str, database_session):
+    """Fetch AstronomicalObject by UUID or raise 404."""
+    obj = (
+        database_session.query(AstronomicalObject)
+        .filter(AstronomicalObject.object_uuid == object_uuid)
+        .first()
+    )
+    if obj is None:
+        raise HTTPException(status_code=404, detail=f"Object {object_uuid} not found")
+    return obj
+
+
+def _get_latest_classification(object_uuid: str, database_session):
+    """Return latest ObjectClassification for an object, or None."""
+    return (
+        database_session.query(ObjectClassification)
+        .filter(ObjectClassification.object_uuid == object_uuid)
+        .order_by(ObjectClassification.classified_at.desc())
+        .first()
+    )
+
+
+@router.get("/api/objects/{object_uuid}/export/fits")
+def export_fits(
+    object_uuid: str = Path(..., max_length=36),
+    database_session: Session = Depends(get_database_session),
+):
+    """Stream the cutout FITS file for an object from MinIO.
+
+    Returns 404 if the UUID is unknown or if the object has no cutout.
+    """
+    obj = _get_object_or_404(object_uuid, database_session)
+
+    if not obj.cutout_s3_prefix:
+        raise HTTPException(
+            status_code=404,
+            detail=f"No cutout available for object {object_uuid}",
+        )
+
+    s3_key = f"{obj.cutout_s3_prefix}/cutout.fits"
+    s3_client = get_s3_client()
+
+    try:
+        response = s3_client.get_object(
+            Bucket=settings.s3_bucket_segmentation, Key=s3_key
+        )
+    except ClientError as error:
+        error_code = error.response["Error"]["Code"]
+        if error_code in ("NoSuchKey", "404"):
+            raise HTTPException(
+                status_code=404,
+                detail=f"FITS file not found for object {object_uuid}",
+            )
+        logger.error("S3 error fetching FITS for object %s: %s", object_uuid, error)
+        raise HTTPException(status_code=503, detail="Storage service unavailable")
+
+    return StreamingResponse(
+        response["Body"],
+        media_type="application/fits",
+        headers={"Content-Disposition": f'attachment; filename="{_export_filename(obj, "fits")}"'},
+    )
+
+
+@router.get("/api/objects/{object_uuid}/export/csv")
+def export_csv(
+    object_uuid: str = Path(..., max_length=36),
+    database_session: Session = Depends(get_database_session),
+):
+    """Return a single-row CSV with the object's key attributes.
+
+    Returns 404 if the UUID is unknown.
+    """
+    obj = _get_object_or_404(object_uuid, database_session)
+    latest_clf = _get_latest_classification(object_uuid, database_session)
+
+    buf = io.StringIO()
+    writer = csv.writer(buf)
+    writer.writerow([
+        "uuid",
+        "ra",
+        "dec",
+        "type",
+        "catalog_object_name",
+        "catalog_magnitude",
+        "catalog_redshift",
+        "is_anomaly_flagged",
+        "classification_confidence_score",
+        "anomaly_score",
+    ])
+    writer.writerow([
+        str(obj.object_uuid),
+        obj.sky_coordinate_ra_degrees,
+        obj.sky_coordinate_dec_degrees,
+        obj.classified_object_type,
+        obj.catalog_object_name,
+        obj.catalog_magnitude,
+        obj.catalog_redshift,
+        obj.is_anomaly_flagged,
+        latest_clf.classification_confidence_score if latest_clf else None,
+        latest_clf.anomaly_score if latest_clf else None,
+    ])
+
+    return Response(
+        content=buf.getvalue(),
+        media_type="text/csv",
+        headers={"Content-Disposition": f'attachment; filename="{_export_filename(obj, "csv")}"'},
+    )
+
+
+@router.get("/api/objects/{object_uuid}/export/votable")
+def export_votable(
+    object_uuid: str = Path(..., max_length=36),
+    database_session: Session = Depends(get_database_session),
+):
+    """Return a VOTable XML document with the object's key attributes.
+
+    Returns 404 if the UUID is unknown.
+    """
+    obj = _get_object_or_404(object_uuid, database_session)
+    latest_clf = _get_latest_classification(object_uuid, database_session)
+
+    # Build VOTable via astropy.table.Table -> from_table
+    clf_confidence = (
+        latest_clf.classification_confidence_score
+        if latest_clf and latest_clf.classification_confidence_score is not None
+        else float("nan")
+    )
+    clf_anomaly = (
+        latest_clf.anomaly_score
+        if latest_clf and latest_clf.anomaly_score is not None
+        else float("nan")
+    )
+
+    t = astropy.table.Table(
+        {
+            "uuid": [str(obj.object_uuid)],
+            "ra": [obj.sky_coordinate_ra_degrees if obj.sky_coordinate_ra_degrees is not None else float("nan")],
+            "dec": [obj.sky_coordinate_dec_degrees if obj.sky_coordinate_dec_degrees is not None else float("nan")],
+            "type": [obj.classified_object_type or ""],
+            "catalog_object_name": [obj.catalog_object_name or ""],
+            "catalog_magnitude": [obj.catalog_magnitude if obj.catalog_magnitude is not None else float("nan")],
+            "catalog_redshift": [obj.catalog_redshift if obj.catalog_redshift is not None else float("nan")],
+            "is_anomaly_flagged": [bool(obj.is_anomaly_flagged) if obj.is_anomaly_flagged is not None else False],
+            "classification_confidence_score": [clf_confidence],
+            "anomaly_score": [clf_anomaly],
+        }
+    )
+    votable = astropy.io.votable.from_table(t)
+    buf = io.BytesIO()
+    votable.to_xml(buf)
+
+    return StreamingResponse(
+        iter([buf.getvalue()]),
+        media_type="application/x-votable+xml",
+        headers={"Content-Disposition": f'attachment; filename="{_export_filename(obj, "votable")}"'},
     )
