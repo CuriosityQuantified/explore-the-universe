@@ -1,16 +1,16 @@
-# Graph Report - explore-the-universe  (2026-08-08)
+# Graph Report - explore-the-universe  (2026-08-22)
 
 ## Corpus Check
-- 170 files · ~155,840 words
+- 174 files · ~155,987 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1282 nodes · 2514 edges · 103 communities (80 shown, 23 thin omitted)
+- 1308 nodes · 2543 edges · 100 communities (76 shown, 24 thin omitted)
 - Extraction: 92% EXTRACTED · 8% INFERRED · 0% AMBIGUOUS · INFERRED: 199 edges (avg confidence: 0.67)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8bd47b9e`
+- Built from commit: `b3b6ba7d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -25,11 +25,12 @@
 - Phase 5 Plan 01: Schema, Config, Catalog Clients
 - Phase 1-2 Planning Docs
 - Summary
-- get_wcs_params
+- tiles.py
 - segment_sam
 - TestClient
 - Ingest Pipeline Tests
-- generate_tiles
+- Base
+- _process_fits_to_tiff
 - Graphify Skill Docs
 - graph-refresh.sh
 - test_classification_schema.py
@@ -77,7 +78,7 @@
 - query_sdss_region
 - a1b2c3d4e5f6_add_classification_tables_and_columns.py
 - objects.py
-- routers/ingest.py
+- Observation
 - cross_match_catalogs
 - detect_anomalies
 - _make_app_with_mock_session
@@ -96,16 +97,13 @@
 - Next.js Web README
 - upload_test_file
 - compute_search_radius_arcsec
-- main.py
-- load_graph
+- deploy
+- deploy
 - Image Tiling (HiPS/HEALPix)
-- _run_load_graph_with_mocks
 - check_service_health
 - _mock_neo4j_lifecycle
 - Settings
-- observations.py
 - classify_objects
-- ingest_observation
 
 ## God Nodes (most connected - your core abstractions)
 1. `AstronomicalObject` - 47 edges
@@ -146,11 +144,11 @@
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
 
-## Communities (103 total, 23 thin omitted)
+## Communities (100 total, 24 thin omitted)
 
 ### Community 0 - "ViewerClient.tsx"
 Cohesion: 0.06
-Nodes (45): NOTE: Currently all bands share the same tile prefix in MinIO due to, ViewerClient(), ViewerClientProps, ViewerClient, ViewerLoader(), ViewerLoaderProps, BandSelector(), BandSelectorProps (+37 more)
+Nodes (44): NOTE: Currently all bands share the same tile prefix in MinIO due to, ViewerClient(), ViewerClientProps, ViewerClient, ViewerLoaderProps, BandSelector(), BandSelectorProps, CoordinateGrid() (+36 more)
 
 ### Community 1 - "Phase 1: Foundation & Infrastructure Implementation Plan"
 Cohesion: 0.18
@@ -161,8 +159,8 @@ Cohesion: 0.10
 Nodes (25): Phase 5 Context: Classification & Cross-Matching, Anomaly Sensitivity Decisions, Classification Taxonomy Decisions, Cross-Match Behavior Decisions, Result Storage & API Decisions, Phase 5 Research: Classification & Cross-Matching, Gaia DR3 Catalog, joblib (+17 more)
 
 ### Community 3 - "graph_client"
-Cohesion: 0.11
-Nodes (29): get_neo4j_session(), Session, FastAPI dependency yielding a Neo4j session from the singleton driver., graph_client, _mock_neo4j_session(), Regression suite: Issue #12 — graph query and neighborhood API. GET…, Empty Cypher result → in_graph: false., OPTIONAL MATCH produces {uuid: null, ...} rows — these should be dropped. (+21 more)
+Cohesion: 0.15
+Nodes (24): graph_client, _mock_neo4j_session(), Regression suite: Issue #12 — graph query and neighborhood API. GET…, Empty Cypher result → in_graph: false., OPTIONAL MATCH produces {uuid: null, ...} rows — these should be dropped., Neo4j driver exception must surface as 503, not a raw 500., Return a mock neo4j Session whose .run().data() returns *data*., Neo4j driver exception in neighbors endpoint must surface as 503. (+16 more)
 
 ### Community 4 - "devDependencies"
 Cohesion: 0.06
@@ -184,9 +182,9 @@ Nodes (19): Phase 1 UAT, Phase 2 Plan 01 (MAST download), Phase 2 Plan 01 Summar
 Cohesion: 0.25
 Nodes (7): Changes, Checklist, How was this tested?, Notes for the issue-worker, Screenshots, Summary, Type of change
 
-### Community 10 - "get_wcs_params"
-Cohesion: 0.15
-Nodes (15): _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get, Session (+7 more)
+### Community 10 - "tiles.py"
+Cohesion: 0.16
+Nodes (18): _find_sci_extension(), get_observation_detail(), get_tile(), get_wcs_params(), ObservationDetailResponse, BaseModel, get, Session (+10 more)
 
 ### Community 11 - "segment_sam"
 Cohesion: 0.11
@@ -200,9 +198,9 @@ Nodes (64): get_database_session(), TestClient, _make_app_with_mock_session(), R
 Cohesion: 0.16
 Nodes (15): server_running, slow, Integration tests for the ingest pipeline. Tests the POST /api/ingest and GET…, GET /api/ingest/{uuid}/status with unknown UUID should return 404., End-to-end test: ingest a real JWST observation through the full pipeline. This…, Check if the FastAPI server is reachable., POST /api/ingest should return 202 with observation_uuid and status., POST /api/ingest with empty body should return 422 validation error. (+7 more)
 
-### Community 15 - "generate_tiles"
-Cohesion: 0.12
-Nodes (17): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), generate_tiles(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), task (+9 more)
+### Community 15 - "_process_fits_to_tiff"
+Cohesion: 0.17
+Nodes (12): _compute_normalization_parameters(), _find_sci_extension(), _generate_dzi_pyramid(), _get_pyvips(), _normalize_chunk(), _process_fits_to_tiff(), Compute ZScale normalization parameters from a subsample of the image. Samples…, Normalize a chunk of FITS data to 8-bit using pre-computed parameters. Applies… (+4 more)
 
 ### Community 16 - "Graphify Skill Docs"
 Cohesion: 0.22
@@ -269,8 +267,8 @@ Cohesion: 0.17
 Nodes (15): parametrize, _load(), Path, Guards on the committed graphify knowledge-graph integration. These are static…, graph.json is committed, so it must not embed this checkout's location., The graph only stays fresh if this hook survives; `graphify install` rewrites…, CI (.github/workflows/knowledge-graph.yml) shells out to this., `graphify install` hardcodes an absolute interpreter path here. That path only… (+7 more)
 
 ### Community 60 - "AstronomicalObject"
-Cohesion: 0.21
-Nodes (17): chat_query(), ChatContext, ChatObjectResult, ChatRequest, ChatResponse, BaseModel, post, Session (+9 more)
+Cohesion: 0.12
+Nodes (26): chat_query(), ChatContext, ChatObjectResult, ChatRequest, ChatResponse, BaseModel, post, Session (+18 more)
 
 ### Community 61 - "Issue tracker: GitHub"
 Cohesion: 0.29
@@ -282,7 +280,7 @@ Nodes (13): _clean_test_nodes(), _make_catalog_match(), _make_mock_db(), _make_o
 
 ### Community 63 - "ProcessingStep"
 Cohesion: 0.14
-Nodes (28): Tile serving API endpoints for the sky viewer. GET…, WCS header parameters for client-side pixel-to-sky coordinate conversion., WcsParamsResponse, Random Forest classifier for astronomical object morphological type prediction.…, Classify Celery task: feature extraction + RF classification for every object.…, _get_pixel_scale(), UUID, Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh… (+20 more)
+Nodes (28): Random Forest classifier for astronomical object morphological type prediction.…, Classify Celery task: feature extraction + RF classification for every object.…, _get_pixel_scale(), UUID, Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh…, Return WCS pixel scale in arcsec/px for this observation. Recovers FITS S3 keys…, Anomaly detection Celery task: IsolationForest scoring + multi-signal flagging.…, download_fits() (+20 more)
 
 ### Community 65 - "graph.py"
 Cohesion: 0.20
@@ -312,9 +310,9 @@ Nodes (4): downgrade(), Add object_classifications table and 3 catalog columns t
 Cohesion: 0.09
 Nodes (51): _angular_separation_arcsec(), AnomalyResponse, _catalog_external_url(), ClassificationDetailResponse, ClassificationResponse, CrossMatchDetailResponse, CrossMatchResponse, export_csv() (+43 more)
 
-### Community 72 - "routers/ingest.py"
-Cohesion: 0.17
-Nodes (15): get_ingest_status(), IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, get, post, Session (+7 more)
+### Community 72 - "Observation"
+Cohesion: 0.19
+Nodes (16): get_ingest_status(), IngestRequest, IngestResponse, IngestStatusResponse, BaseModel, get, post, Session (+8 more)
 
 ### Community 73 - "cross_match_catalogs"
 Cohesion: 0.25
@@ -357,8 +355,8 @@ Cohesion: 0.37
 Nodes (8): _make_app(), _make_obs(), _make_step(), Regression suite: Phase 6 — observations list API endpoint. GET…, Build a mock Session routing query() calls by model class. AstronomicalObject…, _session_for(), _teardown(), TestObservationsList
 
 ### Community 84 - "test_load_graph.py"
-Cohesion: 0.13
-Nodes (14): neo4j_unit, _in_bbox(), Return True if pixel (cx, cy) lies inside bbox {xmin,ymin,xmax,ymax}., Offline unit tests for pipeline/tasks/load_graph.py and api/db/neo4j.py. These…, Source check: load_graph must not use CREATE for nodes (only MERGE)., api/main.py must wire init_driver/close_driver via a lifespan context., test_close_driver_nils_module_state(), test_get_driver_lazily_initialises() (+6 more)
+Cohesion: 0.05
+Nodes (50): close_driver(), get_driver(), get_neo4j_session(), init_driver(), Session, Neo4j driver singleton and FastAPI dependency. One driver is created at FastAPI…, Create the singleton driver and apply schema constraints., Close the singleton driver (called at FastAPI shutdown). (+42 more)
 
 ### Community 85 - "_make_app_with_mock_session"
 Cohesion: 0.13
@@ -370,7 +368,7 @@ Nodes (23): react-force-graph, AI-assisted Natural Language Querying, Anomaly De
 
 ### Community 87 - "api.ts"
 Cohesion: 0.05
-Nodes (50): metadata, DashboardClient(), DashboardClientProps, STATUS_STYLES, DashboardPage(), metadata, GraphPanel(), decompressCocoRle() (+42 more)
+Nodes (51): metadata, DashboardClient(), DashboardClientProps, STATUS_STYLES, DashboardPage(), metadata, GraphPanel(), decompressCocoRle() (+43 more)
 
 ### Community 88 - "Next.js Web README"
 Cohesion: 0.25
@@ -384,21 +382,17 @@ Nodes (5): post, Session, Temporary test endpoint: uploads a file to MinIO and c
 Cohesion: 0.25
 Nodes (7): compute_search_radius_arcsec(), Catalog client package for cross-matching astronomical objects. Exports the…, Return an adaptive cross-match search radius in arcseconds. Compact sources…, Compact source (1 pixel × 0.1 arcsec/px = 0.1 arcsec extent) → ~2 arcsec., Extended source (200 px × 0.1 arcsec/px = 20 arcsec extent) → scales up., test_compute_search_radius_compact_source_returns_approx_2_arcsec(), test_compute_search_radius_extended_source_scales_up()
 
-### Community 91 - "main.py"
-Cohesion: 0.27
-Nodes (9): close_driver(), get_driver(), init_driver(), Neo4j driver singleton and FastAPI dependency. One driver is created at FastAPI…, Create the singleton driver and apply schema constraints., Close the singleton driver (called at FastAPI shutdown)., Return the singleton driver, initialising lazily if needed., lifespan() (+1 more)
+### Community 91 - "deploy"
+Cohesion: 0.18
+Nodes (10): build, buildCommand, builder, deploy, healthcheckPath, healthcheckTimeout, restartPolicyMaxRetries, restartPolicyType (+2 more)
 
-### Community 92 - "load_graph"
-Cohesion: 0.40
-Nodes (5): load_graph(), task, MERGE all objects for an observation into the Neo4j knowledge graph. Args:…, test_load_graph_uses_merge(), test_load_graph_uses_unwind()
+### Community 92 - "deploy"
+Cohesion: 0.20
+Nodes (9): build, builder, dockerfilePath, deploy, healthcheckPath, healthcheckTimeout, restartPolicyMaxRetries, restartPolicyType (+1 more)
 
 ### Community 94 - "Image Tiling (HiPS/HEALPix)"
 Cohesion: 0.32
 Nodes (8): openseadragon, Anti-feature: 3D Universe Navigation, Image Tiling (HiPS/HEALPix), Multi-wavelength Image Layers, Zoomable Sky Map / Image Viewer, Pitfall: Memory Exhaustion on Trillion-pixel FITS, pyvips, openseadragon
-
-### Community 96 - "_run_load_graph_with_mocks"
-Cohesion: 0.25
-Nodes (11): _make_catalog_match(), _make_object(), _make_observation(), Helper: patch SessionLocal + get_driver, call load_graph.run()., Galaxy CONTAINS two stars whose centroids are inside its bbox., _run_load_graph_with_mocks(), test_load_graph_contains_inference(), test_load_graph_creates_catalog_entries() (+3 more)
 
 ### Community 97 - "check_service_health"
 Cohesion: 0.67
@@ -408,17 +402,9 @@ Nodes (3): check_service_health(), get, Response
 Cohesion: 0.40
 Nodes (4): _mock_neo4j_lifecycle(), fixture, Shared pytest fixtures for the offline test suite. Any test that brings up the…, Patch Neo4j driver lifecycle for tests that don't need a live instance.
 
-### Community 100 - "observations.py"
-Cohesion: 0.31
-Nodes (8): list_observations(), ObservationSummaryResponse, ProcessingStepSummary, BaseModel, get, Session, Observations list API endpoint. GET /api/observations — all ingested…, Return all ingested observations with pipeline status and object counts.
-
 ### Community 101 - "classify_objects"
 Cohesion: 0.11
 Nodes (21): load_or_create_classifier(), predict_object_types(), ndarray, Serialize and upload a trained classifier to S3., Download and deserialize the pre-trained RF classifier from S3. Returns None if…, Predict morphological types for a batch of objects. Sentinel values (-999.0)…, save_classifier(), _build_feature_matrix() (+13 more)
-
-### Community 104 - "ingest_observation"
-Cohesion: 0.40
-Nodes (5): ingest_observation(), task, Dispatch the full 10-task pipeline chain for a pre-created Observation. The…, test_ingest_observation_chain_has_10_tasks(), test_ingest_chain_has_10_tasks()
 
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]
@@ -433,9 +419,9 @@ Nodes (5): ingest_observation(), task, Dispatch the full 10-task pipeline chain 
   web/public/window.svg · relation: conceptually_related_to
 
 ## Knowledge Gaps
-- **195 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `eslintConfig`, `nextConfig` (+190 more)
+- **210 isolated node(s):** `graph-refresh.sh script`, `graphify-mcp`, `explore-the-universe`, `$schema`, `builder` (+205 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **23 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **24 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
@@ -451,6 +437,6 @@ _Questions this graph is uniquely positioned to answer:_
 - **What is the exact relationship between `Next.js Web README` and `window.svg Icon`?**
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `Project Research Summary` connect `Project Research Summary` to `Next.js Web README`, `Image Tiling (HiPS/HEALPix)`, `Catalog Cross-matching`, `Knowledge Graph With Spatial Hierarchy`?**
-  _High betweenness centrality (0.119) - this node is a cross-community bridge._
-- **Why does `AstronomicalObject` connect `AstronomicalObject` to `observations.py`, `detect_sources.py`, `objects.py`, `_make_app_with_mock_session`, `TestClient`, `test_object_detail_api.py`, `_make_app_with_mock_session`, `test_classification_schema.py`, `test_observations_api.py`, `_make_app_with_mock_session`, `_make_app_with_mock_session`, `ProcessingStep`?**
-  _High betweenness centrality (0.107) - this node is a cross-community bridge._
+  _High betweenness centrality (0.104) - this node is a cross-community bridge._
+- **Why does `AstronomicalObject` connect `AstronomicalObject` to `detect_sources.py`, `objects.py`, `_make_app_with_mock_session`, `TestClient`, `Base`, `test_object_detail_api.py`, `_make_app_with_mock_session`, `test_classification_schema.py`, `test_observations_api.py`, `test_load_graph.py`, `_make_app_with_mock_session`, `_make_app_with_mock_session`, `ProcessingStep`?**
+  _High betweenness centrality (0.088) - this node is a cross-community bridge._

@@ -2,6 +2,8 @@ from pydantic_settings import BaseSettings
 
 
 class Settings(BaseSettings):
+    app_revision: str = "development"
+
     # PostgreSQL
     database_url: str = "postgresql://explorer:explorer_dev@localhost:5432/explore_universe"
 

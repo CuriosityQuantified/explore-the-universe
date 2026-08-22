@@ -232,7 +232,7 @@
       "_origin": "ast",
       "id": "alembic_env",
       "community": 14,
-      "community_name": "env.py",
+      "community_name": "Base",
       "norm_label": "env.py"
     },
     {
@@ -243,7 +243,7 @@
       "_origin": "ast",
       "id": "alembic_env_run_migrations_offline",
       "community": 14,
-      "community_name": "env.py",
+      "community_name": "Base",
       "norm_label": "run_migrations_offline()"
     },
     {
@@ -254,7 +254,7 @@
       "_origin": "ast",
       "id": "alembic_env_run_migrations_online",
       "community": 14,
-      "community_name": "env.py",
+      "community_name": "Base",
       "norm_label": "run_migrations_online()"
     },
     {
@@ -407,8 +407,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_db_neo4j",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "neo4j.py"
     },
     {
@@ -418,8 +418,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "api_db_neo4j_init_driver",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "init_driver()"
     },
     {
@@ -429,8 +429,8 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "api_db_neo4j_close_driver",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "close_driver()"
     },
     {
@@ -440,8 +440,8 @@
       "source_location": "L57",
       "_origin": "ast",
       "id": "api_db_neo4j_get_driver",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "get_driver()"
     },
     {
@@ -451,8 +451,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "driver",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "driver"
     },
     {
@@ -462,8 +462,8 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "api_db_neo4j_get_neo4j_session",
-      "community": 3,
-      "community_name": "graph_client",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "get_neo4j_session()"
     },
     {
@@ -473,8 +473,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_db_neo4j_py_session",
-      "community": 3,
-      "community_name": "graph_client",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "session"
     },
     {
@@ -484,8 +484,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_db_neo4j_rationale_1",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "neo4j driver singleton and fastapi dependency. one driver is created at fastapi..."
     },
     {
@@ -495,8 +495,8 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "api_db_neo4j_rationale_35",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "create the singleton driver and apply schema constraints."
     },
     {
@@ -506,8 +506,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "api_db_neo4j_rationale_49",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "close the singleton driver (called at fastapi shutdown)."
     },
     {
@@ -517,8 +517,8 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "api_db_neo4j_rationale_58",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "return the singleton driver, initialising lazily if needed."
     },
     {
@@ -528,8 +528,8 @@
       "source_location": "L66",
       "_origin": "ast",
       "id": "api_db_neo4j_rationale_66",
-      "community": 3,
-      "community_name": "graph_client",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "fastapi dependency yielding a neo4j session from the singleton driver."
     },
     {
@@ -561,19 +561,19 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_main",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "main.py"
     },
     {
       "label": "lifespan()",
       "file_type": "code",
       "source_file": "api/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "api_main_lifespan",
-      "community": 91,
-      "community_name": "main.py",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "lifespan()"
     },
     {
@@ -969,7 +969,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "routers/ingest.py"
     },
     {
@@ -980,7 +980,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestrequest",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "ingestrequest"
     },
     {
@@ -991,7 +991,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_basemodel",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "basemodel"
     },
     {
@@ -1002,7 +1002,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingestresponse",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "ingestresponse"
     },
     {
@@ -1013,7 +1013,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_ingeststatusresponse",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "ingeststatusresponse"
     },
     {
@@ -1024,7 +1024,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_post",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "post"
     },
     {
@@ -1035,7 +1035,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_trigger_ingest",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "trigger_ingest()"
     },
     {
@@ -1046,7 +1046,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_session",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "session"
     },
     {
@@ -1057,7 +1057,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_py_get",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "get"
     },
     {
@@ -1068,7 +1068,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_get_ingest_status",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "get_ingest_status()"
     },
     {
@@ -1079,7 +1079,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_1",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post..."
     },
     {
@@ -1090,7 +1090,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_25",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "request body for post /api/ingest."
     },
     {
@@ -1101,7 +1101,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_38",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "response body for post /api/ingest (202 accepted)."
     },
     {
@@ -1112,7 +1112,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_49",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "response body for get /api/ingest/{observation_uuid}/status."
     },
     {
@@ -1123,7 +1123,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_66",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "trigger the ingestion pipeline for a jwst observation. creates an observation..."
     },
     {
@@ -1134,7 +1134,7 @@
       "_origin": "ast",
       "id": "api_routers_ingest_rationale_140",
       "community": 72,
-      "community_name": "routers/ingest.py",
+      "community_name": "Observation",
       "norm_label": "check the status of an ingestion pipeline. returns the observation details..."
     },
     {
@@ -1265,8 +1265,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "api_routers_objects_make_cutout_thumbnail_url",
-      "community": 60,
-      "community_name": "AstronomicalObject",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "_make_cutout_thumbnail_url()"
     },
     {
@@ -1562,8 +1562,8 @@
       "source_location": "L246",
       "_origin": "ast",
       "id": "api_routers_objects_rationale_246",
-      "community": 60,
-      "community_name": "AstronomicalObject",
+      "community": 71,
+      "community_name": "objects.py",
       "norm_label": "return a 1-hour signed minio url for the cutout png, or none if no prefix."
     },
     {
@@ -1705,8 +1705,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_observations",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "observations.py"
     },
     {
@@ -1716,8 +1716,8 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "api_routers_observations_processingstepsummary",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "processingstepsummary"
     },
     {
@@ -1727,8 +1727,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_observations_py_basemodel",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "basemodel"
     },
     {
@@ -1738,8 +1738,8 @@
       "source_location": "L26",
       "_origin": "ast",
       "id": "api_routers_observations_observationsummaryresponse",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "observationsummaryresponse"
     },
     {
@@ -1749,8 +1749,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_observations_py_get",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "get"
     },
     {
@@ -1760,8 +1760,8 @@
       "source_location": "L38",
       "_origin": "ast",
       "id": "api_routers_observations_list_observations",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "list_observations()"
     },
     {
@@ -1771,8 +1771,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "api_routers_observations_py_session",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "session"
     },
     {
@@ -1782,8 +1782,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_observations_rationale_1",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "observations list api endpoint. get /api/observations \u2014 all ingested..."
     },
     {
@@ -1793,9 +1793,42 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "api_routers_observations_rationale_41",
-      "community": 100,
-      "community_name": "observations.py",
+      "community": 60,
+      "community_name": "AstronomicalObject",
       "norm_label": "return all ingested observations with pipeline status and object counts."
+    },
+    {
+      "label": "revision.py",
+      "file_type": "code",
+      "source_file": "api/routers/revision.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "api_routers_revision",
+      "community": 60,
+      "community_name": "AstronomicalObject",
+      "norm_label": "revision.py"
+    },
+    {
+      "label": "get",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "_origin": "ast",
+      "id": "api_routers_revision_py_get",
+      "community": 60,
+      "community_name": "AstronomicalObject",
+      "norm_label": "get"
+    },
+    {
+      "label": "get_revision()",
+      "file_type": "code",
+      "source_file": "api/routers/revision.py",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "api_routers_revision_get_revision",
+      "community": 60,
+      "community_name": "AstronomicalObject",
+      "norm_label": "get_revision()"
     },
     {
       "label": "test_upload.py",
@@ -1870,8 +1903,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_tiles",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "tiles.py"
     },
     {
@@ -1881,8 +1914,8 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "api_routers_tiles_wcsparamsresponse",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "wcsparamsresponse"
     },
     {
@@ -1893,7 +1926,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_py_basemodel",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "basemodel"
     },
     {
@@ -1904,7 +1937,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_tilemetadataresponse",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "tilemetadataresponse"
     },
     {
@@ -1915,7 +1948,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_observationdetailresponse",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "observationdetailresponse"
     },
     {
@@ -1926,7 +1959,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_find_sci_extension",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -1937,7 +1970,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_py_get",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "get"
     },
     {
@@ -1948,7 +1981,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_get_tile",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "get_tile()"
     },
     {
@@ -1959,7 +1992,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_get_wcs_params",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "get_wcs_params()"
     },
     {
@@ -1970,7 +2003,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_get_observation_detail",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "get_observation_detail()"
     },
     {
@@ -1981,7 +2014,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_py_session",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "session"
     },
     {
@@ -1991,8 +2024,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_1",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "tile serving api endpoints for the sky viewer. get..."
     },
     {
@@ -2002,8 +2035,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_34",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 10,
+      "community_name": "tiles.py",
       "norm_label": "wcs header parameters for client-side pixel-to-sky coordinate conversion."
     },
     {
@@ -2014,7 +2047,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_51",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "tile generation metadata from the generate_tiles processing step."
     },
     {
@@ -2025,7 +2058,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_66",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "observation provenance and tile metadata for the info panel."
     },
     {
@@ -2036,7 +2069,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_85",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "find the sci extension in a fits hdu list. same logic as pipeline/tasks/tile.py..."
     },
     {
@@ -2047,7 +2080,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_129",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "stream a tile jpeg from minio. proxies tile requests to minio to avoid cors..."
     },
     {
@@ -2058,7 +2091,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_163",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "extract wcs parameters from the primary fits file for client-side projection...."
     },
     {
@@ -2069,7 +2102,7 @@
       "_origin": "ast",
       "id": "api_routers_tiles_rationale_247",
       "community": 10,
-      "community_name": "get_wcs_params",
+      "community_name": "tiles.py",
       "norm_label": "return observation provenance metadata and tile metadata. queries the..."
     },
     {
@@ -3663,8 +3696,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_py_task",
-      "community": 104,
-      "community_name": "ingest_observation",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "task"
     },
     {
@@ -3674,8 +3707,8 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_ingest_observation",
-      "community": 104,
-      "community_name": "ingest_observation",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "ingest_observation()"
     },
     {
@@ -3696,8 +3729,8 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "pipeline_tasks_ingest_rationale_45",
-      "community": 104,
-      "community_name": "ingest_observation",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "dispatch the full 10-task pipeline chain for a pre-created observation. the..."
     },
     {
@@ -3707,8 +3740,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "load_graph.py"
     },
     {
@@ -3729,8 +3762,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph_py_task",
-      "community": 92,
-      "community_name": "load_graph",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "task"
     },
     {
@@ -3740,8 +3773,8 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph_load_graph",
-      "community": 92,
-      "community_name": "load_graph",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "load_graph()"
     },
     {
@@ -3751,8 +3784,8 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph_rationale_1",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "bulk-load observation objects into the neo4j knowledge graph. tenth (final)..."
     },
     {
@@ -3773,8 +3806,8 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "pipeline_tasks_load_graph_rationale_50",
-      "community": 92,
-      "community_name": "load_graph",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "merge all objects for an observation into the neo4j knowledge graph. args:..."
     },
     {
@@ -4093,7 +4126,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_get_pyvips",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_get_pyvips()"
     },
     {
@@ -4104,7 +4137,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_find_sci_extension",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_find_sci_extension()"
     },
     {
@@ -4115,7 +4148,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_compute_normalization_parameters",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_compute_normalization_parameters()"
     },
     {
@@ -4126,7 +4159,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_normalize_chunk",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_normalize_chunk()"
     },
     {
@@ -4137,7 +4170,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_process_fits_to_tiff",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_process_fits_to_tiff()"
     },
     {
@@ -4148,7 +4181,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_dzi_pyramid",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "_generate_dzi_pyramid()"
     },
     {
@@ -4158,8 +4191,8 @@
       "source_location": "L345",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_upload_tiles_to_minio",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "ProcessingStep",
       "norm_label": "_upload_tiles_to_minio()"
     },
     {
@@ -4169,8 +4202,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_py_task",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "ProcessingStep",
       "norm_label": "task"
     },
     {
@@ -4180,8 +4213,8 @@
       "source_location": "L432",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_generate_tiles",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "ProcessingStep",
       "norm_label": "generate_tiles()"
     },
     {
@@ -4203,7 +4236,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_55",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "lazily import pyvips, setting dyld_library_path for macos homebrew."
     },
     {
@@ -4214,7 +4247,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_84",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "find the sci extension in a fits hdu list. same logic as..."
     },
     {
@@ -4225,7 +4258,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_123",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "compute zscale normalization parameters from a subsample of the image. samples..."
     },
     {
@@ -4236,7 +4269,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_162",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "normalize a chunk of fits data to 8-bit using pre-computed parameters. applies..."
     },
     {
@@ -4247,7 +4280,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_194",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "process a fits file into a tiled, pyramidal tiff using chunked reads. memory..."
     },
     {
@@ -4258,7 +4291,7 @@
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_295",
       "community": 15,
-      "community_name": "generate_tiles",
+      "community_name": "_process_fits_to_tiff",
       "norm_label": "generate dzi tile pyramid from a pyramidal tiff. uses pyvips dzsave to create a..."
     },
     {
@@ -4268,8 +4301,8 @@
       "source_location": "L348",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_348",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "ProcessingStep",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi..."
     },
     {
@@ -4279,8 +4312,8 @@
       "source_location": "L433",
       "_origin": "ast",
       "id": "pipeline_tasks_tile_rationale_433",
-      "community": 15,
-      "community_name": "generate_tiles",
+      "community": 63,
+      "community_name": "ProcessingStep",
       "norm_label": "generate dzi tile pyramids from fits data and upload to minio. receives the..."
     },
     {
@@ -4419,6 +4452,116 @@
       "norm_label": "explore-the-universe"
     },
     {
+      "label": "railway.json",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "railway",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "railway.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "railway_schema",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "$schema"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "railway_build",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "build"
+    },
+    {
+      "label": "builder",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "railway_build_builder",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "builder"
+    },
+    {
+      "label": "dockerfilePath",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "railway_build_dockerfilepath",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "dockerfilepath"
+    },
+    {
+      "label": "deploy",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "railway_deploy",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "deploy"
+    },
+    {
+      "label": "healthcheckPath",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "railway_deploy_healthcheckpath",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "healthcheckpath"
+    },
+    {
+      "label": "healthcheckTimeout",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "railway_deploy_healthchecktimeout",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "healthchecktimeout"
+    },
+    {
+      "label": "restartPolicyType",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "railway_deploy_restartpolicytype",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "restartpolicytype"
+    },
+    {
+      "label": "restartPolicyMaxRetries",
+      "file_type": "code",
+      "source_file": "railway.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "railway_deploy_restartpolicymaxretries",
+      "community": 92,
+      "community_name": "deploy",
+      "norm_label": "restartpolicymaxretries"
+    },
+    {
       "label": "check_graph_fresh.py",
       "file_type": "code",
       "source_file": "scripts/check_graph_fresh.py",
@@ -4524,8 +4667,8 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "shared_models_base",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 14,
+      "community_name": "Base",
       "norm_label": "base"
     },
     {
@@ -4535,8 +4678,8 @@
       "source_location": "",
       "_origin": "ast",
       "id": "declarativebase",
-      "community": 71,
-      "community_name": "objects.py",
+      "community": 14,
+      "community_name": "Base",
       "norm_label": "declarativebase"
     },
     {
@@ -4590,8 +4733,8 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "shared_models_observation",
-      "community": 63,
-      "community_name": "ProcessingStep",
+      "community": 72,
+      "community_name": "Observation",
       "norm_label": "observation"
     },
     {
@@ -5481,8 +5624,8 @@
       "source_location": "L256",
       "_origin": "ast",
       "id": "tests_test_classification_schema_test_ingest_observation_chain_has_10_tasks",
-      "community": 104,
-      "community_name": "ingest_observation",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_ingest_observation_chain_has_10_tasks()"
     },
     {
@@ -6625,8 +6768,8 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "tests_test_graph_query_api_graph_client_init",
-      "community": 3,
-      "community_name": "graph_client",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": ".__init__()"
     },
     {
@@ -7351,8 +7494,8 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_get_neo4j_session_is_generator",
-      "community": 3,
-      "community_name": "graph_client",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_get_neo4j_session_is_generator()"
     },
     {
@@ -7428,8 +7571,8 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_uses_unwind",
-      "community": 92,
-      "community_name": "load_graph",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_uses_unwind()"
     },
     {
@@ -7439,8 +7582,8 @@
       "source_location": "L124",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_uses_merge",
-      "community": 92,
-      "community_name": "load_graph",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_uses_merge()"
     },
     {
@@ -7505,8 +7648,8 @@
       "source_location": "L180",
       "_origin": "ast",
       "id": "tests_test_load_graph_make_observation",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "_make_observation()"
     },
     {
@@ -7516,8 +7659,8 @@
       "source_location": "L188",
       "_origin": "ast",
       "id": "tests_test_load_graph_make_object",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "_make_object()"
     },
     {
@@ -7527,8 +7670,8 @@
       "source_location": "L214",
       "_origin": "ast",
       "id": "tests_test_load_graph_make_catalog_match",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "_make_catalog_match()"
     },
     {
@@ -7538,8 +7681,8 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "tests_test_load_graph_run_load_graph_with_mocks",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "_run_load_graph_with_mocks()"
     },
     {
@@ -7549,8 +7692,8 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_merges_object_nodes",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_merges_object_nodes()"
     },
     {
@@ -7560,8 +7703,8 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_creates_catalog_entries",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_creates_catalog_entries()"
     },
     {
@@ -7571,8 +7714,8 @@
       "source_location": "L273",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_creates_observed_in_edges",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_creates_observed_in_edges()"
     },
     {
@@ -7582,8 +7725,8 @@
       "source_location": "L285",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_contains_inference",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_contains_inference()"
     },
     {
@@ -7593,8 +7736,8 @@
       "source_location": "L314",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_load_graph_no_contains_when_centroid_outside",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_load_graph_no_contains_when_centroid_outside()"
     },
     {
@@ -7615,8 +7758,8 @@
       "source_location": "L352",
       "_origin": "ast",
       "id": "tests_test_load_graph_test_ingest_chain_has_10_tasks",
-      "community": 104,
-      "community_name": "ingest_observation",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "test_ingest_chain_has_10_tasks()"
     },
     {
@@ -7637,8 +7780,8 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "tests_test_load_graph_rationale_31",
-      "community": 3,
-      "community_name": "graph_client",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "get_neo4j_session must be a generator function so fastapi depends works."
     },
     {
@@ -7659,8 +7802,8 @@
       "source_location": "L223",
       "_origin": "ast",
       "id": "tests_test_load_graph_rationale_223",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "helper: patch sessionlocal + get_driver, call load_graph.run()."
     },
     {
@@ -7670,8 +7813,8 @@
       "source_location": "L286",
       "_origin": "ast",
       "id": "tests_test_load_graph_rationale_286",
-      "community": 96,
-      "community_name": "_run_load_graph_with_mocks",
+      "community": 84,
+      "community_name": "test_load_graph.py",
       "norm_label": "galaxy contains two stars whose centroids are inside its bbox."
     },
     {
@@ -8577,6 +8720,28 @@
       "norm_label": "build a mock session routing query() calls by model class. astronomicalobject..."
     },
     {
+      "label": "test_revision.py",
+      "file_type": "code",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "tests_test_revision",
+      "community": 60,
+      "community_name": "AstronomicalObject",
+      "norm_label": "test_revision.py"
+    },
+    {
+      "label": "test_revision_endpoint_returns_configured_revision()",
+      "file_type": "code",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "tests_test_revision_test_revision_endpoint_returns_configured_revision",
+      "community": 60,
+      "community_name": "AstronomicalObject",
+      "norm_label": "test_revision_endpoint_returns_configured_revision()"
+    },
+    {
       "label": "test_search_api.py",
       "file_type": "code",
       "source_file": "tests/test_search_api.py",
@@ -9405,7 +9570,7 @@
       "label": "nextConfig",
       "file_type": "code",
       "source_file": "web/next.config.ts",
-      "source_location": "L3",
+      "source_location": "L5",
       "_origin": "ast",
       "id": "web_next_config_nextconfig",
       "community": 33,
@@ -9840,6 +10005,127 @@
       "community": 34,
       "community_name": "PostCSS Config",
       "norm_label": "config"
+    },
+    {
+      "label": "web/railway.json",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "web_railway",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "web/railway.json"
+    },
+    {
+      "label": "$schema",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L2",
+      "_origin": "ast",
+      "id": "web_railway_schema",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "$schema"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "web_railway_build",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "build"
+    },
+    {
+      "label": "builder",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L4",
+      "_origin": "ast",
+      "id": "web_railway_build_builder",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "builder"
+    },
+    {
+      "label": "buildCommand",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L5",
+      "_origin": "ast",
+      "id": "web_railway_build_buildcommand",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "buildcommand"
+    },
+    {
+      "label": "deploy",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "web_railway_deploy",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "deploy"
+    },
+    {
+      "label": "startCommand",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "web_railway_deploy_startcommand",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "startcommand"
+    },
+    {
+      "label": "healthcheckPath",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "web_railway_deploy_healthcheckpath",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "healthcheckpath"
+    },
+    {
+      "label": "healthcheckTimeout",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "web_railway_deploy_healthchecktimeout",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "healthchecktimeout"
+    },
+    {
+      "label": "restartPolicyType",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "web_railway_deploy_restartpolicytype",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "restartpolicytype"
+    },
+    {
+      "label": "restartPolicyMaxRetries",
+      "file_type": "code",
+      "source_file": "web/railway.json",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "web_railway_deploy_restartpolicymaxretries",
+      "community": 91,
+      "community_name": "deploy",
+      "norm_label": "restartpolicymaxretries"
     },
     {
       "label": "chat/page.tsx",
@@ -10321,8 +10607,8 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "web_src_app_viewer_uuid_viewerloader_viewerloader",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
+      "community": 87,
+      "community_name": "api.ts",
       "norm_label": "viewerloader()"
     },
     {
@@ -10967,7 +11253,7 @@
       "label": "fetchObservations()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L28",
+      "source_location": "L31",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobservations",
       "community": 87,
@@ -10978,7 +11264,7 @@
       "label": "fetchObservation()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L47",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobservation",
       "community": 87,
@@ -10989,7 +11275,7 @@
       "label": "fetchWcsParams()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L68",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchwcsparams",
       "community": 87,
@@ -11000,7 +11286,7 @@
       "label": "getTileUrl()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L87",
+      "source_location": "L90",
       "_origin": "ast",
       "id": "web_src_lib_api_gettileurl",
       "community": 87,
@@ -11011,7 +11297,7 @@
       "label": "fetchObjectDetail()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L102",
+      "source_location": "L105",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobjectdetail",
       "community": 87,
@@ -11022,7 +11308,7 @@
       "label": "throwApiError()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L115",
+      "source_location": "L118",
       "_origin": "ast",
       "id": "web_src_lib_api_throwapierror",
       "community": 87,
@@ -11033,7 +11319,7 @@
       "label": "fetchObjectTypes()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L121",
+      "source_location": "L124",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchobjecttypes",
       "community": 87,
@@ -11044,7 +11330,7 @@
       "label": "searchByName()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L134",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "web_src_lib_api_searchbyname",
       "community": 87,
@@ -11055,7 +11341,7 @@
       "label": "searchByCone()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L154",
+      "source_location": "L157",
       "_origin": "ast",
       "id": "web_src_lib_api_searchbycone",
       "community": 87,
@@ -11066,7 +11352,7 @@
       "label": "searchByType()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L180",
+      "source_location": "L183",
       "_origin": "ast",
       "id": "web_src_lib_api_searchbytype",
       "community": 87,
@@ -11077,7 +11363,7 @@
       "label": "searchByFilters()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L203",
+      "source_location": "L206",
       "_origin": "ast",
       "id": "web_src_lib_api_searchbyfilters",
       "community": 87,
@@ -11088,7 +11374,7 @@
       "label": "fetchGraphNeighbors()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L226",
+      "source_location": "L229",
       "_origin": "ast",
       "id": "web_src_lib_api_fetchgraphneighbors",
       "community": 87,
@@ -11099,7 +11385,7 @@
       "label": "chatQuery()",
       "file_type": "code",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L243",
+      "source_location": "L246",
       "_origin": "ast",
       "id": "web_src_lib_api_chatquery",
       "community": 87,
@@ -15138,7 +15424,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/main.py",
-      "source_location": "L18",
+      "source_location": "L19",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main_lifespan",
@@ -15185,7 +15471,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "api/main.py",
-      "source_location": "L20",
+      "source_location": "L21",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main_lifespan",
@@ -15934,7 +16220,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "api/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
@@ -16022,7 +16308,7 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
-      "target": "api_routers_test_upload",
+      "target": "api_routers_revision",
       "confidence_score": 1.0
     },
     {
@@ -16031,6 +16317,18 @@
       "confidence": "EXTRACTED",
       "source_file": "api/main.py",
       "source_location": "L13",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_main",
+      "target": "api_routers_test_upload",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/main.py",
+      "source_location": "L14",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main",
@@ -16054,7 +16352,7 @@
       "context": "parameter_type",
       "confidence": "EXTRACTED",
       "source_file": "api/main.py",
-      "source_location": "L17",
+      "source_location": "L18",
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_main_lifespan",
@@ -16130,6 +16428,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "api_routers_observations",
+      "target": "fastapi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/revision.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_revision",
       "target": "fastapi",
       "confidence_score": 1.0
     },
@@ -19522,6 +19832,77 @@
       "_origin": "ast",
       "source": "api_routers_observations_rationale_41",
       "target": "api_routers_observations_list_observations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/revision.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_revision",
+      "target": "api_routers_revision_get_revision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/revision.py",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "api_routers_revision",
+      "target": "shared_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_revision",
+      "target": "api_routers_revision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "source_file": "api/routers/revision.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "context": "decorator",
+      "_origin": "ast",
+      "source": "api_routers_revision_get_revision",
+      "target": "api_routers_revision_py_get",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_revision",
+      "target": "api_routers_revision_get_revision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_revision_test_revision_endpoint_returns_configured_revision",
+      "target": "api_routers_revision_get_revision",
       "confidence_score": 1.0
     },
     {
@@ -25965,6 +26346,105 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway",
+      "target": "railway_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway",
+      "target": "railway_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway",
+      "target": "railway_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway_build",
+      "target": "railway_build_builder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway_build",
+      "target": "railway_build_dockerfilepath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway_deploy",
+      "target": "railway_deploy_healthcheckpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway_deploy",
+      "target": "railway_deploy_healthchecktimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway_deploy",
+      "target": "railway_deploy_restartpolicymaxretries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "railway.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "railway_deploy",
+      "target": "railway_deploy_restartpolicytype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "scripts/check_graph_fresh.py",
       "source_location": "L52",
       "weight": 1.0,
@@ -26064,6 +26544,18 @@
       "weight": 1.0,
       "_origin": "ast",
       "source": "tests_test_load_graph_integration",
+      "target": "shared_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_revision",
       "target": "shared_config",
       "confidence_score": 1.0
     },
@@ -34916,6 +35408,17 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "tests/test_revision.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "tests_test_revision",
+      "target": "tests_test_revision_test_revision_endpoint_returns_configured_revision",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "tests/test_search_api.py",
       "source_location": "L26",
       "weight": 1.0,
@@ -37042,7 +37545,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/next.config.ts",
-      "source_location": "L3",
+      "source_location": "L5",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_next_config",
@@ -37497,6 +38000,116 @@
       "_origin": "ast",
       "source": "web_postcss_config",
       "target": "web_postcss_config_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway",
+      "target": "web_railway_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway",
+      "target": "web_railway_deploy",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway",
+      "target": "web_railway_schema",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_build",
+      "target": "web_railway_build_buildcommand",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_build",
+      "target": "web_railway_build_builder",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_deploy",
+      "target": "web_railway_deploy_healthcheckpath",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_deploy",
+      "target": "web_railway_deploy_healthchecktimeout",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_deploy",
+      "target": "web_railway_deploy_restartpolicymaxretries",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_deploy",
+      "target": "web_railway_deploy_restartpolicytype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "web/railway.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "_origin": "ast",
+      "source": "web_railway_deploy",
+      "target": "web_railway_deploy_startcommand",
       "confidence_score": 1.0
     },
     {
@@ -40030,7 +40643,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L243",
+      "source_location": "L246",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40041,7 +40654,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L226",
+      "source_location": "L229",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40052,7 +40665,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L102",
+      "source_location": "L105",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40063,7 +40676,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L121",
+      "source_location": "L124",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40074,7 +40687,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L47",
+      "source_location": "L50",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40085,7 +40698,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L28",
+      "source_location": "L31",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40096,7 +40709,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L68",
+      "source_location": "L71",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40107,7 +40720,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L87",
+      "source_location": "L90",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40118,7 +40731,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L154",
+      "source_location": "L157",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40129,7 +40742,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L203",
+      "source_location": "L206",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40140,7 +40753,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L134",
+      "source_location": "L137",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40151,7 +40764,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L180",
+      "source_location": "L183",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40162,7 +40775,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L115",
+      "source_location": "L118",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api",
@@ -40342,7 +40955,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L256",
+      "source_location": "L259",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api_chatquery",
@@ -40354,7 +40967,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L123",
+      "source_location": "L126",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api_fetchobjecttypes",
@@ -40366,7 +40979,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L169",
+      "source_location": "L172",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api_searchbycone",
@@ -40378,7 +40991,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L211",
+      "source_location": "L214",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api_searchbyfilters",
@@ -40390,7 +41003,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L141",
+      "source_location": "L144",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api_searchbyname",
@@ -40402,7 +41015,7 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L187",
+      "source_location": "L190",
       "weight": 1.0,
       "_origin": "ast",
       "source": "web_src_lib_api_searchbytype",
@@ -43662,5 +44275,5 @@
       "source_file": ".planning/research/SUMMARY.md"
     }
   ],
-  "built_at_commit": "8bd47b9e3435ecef5e8595582ce3d4c3ec7bc1fc"
+  "built_at_commit": "b3b6ba7d50c23bf2268b7787b735b3b98a04e138"
 }
