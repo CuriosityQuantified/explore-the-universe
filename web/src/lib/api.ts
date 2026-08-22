@@ -13,7 +13,10 @@ import type { GraphNeighbors, ObjectDetail } from "@/types/object";
 import type { NameSearchResult, ObjectSearchItem, StructuredSearchFilters, StructuredSearchResult } from "@/types/search";
 import type { ChatResponse } from "@/types/chat";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+// Same-origin by default so production traffic passes through the Next.js
+// rewrite to Railway's private API service. Local development can still set
+// NEXT_PUBLIC_API_URL=http://localhost:8000 to call FastAPI directly.
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
 
 /**
  * Fetch the list of all ingested observations with pipeline status and counts.

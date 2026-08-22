@@ -1,0 +1,10 @@
+.git
+.github
+.pytest_cache
+.venv
+HANDOFF.md
+graphify-out
+tests
+web
+**/__pycache__
+**/*.pyc
