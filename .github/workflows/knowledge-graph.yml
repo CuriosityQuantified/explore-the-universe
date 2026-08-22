@@ -39,8 +39,10 @@ jobs:
 
       # Only the base package — `graphify update` needs tree-sitter, not the
       # mcp/pdf extras, and pulling fewer wheels keeps this job quick.
+      # Pin the extractor so local refreshes and CI do not disagree when
+      # graphify changes its AST schema.
       - name: Install graphify
-        run: pip install "graphifyy>=0.9.30"
+        run: pip install "graphifyy==0.9.48"
 
       - name: Check graph freshness
         run: python3 scripts/check_graph_fresh.py
