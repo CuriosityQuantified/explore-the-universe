@@ -89,15 +89,15 @@
   "87": "api.ts",
   "88": "Next.js Web README",
   "89": "PipelineStatus",
-  "90": "generate_cutouts",
+  "90": "compute_search_radius_arcsec",
   "91": "deploy",
   "92": "deploy",
   "93": "not-found.tsx",
   "94": "Image Tiling (HiPS/HEALPix)",
   "95": "test_health.py",
-  "96": "classify_objects",
+  "96": "generate_cutouts",
   "97": "Architecture Research",
   "98": "_mock_neo4j_lifecycle",
   "99": "PyTorch",
-  "101": "predict_object_types"
+  "101": "classify_objects"
 }
