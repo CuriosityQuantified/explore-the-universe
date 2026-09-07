@@ -1,4 +1,4 @@
-# Graph Report - explore-the-universe  (2026-08-22)
+# Graph Report - explore-the-universe  (2026-09-06)
 
 ## Corpus Check
 - 174 files · ~156,006 words
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d76df9e4`
+- Built from commit: `449e2ecb`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -96,15 +96,15 @@
 - api.ts
 - Next.js Web README
 - PipelineStatus
-- generate_cutouts
+- compute_search_radius_arcsec
 - deploy
 - deploy
 - Image Tiling (HiPS/HEALPix)
-- classify_objects
+- generate_cutouts
 - Architecture Research
 - _mock_neo4j_lifecycle
 - PyTorch
-- predict_object_types
+- classify_objects
 
 ## God Nodes (most connected - your core abstractions)
 1. `AstronomicalObject` - 60 edges
@@ -134,16 +134,16 @@
 - None detected.
 
 ## Hyperedges (group relationships)
-- **Roadmap Phase 1-5 Execution Order** — _planning_roadmap_phase1_foundation_infrastructure, _planning_roadmap_phase2_data_ingestion_tiling, _planning_roadmap_phase3_sky_viewer, _planning_roadmap_phase4_segmentation, _planning_roadmap_phase5_classification_crossmatching [EXTRACTED 0.90]
-- **JWST Ingestion Celery Task Chain** — _planning_phases_02_data_ingestion_tiling_02_03_summary_ingest_observation_task, _planning_phases_02_data_ingestion_tiling_02_01_summary_download_fits_task, _planning_phases_02_data_ingestion_tiling_02_02_summary_wcs_validation_task, _planning_phases_02_data_ingestion_tiling_02_02_summary_generate_tiles_task [EXTRACTED 0.90]
-- **Phase 3 Sky Viewer Planning Cycle** — planning_phases_03-sky-viewer_03-CONTEXT, planning_phases_03-sky-viewer_03-RESEARCH, planning_phases_03-sky-viewer_03-01-PLAN, planning_phases_03-sky-viewer_03-02-PLAN, planning_phases_03-sky-viewer_03-03-PLAN, planning_phases_03-sky-viewer_03-VERIFICATION [INFERRED 0.75]
-- **Docker Compose Infrastructure Stack** — docker_compose, docker_compose_postgres, docker_compose_redis, docker_compose_minio, docker_compose_neo4j [EXTRACTED 0.90]
-- **Phase 5 Locked Decision Set** — planning_phases_05_classification_cross_matching_05_context_cross_match_behavior, planning_phases_05_classification_cross_matching_05_context_classification_taxonomy, planning_phases_05_classification_cross_matching_05_context_anomaly_sensitivity, planning_phases_05_classification_cross_matching_05_context_result_storage_api [EXTRACTED 0.90]
-- **SAM Segmentation Pipeline and Domain-Adaptation Risk** — planning_research_features_sam_segmentation, planning_research_stack_sam2, planning_research_stack_pytorch, planning_research_pitfalls_sam_domain_mismatch [INFERRED 0.75]
-- **Dual-database Knowledge Graph Architecture** — planning_research_features_knowledge_graph, planning_research_stack_neo4j, planning_research_pitfalls_kg_schema_lock_in [EXTRACTED 0.85]
 - **Core Pipeline Dependency Chain (Ingest to Encyclopedia)** — planning_research_features_fits_ingestion, planning_research_features_wcs_coordinate_support, planning_research_features_image_tiling, planning_research_features_sam_segmentation, planning_research_features_catalog_cross_matching, planning_research_features_knowledge_graph [EXTRACTED 0.85]
+- **Dual-database Knowledge Graph Architecture** — planning_research_features_knowledge_graph, planning_research_stack_neo4j, planning_research_pitfalls_kg_schema_lock_in [EXTRACTED 0.85]
 - **FastAPI Health Check Verification Flow** — api_routers_health, concept_postgresql, concept_redis, concept_minio, concept_neo4j [EXTRACTED 0.85]
+- **Docker Compose Infrastructure Stack** — docker_compose, docker_compose_postgres, docker_compose_redis, docker_compose_minio, docker_compose_neo4j [EXTRACTED 0.90]
+- **JWST Ingestion Celery Task Chain** — _planning_phases_02_data_ingestion_tiling_02_03_summary_ingest_observation_task, _planning_phases_02_data_ingestion_tiling_02_01_summary_download_fits_task, _planning_phases_02_data_ingestion_tiling_02_02_summary_wcs_validation_task, _planning_phases_02_data_ingestion_tiling_02_02_summary_generate_tiles_task [EXTRACTED 0.90]
+- **Phase 5 Locked Decision Set** — planning_phases_05_classification_cross_matching_05_context_cross_match_behavior, planning_phases_05_classification_cross_matching_05_context_classification_taxonomy, planning_phases_05_classification_cross_matching_05_context_anomaly_sensitivity, planning_phases_05_classification_cross_matching_05_context_result_storage_api [EXTRACTED 0.90]
+- **Roadmap Phase 1-5 Execution Order** — _planning_roadmap_phase1_foundation_infrastructure, _planning_roadmap_phase2_data_ingestion_tiling, _planning_roadmap_phase3_sky_viewer, _planning_roadmap_phase4_segmentation, _planning_roadmap_phase5_classification_crossmatching [EXTRACTED 0.90]
 - **Astronomical Data Pipeline Core Stack** — concept_sam, concept_astropy, concept_astroquery, concept_pyvips [INFERRED 0.70]
+- **Phase 3 Sky Viewer Planning Cycle** — planning_phases_03-sky-viewer_03-CONTEXT, planning_phases_03-sky-viewer_03-RESEARCH, planning_phases_03-sky-viewer_03-01-PLAN, planning_phases_03-sky-viewer_03-02-PLAN, planning_phases_03-sky-viewer_03-03-PLAN, planning_phases_03-sky-viewer_03-VERIFICATION [INFERRED 0.75]
+- **SAM Segmentation Pipeline and Domain-Adaptation Risk** — planning_research_features_sam_segmentation, planning_research_stack_sam2, planning_research_stack_pytorch, planning_research_pitfalls_sam_domain_mismatch [INFERRED 0.75]
 
 ## Communities (101 total, 22 thin omitted)
 
@@ -296,8 +296,8 @@ Cohesion: 0.27
 Nodes (9): SkyCoord, query_simbad_region(), SIMBAD catalog client with exponential-backoff retry. Implements vectorized…, Query SIMBAD for all objects within *radius_arcsec* of *coordinate*. Returns a…, Resolve an object name to (ra_deg, dec_deg, canonical_name) via SIMBAD. Returns…, resolve_object_name(), _table_to_dicts(), On repeated failure, query_simbad_region must return a not_queried sentinel. (+1 more)
 
 ### Community 67 - "gaia_client.py"
-Cohesion: 0.28
-Nodes (7): SkyCoord, query_gaia_region(), Gaia DR3 catalog client using astroquery.gaia cone-search. On final failure…, Query Gaia DR3 for sources within *radius_arcsec* of *coordinate*. Returns a…, _table_to_dicts(), Catalog client package for cross-matching astronomical objects. Exports the…, test_gaia_client_returns_not_queried_on_failure()
+Cohesion: 0.38
+Nodes (6): SkyCoord, query_gaia_region(), Gaia DR3 catalog client using astroquery.gaia cone-search. On final failure…, Query Gaia DR3 for sources within *radius_arcsec* of *coordinate*. Returns a…, _table_to_dicts(), test_gaia_client_returns_not_queried_on_failure()
 
 ### Community 68 - "query_ned_region"
 Cohesion: 0.38
@@ -320,8 +320,8 @@ Cohesion: 0.09
 Nodes (28): close_driver(), init_driver(), Neo4j driver singleton and FastAPI dependency. One driver is created at FastAPI…, Create the singleton driver and apply schema constraints., Close the singleton driver (called at FastAPI shutdown)., lifespan(), Graph property query and neighborhood API. GET /api/graph/query — filter…, Return a 1-hour presigned MinIO URL for the cutout thumbnail, or None. (+20 more)
 
 ### Community 73 - "cross_match_catalogs"
-Cohesion: 0.17
-Nodes (13): compute_search_radius_arcsec(), Return an adaptive cross-match search radius in arcseconds. Compact sources…, cross_match_catalogs(), SkyCoord, task, _query_one_catalog(), Cross-match detected objects against SIMBAD, NED, SDSS, and Gaia. Seventh step…, Compact source (1 pixel × 0.1 arcsec/px = 0.1 arcsec extent) → ~2 arcsec. (+5 more)
+Cohesion: 0.25
+Nodes (9): cross_match_catalogs(), SkyCoord, task, _query_one_catalog(), Cross-match detected objects against SIMBAD, NED, SDSS, and Gaia. Seventh step…, After Plan 3, all 9 pipeline tasks are fully implemented — no…, test_cross_match_catalogs_not_implemented_removed(), test_cross_match_catalogs_uses_thread_pool() (+1 more)
 
 ### Community 74 - "detect_anomalies"
 Cohesion: 0.16
@@ -383,9 +383,9 @@ Nodes (8): Next.js, React, file.svg Icon, globe.svg Icon, next.svg Logo, vercel.
 Cohesion: 0.29
 Nodes (7): post, Session, Temporary test endpoint: uploads a file to MinIO and creates an observation…, upload_test_file(), PipelineStatus, str, UploadFile
 
-### Community 90 - "generate_cutouts"
-Cohesion: 0.13
-Nodes (15): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Extract a WCS-preserving cutout from FITS data using Cutout2D. Computes a… (+7 more)
+### Community 90 - "compute_search_radius_arcsec"
+Cohesion: 0.25
+Nodes (7): compute_search_radius_arcsec(), Catalog client package for cross-matching astronomical objects. Exports the…, Return an adaptive cross-match search radius in arcseconds. Compact sources…, Compact source (1 pixel × 0.1 arcsec/px = 0.1 arcsec extent) → ~2 arcsec., Extended source (200 px × 0.1 arcsec/px = 20 arcsec extent) → scales up., test_compute_search_radius_compact_source_returns_approx_2_arcsec(), test_compute_search_radius_extended_source_scales_up()
 
 ### Community 91 - "deploy"
 Cohesion: 0.18
@@ -399,9 +399,9 @@ Nodes (9): build, builder, dockerfilePath, deploy, healthcheckPath, healthcheckT
 Cohesion: 0.32
 Nodes (8): openseadragon, Anti-feature: 3D Universe Navigation, Image Tiling (HiPS/HEALPix), Multi-wavelength Image Layers, Zoomable Sky Map / Image Viewer, Pitfall: Memory Exhaustion on Trillion-pixel FITS, pyvips, openseadragon
 
-### Community 96 - "classify_objects"
-Cohesion: 0.20
-Nodes (11): _build_feature_matrix(), classify_objects(), _download_cutout(), ndarray, task, Extract morphological features and classify objects using a trained ML model.…, Download cutout.fits from MinIO and return its data as a float64 array., Convert list of feature dicts to a numeric matrix (n_objects × n_features). (+3 more)
+### Community 96 - "generate_cutouts"
+Cohesion: 0.13
+Nodes (15): _create_fits_cutout(), _create_raw_png(), _create_stretched_png(), _extract_cutout_data(), _find_sci_extension(), generate_cutouts(), task, Extract a WCS-preserving cutout from FITS data using Cutout2D. Computes a… (+7 more)
 
 ### Community 97 - "Architecture Research"
 Cohesion: 0.22
@@ -415,9 +415,9 @@ Nodes (4): _mock_neo4j_lifecycle(), fixture, Shared pytest fixtures for the offl
 Cohesion: 0.67
 Nodes (3): PyTorch, SAM 2.1, timm
 
-### Community 101 - "predict_object_types"
-Cohesion: 0.18
-Nodes (12): load_or_create_classifier(), predict_object_types(), ndarray, Serialize and upload a trained classifier to S3., Download and deserialize the pre-trained RF classifier from S3. Returns None if…, Predict morphological types for a batch of objects. Sentinel values (-999.0)…, save_classifier(), RandomForestClassifier (+4 more)
+### Community 101 - "classify_objects"
+Cohesion: 0.11
+Nodes (21): load_or_create_classifier(), predict_object_types(), ndarray, Serialize and upload a trained classifier to S3., Download and deserialize the pre-trained RF classifier from S3. Returns None if…, Predict morphological types for a batch of objects. Sentinel values (-999.0)…, save_classifier(), _build_feature_matrix() (+13 more)
 
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]
@@ -451,5 +451,5 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: conceptually_related_to) - confidence is low._
 - **Why does `Project Research Summary` connect `Project Research Summary` to `Next.js Web README`, `Image Tiling (HiPS/HEALPix)`, `Astropy`, `Knowledge Graph With Spatial Hierarchy`?**
   _High betweenness centrality (0.123) - this node is a cross-community bridge._
-- **Why does `AstronomicalObject` connect `test_classification_schema.py` to `classify_objects`, `detect_sources.py`, `get_object_detail`, `cross_match_catalogs`, `detect_anomalies`, `segment_sam.py`, `TestClient`, `_make_app_with_mock_session`, `Observation`, `test_object_detail_api.py`, `_make_app_with_mock_session`, `test_observations_api.py`, `test_load_graph.py`, `_make_app_with_mock_session`, `_make_app_with_mock_session`, `generate_cutouts`, `objects.py`, `get_s3_client`?**
+- **Why does `AstronomicalObject` connect `test_classification_schema.py` to `generate_cutouts`, `classify_objects`, `detect_sources.py`, `get_object_detail`, `cross_match_catalogs`, `detect_anomalies`, `segment_sam.py`, `TestClient`, `_make_app_with_mock_session`, `Observation`, `test_object_detail_api.py`, `_make_app_with_mock_session`, `test_observations_api.py`, `test_load_graph.py`, `_make_app_with_mock_session`, `_make_app_with_mock_session`, `objects.py`, `get_s3_client`?**
   _High betweenness centrality (0.115) - this node is a cross-community bridge._
