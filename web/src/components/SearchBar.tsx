@@ -2,18 +2,14 @@
 
 import { useState, useEffect, FormEvent } from "react";
 import { useRouter } from "next/navigation";
-import { fetchObjectTypes, searchByName } from "@/lib/api";
+import { fetchObjectTypes } from "@/lib/api";
+import { CatalogBrowser } from "@/components/CatalogBrowser";
 
 type Tab = "name" | "coordinates" | "type";
 
 export function SearchBar() {
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<Tab>("name");
-
-  // Name tab state
-  const [nameInput, setNameInput] = useState("");
-  const [nameError, setNameError] = useState<string | null>(null);
-  const [nameLoading, setNameLoading] = useState(false);
 
   // Coordinates tab state
   const [ra, setRa] = useState("");
@@ -22,48 +18,29 @@ export function SearchBar() {
   const [coordError, setCoordError] = useState<string | null>(null);
 
   // Type tab state
-  const [types, setTypes] = useState<string[]>([]);
+  const [types, setTypes] = useState<string[] | null>(null);
   const [selectedType, setSelectedType] = useState("");
-  const [typesLoading, setTypesLoading] = useState(false);
+  const [typesError, setTypesError] = useState(false);
 
   // Load object types when type tab is first activated
   useEffect(() => {
-    if (activeTab === "type" && types.length === 0) {
-      setTypesLoading(true);
-      fetchObjectTypes()
+    const controller = new AbortController();
+    if (activeTab === "type" && types === null) {
+      fetchObjectTypes(controller.signal)
         .then((t) => {
+          if (controller.signal.aborted) return;
           setTypes(t);
           if (t.length > 0) setSelectedType(t[0]);
         })
         .catch(() => {
-          // Silent — empty dropdown is a valid degraded state
-        })
-        .finally(() => setTypesLoading(false));
+          if (!controller.signal.aborted) {
+            setTypes([]);
+            setTypesError(true);
+          }
+        });
     }
-  }, [activeTab, types.length]);
-
-  // --- Name search submit ---
-  async function handleNameSubmit(e: FormEvent) {
-    e.preventDefault();
-    const trimmed = nameInput.trim();
-    if (!trimmed) return;
-
-    setNameError(null);
-    setNameLoading(true);
-    try {
-      const result = await searchByName(trimmed, 50, 0);
-      if (result.results.length === 1) {
-        router.push(`/objects/${result.results[0].object_uuid}`);
-      } else {
-        router.push(`/search?name=${encodeURIComponent(trimmed)}`);
-      }
-    } catch (err: unknown) {
-      const msg = err instanceof Error ? err.message : "Search failed";
-      setNameError(msg);
-    } finally {
-      setNameLoading(false);
-    }
-  }
+    return () => controller.abort();
+  }, [activeTab, types]);
 
   // --- Coordinates submit ---
   function handleConeSubmit(e: FormEvent) {
@@ -106,16 +83,16 @@ export function SearchBar() {
     }`;
 
   return (
-    <div className="w-full max-w-xl">
+    <div className={`w-full ${activeTab === "name" ? "max-w-6xl" : "max-w-xl"}`}>
       {/* Tabs */}
       <div className="flex gap-1 border-b border-zinc-700 mb-0">
-        <button className={tabClass("name")} onClick={() => setActiveTab("name")}>
+        <button className={tabClass("name")} aria-pressed={activeTab === "name"} onClick={() => setActiveTab("name")}>
           Name
         </button>
-        <button className={tabClass("coordinates")} onClick={() => setActiveTab("coordinates")}>
+        <button className={tabClass("coordinates")} aria-pressed={activeTab === "coordinates"} onClick={() => setActiveTab("coordinates")}>
           Coordinates
         </button>
-        <button className={tabClass("type")} onClick={() => setActiveTab("type")}>
+        <button className={tabClass("type")} aria-pressed={activeTab === "type"} onClick={() => setActiveTab("type")}>
           Type
         </button>
       </div>
@@ -123,34 +100,10 @@ export function SearchBar() {
       {/* Tab panels */}
       <div className="bg-zinc-800 rounded-b rounded-tr p-4">
 
-        {/* Name tab */}
-        {activeTab === "name" && (
-          <form onSubmit={handleNameSubmit} className="flex flex-col gap-3">
-            <label className="text-xs text-zinc-400 uppercase tracking-wide">
-              Object name (e.g. NGC 1300, M87, Andromeda)
-            </label>
-            <div className="flex gap-2">
-              <input
-                type="text"
-                value={nameInput}
-                onChange={(e) => setNameInput(e.target.value)}
-                placeholder="NGC 1300"
-                className="flex-1 rounded bg-zinc-900 border border-zinc-600 px-3 py-2 text-sm text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-indigo-400"
-                disabled={nameLoading}
-              />
-              <button
-                type="submit"
-                disabled={nameLoading || !nameInput.trim()}
-                className="rounded bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
-              >
-                {nameLoading ? "Searching…" : "Search"}
-              </button>
-            </div>
-            {nameError && (
-              <p className="text-xs text-red-400">{nameError}</p>
-            )}
-          </form>
-        )}
+        {/* Keep catalog filters when switching between search modes. */}
+        <div hidden={activeTab !== "name"}>
+          <CatalogBrowser />
+        </div>
 
         {/* Coordinates tab */}
         {activeTab === "coordinates" && (
@@ -212,8 +165,10 @@ export function SearchBar() {
             <label className="text-xs text-zinc-400 uppercase tracking-wide">
               Object type
             </label>
-            {typesLoading ? (
+            {types === null ? (
               <p className="text-sm text-zinc-500">Loading types…</p>
+            ) : typesError ? (
+              <p role="alert" className="text-sm text-red-300">Could not load object types. <button type="button" className="underline" onClick={() => { setTypesError(false); setTypes(null); }}>Retry</button></p>
             ) : types.length === 0 ? (
               <p className="text-sm text-zinc-500">No classified objects in catalog yet.</p>
             ) : (

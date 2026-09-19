@@ -4,14 +4,14 @@ import { CatalogSummary } from "@/components/CatalogSummary";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <main className="flex flex-col items-center gap-8 text-center px-8 w-full">
+    <div className="flex min-h-screen justify-center">
+      <main className="flex flex-col items-center gap-6 text-center px-3 py-10 sm:px-8 w-full">
         <h1 className="text-4xl font-semibold tracking-tight">
           Explore the Universe
         </h1>
         <p className="text-lg text-zinc-400 max-w-md">
           Explore galaxies, nebulae, and star clusters in survey and JWST imagery. Search by name,
-          coordinates, or type, or navigate directly to an observation.
+          coordinates, or type, or browse the complete object catalog below.
         </p>
 
         <SearchBar />
