@@ -204,8 +204,10 @@ def run(max_images: int, max_seconds: int, max_total_bytes: int, metadata_only: 
                 prior_bytes = {obj_id: properties.get("imagery_bytes", 0) for obj_id, properties in existing}
                 completed = {obj_id for obj_id, properties in existing
                              if properties.get("imagery_render_version") == RENDER_VERSION}
-                stored = session.scalar(select(func.coalesce(func.sum(
-                    AstronomicalObject.physical_properties["imagery_bytes"].astext.cast(BigInteger)), 0)))
+                # PostgreSQL SUM(bigint) returns NUMERIC (Decimal in psycopg2).
+                # Keep byte arithmetic exact and the final JSON report serializable.
+                stored = int(session.scalar(select(func.coalesce(func.sum(
+                    AstronomicalObject.physical_properties["imagery_bytes"].astext.cast(BigInteger)), 0))))
             started = time.monotonic()
             added = failures = attempted = 0
             for target in targets:
