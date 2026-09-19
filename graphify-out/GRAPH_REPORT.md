@@ -1,16 +1,16 @@
 # Graph Report - explore-the-universe  (2026-09-18)
 
 ## Corpus Check
-- 181 files · ~159,556 words
+- 181 files · ~159,571 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1361 nodes · 2741 edges · 115 communities (92 shown, 23 thin omitted)
+- 1361 nodes · 2741 edges · 116 communities (93 shown, 23 thin omitted)
 - Extraction: 90% EXTRACTED · 10% INFERRED · 0% AMBIGUOUS · INFERRED: 261 edges (avg confidence: 0.88)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `15a2b1f8`
+- Built from commit: `f92c1266`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -118,6 +118,7 @@
 - search_objects
 - QueryBuilder
 - check_service_health
+- PyTorch
 
 ## God Nodes (most connected - your core abstractions)
 1. `AstronomicalObject` - 66 edges
@@ -158,7 +159,7 @@
 - **Phase 3 Sky Viewer Planning Cycle** — planning_phases_03-sky-viewer_03-CONTEXT, planning_phases_03-sky-viewer_03-RESEARCH, planning_phases_03-sky-viewer_03-01-PLAN, planning_phases_03-sky-viewer_03-02-PLAN, planning_phases_03-sky-viewer_03-03-PLAN, planning_phases_03-sky-viewer_03-VERIFICATION [INFERRED 0.75]
 - **SAM Segmentation Pipeline and Domain-Adaptation Risk** — planning_research_features_sam_segmentation, planning_research_stack_sam2, planning_research_stack_pytorch, planning_research_pitfalls_sam_domain_mismatch [INFERRED 0.75]
 
-## Communities (115 total, 23 thin omitted)
+## Communities (116 total, 23 thin omitted)
 
 ### Community 0 - "ViewerClient.tsx"
 Cohesion: 0.06
@@ -381,8 +382,8 @@ Cohesion: 0.13
 Nodes (12): _make_app_with_mock_session(), _make_chained_mock(), _make_obj(), Return a TestClient wired with a mock DB session override., angular_separation sort in pure-filter mode falls back to magnitude sort —…, Endpoint accepts limit param without error., Endpoint accepts offset param without error., total_count is the unsliced count (from .count()), not len(results). (+4 more)
 
 ### Community 86 - "Knowledge Graph With Spatial Hierarchy"
-Cohesion: 0.11
-Nodes (23): react-force-graph, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: Full Citizen Science Platform, Anti-feature: Full LSST Real-time Ingestion, Anti-feature: Raw SQL/ADQL Query Interface, Anti-feature: Spectral Analysis Tools, FITS Ingestion Pipeline (+15 more)
+Cohesion: 0.13
+Nodes (20): react-force-graph, AI-assisted Natural Language Querying, Anomaly Detection and Novel Object Flagging, Anti-feature: Full Citizen Science Platform, Anti-feature: Full LSST Real-time Ingestion, Anti-feature: Raw SQL/ADQL Query Interface, Anti-feature: Spectral Analysis Tools, FITS Ingestion Pipeline (+12 more)
 
 ### Community 87 - "object.ts"
 Cohesion: 0.15
@@ -479,6 +480,10 @@ Nodes (3): QueryBuilder(), handleSearch(), searchByFilters()
 ### Community 114 - "check_service_health"
 Cohesion: 0.67
 Nodes (3): check_service_health(), get, Response
+
+### Community 115 - "PyTorch"
+Cohesion: 0.67
+Nodes (3): PyTorch, SAM 2.1, timm
 
 ## Ambiguous Edges - Review These
 - `Next.js Web README` → `file.svg Icon`  [AMBIGUOUS]

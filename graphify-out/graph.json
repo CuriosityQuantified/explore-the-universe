@@ -1991,7 +1991,7 @@
       "file_type": "code",
       "norm_label": "searchbycone()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L159"
+      "source_location": "L160"
     },
     {
       "id": "web_src_lib_api_searchbyname",
@@ -2003,7 +2003,7 @@
       "file_type": "code",
       "norm_label": "searchbyname()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L139"
+      "source_location": "L140"
     },
     {
       "id": "web_src_lib_api_searchbytype",
@@ -2015,7 +2015,7 @@
       "file_type": "code",
       "norm_label": "searchbytype()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L185"
+      "source_location": "L186"
     },
     {
       "id": "web_src_lib_api_throwapierror",
@@ -2027,7 +2027,7 @@
       "file_type": "code",
       "norm_label": "throwapierror()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L120"
+      "source_location": "L121"
     },
     {
       "id": "pipeline_tasks_classify_objects_build_feature_matrix",
@@ -2159,7 +2159,7 @@
       "file_type": "code",
       "norm_label": "fetchobjecttypes()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L126"
+      "source_location": "L127"
     },
     {
       "id": "pipeline_ml_models_classifier_predict_object_types",
@@ -2639,7 +2639,7 @@
       "file_type": "code",
       "norm_label": "searchbyfilters()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L208"
+      "source_location": "L209"
     },
     {
       "id": "alembic_env_run_migrations_offline",
@@ -6815,7 +6815,7 @@
       "file_type": "code",
       "norm_label": "fetchgraphneighbors()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L231"
+      "source_location": "L232"
     },
     {
       "id": "web_src_lib_api_fetchobjectdetail",
@@ -6827,7 +6827,7 @@
       "file_type": "code",
       "norm_label": "fetchobjectdetail()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L107"
+      "source_location": "L108"
     },
     {
       "id": "tests_test_classification_schema_test_classify_objects_creates_classification_for_maskless_object",
@@ -7199,7 +7199,7 @@
       "file_type": "code",
       "norm_label": "chatquery()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L248"
+      "source_location": "L249"
     },
     {
       "id": "tests_conftest_mock_neo4j_lifecycle",
@@ -14069,6 +14069,51 @@
       "source_url": null
     },
     {
+      "id": "planning_research_stack_pytorch",
+      "label": "PyTorch",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 115,
+      "community_name": "PyTorch",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "pytorch",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_stack_sam2",
+      "label": "SAM 2.1",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 115,
+      "community_name": "PyTorch",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "sam 2.1",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_stack_timm",
+      "label": "timm",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 115,
+      "community_name": "PyTorch",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "timm",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
       "id": "_claude_claude",
       "label": ".claude/CLAUDE.md (graphify trigger)",
       "_origin": "semantic",
@@ -16194,51 +16239,6 @@
       "contributor": null,
       "file_type": "concept",
       "norm_label": "neo4j python driver",
-      "source_file": ".planning/research/STACK.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_pytorch",
-      "label": "PyTorch",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "pytorch",
-      "source_file": ".planning/research/STACK.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_sam2",
-      "label": "SAM 2.1",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "sam 2.1",
-      "source_file": ".planning/research/STACK.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_timm",
-      "label": "timm",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "timm",
       "source_file": ".planning/research/STACK.md",
       "source_location": null,
       "source_url": null
@@ -24372,7 +24372,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L261",
+      "source_location": "L262",
       "weight": 1.0
     },
     {
@@ -24384,7 +24384,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L128",
+      "source_location": "L129",
       "weight": 1.0
     },
     {
@@ -24396,7 +24396,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L174",
+      "source_location": "L175",
       "weight": 1.0
     },
     {
@@ -24408,7 +24408,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L216",
+      "source_location": "L217",
       "weight": 1.0
     },
     {
@@ -24420,7 +24420,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L146",
+      "source_location": "L147",
       "weight": 1.0
     },
     {
@@ -24432,7 +24432,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L192",
+      "source_location": "L193",
       "weight": 1.0
     },
     {
@@ -38508,7 +38508,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L107",
+      "source_location": "L108",
       "weight": 1.0
     },
     {
@@ -38519,7 +38519,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L120",
+      "source_location": "L121",
       "weight": 1.0
     },
     {
@@ -38530,7 +38530,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L126",
+      "source_location": "L127",
       "weight": 1.0
     },
     {
@@ -38541,7 +38541,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L139",
+      "source_location": "L140",
       "weight": 1.0
     },
     {
@@ -38552,7 +38552,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L159",
+      "source_location": "L160",
       "weight": 1.0
     },
     {
@@ -38563,7 +38563,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L185",
+      "source_location": "L186",
       "weight": 1.0
     },
     {
@@ -38574,7 +38574,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L208",
+      "source_location": "L209",
       "weight": 1.0
     },
     {
@@ -38585,7 +38585,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L231",
+      "source_location": "L232",
       "weight": 1.0
     },
     {
@@ -38596,7 +38596,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L248",
+      "source_location": "L249",
       "weight": 1.0
     },
     {
@@ -48266,5 +48266,5 @@
       "source_file": ".planning/research/STACK.md"
     }
   ],
-  "built_at_commit": "15a2b1f8e7acd0fca048a359c856b7352faa4f0d"
+  "built_at_commit": "f92c1266bb1bab34d478212dd811acff06986185"
 }

@@ -90,7 +90,8 @@ export async function fetchWcsParams(uuid: string): Promise<WcsParams> {
  * @returns Base URL string for the tile source Url property
  */
 export function getTileUrl(uuid: string): string {
-  return `${API_BASE}/api/tiles/${uuid}/`;
+  // This URL is passed from the server component to the user's browser.
+  return `${process.env.NEXT_PUBLIC_API_URL || ""}/api/tiles/${uuid}/`;
 }
 
 /**
