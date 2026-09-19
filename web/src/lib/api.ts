@@ -16,7 +16,9 @@ import type { ChatResponse } from "@/types/chat";
 // Same-origin by default so production traffic passes through the Next.js
 // rewrite to Railway's private API service. Local development can still set
 // NEXT_PUBLIC_API_URL=http://localhost:8000 to call FastAPI directly.
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "";
+const API_BASE = typeof window === "undefined"
+  ? process.env.API_INTERNAL_URL || "http://localhost:8000"
+  : process.env.NEXT_PUBLIC_API_URL || "";
 
 /**
  * Fetch the list of all ingested observations with pipeline status and counts.
@@ -88,7 +90,8 @@ export async function fetchWcsParams(uuid: string): Promise<WcsParams> {
  * @returns Base URL string for the tile source Url property
  */
 export function getTileUrl(uuid: string): string {
-  return `${API_BASE}/api/tiles/${uuid}/`;
+  // This URL is passed from the server component to the user's browser.
+  return `${process.env.NEXT_PUBLIC_API_URL || ""}/api/tiles/${uuid}/`;
 }
 
 /**

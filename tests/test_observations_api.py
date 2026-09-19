@@ -94,7 +94,7 @@ def _session_for(
     def query_side_effect(model_class):
         q = mock.MagicMock()
         if model_class is Observation:
-            q.order_by.return_value.all.return_value = obs_list
+            q.order_by.return_value.limit.return_value.offset.return_value.all.return_value = obs_list
         elif model_class is AstronomicalObject:
             idx = ao_call_count["n"]
             ao_call_count["n"] += 1

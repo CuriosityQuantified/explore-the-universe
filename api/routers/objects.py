@@ -27,6 +27,7 @@ from fastapi import APIRouter, Body, Depends, HTTPException, Path, Query, Respon
 from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel, Field, StringConstraints
 from sqlalchemy.orm import Session
+from sqlalchemy import select
 
 from api.db.session import get_database_session
 from shared.config import settings
@@ -36,6 +37,8 @@ from shared.models import (
     ObjectClassification,
 )
 from shared.s3 import get_s3_client
+from shared.catalog_storage import get_catalog_s3_client, is_catalog_cutout
+from pipeline.catalog import normalize_name
 from pipeline.catalog_clients.simbad_client import resolve_object_name
 
 router = APIRouter(tags=["objects"])
@@ -246,12 +249,13 @@ def _make_cutout_thumbnail_url(cutout_s3_prefix: Optional[str]) -> Optional[str]
     """Return a 1-hour signed MinIO URL for the cutout PNG, or None if no prefix."""
     if not cutout_s3_prefix:
         return None
-    s3 = get_s3_client()
+    catalog = is_catalog_cutout(cutout_s3_prefix)
+    s3 = get_catalog_s3_client() if catalog else get_s3_client()
     key = cutout_s3_prefix.rstrip("/") + "/cutout_stretched.png"
     try:
         return s3.generate_presigned_url(
             "get_object",
-            Params={"Bucket": settings.s3_bucket_segmentation, "Key": key},
+            Params={"Bucket": settings.catalog_s3_bucket if catalog else settings.s3_bucket_segmentation, "Key": key},
             ExpiresIn=3600,
         )
     except Exception:
@@ -414,6 +418,28 @@ def search_objects(
     """
     # --- SIMBAD name search mode ---
     if name is not None:
+        # Resolve imported aliases locally so common catalog names remain usable
+        # even when SIMBAD is down or uses a slightly different object center.
+        statement = select(AstronomicalObject).where(
+            AstronomicalObject.physical_properties.contains({"aliases": [normalize_name(name)]})
+        ).order_by(AstronomicalObject.catalog_object_name)
+        local = list(database_session.execute(statement).scalars().all())
+        if local:
+            response.headers["X-Total-Count"] = str(len(local))
+            return NameSearchResponse(
+                results=[ObjectSearchResponse(
+                    object_uuid=str(obj.object_uuid),
+                    sky_coordinate_ra_degrees=obj.sky_coordinate_ra_degrees,
+                    sky_coordinate_dec_degrees=obj.sky_coordinate_dec_degrees,
+                    classified_object_type=obj.classified_object_type,
+                    catalog_object_name=obj.catalog_object_name,
+                    is_anomaly_flagged=obj.is_anomaly_flagged,
+                    cutout_thumbnail_url=_make_cutout_thumbnail_url(obj.cutout_s3_prefix),
+                ) for obj in local[offset:offset + limit]],
+                resolved_ra=local[0].sky_coordinate_ra_degrees,
+                resolved_dec=local[0].sky_coordinate_dec_degrees,
+                simbad_name=local[0].catalog_object_name,
+            )
         try:
             resolved = resolve_object_name(name)
         except RuntimeError as exc:
@@ -712,6 +738,14 @@ def _get_latest_classification(object_uuid: str, database_session):
     )
 
 
+def _catalog_export_credit(obj) -> dict[str, str]:
+    properties = obj.physical_properties
+    if not isinstance(properties, dict) or properties.get("catalog") != "OpenNGC":
+        return {}
+    return {key: str(properties.get(key) or "") for key in
+            ("catalog_credit", "catalog_url", "catalog_license", "catalog_revision")}
+
+
 @router.get("/api/objects/{object_uuid}/export/fits")
 def export_fits(
     object_uuid: str = Path(..., max_length=36),
@@ -729,12 +763,13 @@ def export_fits(
             detail=f"No cutout available for object {object_uuid}",
         )
 
-    s3_key = f"{obj.cutout_s3_prefix}/cutout.fits"
-    s3_client = get_s3_client()
+    s3_key = f"{obj.cutout_s3_prefix.rstrip('/')}/cutout.fits"
+    catalog = is_catalog_cutout(obj.cutout_s3_prefix)
+    s3_client = get_catalog_s3_client() if catalog else get_s3_client()
 
     try:
         response = s3_client.get_object(
-            Bucket=settings.s3_bucket_segmentation, Key=s3_key
+            Bucket=settings.catalog_s3_bucket if catalog else settings.s3_bucket_segmentation, Key=s3_key
         )
     except ClientError as error:
         error_code = error.response["Error"]["Code"]
@@ -767,6 +802,7 @@ def export_csv(
 
     buf = io.StringIO()
     writer = csv.writer(buf)
+    credit = _catalog_export_credit(obj)
     writer.writerow([
         "uuid",
         "ra",
@@ -778,7 +814,7 @@ def export_csv(
         "is_anomaly_flagged",
         "classification_confidence_score",
         "anomaly_score",
-    ])
+    ] + list(credit))
     writer.writerow([
         str(obj.object_uuid),
         obj.sky_coordinate_ra_degrees,
@@ -790,7 +826,7 @@ def export_csv(
         obj.is_anomaly_flagged,
         latest_clf.classification_confidence_score if latest_clf else None,
         latest_clf.anomaly_score if latest_clf else None,
-    ])
+    ] + list(credit.values()))
 
     return Response(
         content=buf.getvalue(),
@@ -837,6 +873,8 @@ def export_votable(
             "anomaly_score": [clf_anomaly],
         }
     )
+    for key, value in _catalog_export_credit(obj).items():
+        t[key] = [value]
     votable = astropy.io.votable.from_table(t)
     buf = io.BytesIO()
     votable.to_xml(buf)

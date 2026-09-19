@@ -64,6 +64,16 @@ def _mock_session_with_objects(objects):
 
 class TestNameSearch:
 
+    def test_catalog_alias_works_without_simbad(self):
+        obj = _make_obj(10.68, 41.27, name="M31")
+        session = mock.MagicMock()
+        session.execute.return_value.scalars.return_value.all.return_value = [obj]
+        with mock.patch("api.routers.objects.resolve_object_name") as remote:
+            response = _make_app_with_mock_session(session).get("/api/objects/search?name=NGC+0224")
+        assert response.status_code == 200
+        assert response.json()["results"][0]["catalog_object_name"] == "M31"
+        remote.assert_not_called()
+
     def test_name_resolves_and_local_match_returned(self):
         """AC1: SIMBAD resolves name → local object within 5 arcsec → returned."""
         # NGC 1300 approximate coords: RA=49.9208, Dec=-19.4112

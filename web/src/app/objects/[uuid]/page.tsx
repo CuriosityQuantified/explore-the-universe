@@ -30,6 +30,7 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
   }
 
   const clf = object.latest_classification;
+  const catalog = object.physical_properties?.catalog === "OpenNGC";
 
   return (
     <main className="max-w-4xl mx-auto px-4 py-8 space-y-8">
@@ -61,7 +62,7 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
             />
           ) : (
             <div className="w-64 h-64 flex items-center justify-center text-zinc-500 text-sm">
-              No cutout available
+              {catalog ? "Survey imagery queued" : "No cutout available"}
             </div>
           )}
           {object.segmentation_mask_rle && (
@@ -69,6 +70,12 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
           )}
         </div>
       </section>
+
+      {catalog && <section className="text-sm text-zinc-400 space-y-2">
+        <p>Names: {String(object.physical_properties?.names)}</p>
+        <p>Published catalog classification from <a className="text-blue-400" href="https://github.com/mattiaverga/OpenNGC">OpenNGC, Mattia Verga and contributors</a>, adapted under <a className="text-blue-400" href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
+        <p>Survey cutout: DSS2 red / STScI, provided by CDS Strasbourg. Coordinates: J2000. Image coverage is being added progressively.</p>
+      </section>}
 
       {/* Classification panel */}
       {clf && (
@@ -159,7 +166,7 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
             <h2 className="text-lg font-semibold">Physical Properties</h2>
             <dl className="bg-zinc-900 rounded p-4 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
               {Object.entries(object.physical_properties)
-                .filter(([, v]) => v !== null && v !== undefined)
+                .filter(([k, v]) => v !== null && v !== undefined && (!catalog || ["constellation", "major_axis_arcmin", "minor_axis_arcmin", "morphology", "field_of_view_degrees"].includes(k)))
                 .map(([key, value]) => (
                   <div key={key} className="flex justify-between col-span-1">
                     <dt className="text-zinc-400 font-mono">{key}</dt>
@@ -199,25 +206,25 @@ export default async function ObjectPage({ params }: ObjectPageProps) {
             </div>
           )}
         </div>
-        <Link
+        {object.cutout_url && <Link
           href={`/viewer/${object.source_observation_uuid}`}
           className="inline-block text-sm text-blue-400 hover:underline"
         >
           ← View parent observation in sky viewer
-        </Link>
+        </Link>}
       </section>
 
       {/* Export Data */}
       <section className="space-y-3">
         <h2 className="text-lg font-semibold">Export Data</h2>
         <div className="flex flex-wrap gap-3">
-          <a
+          {object.cutout_url && <a
             href={`/api/objects/${object.object_uuid}/export/fits`}
             download={`${object.catalog_object_name ?? object.object_uuid}.fits`}
             className="inline-block rounded bg-zinc-800 px-4 py-2 text-sm hover:bg-zinc-700 transition-colors"
           >
             Download FITS
-          </a>
+          </a>}
           <a
             href={`/api/objects/${object.object_uuid}/export/csv`}
             download={`${object.catalog_object_name ?? object.object_uuid}.csv`}

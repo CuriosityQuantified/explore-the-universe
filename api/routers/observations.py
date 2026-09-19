@@ -6,7 +6,7 @@ counts of detected/classified/anomaly objects, and processing step timeline.
 
 from typing import Optional
 
-from fastapi import APIRouter, Depends
+from fastapi import APIRouter, Depends, Query
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -37,11 +37,14 @@ class ObservationSummaryResponse(BaseModel):
 @router.get("", response_model=list[ObservationSummaryResponse])
 def list_observations(
     database_session: Session = Depends(get_database_session),
+    limit: int = Query(100, ge=1, le=500),
+    offset: int = Query(0, ge=0),
 ) -> list[ObservationSummaryResponse]:
     """Return all ingested observations with pipeline status and object counts."""
     observations = (
         database_session.query(Observation)
-        .order_by(Observation.ingested_at.desc())
+        .order_by(Observation.last_updated_at.desc(), Observation.observation_uuid)
+        .limit(limit).offset(offset)
         .all()
     )
 

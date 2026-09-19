@@ -6,12 +6,16 @@ Python Dockerfile.
 
 | Service | Root directory | Railway config file | Healthcheck |
 | --- | --- | --- | --- |
-| `api` | `/` | `/railway.json` | `/health` |
+| `api` | `/` | none; service settings | `/health` |
 | `web` | `/web` | `/web/railway.json` | `/` |
+| `worker` | `/` | none; service settings | none (cron job) |
 
-Set both **Root Directory** and **Railway Config File** in the service settings.
-Railway resolves the config file path from the repository root, independently
-of the service root directory. The files supply the build and start commands.
+The API uses the root Dockerfile and its default start command, with a
+300-second healthcheck timeout and ON_FAILURE restart policy (three retries).
+The web retains its existing config-file path, resolved from the repository
+root. Railway rejects new legacy config paths; configure new services through
+service settings or its Infrastructure as Code tooling. See
+[catalog ingestion](catalog-ingestion.md) for the bounded worker configuration.
 See [Railway's monorepo documentation](https://docs.railway.com/deployments/monorepo).
 
 For the production web service:
