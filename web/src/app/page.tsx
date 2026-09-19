@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { SearchBar } from "@/components/SearchBar";
+import { CatalogSummary } from "@/components/CatalogSummary";
 
 export default function Home() {
   return (
@@ -9,11 +10,13 @@ export default function Home() {
           Explore the Universe
         </h1>
         <p className="text-lg text-zinc-400 max-w-md">
-          Interactive sky viewer for JWST imagery. Search for objects by name,
+          Explore galaxies, nebulae, and star clusters in survey and JWST imagery. Search by name,
           coordinates, or type, or navigate directly to an observation.
         </p>
 
         <SearchBar />
+        <p className="text-sm text-zinc-400">Try M31, M42, M45, or NGC 253.</p>
+        <CatalogSummary />
 
         <nav className="flex gap-4 text-sm">
           <Link

@@ -21,6 +21,7 @@ from api.db.session import get_database_session
 from shared.config import settings
 from shared.models import Observation, ProcessingStep, StepStatus
 from shared.s3 import get_s3_client
+from shared.catalog_storage import get_catalog_s3_client
 
 logger = logging.getLogger(__name__)
 
@@ -139,9 +140,16 @@ def get_tile(observation_uuid: str, level: int, col: int, row: int):
     s3_client = get_s3_client()
 
     try:
-        response = s3_client.get_object(
-            Bucket=settings.s3_bucket_tiles, Key=s3_key
-        )
+        response = None
+        if settings.catalog_s3_bucket:
+            try:
+                response = get_catalog_s3_client().get_object(
+                    Bucket=settings.catalog_s3_bucket, Key=f"tiles/{s3_key}")
+            except ClientError as error:
+                if error.response["Error"]["Code"] not in ("NoSuchKey", "404"):
+                    raise
+        if response is None:
+            response = s3_client.get_object(Bucket=settings.s3_bucket_tiles, Key=s3_key)
     except ClientError as error:
         error_code = error.response["Error"]["Code"]
         if error_code in ("NoSuchKey", "404"):
@@ -173,11 +181,18 @@ def get_wcs_params(observation_uuid: str):
     s3_client = get_s3_client()
 
     # Find the first FITS file in MinIO under this observation's prefix
-    response = s3_client.list_objects_v2(
-        Bucket=settings.s3_bucket_fits_raw,
-        Prefix=f"{observation_uuid}/",
-        MaxKeys=1,
-    )
+    response = None
+    if settings.catalog_s3_bucket:
+        response = get_catalog_s3_client().list_objects_v2(
+            Bucket=settings.catalog_s3_bucket, Prefix=f"fits/{observation_uuid}/", MaxKeys=1)
+        if response.get("Contents"):
+            s3_client = get_catalog_s3_client()
+    if not response or not response.get("Contents"):
+        response = s3_client.list_objects_v2(
+            Bucket=settings.s3_bucket_fits_raw,
+            Prefix=f"{observation_uuid}/",
+            MaxKeys=1,
+        )
     contents = response.get("Contents", [])
     if not contents:
         raise HTTPException(
@@ -193,7 +208,8 @@ def get_wcs_params(observation_uuid: str):
 
     try:
         s3_client.download_file(
-            settings.s3_bucket_fits_raw, fits_s3_key, temp_path
+            settings.catalog_s3_bucket if fits_s3_key.startswith("fits/") else settings.s3_bucket_fits_raw,
+            fits_s3_key, temp_path
         )
 
         with fits.open(temp_path, memmap=True, mode="denywrite") as hdul:
@@ -206,15 +222,10 @@ def get_wcs_params(observation_uuid: str):
 
             wcs_header = wcs_obj.to_header()
 
-            # Extract CD matrix with CDELT fallback for older FITS files
-            cd1_1 = float(
-                wcs_header.get("CD1_1", wcs_header.get("CDELT1", 0))
-            )
-            cd1_2 = float(wcs_header.get("CD1_2", 0))
-            cd2_1 = float(wcs_header.get("CD2_1", 0))
-            cd2_2 = float(
-                wcs_header.get("CD2_2", wcs_header.get("CDELT2", 0))
-            )
+            # Astropy normalizes CD into PC/CDELT; preserve scale and rotation.
+            matrix = wcs_obj.pixel_scale_matrix
+            cd1_1, cd1_2 = map(float, matrix[0])
+            cd2_1, cd2_2 = map(float, matrix[1])
 
             return WcsParamsResponse(
                 crpix1=float(wcs_header.get("CRPIX1", 0)),

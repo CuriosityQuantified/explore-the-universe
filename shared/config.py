@@ -18,6 +18,14 @@ class Settings(BaseSettings):
     s3_bucket_fits_raw: str = "fits-raw"
     s3_bucket_tiles: str = "tiles"
 
+    # Dedicated managed bucket for survey imagery; existing JWST storage is preserved.
+    catalog_s3_bucket: str = ""
+    catalog_s3_endpoint_url: str = ""
+    catalog_s3_access_key: str = ""
+    catalog_s3_secret_key: str = ""
+    catalog_s3_region: str = "auto"
+    catalog_s3_url_style: str = "virtual"
+
     # Neo4j
     neo4j_uri: str = "bolt://localhost:7687"
     neo4j_user: str = "neo4j"

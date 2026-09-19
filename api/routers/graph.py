@@ -14,6 +14,7 @@ from pydantic import BaseModel
 from api.db.neo4j import get_neo4j_session
 from shared.config import settings
 from shared.s3 import get_s3_client
+from shared.catalog_storage import get_catalog_s3_client, is_catalog_cutout
 
 logger = logging.getLogger(__name__)
 
@@ -103,9 +104,11 @@ def _thumbnail_url(cutout_s3_prefix: Optional[str]) -> Optional[str]:
         return None
     key = cutout_s3_prefix.rstrip("/") + "/cutout_stretched.png"
     try:
-        return get_s3_client().generate_presigned_url(
+        catalog = is_catalog_cutout(cutout_s3_prefix)
+        client = get_catalog_s3_client() if catalog else get_s3_client()
+        return client.generate_presigned_url(
             "get_object",
-            Params={"Bucket": settings.s3_bucket_segmentation, "Key": key},
+            Params={"Bucket": settings.catalog_s3_bucket if catalog else settings.s3_bucket_segmentation, "Key": key},
             ExpiresIn=3600,
         )
     except Exception:

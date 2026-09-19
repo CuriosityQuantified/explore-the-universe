@@ -30,5 +30,7 @@ def _mock_neo4j_lifecycle(request):
     with (
         mock.patch("api.db.neo4j.init_driver"),
         mock.patch("api.db.neo4j.close_driver"),
+        mock.patch("api.main.init_driver"),
+        mock.patch("api.main.close_driver"),
     ):
         yield
