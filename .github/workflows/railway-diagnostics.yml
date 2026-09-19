@@ -1,0 +1,90 @@
+name: Railway diagnostics
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Inspect service settings and recent deployment logs
+        env:
+          RAILWAY_TOKEN: ${{ secrets.RAILWAY_API_TOKEN || secrets.RAILWAY_TOKEN }}
+          RAILWAY_PROJECT_ID: ${{ secrets.RAILWAY_PROJECT_ID }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import urllib.error
+          import urllib.request
+
+          token = os.environ['RAILWAY_TOKEN']
+          project_id = os.environ['RAILWAY_PROJECT_ID']
+          if not token or not project_id:
+              raise SystemExit('A Railway token and RAILWAY_PROJECT_ID secrets are required')
+          headers = {'Content-Type': 'application/json', 'User-Agent': 'railway-diagnostics/1.0', 'Project-Access-Token': token}
+
+          def query(document, variables=None):
+              req = urllib.request.Request(
+                  'https://backboard.railway.com/graphql/v2',
+                  data=json.dumps({'query': document, 'variables': variables or {}}).encode(),
+                  headers=headers,
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=45) as response:
+                      result = json.load(response)
+              except urllib.error.HTTPError as exc:
+                  raise RuntimeError(f'Railway HTTP {exc.code}: {exc.read().decode()[:1000]}') from None
+              if result.get('errors'):
+                  raise RuntimeError(json.dumps(result['errors']))
+              return result['data']
+
+          document = '''query($id: String!) {
+            project(id: $id) { name environments { edges { node {
+              id name serviceInstances { edges { node {
+                serviceId serviceName rootDirectory railwayConfigFile
+                builder buildCommand startCommand healthcheckPath healthcheckTimeout
+                domains { serviceDomains { domain targetPort } }
+                latestDeployment { id status createdAt }
+              } } }
+            } } } }
+          }'''
+          try:
+              project = query(document, {'id': project_id})['project']
+          except Exception:
+              # GitHub secrets may hold either a project token or an account token.
+              headers.pop('Project-Access-Token')
+              headers['Authorization'] = 'Bearer ' + token
+              project = query(document, {'id': project_id})['project']
+
+          # Mask service credentials before printing any application logs.
+          for env_edge in project['environments']['edges']:
+              environment = env_edge['node']
+              for service_edge in environment['serviceInstances']['edges']:
+                  service = service_edge['node']
+                  values = query('''query($p: String!, $e: String!, $s: String!) {
+                    variables(projectId: $p, environmentId: $e, serviceId: $s)
+                  }''', {'p': project_id, 'e': environment['id'], 's': service['serviceId']})['variables']
+                  for key, value in values.items():
+                      if value and len(str(value)) >= 4 and any(part in key.upper() for part in ('TOKEN', 'SECRET', 'PASSWORD', 'KEY', 'DATABASE_URL', 'REDIS_URL')):
+                          escaped = str(value).replace('%', '%25').replace('\r', '%0D').replace('\n', '%0A')
+                          print('::add-mask::' + escaped, flush=True)
+                  service['variableNames'] = sorted(values)
+                  service['port'] = values.get('PORT')
+          print(json.dumps(project, indent=2), flush=True)
+
+          for env_edge in project['environments']['edges']:
+              for service_edge in env_edge['node']['serviceInstances']['edges']:
+                  service = service_edge['node']
+                  deployment = service['latestDeployment']
+                  if not deployment:
+                      continue
+                  print('\nSERVICE ' + service['serviceName'], flush=True)
+                  for field in ('deploymentLogs', 'buildLogs'):
+                      data = query('query($id: String!) { ' + field + '(deploymentId: $id, limit: 100) { message severity timestamp } }', {'id': deployment['id']})
+                      print(json.dumps(data, indent=2), flush=True)
+          PY

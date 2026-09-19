@@ -84,11 +84,11 @@ jobs:
         run: pip install -e ".[dev]"
 
       - name: Start service stack
-        # Postgres, Redis, MinIO (+ bucket init), Neo4j — the whole compose
-        # file. Config defaults in shared/config.py match these credentials.
-        # --wait blocks until postgres passes its pg_isready healthcheck, so
-        # migrations never race a half-initialized server.
-        run: docker compose up -d --wait
+        # Wait for the long-running services, then run bucket initialization
+        # as a one-shot job whose failure stops CI before the API tests.
+        run: |
+          docker compose up -d --wait postgres redis minio neo4j
+          docker compose run --rm minio-init
 
       - name: Apply database migrations
         # The stack comes up with an empty Postgres; the health check only

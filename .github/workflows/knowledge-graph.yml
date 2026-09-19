@@ -7,17 +7,10 @@ name: Knowledge graph
 # See docs/knowledge-graph.md.
 
 on:
+  # This job is required by branch protection, so every PR to main must
+  # report it. Workflow-level path filters leave other PRs pending forever.
   pull_request:
-    paths:
-      - "**.py"
-      - "**.ts"
-      - "**.tsx"
-      - "**.js"
-      - "**.mjs"
-      - "**.sh"
-      - "graphify-out/**"
-      - "scripts/check_graph_fresh.py"
-      - ".github/workflows/knowledge-graph.yml"
+    branches: [main]
   push:
     branches: [main]
 
