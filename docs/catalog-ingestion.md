@@ -11,6 +11,9 @@ Catalog data: Mattia Verga and OpenNGC contributors, [CC BY-SA 4.0](https://crea
 coordinates, and types and combine records with survey cutout metadata. Derived
 catalog data retains the same license. Imagery: Digitized Sky Survey 2 / STScI;
 cutouts provided by CDS Strasbourg through [HiPS2FITS](https://alasky.cds.unistra.fr/hips-image-services/hips2fits).
+DSS digitization was funded by grant NAG W-2166 and uses photographic plates
+from the Palomar Oschin Schmidt and UK Schmidt telescopes. See the
+[survey acknowledgments and plate copyrights](https://archive.stsci.edu/dss/acknowledging.html).
 This is targeted imagery across both hemispheres, not complete all-sky pixel coverage.
 
 ## Storage and operation

@@ -738,6 +738,14 @@ def _get_latest_classification(object_uuid: str, database_session):
     )
 
 
+def _catalog_export_credit(obj) -> dict[str, str]:
+    properties = obj.physical_properties
+    if not isinstance(properties, dict) or properties.get("catalog") != "OpenNGC":
+        return {}
+    return {key: str(properties.get(key) or "") for key in
+            ("catalog_credit", "catalog_url", "catalog_license", "catalog_revision")}
+
+
 @router.get("/api/objects/{object_uuid}/export/fits")
 def export_fits(
     object_uuid: str = Path(..., max_length=36),
@@ -794,6 +802,7 @@ def export_csv(
 
     buf = io.StringIO()
     writer = csv.writer(buf)
+    credit = _catalog_export_credit(obj)
     writer.writerow([
         "uuid",
         "ra",
@@ -805,7 +814,7 @@ def export_csv(
         "is_anomaly_flagged",
         "classification_confidence_score",
         "anomaly_score",
-    ])
+    ] + list(credit))
     writer.writerow([
         str(obj.object_uuid),
         obj.sky_coordinate_ra_degrees,
@@ -817,7 +826,7 @@ def export_csv(
         obj.is_anomaly_flagged,
         latest_clf.classification_confidence_score if latest_clf else None,
         latest_clf.anomaly_score if latest_clf else None,
-    ])
+    ] + list(credit.values()))
 
     return Response(
         content=buf.getvalue(),
@@ -864,6 +873,8 @@ def export_votable(
             "anomaly_score": [clf_anomaly],
         }
     )
+    for key, value in _catalog_export_credit(obj).items():
+        t[key] = [value]
     votable = astropy.io.votable.from_table(t)
     buf = io.BytesIO()
     votable.to_xml(buf)
