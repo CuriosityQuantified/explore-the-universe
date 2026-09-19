@@ -2,9 +2,6 @@ name: Railway diagnostics
 
 on:
   workflow_dispatch:
-  push:
-    branches: [codex/railway-healthcheck]
-    paths: [.github/workflows/railway-diagnostics.yml]
 
 permissions:
   contents: read
