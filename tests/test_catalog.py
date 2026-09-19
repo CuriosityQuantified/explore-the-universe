@@ -1,5 +1,7 @@
 """Offline regression tests for real catalog parsing and bounded imagery imports."""
 import io
+import json
+from decimal import Decimal
 from unittest.mock import patch
 
 import numpy as np
@@ -10,6 +12,7 @@ from PIL import Image
 
 from pipeline.catalog import coordinate, normalize_name, parse_catalog, diverse_order, field_of_view
 from pipeline.catalog_import import identity, make_assets, import_image, prepare_images
+from pipeline import catalog_import
 
 
 def test_coordinate_rollover_and_negative_zero():
@@ -90,3 +93,35 @@ def test_display_orientation_matches_viewer_fits_y_flip():
     image, _ = prepare_images(buffer.getvalue())
     pixels = np.asarray(image)
     assert pixels[0, 256] > pixels[-1, 256]
+
+
+@pytest.mark.parametrize("stored_bytes", [Decimal(0), Decimal(2**53 + 1)])
+def test_batch_cli_completes_with_postgres_numeric_storage_total(stored_bytes, capsys):
+    """Postgres SUM(bigint) returns Decimal; completion must emit exact JSON integers."""
+    targets = [target(), dict(target(), id="NGC0003")]
+    budget = 2**54
+    with (
+        patch.object(catalog_import, "engine") as engine,
+        patch.object(catalog_import, "SessionLocal") as sessions,
+        patch.object(catalog_import, "load_targets", return_value=targets),
+        patch.object(catalog_import, "seed_catalog"),
+        patch.object(catalog_import, "get_catalog_s3_client"),
+        patch.object(catalog_import, "import_image", return_value=1024) as upload,
+        patch.object(catalog_import.time, "sleep"),
+        patch("sys.argv", ["catalog_import", "--max-images", "1", "--max-total-bytes", str(budget)]),
+    ):
+        connection = engine.connect.return_value.__enter__.return_value
+        connection.scalar.return_value = True
+        session = sessions.return_value.__enter__.return_value
+        session.execute.return_value.all.return_value = []
+        session.scalar.return_value = stored_bytes
+
+        catalog_import.main()
+
+        result = json.loads(capsys.readouterr().out)
+        assert result["stored_bytes"] == int(stored_bytes) + 1024
+        assert type(result["stored_bytes"]) is int
+        assert result["images_added"] == result["attempted"] == 1
+        upload.assert_called_once_with(targets[0], budget - int(stored_bytes))
+        assert type(upload.call_args.args[1]) is int
+        connection.execute.assert_called_once()  # release the advisory lock
