@@ -12,6 +12,7 @@ import type { ObservationDetail, ObservationSummary, WcsParams } from "@/types/o
 import type { GraphNeighbors, ObjectDetail } from "@/types/object";
 import type { NameSearchResult, ObjectSearchItem, StructuredSearchFilters, StructuredSearchResult } from "@/types/search";
 import type { ChatResponse } from "@/types/chat";
+import type { CatalogFilters, CatalogPage } from "@/types/catalog";
 
 // Same-origin by default so production traffic passes through the Next.js
 // rewrite to Railway's private API service. Local development can still set
@@ -124,9 +125,23 @@ async function throwApiError(response: Response, label: string): Promise<never> 
 }
 
 /** Fetch the list of distinct classified_object_type values from the DB. */
-export async function fetchObjectTypes(): Promise<string[]> {
-  const response = await fetch(`${API_BASE}/api/objects/types`);
+export async function fetchObjectTypes(signal?: AbortSignal): Promise<string[]> {
+  const response = await fetch(`${API_BASE}/api/objects/types`, { signal });
   if (!response.ok) await throwApiError(response, "Failed to fetch object types");
+  return response.json();
+}
+
+/** Browse the complete catalog with server-side filtering, sorting and pagination. */
+export async function fetchCatalogObjects(
+  filters: CatalogFilters,
+  signal?: AbortSignal,
+): Promise<CatalogPage> {
+  const params = new URLSearchParams();
+  for (const [key, value] of Object.entries(filters)) {
+    if (value !== undefined && value !== "") params.set(key, String(value));
+  }
+  const response = await fetch(`${API_BASE}/api/catalog/objects?${params}`, { signal });
+  if (!response.ok) await throwApiError(response, "Could not load the catalog");
   return response.json();
 }
 
