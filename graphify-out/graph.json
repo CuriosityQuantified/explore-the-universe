@@ -374,6 +374,19 @@
       "source_location": "L81"
     },
     {
+      "id": "web_src_types_observation_observationstep",
+      "label": "ObservationStep",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
+      "file_type": "code",
+      "norm_label": "observationstep",
+      "source_file": "web/src/types/observation.ts",
+      "source_location": "L52"
+    },
+    {
       "id": "web_src_types_observation_tilemetadata",
       "label": "TileMetadata",
       "_callable": true,
@@ -400,6 +413,71 @@
       "source_location": "L14"
     },
     {
+      "id": "api_routers_graph_graphcatalogentry",
+      "label": "GraphCatalogEntry",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "graphcatalogentry",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L78"
+    },
+    {
+      "id": "api_routers_graph_graphneighbornode",
+      "label": "GraphNeighborNode",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "graphneighbornode",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L72"
+    },
+    {
+      "id": "api_routers_graph_graphneighborsresponse",
+      "label": "GraphNeighborsResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "graphneighborsresponse",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L83"
+    },
+    {
+      "id": "api_routers_graph_graphqueryresponse",
+      "label": "GraphQueryResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "graphqueryresponse",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L66"
+    },
+    {
+      "id": "api_routers_graph_graphqueryresult",
+      "label": "GraphQueryResult",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "graphqueryresult",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L57"
+    },
+    {
       "id": "web_src_components_searchbar_tab",
       "label": "Tab",
       "_callable": true,
@@ -411,19 +489,6 @@
       "norm_label": "tab",
       "source_file": "web/src/components/SearchBar.tsx",
       "source_location": "L7"
-    },
-    {
-      "id": "web_src_app_viewer_uuid_page_viewerpageprops",
-      "label": "ViewerPageProps",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "api.ts",
-      "file_type": "code",
-      "norm_label": "viewerpageprops",
-      "source_file": "web/src/app/viewer/[uuid]/page.tsx",
-      "source_location": "L4"
     },
     {
       "id": "web_src_components_querybuilder_querybuilderprops",
@@ -530,71 +595,6 @@
       "source_location": "L34"
     },
     {
-      "id": "shared_config_settings",
-      "label": "Settings",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 107,
-      "community_name": "Settings",
-      "file_type": "code",
-      "norm_label": "settings",
-      "source_file": "shared/config.py",
-      "source_location": "L4"
-    },
-    {
-      "id": "api_routers_graph_graphneighbornode",
-      "label": "GraphNeighborNode",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "graphneighbornode",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L72"
-    },
-    {
-      "id": "api_routers_objects_namesearchresponse",
-      "label": "NameSearchResponse",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "namesearchresponse",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L275"
-    },
-    {
-      "id": "api_routers_objects_objectsearchresponse",
-      "label": "ObjectSearchResponse",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "objectsearchresponse",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L265"
-    },
-    {
-      "id": "api_routers_objects_structuredsearchresponse",
-      "label": "StructuredSearchResponse",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "structuredsearchresponse",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L301"
-    },
-    {
       "id": "tests_test_chat_api_testchatapi",
       "label": "TestChatApi",
       "_callable": true,
@@ -619,6 +619,58 @@
       "norm_label": "graph_client",
       "source_file": "tests/test_graph_query_api.py",
       "source_location": "L31"
+    },
+    {
+      "id": "api_routers_chat_chatcontext",
+      "label": "ChatContext",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "chatcontext",
+      "source_file": "api/routers/chat.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "api_routers_chat_chatobjectresult",
+      "label": "ChatObjectResult",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "chatobjectresult",
+      "source_file": "api/routers/chat.py",
+      "source_location": "L44"
+    },
+    {
+      "id": "api_routers_chat_chatrequest",
+      "label": "ChatRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "chatrequest",
+      "source_file": "api/routers/chat.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "api_routers_chat_chatresponse",
+      "label": "ChatResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "chatresponse",
+      "source_file": "api/routers/chat.py",
+      "source_location": "L52"
     },
     {
       "id": "api_routers_objects_structuredsearchfilters",
@@ -673,69 +725,17 @@
       "source_location": "L186"
     },
     {
-      "id": "api_routers_chat_chatcontext",
-      "label": "ChatContext",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "chatcontext",
-      "source_file": "api/routers/chat.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "api_routers_chat_chatobjectresult",
-      "label": "ChatObjectResult",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "chatobjectresult",
-      "source_file": "api/routers/chat.py",
-      "source_location": "L44"
-    },
-    {
-      "id": "api_routers_chat_chatrequest",
-      "label": "ChatRequest",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "chatrequest",
-      "source_file": "api/routers/chat.py",
-      "source_location": "L39"
-    },
-    {
-      "id": "api_routers_chat_chatresponse",
-      "label": "ChatResponse",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "chatresponse",
-      "source_file": "api/routers/chat.py",
-      "source_location": "L52"
-    },
-    {
-      "id": "shared_models_observation",
-      "label": "Observation",
+      "id": "shared_config_settings",
+      "label": "Settings",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
-      "norm_label": "observation",
-      "source_file": "shared/models.py",
-      "source_location": "L44"
+      "norm_label": "settings",
+      "source_file": "shared/config.py",
+      "source_location": "L4"
     },
     {
       "id": "shared_models_pipelinestatus",
@@ -744,7 +744,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "pipelinestatus",
       "source_file": "shared/models.py",
@@ -757,7 +757,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "processingstep",
       "source_file": "shared/models.py",
@@ -770,63 +770,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "stepstatus",
       "source_file": "shared/models.py",
       "source_location": "L30"
     },
     {
-      "id": "api_routers_graph_graphcatalogentry",
-      "label": "GraphCatalogEntry",
+      "id": "web_src_app_viewer_uuid_page_viewerpageprops",
+      "label": "ViewerPageProps",
       "_callable": true,
       "_callable_class": true,
       "_origin": "ast",
       "community": 65,
-      "community_name": "get_graph_neighbors",
+      "community_name": "viewer/[uuid]/page.tsx",
       "file_type": "code",
-      "norm_label": "graphcatalogentry",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L78"
-    },
-    {
-      "id": "api_routers_graph_graphneighborsresponse",
-      "label": "GraphNeighborsResponse",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "code",
-      "norm_label": "graphneighborsresponse",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L83"
-    },
-    {
-      "id": "api_routers_graph_graphqueryresponse",
-      "label": "GraphQueryResponse",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "code",
-      "norm_label": "graphqueryresponse",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L66"
-    },
-    {
-      "id": "api_routers_graph_graphqueryresult",
-      "label": "GraphQueryResult",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "code",
-      "norm_label": "graphqueryresult",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L57"
+      "norm_label": "viewerpageprops",
+      "source_file": "web/src/app/viewer/[uuid]/page.tsx",
+      "source_location": "L4"
     },
     {
       "id": "api_routers_objects_anomalyresponse",
@@ -894,6 +855,19 @@
       "source_location": "L63"
     },
     {
+      "id": "api_routers_objects_namesearchresponse",
+      "label": "NameSearchResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "namesearchresponse",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L275"
+    },
+    {
       "id": "api_routers_objects_objectdetailresponse",
       "label": "ObjectDetailResponse",
       "_callable": true,
@@ -905,6 +879,32 @@
       "norm_label": "objectdetailresponse",
       "source_file": "api/routers/objects.py",
       "source_location": "L607"
+    },
+    {
+      "id": "api_routers_objects_objectsearchresponse",
+      "label": "ObjectSearchResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "objectsearchresponse",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L265"
+    },
+    {
+      "id": "api_routers_objects_structuredsearchresponse",
+      "label": "StructuredSearchResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "structuredsearchresponse",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L301"
     },
     {
       "id": "api_routers_ingest_ingestrequest",
@@ -1030,7 +1030,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "observationsummaryresponse",
       "source_file": "api/routers/observations.py",
@@ -1043,11 +1043,24 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "processingstepsummary",
       "source_file": "api/routers/observations.py",
       "source_location": "L19"
+    },
+    {
+      "id": "shared_models_observation",
+      "label": "Observation",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "observation",
+      "source_file": "shared/models.py",
+      "source_location": "L44"
     },
     {
       "id": "tests_test_name_search_api_testnamesearch",
@@ -1277,24 +1290,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "dashboardclientprops",
       "source_file": "web/src/app/dashboard/DashboardClient.tsx",
       "source_location": "L33"
-    },
-    {
-      "id": "web_src_types_observation_observationstep",
-      "label": "ObservationStep",
-      "_callable": true,
-      "_callable_class": true,
-      "_origin": "ast",
-      "community": 99,
-      "community_name": "observation.ts",
-      "file_type": "code",
-      "norm_label": "observationstep",
-      "source_file": "web/src/types/observation.ts",
-      "source_location": "L52"
     },
     {
       "id": "web_src_types_observation_observationsummary",
@@ -1303,7 +1303,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "observationsummary",
       "source_file": "web/src/types/observation.ts",
@@ -1320,18 +1320,6 @@
       "norm_label": "viewerclient()",
       "source_file": "web/src/app/viewer/[uuid]/ViewerClient.tsx",
       "source_location": "L45"
-    },
-    {
-      "id": "web_src_app_viewer_uuid_viewerloader_viewerloader",
-      "label": "ViewerLoader()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 0,
-      "community_name": "ViewerClient.tsx",
-      "file_type": "code",
-      "norm_label": "viewerloader()",
-      "source_file": "web/src/app/viewer/[uuid]/ViewerLoader.tsx",
-      "source_location": "L20"
     },
     {
       "id": "web_src_components_viewer_bandselector_bandselector",
@@ -1634,6 +1622,54 @@
       "source_location": "L8"
     },
     {
+      "id": "api_routers_graph_build_neighbors",
+      "label": "_build_neighbors()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "_build_neighbors()",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L119"
+    },
+    {
+      "id": "api_routers_graph_get_graph_neighbors",
+      "label": "get_graph_neighbors()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "get_graph_neighbors()",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L178"
+    },
+    {
+      "id": "api_routers_graph_query_graph",
+      "label": "query_graph()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "query_graph()",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L138"
+    },
+    {
+      "id": "api_routers_graph_thumbnail_url",
+      "label": "_thumbnail_url()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "_thumbnail_url()",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L98"
+    },
+    {
       "id": "pipeline_catalog_coordinate",
       "label": "coordinate()",
       "_callable": true,
@@ -1667,7 +1703,7 @@
       "file_type": "code",
       "norm_label": "field_of_view()",
       "source_file": "pipeline/catalog.py",
-      "source_location": "L109"
+      "source_location": "L113"
     },
     {
       "id": "pipeline_catalog_import_fetch_bytes",
@@ -1679,7 +1715,7 @@
       "file_type": "code",
       "norm_label": "fetch_bytes()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L47"
+      "source_location": "L48"
     },
     {
       "id": "pipeline_catalog_import_identity",
@@ -1691,7 +1727,7 @@
       "file_type": "code",
       "norm_label": "identity()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L42"
+      "source_location": "L43"
     },
     {
       "id": "pipeline_catalog_import_image_bytes",
@@ -1703,7 +1739,7 @@
       "file_type": "code",
       "norm_label": "image_bytes()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L109"
+      "source_location": "L112"
     },
     {
       "id": "pipeline_catalog_import_import_image",
@@ -1715,7 +1751,7 @@
       "file_type": "code",
       "norm_label": "import_image()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L145"
+      "source_location": "L148"
     },
     {
       "id": "pipeline_catalog_import_load_targets",
@@ -1727,7 +1763,7 @@
       "file_type": "code",
       "norm_label": "load_targets()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L56"
+      "source_location": "L57"
     },
     {
       "id": "pipeline_catalog_import_main",
@@ -1739,7 +1775,7 @@
       "file_type": "code",
       "norm_label": "main()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L229"
+      "source_location": "L237"
     },
     {
       "id": "pipeline_catalog_import_make_assets",
@@ -1751,7 +1787,7 @@
       "file_type": "code",
       "norm_label": "make_assets()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L115"
+      "source_location": "L118"
     },
     {
       "id": "pipeline_catalog_import_prepare_images",
@@ -1763,7 +1799,7 @@
       "file_type": "code",
       "norm_label": "prepare_images()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L91"
+      "source_location": "L92"
     },
     {
       "id": "pipeline_catalog_import_run",
@@ -1775,19 +1811,7 @@
       "file_type": "code",
       "norm_label": "run()",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L183"
-    },
-    {
-      "id": "pipeline_catalog_import_seed_catalog",
-      "label": "seed_catalog()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "catalog_import.py",
-      "file_type": "code",
-      "norm_label": "seed_catalog()",
-      "source_file": "pipeline/catalog_import.py",
-      "source_location": "L64"
+      "source_location": "L187"
     },
     {
       "id": "pipeline_catalog_normalize_name",
@@ -1824,6 +1848,30 @@
       "norm_label": "parse_catalog()",
       "source_file": "pipeline/catalog.py",
       "source_location": "L57"
+    },
+    {
+      "id": "shared_catalog_storage_get_catalog_s3_client",
+      "label": "get_catalog_s3_client()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "get_catalog_s3_client()",
+      "source_file": "shared/catalog_storage.py",
+      "source_location": "L11"
+    },
+    {
+      "id": "shared_catalog_storage_is_catalog_cutout",
+      "label": "is_catalog_cutout()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "is_catalog_cutout()",
+      "source_file": "shared/catalog_storage.py",
+      "source_location": "L25"
     },
     {
       "id": "tests_test_catalog_survey_fits",
@@ -1896,6 +1944,18 @@
       "norm_label": "test_coordinate_rollover_and_negative_zero()",
       "source_file": "tests/test_catalog.py",
       "source_location": "L15"
+    },
+    {
+      "id": "tests_test_catalog_test_display_orientation_matches_viewer_fits_y_flip",
+      "label": "test_display_orientation_matches_viewer_fits_y_flip()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "test_display_orientation_matches_viewer_fits_y_flip()",
+      "source_file": "tests/test_catalog.py",
+      "source_location": "L84"
     },
     {
       "id": "tests_test_catalog_test_diversity_interleaves_sky_sectors",
@@ -2035,11 +2095,23 @@
       "_callable": true,
       "_origin": "ast",
       "community": 101,
-      "community_name": "_build_feature_matrix",
+      "community_name": "classify_objects",
       "file_type": "code",
       "norm_label": "_build_feature_matrix()",
       "source_file": "pipeline/tasks/classify_objects.py",
       "source_location": "L78"
+    },
+    {
+      "id": "pipeline_tasks_classify_objects_classify_objects",
+      "label": "classify_objects()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 101,
+      "community_name": "classify_objects",
+      "file_type": "code",
+      "norm_label": "classify_objects()",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L100"
     },
     {
       "id": "pipeline_tasks_classify_objects_download_cutout",
@@ -2047,11 +2119,59 @@
       "_callable": true,
       "_origin": "ast",
       "community": 101,
-      "community_name": "_build_feature_matrix",
+      "community_name": "classify_objects",
       "file_type": "code",
       "norm_label": "_download_cutout()",
       "source_file": "pipeline/tasks/classify_objects.py",
       "source_location": "L61"
+    },
+    {
+      "id": "api_db_neo4j_close_driver",
+      "label": "close_driver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "close_driver()",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L48"
+    },
+    {
+      "id": "api_db_neo4j_init_driver",
+      "label": "init_driver()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "init_driver()",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L34"
+    },
+    {
+      "id": "api_main_lifespan",
+      "label": "lifespan()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "lifespan()",
+      "source_file": "api/main.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "api_routers_catalog_catalog_summary",
+      "label": "catalog_summary()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "catalog_summary()",
+      "source_file": "api/routers/catalog.py",
+      "source_location": "L12"
     },
     {
       "id": "api_routers_revision_get_revision",
@@ -2059,7 +2179,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 102,
-      "community_name": "revision.py",
+      "community_name": "tiles.py",
       "file_type": "code",
       "norm_label": "get_revision()",
       "source_file": "api/routers/revision.py",
@@ -2071,7 +2191,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 102,
-      "community_name": "revision.py",
+      "community_name": "tiles.py",
       "file_type": "code",
       "norm_label": "test_revision_endpoint_returns_configured_revision()",
       "source_file": "tests/test_revision.py",
@@ -2162,6 +2282,18 @@
       "source_location": "L127"
     },
     {
+      "id": "pipeline_ml_models_classifier_load_or_create_classifier",
+      "label": "load_or_create_classifier()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 104,
+      "community_name": "predict_object_types",
+      "file_type": "code",
+      "norm_label": "load_or_create_classifier()",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L60"
+    },
+    {
       "id": "pipeline_ml_models_classifier_predict_object_types",
       "label": "predict_object_types()",
       "_callable": true,
@@ -2186,6 +2318,18 @@
       "source_location": "L116"
     },
     {
+      "id": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
+      "label": "test_load_or_create_classifier_returns_none_when_no_s3_model()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 104,
+      "community_name": "predict_object_types",
+      "file_type": "code",
+      "norm_label": "test_load_or_create_classifier_returns_none_when_no_s3_model()",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L414"
+    },
+    {
       "id": "tests_test_classification_schema_test_predict_object_types_imputes_sentinels",
       "label": "test_predict_object_types_imputes_sentinels()",
       "_callable": true,
@@ -2198,52 +2342,52 @@
       "source_location": "L425"
     },
     {
-      "id": "web_src_app_viewer_uuid_page_viewerpage",
-      "label": "ViewerPage()",
+      "id": "web_src_components_querybuilder_querybuilder",
+      "label": "QueryBuilder()",
       "_callable": true,
       "_origin": "ast",
       "community": 105,
       "community_name": "api.ts",
       "file_type": "code",
-      "norm_label": "viewerpage()",
-      "source_file": "web/src/app/viewer/[uuid]/page.tsx",
-      "source_location": "L15"
+      "norm_label": "querybuilder()",
+      "source_file": "web/src/components/QueryBuilder.tsx",
+      "source_location": "L32"
     },
     {
-      "id": "web_src_lib_api_fetchobservation",
-      "label": "fetchObservation()",
+      "id": "web_src_components_querybuilder_querybuilder_handlesearch",
+      "label": "handleSearch()",
       "_callable": true,
       "_origin": "ast",
       "community": 105,
       "community_name": "api.ts",
       "file_type": "code",
-      "norm_label": "fetchobservation()",
-      "source_file": "web/src/lib/api.ts",
-      "source_location": "L52"
+      "norm_label": "handlesearch()",
+      "source_file": "web/src/components/QueryBuilder.tsx",
+      "source_location": "L81"
     },
     {
-      "id": "web_src_lib_api_fetchwcsparams",
-      "label": "fetchWcsParams()",
+      "id": "web_src_components_querybuilder_querybuilder_toggletype",
+      "label": "toggleType()",
       "_callable": true,
       "_origin": "ast",
       "community": 105,
       "community_name": "api.ts",
       "file_type": "code",
-      "norm_label": "fetchwcsparams()",
-      "source_file": "web/src/lib/api.ts",
-      "source_location": "L73"
+      "norm_label": "toggletype()",
+      "source_file": "web/src/components/QueryBuilder.tsx",
+      "source_location": "L75"
     },
     {
-      "id": "web_src_lib_api_gettileurl",
-      "label": "getTileUrl()",
+      "id": "web_src_lib_api_searchbyfilters",
+      "label": "searchByFilters()",
       "_callable": true,
       "_origin": "ast",
       "community": 105,
       "community_name": "api.ts",
       "file_type": "code",
-      "norm_label": "gettileurl()",
+      "norm_label": "searchbyfilters()",
       "source_file": "web/src/lib/api.ts",
-      "source_location": "L92"
+      "source_location": "L209"
     },
     {
       "id": "api_routers_tiles_find_sci_extension",
@@ -2292,78 +2436,6 @@
       "norm_label": "get_wcs_params()",
       "source_file": "api/routers/tiles.py",
       "source_location": "L170"
-    },
-    {
-      "id": "api_routers_graph_build_neighbors",
-      "label": "_build_neighbors()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "_build_neighbors()",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L119"
-    },
-    {
-      "id": "api_routers_graph_thumbnail_url",
-      "label": "_thumbnail_url()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "_thumbnail_url()",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L98"
-    },
-    {
-      "id": "api_routers_objects_export_fits",
-      "label": "export_fits()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "export_fits()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L750"
-    },
-    {
-      "id": "api_routers_objects_make_cutout_thumbnail_url",
-      "label": "_make_cutout_thumbnail_url()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "_make_cutout_thumbnail_url()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L248"
-    },
-    {
-      "id": "shared_catalog_storage_get_catalog_s3_client",
-      "label": "get_catalog_s3_client()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "get_catalog_s3_client()",
-      "source_file": "shared/catalog_storage.py",
-      "source_location": "L11"
-    },
-    {
-      "id": "shared_catalog_storage_is_catalog_cutout",
-      "label": "is_catalog_cutout()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "is_catalog_cutout()",
-      "source_file": "shared/catalog_storage.py",
-      "source_location": "L25"
     },
     {
       "id": "pipeline_tasks_segment_sam_compute_normalization_parameters",
@@ -2472,198 +2544,6 @@
       "norm_label": "segment_sam()",
       "source_file": "pipeline/tasks/segment_sam.py",
       "source_location": "L507"
-    },
-    {
-      "id": "api_routers_objects_catalog_export_credit",
-      "label": "_catalog_export_credit()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "_catalog_export_credit()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L741"
-    },
-    {
-      "id": "api_routers_objects_export_csv",
-      "label": "export_csv()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "export_csv()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L792"
-    },
-    {
-      "id": "api_routers_objects_export_filename",
-      "label": "_export_filename()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "_export_filename()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L713"
-    },
-    {
-      "id": "api_routers_objects_export_votable",
-      "label": "export_votable()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "export_votable()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L839"
-    },
-    {
-      "id": "api_routers_objects_get_latest_classification",
-      "label": "_get_latest_classification()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "_get_latest_classification()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L731"
-    },
-    {
-      "id": "api_routers_objects_get_object_or_404",
-      "label": "_get_object_or_404()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "_get_object_or_404()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L719"
-    },
-    {
-      "id": "api_routers_objects_safe_filename",
-      "label": "_safe_filename()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "code",
-      "norm_label": "_safe_filename()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L705"
-    },
-    {
-      "id": "api_routers_objects_angular_separation_arcsec",
-      "label": "_angular_separation_arcsec()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "_angular_separation_arcsec()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L237"
-    },
-    {
-      "id": "api_routers_objects_search_objects",
-      "label": "search_objects()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "search_objects()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L401"
-    },
-    {
-      "id": "api_routers_objects_structured_search_objects",
-      "label": "structured_search_objects()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "structured_search_objects()",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L307"
-    },
-    {
-      "id": "web_src_components_querybuilder_querybuilder",
-      "label": "QueryBuilder()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 112,
-      "community_name": "QueryBuilder",
-      "file_type": "code",
-      "norm_label": "querybuilder()",
-      "source_file": "web/src/components/QueryBuilder.tsx",
-      "source_location": "L32"
-    },
-    {
-      "id": "web_src_components_querybuilder_querybuilder_handlesearch",
-      "label": "handleSearch()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 112,
-      "community_name": "QueryBuilder",
-      "file_type": "code",
-      "norm_label": "handlesearch()",
-      "source_file": "web/src/components/QueryBuilder.tsx",
-      "source_location": "L81"
-    },
-    {
-      "id": "web_src_components_querybuilder_querybuilder_toggletype",
-      "label": "toggleType()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 112,
-      "community_name": "QueryBuilder",
-      "file_type": "code",
-      "norm_label": "toggletype()",
-      "source_file": "web/src/components/QueryBuilder.tsx",
-      "source_location": "L75"
-    },
-    {
-      "id": "web_src_lib_api_searchbyfilters",
-      "label": "searchByFilters()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 112,
-      "community_name": "QueryBuilder",
-      "file_type": "code",
-      "norm_label": "searchbyfilters()",
-      "source_file": "web/src/lib/api.ts",
-      "source_location": "L209"
-    },
-    {
-      "id": "alembic_env_run_migrations_offline",
-      "label": "run_migrations_offline()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 113,
-      "community_name": "env.py",
-      "file_type": "code",
-      "norm_label": "run_migrations_offline()",
-      "source_file": "alembic/env.py",
-      "source_location": "L18"
-    },
-    {
-      "id": "alembic_env_run_migrations_online",
-      "label": "run_migrations_online()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 113,
-      "community_name": "env.py",
-      "file_type": "code",
-      "norm_label": "run_migrations_online()",
-      "source_file": "alembic/env.py",
-      "source_location": "L30"
     },
     {
       "id": "api_routers_health_check_service_health",
@@ -3398,16 +3278,52 @@
       "source_location": "L193"
     },
     {
-      "id": "api_routers_catalog_catalog_summary",
-      "label": "catalog_summary()",
+      "id": "pipeline_tasks_validate_wcs_extract_fits_header_provenance",
+      "label": "_extract_fits_header_provenance()",
       "_callable": true,
       "_origin": "ast",
       "community": 15,
-      "community_name": "catalog_summary",
+      "community_name": "validate_wcs",
       "file_type": "code",
-      "norm_label": "catalog_summary()",
-      "source_file": "api/routers/catalog.py",
-      "source_location": "L12"
+      "norm_label": "_extract_fits_header_provenance()",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L136"
+    },
+    {
+      "id": "pipeline_tasks_validate_wcs_find_sci_extension",
+      "label": "_find_sci_extension()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "validate_wcs",
+      "file_type": "code",
+      "norm_label": "_find_sci_extension()",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L39"
+    },
+    {
+      "id": "pipeline_tasks_validate_wcs_validate_wcs",
+      "label": "validate_wcs()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "validate_wcs",
+      "file_type": "code",
+      "norm_label": "validate_wcs()",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L191"
+    },
+    {
+      "id": "pipeline_tasks_validate_wcs_validate_wcs_round_trip",
+      "label": "_validate_wcs_round_trip()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "validate_wcs",
+      "file_type": "code",
+      "norm_label": "_validate_wcs_round_trip()",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L87"
     },
     {
       "id": "tests_test_classification_schema_test_astronomical_object_catalog_object_name_is_indexed",
@@ -3588,18 +3504,6 @@
       "norm_label": "test_generate_cutouts_does_not_set_pipeline_completed()",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L276"
-    },
-    {
-      "id": "tests_test_classification_schema_test_load_or_create_classifier_returns_none_when_no_s3_model",
-      "label": "test_load_or_create_classifier_returns_none_when_no_s3_model()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
-      "file_type": "code",
-      "norm_label": "test_load_or_create_classifier_returns_none_when_no_s3_model()",
-      "source_file": "tests/test_classification_schema.py",
-      "source_location": "L414"
     },
     {
       "id": "tests_test_classification_schema_test_ned_client_has_query_region",
@@ -4082,6 +3986,18 @@
       "source_location": "L21"
     },
     {
+      "id": "api_db_neo4j_get_neo4j_session",
+      "label": "get_neo4j_session()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "graph_client",
+      "file_type": "code",
+      "norm_label": "get_neo4j_session()",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L65"
+    },
+    {
       "id": "tests_test_graph_query_api_graph_client_enter",
       "label": ".__enter__()",
       "_callable": true,
@@ -4104,6 +4020,18 @@
       "norm_label": ".__exit__()",
       "source_file": "tests/test_graph_query_api.py",
       "source_location": "L46"
+    },
+    {
+      "id": "tests_test_graph_query_api_graph_client_init",
+      "label": ".__init__()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "graph_client",
+      "file_type": "code",
+      "norm_label": ".__init__()",
+      "source_file": "tests/test_graph_query_api.py",
+      "source_location": "L34"
     },
     {
       "id": "tests_test_graph_query_api_mock_neo4j_session",
@@ -4286,6 +4214,18 @@
       "source_location": "L56"
     },
     {
+      "id": "tests_test_load_graph_test_get_neo4j_session_is_generator",
+      "label": "test_get_neo4j_session_is_generator()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "graph_client",
+      "file_type": "code",
+      "norm_label": "test_get_neo4j_session_is_generator()",
+      "source_file": "tests/test_load_graph.py",
+      "source_location": "L30"
+    },
+    {
       "id": "alembic_versions_8b7ed9ebe193_initial_schema_with_observations_downgrade",
       "label": "downgrade()",
       "_callable": true,
@@ -4334,28 +4274,28 @@
       "source_location": "L42"
     },
     {
-      "id": "api_db_neo4j_close_driver",
-      "label": "close_driver()",
+      "id": "alembic_env_run_migrations_offline",
+      "label": "run_migrations_offline()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "AstronomicalObject",
       "file_type": "code",
-      "norm_label": "close_driver()",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L48"
+      "norm_label": "run_migrations_offline()",
+      "source_file": "alembic/env.py",
+      "source_location": "L18"
     },
     {
-      "id": "api_db_neo4j_init_driver",
-      "label": "init_driver()",
+      "id": "alembic_env_run_migrations_online",
+      "label": "run_migrations_online()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "AstronomicalObject",
       "file_type": "code",
-      "norm_label": "init_driver()",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L34"
+      "norm_label": "run_migrations_online()",
+      "source_file": "alembic/env.py",
+      "source_location": "L30"
     },
     {
       "id": "api_db_session_get_database_session",
@@ -4370,16 +4310,28 @@
       "source_location": "L10"
     },
     {
-      "id": "api_main_lifespan",
-      "label": "lifespan()",
+      "id": "api_routers_chat_chat_query",
+      "label": "chat_query()",
       "_callable": true,
       "_origin": "ast",
       "community": 35,
       "community_name": "AstronomicalObject",
       "file_type": "code",
-      "norm_label": "lifespan()",
-      "source_file": "api/main.py",
-      "source_location": "L19"
+      "norm_label": "chat_query()",
+      "source_file": "api/routers/chat.py",
+      "source_location": "L134"
+    },
+    {
+      "id": "api_routers_objects_make_cutout_thumbnail_url",
+      "label": "_make_cutout_thumbnail_url()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "_make_cutout_thumbnail_url()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L248"
     },
     {
       "id": "tests_test_anomaly_api_make_app_with_mock_session",
@@ -4562,18 +4514,6 @@
       "source_location": "L58"
     },
     {
-      "id": "api_routers_chat_chat_query",
-      "label": "chat_query()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "chat_query()",
-      "source_file": "api/routers/chat.py",
-      "source_location": "L134"
-    },
-    {
       "id": "pipeline_tasks_cross_match_catalogs_cross_match_catalogs",
       "label": "cross_match_catalogs()",
       "_callable": true,
@@ -4742,36 +4682,12 @@
       "source_location": "L119"
     },
     {
-      "id": "pipeline_ml_models_classifier_load_or_create_classifier",
-      "label": "load_or_create_classifier()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "load_or_create_classifier()",
-      "source_file": "pipeline/ml_models/classifier.py",
-      "source_location": "L60"
-    },
-    {
-      "id": "pipeline_tasks_classify_objects_classify_objects",
-      "label": "classify_objects()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "classify_objects()",
-      "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L100"
-    },
-    {
       "id": "pipeline_tasks_cross_match_catalogs_get_pixel_scale",
       "label": "_get_pixel_scale()",
       "_callable": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "_get_pixel_scale()",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
@@ -4783,7 +4699,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "_finalize_empty()",
       "source_file": "pipeline/tasks/detect_anomalies.py",
@@ -4795,7 +4711,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "download_fits()",
       "source_file": "pipeline/tasks/download.py",
@@ -4807,7 +4723,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "generate_tiles()",
       "source_file": "pipeline/tasks/tile.py",
@@ -4819,59 +4735,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "_upload_tiles_to_minio()",
       "source_file": "pipeline/tasks/tile.py",
       "source_location": "L345"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_extract_fits_header_provenance",
-      "label": "_extract_fits_header_provenance()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "_extract_fits_header_provenance()",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L136"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_find_sci_extension",
-      "label": "_find_sci_extension()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "_find_sci_extension()",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L39"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_validate_wcs",
-      "label": "validate_wcs()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "validate_wcs()",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L191"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_validate_wcs_round_trip",
-      "label": "_validate_wcs_round_trip()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "_validate_wcs_round_trip()",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L87"
     },
     {
       "id": "shared_s3_get_s3_client",
@@ -4879,35 +4747,71 @@
       "_callable": true,
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "get_s3_client()",
       "source_file": "shared/s3.py",
       "source_location": "L15"
     },
     {
-      "id": "api_routers_graph_get_graph_neighbors",
-      "label": "get_graph_neighbors()",
+      "id": "web_src_app_viewer_uuid_page_viewerpage",
+      "label": "ViewerPage()",
       "_callable": true,
       "_origin": "ast",
       "community": 65,
-      "community_name": "get_graph_neighbors",
+      "community_name": "viewer/[uuid]/page.tsx",
       "file_type": "code",
-      "norm_label": "get_graph_neighbors()",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L178"
+      "norm_label": "viewerpage()",
+      "source_file": "web/src/app/viewer/[uuid]/page.tsx",
+      "source_location": "L15"
     },
     {
-      "id": "api_routers_graph_query_graph",
-      "label": "query_graph()",
+      "id": "web_src_app_viewer_uuid_viewerloader_viewerloader",
+      "label": "ViewerLoader()",
       "_callable": true,
       "_origin": "ast",
       "community": 65,
-      "community_name": "get_graph_neighbors",
+      "community_name": "viewer/[uuid]/page.tsx",
       "file_type": "code",
-      "norm_label": "query_graph()",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L138"
+      "norm_label": "viewerloader()",
+      "source_file": "web/src/app/viewer/[uuid]/ViewerLoader.tsx",
+      "source_location": "L20"
+    },
+    {
+      "id": "web_src_lib_api_fetchobservation",
+      "label": "fetchObservation()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 65,
+      "community_name": "viewer/[uuid]/page.tsx",
+      "file_type": "code",
+      "norm_label": "fetchobservation()",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L52"
+    },
+    {
+      "id": "web_src_lib_api_fetchwcsparams",
+      "label": "fetchWcsParams()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 65,
+      "community_name": "viewer/[uuid]/page.tsx",
+      "file_type": "code",
+      "norm_label": "fetchwcsparams()",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L73"
+    },
+    {
+      "id": "web_src_lib_api_gettileurl",
+      "label": "getTileUrl()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 65,
+      "community_name": "viewer/[uuid]/page.tsx",
+      "file_type": "code",
+      "norm_label": "gettileurl()",
+      "source_file": "web/src/lib/api.ts",
+      "source_location": "L92"
     },
     {
       "id": "pipeline_catalog_clients_simbad_client_query_simbad_region",
@@ -5090,6 +4994,30 @@
       "source_location": "L22"
     },
     {
+      "id": "api_routers_objects_angular_separation_arcsec",
+      "label": "_angular_separation_arcsec()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "_angular_separation_arcsec()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L237"
+    },
+    {
+      "id": "api_routers_objects_catalog_export_credit",
+      "label": "_catalog_export_credit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "_catalog_export_credit()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L741"
+    },
+    {
       "id": "api_routers_objects_catalog_external_url",
       "label": "_catalog_external_url()",
       "_callable": true,
@@ -5100,6 +5028,66 @@
       "norm_label": "_catalog_external_url()",
       "source_file": "api/routers/objects.py",
       "source_location": "L580"
+    },
+    {
+      "id": "api_routers_objects_export_csv",
+      "label": "export_csv()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "export_csv()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L792"
+    },
+    {
+      "id": "api_routers_objects_export_filename",
+      "label": "_export_filename()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "_export_filename()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L713"
+    },
+    {
+      "id": "api_routers_objects_export_fits",
+      "label": "export_fits()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "export_fits()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L750"
+    },
+    {
+      "id": "api_routers_objects_export_votable",
+      "label": "export_votable()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "export_votable()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L839"
+    },
+    {
+      "id": "api_routers_objects_get_latest_classification",
+      "label": "_get_latest_classification()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "_get_latest_classification()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L731"
     },
     {
       "id": "api_routers_objects_get_object_classifications",
@@ -5138,6 +5126,18 @@
       "source_location": "L626"
     },
     {
+      "id": "api_routers_objects_get_object_or_404",
+      "label": "_get_object_or_404()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "_get_object_or_404()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L719"
+    },
+    {
       "id": "api_routers_objects_get_object_types",
       "label": "get_object_types()",
       "_callable": true,
@@ -5160,6 +5160,42 @@
       "norm_label": "get_observation_anomalies()",
       "source_file": "api/routers/objects.py",
       "source_location": "L175"
+    },
+    {
+      "id": "api_routers_objects_safe_filename",
+      "label": "_safe_filename()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "_safe_filename()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L705"
+    },
+    {
+      "id": "api_routers_objects_search_objects",
+      "label": "search_objects()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "search_objects()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L401"
+    },
+    {
+      "id": "api_routers_objects_structured_search_objects",
+      "label": "structured_search_objects()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "structured_search_objects()",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L307"
     },
     {
       "id": "api_routers_ingest_get_ingest_status",
@@ -5659,11 +5695,35 @@
       "_callable": true,
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "list_observations()",
       "source_file": "api/routers/observations.py",
       "source_location": "L38"
+    },
+    {
+      "id": "api_routers_test_upload_upload_test_file",
+      "label": "upload_test_file()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "upload_test_file()",
+      "source_file": "api/routers/test_upload.py",
+      "source_location": "L16"
+    },
+    {
+      "id": "pipeline_catalog_import_seed_catalog",
+      "label": "seed_catalog()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "seed_catalog()",
+      "source_file": "pipeline/catalog_import.py",
+      "source_location": "L65"
     },
     {
       "id": "tests_test_name_search_api_make_app_with_mock_session",
@@ -5966,18 +6026,6 @@
       "source_location": "L57"
     },
     {
-      "id": "api_db_neo4j_get_neo4j_session",
-      "label": "get_neo4j_session()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 84,
-      "community_name": "test_load_graph.py",
-      "file_type": "code",
-      "norm_label": "get_neo4j_session()",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L65"
-    },
-    {
       "id": "pipeline_tasks_ingest_ingest_observation",
       "label": "ingest_observation()",
       "_callable": true,
@@ -6024,18 +6072,6 @@
       "norm_label": "test_ingest_observation_chain_has_10_tasks()",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L256"
-    },
-    {
-      "id": "tests_test_graph_query_api_graph_client_init",
-      "label": ".__init__()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 84,
-      "community_name": "test_load_graph.py",
-      "file_type": "code",
-      "norm_label": ".__init__()",
-      "source_file": "tests/test_graph_query_api.py",
-      "source_location": "L34"
     },
     {
       "id": "tests_test_load_graph_make_catalog_match",
@@ -6108,18 +6144,6 @@
       "norm_label": "test_get_driver_lazily_initialises()",
       "source_file": "tests/test_load_graph.py",
       "source_location": "L80"
-    },
-    {
-      "id": "tests_test_load_graph_test_get_neo4j_session_is_generator",
-      "label": "test_get_neo4j_session_is_generator()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 84,
-      "community_name": "test_load_graph.py",
-      "file_type": "code",
-      "norm_label": "test_get_neo4j_session_is_generator()",
-      "source_file": "tests/test_load_graph.py",
-      "source_location": "L30"
     },
     {
       "id": "tests_test_load_graph_test_in_bbox_edge_on_boundary",
@@ -6938,18 +6962,6 @@
       "source_location": "L19"
     },
     {
-      "id": "api_routers_test_upload_upload_test_file",
-      "label": "upload_test_file()",
-      "_callable": true,
-      "_origin": "ast",
-      "community": 92,
-      "community_name": "upload_test_file",
-      "file_type": "code",
-      "norm_label": "upload_test_file()",
-      "source_file": "api/routers/test_upload.py",
-      "source_location": "L16"
-    },
-    {
       "id": "web_src_app_objects_uuid_not_found_objectnotfound",
       "label": "ObjectNotFound()",
       "_callable": true,
@@ -7219,7 +7231,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "dashboardclient()",
       "source_file": "web/src/app/dashboard/DashboardClient.tsx",
@@ -7231,7 +7243,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "statusbadge()",
       "source_file": "web/src/app/dashboard/DashboardClient.tsx",
@@ -7243,7 +7255,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "dashboardpage()",
       "source_file": "web/src/app/dashboard/page.tsx",
@@ -7255,7 +7267,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "fetchobservations()",
       "source_file": "web/src/lib/api.ts",
@@ -7460,6 +7472,17 @@
       "source_location": "L1"
     },
     {
+      "id": "web_src_types_observation",
+      "label": "observation.ts",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "ViewerClient.tsx",
+      "file_type": "code",
+      "norm_label": "observation.ts",
+      "source_file": "web/src/types/observation.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "web_src_app_viewer_uuid_viewerclient_rationale_128",
       "label": "NOTE: Currently all bands share the same tile prefix in MinIO due to",
       "_origin": "ast",
@@ -7548,6 +7571,50 @@
       "source_location": "L2"
     },
     {
+      "id": "api_routers_graph",
+      "label": "graph.py",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "graph.py",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_graph_py_basemodel",
+      "label": "BaseModel",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "basemodel",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_graph_py_get",
+      "label": "get",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "get",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_graph_py_session",
+      "label": "Session",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "session",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "image",
       "label": "Image",
       "_origin": "ast",
@@ -7592,6 +7659,17 @@
       "source_location": ""
     },
     {
+      "id": "shared_catalog_storage",
+      "label": "catalog_storage.py",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "code",
+      "norm_label": "catalog_storage.py",
+      "source_file": "shared/catalog_storage.py",
+      "source_location": "L1"
+    },
+    {
       "id": "tests_test_catalog",
       "label": "test_catalog.py",
       "_origin": "ast",
@@ -7601,6 +7679,61 @@
       "norm_label": "test_catalog.py",
       "source_file": "tests/test_catalog.py",
       "source_location": "L1"
+    },
+    {
+      "id": "api_routers_graph_rationale_1",
+      "label": "Graph property query and neighborhood API. GET /api/graph/query \u2014 filter\u2026",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "rationale",
+      "norm_label": "graph property query and neighborhood api. get /api/graph/query \u2014 filter...",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_graph_rationale_120",
+      "label": "Convert a raw Neo4j neighbor list to GraphNeighborNode, dropping null-uuid\u2026",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "rationale",
+      "norm_label": "convert a raw neo4j neighbor list to graphneighbornode, dropping null-uuid...",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L120"
+    },
+    {
+      "id": "api_routers_graph_rationale_149",
+      "label": "Query AstronomicalObject nodes in Neo4j by property filters. All filter\u2026",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "rationale",
+      "norm_label": "query astronomicalobject nodes in neo4j by property filters. all filter...",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L149"
+    },
+    {
+      "id": "api_routers_graph_rationale_182",
+      "label": "Return 1-hop neighbors for an AstronomicalObject in the knowledge graph.\u2026",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "rationale",
+      "norm_label": "return 1-hop neighbors for an astronomicalobject in the knowledge graph....",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L182"
+    },
+    {
+      "id": "api_routers_graph_rationale_99",
+      "label": "Return a 1-hour presigned MinIO URL for the cutout thumbnail, or None.",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "rationale",
+      "norm_label": "return a 1-hour presigned minio url for the cutout thumbnail, or none.",
+      "source_file": "api/routers/graph.py",
+      "source_location": "L99"
     },
     {
       "id": "pipeline_catalog_import_rationale_1",
@@ -7614,18 +7747,7 @@
       "source_location": "L1"
     },
     {
-      "id": "pipeline_catalog_import_rationale_65",
-      "label": "Import genuine published records idempotently, without fabricated detections.",
-      "_origin": "ast",
-      "community": 10,
-      "community_name": "catalog_import.py",
-      "file_type": "rationale",
-      "norm_label": "import genuine published records idempotently, without fabricated detections.",
-      "source_file": "pipeline/catalog_import.py",
-      "source_location": "L65"
-    },
-    {
-      "id": "pipeline_catalog_import_rationale_92",
+      "id": "pipeline_catalog_import_rationale_93",
       "label": "Validate a real 2-D celestial FITS image and stretch it for display.",
       "_origin": "ast",
       "community": 10,
@@ -7633,7 +7755,7 @@
       "file_type": "rationale",
       "norm_label": "validate a real 2-d celestial fits image and stretch it for display.",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L92"
+      "source_location": "L93"
     },
     {
       "id": "pipeline_catalog_rationale_1",
@@ -7656,6 +7778,17 @@
       "norm_label": "messier targets first, then round-robin by sky sector and object type.",
       "source_file": "pipeline/catalog.py",
       "source_location": "L92"
+    },
+    {
+      "id": "shared_catalog_storage_rationale_1",
+      "label": "S3 access for the managed survey bucket, independent of existing JWST data.",
+      "_origin": "ast",
+      "community": 10,
+      "community_name": "catalog_import.py",
+      "file_type": "rationale",
+      "norm_label": "s3 access for the managed survey bucket, independent of existing jwst data.",
+      "source_file": "shared/catalog_storage.py",
+      "source_location": "L1"
     },
     {
       "id": "tests_test_catalog_rationale_1",
@@ -7684,18 +7817,40 @@
       "label": "ndarray",
       "_origin": "ast",
       "community": 101,
-      "community_name": "_build_feature_matrix",
+      "community_name": "classify_objects",
       "file_type": "code",
       "norm_label": "ndarray",
       "source_file": "",
       "source_location": ""
     },
     {
+      "id": "pipeline_tasks_classify_objects_py_task",
+      "label": "task",
+      "_origin": "ast",
+      "community": 101,
+      "community_name": "classify_objects",
+      "file_type": "code",
+      "norm_label": "task",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "pipeline_tasks_classify_objects_rationale_101",
+      "label": "Extract morphological features and classify objects using a trained ML model.\u2026",
+      "_origin": "ast",
+      "community": 101,
+      "community_name": "classify_objects",
+      "file_type": "rationale",
+      "norm_label": "extract morphological features and classify objects using a trained ml model....",
+      "source_file": "pipeline/tasks/classify_objects.py",
+      "source_location": "L101"
+    },
+    {
       "id": "pipeline_tasks_classify_objects_rationale_62",
       "label": "Download cutout.fits from MinIO and return its data as a float64 array.",
       "_origin": "ast",
       "community": 101,
-      "community_name": "_build_feature_matrix",
+      "community_name": "classify_objects",
       "file_type": "rationale",
       "norm_label": "download cutout.fits from minio and return its data as a float64 array.",
       "source_file": "pipeline/tasks/classify_objects.py",
@@ -7706,18 +7861,84 @@
       "label": "Convert list of feature dicts to a numeric matrix (n_objects \u00d7 n_features).",
       "_origin": "ast",
       "community": 101,
-      "community_name": "_build_feature_matrix",
+      "community_name": "classify_objects",
       "file_type": "rationale",
       "norm_label": "convert list of feature dicts to a numeric matrix (n_objects \u00d7 n_features).",
       "source_file": "pipeline/tasks/classify_objects.py",
       "source_location": "L79"
     },
     {
+      "id": "api_db_neo4j",
+      "label": "neo4j.py",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "neo4j.py",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_main",
+      "label": "main.py",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "main.py",
+      "source_file": "api/main.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_catalog",
+      "label": "routers/catalog.py",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "routers/catalog.py",
+      "source_file": "api/routers/catalog.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_catalog_py_get",
+      "label": "get",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "get",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_catalog_py_session",
+      "label": "Session",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "session",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_ingest",
+      "label": "routers/ingest.py",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "routers/ingest.py",
+      "source_file": "api/routers/ingest.py",
+      "source_location": "L1"
+    },
+    {
       "id": "api_routers_revision",
       "label": "revision.py",
       "_origin": "ast",
       "community": 102,
-      "community_name": "revision.py",
+      "community_name": "tiles.py",
       "file_type": "code",
       "norm_label": "revision.py",
       "source_file": "api/routers/revision.py",
@@ -7728,9 +7949,31 @@
       "label": "get",
       "_origin": "ast",
       "community": 102,
-      "community_name": "revision.py",
+      "community_name": "tiles.py",
       "file_type": "code",
       "norm_label": "get",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_tiles",
+      "label": "tiles.py",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "tiles.py",
+      "source_file": "api/routers/tiles.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "code",
+      "norm_label": "fastapi",
       "source_file": "",
       "source_location": ""
     },
@@ -7739,10 +7982,76 @@
       "label": "test_revision.py",
       "_origin": "ast",
       "community": 102,
-      "community_name": "revision.py",
+      "community_name": "tiles.py",
       "file_type": "code",
       "norm_label": "test_revision.py",
       "source_file": "tests/test_revision.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_db_neo4j_rationale_1",
+      "label": "Neo4j driver singleton and FastAPI dependency. One driver is created at FastAPI\u2026",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "rationale",
+      "norm_label": "neo4j driver singleton and fastapi dependency. one driver is created at fastapi...",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_db_neo4j_rationale_35",
+      "label": "Create the singleton driver and apply schema constraints.",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "rationale",
+      "norm_label": "create the singleton driver and apply schema constraints.",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L35"
+    },
+    {
+      "id": "api_db_neo4j_rationale_49",
+      "label": "Close the singleton driver (called at FastAPI shutdown).",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "rationale",
+      "norm_label": "close the singleton driver (called at fastapi shutdown).",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L49"
+    },
+    {
+      "id": "api_routers_catalog_rationale_1",
+      "label": "Live catalog coverage, including records whose survey imagery is queued.",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "rationale",
+      "norm_label": "live catalog coverage, including records whose survey imagery is queued.",
+      "source_file": "api/routers/catalog.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_ingest_rationale_1",
+      "label": "Ingest API endpoints for triggering and monitoring the pipeline. POST\u2026",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "rationale",
+      "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post...",
+      "source_file": "api/routers/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_tiles_rationale_1",
+      "label": "Tile serving API endpoints for the sky viewer. GET\u2026",
+      "_origin": "ast",
+      "community": 102,
+      "community_name": "tiles.py",
+      "file_type": "rationale",
+      "norm_label": "tile serving api endpoints for the sky viewer. get...",
+      "source_file": "api/routers/tiles.py",
       "source_location": "L1"
     },
     {
@@ -7779,6 +8088,17 @@
       "source_location": "L1"
     },
     {
+      "id": "pipeline_ml_models_classifier",
+      "label": "classifier.py",
+      "_origin": "ast",
+      "community": 104,
+      "community_name": "predict_object_types",
+      "file_type": "code",
+      "norm_label": "classifier.py",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L1"
+    },
+    {
       "id": "pipeline_ml_models_classifier_py_ndarray",
       "label": "ndarray",
       "_origin": "ast",
@@ -7801,6 +8121,17 @@
       "source_location": ""
     },
     {
+      "id": "pipeline_ml_models_classifier_rationale_1",
+      "label": "Random Forest classifier for astronomical object morphological type prediction.\u2026",
+      "_origin": "ast",
+      "community": 104,
+      "community_name": "predict_object_types",
+      "file_type": "rationale",
+      "norm_label": "random forest classifier for astronomical object morphological type prediction....",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L1"
+    },
+    {
       "id": "pipeline_ml_models_classifier_rationale_122",
       "label": "Serialize and upload a trained classifier to S3.",
       "_origin": "ast",
@@ -7810,6 +8141,17 @@
       "norm_label": "serialize and upload a trained classifier to s3.",
       "source_file": "pipeline/ml_models/classifier.py",
       "source_location": "L122"
+    },
+    {
+      "id": "pipeline_ml_models_classifier_rationale_65",
+      "label": "Download and deserialize the pre-trained RF classifier from S3. Returns None if\u2026",
+      "_origin": "ast",
+      "community": 104,
+      "community_name": "predict_object_types",
+      "file_type": "rationale",
+      "norm_label": "download and deserialize the pre-trained rf classifier from s3. returns none if...",
+      "source_file": "pipeline/ml_models/classifier.py",
+      "source_location": "L65"
     },
     {
       "id": "pipeline_ml_models_classifier_rationale_94",
@@ -7823,6 +8165,17 @@
       "source_location": "L94"
     },
     {
+      "id": "tests_test_classification_schema_rationale_415",
+      "label": "load_or_create_classifier returns None (not an exception) when S3 has no model.",
+      "_origin": "ast",
+      "community": 104,
+      "community_name": "predict_object_types",
+      "file_type": "rationale",
+      "norm_label": "load_or_create_classifier returns none (not an exception) when s3 has no model.",
+      "source_file": "tests/test_classification_schema.py",
+      "source_location": "L415"
+    },
+    {
       "id": "tests_test_classification_schema_rationale_426",
       "label": "predict_object_types handles -999.0 sentinels without crashing.",
       "_origin": "ast",
@@ -7832,17 +8185,6 @@
       "norm_label": "predict_object_types handles -999.0 sentinels without crashing.",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L426"
-    },
-    {
-      "id": "web_src_app_viewer_uuid_page",
-      "label": "viewer/[uuid]/page.tsx",
-      "_origin": "ast",
-      "community": 105,
-      "community_name": "api.ts",
-      "file_type": "code",
-      "norm_label": "viewer/[uuid]/page.tsx",
-      "source_file": "web/src/app/viewer/[uuid]/page.tsx",
-      "source_location": "L1"
     },
     {
       "id": "web_src_components_querybuilder",
@@ -7986,105 +8328,6 @@
       "norm_label": "find the sci extension in a fits hdu list. same logic as pipeline/tasks/tile.py...",
       "source_file": "api/routers/tiles.py",
       "source_location": "L86"
-    },
-    {
-      "id": "basesettings",
-      "label": "BaseSettings",
-      "_origin": "ast",
-      "community": 107,
-      "community_name": "Settings",
-      "file_type": "code",
-      "norm_label": "basesettings",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_graph",
-      "label": "graph.py",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "graph.py",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "shared_catalog_storage",
-      "label": "catalog_storage.py",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "code",
-      "norm_label": "catalog_storage.py",
-      "source_file": "shared/catalog_storage.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_routers_graph_rationale_1",
-      "label": "Graph property query and neighborhood API. GET /api/graph/query \u2014 filter\u2026",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "rationale",
-      "norm_label": "graph property query and neighborhood api. get /api/graph/query \u2014 filter...",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_routers_graph_rationale_120",
-      "label": "Convert a raw Neo4j neighbor list to GraphNeighborNode, dropping null-uuid\u2026",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "rationale",
-      "norm_label": "convert a raw neo4j neighbor list to graphneighbornode, dropping null-uuid...",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L120"
-    },
-    {
-      "id": "api_routers_graph_rationale_99",
-      "label": "Return a 1-hour presigned MinIO URL for the cutout thumbnail, or None.",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "rationale",
-      "norm_label": "return a 1-hour presigned minio url for the cutout thumbnail, or none.",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L99"
-    },
-    {
-      "id": "api_routers_objects_rationale_249",
-      "label": "Return a 1-hour signed MinIO URL for the cutout PNG, or None if no prefix.",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "rationale",
-      "norm_label": "return a 1-hour signed minio url for the cutout png, or none if no prefix.",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L249"
-    },
-    {
-      "id": "api_routers_objects_rationale_754",
-      "label": "Stream the cutout FITS file for an object from MinIO. Returns 404 if the UUID\u2026",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "rationale",
-      "norm_label": "stream the cutout fits file for an object from minio. returns 404 if the uuid...",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L754"
-    },
-    {
-      "id": "shared_catalog_storage_rationale_1",
-      "label": "S3 access for the managed survey bucket, independent of existing JWST data.",
-      "_origin": "ast",
-      "community": 108,
-      "community_name": "graph.py",
-      "file_type": "rationale",
-      "norm_label": "s3 access for the managed survey bucket, independent of existing jwst data.",
-      "source_file": "shared/catalog_storage.py",
-      "source_location": "L1"
     },
     {
       "id": "docs_catalog_ingestion",
@@ -8311,138 +8554,6 @@
       "norm_label": "lazily initialize sam 3 model and processor. returns sam3processor if cuda is...",
       "source_file": "pipeline/tasks/segment_sam.py",
       "source_location": "L99"
-    },
-    {
-      "id": "api_routers_objects_rationale_706",
-      "label": "Sanitize a string for use in a Content-Disposition filename token. Strips\u2026",
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "rationale",
-      "norm_label": "sanitize a string for use in a content-disposition filename token. strips...",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L706"
-    },
-    {
-      "id": "api_routers_objects_rationale_714",
-      "label": "Return a safe Content-Disposition filename for an object export.",
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "rationale",
-      "norm_label": "return a safe content-disposition filename for an object export.",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L714"
-    },
-    {
-      "id": "api_routers_objects_rationale_720",
-      "label": "Fetch AstronomicalObject by UUID or raise 404.",
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "rationale",
-      "norm_label": "fetch astronomicalobject by uuid or raise 404.",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L720"
-    },
-    {
-      "id": "api_routers_objects_rationale_732",
-      "label": "Return latest ObjectClassification for an object, or None.",
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "rationale",
-      "norm_label": "return latest objectclassification for an object, or none.",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L732"
-    },
-    {
-      "id": "api_routers_objects_rationale_796",
-      "label": "Return a single-row CSV with the object's key attributes. Returns 404 if the\u2026",
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "rationale",
-      "norm_label": "return a single-row csv with the object's key attributes. returns 404 if the...",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L796"
-    },
-    {
-      "id": "api_routers_objects_rationale_843",
-      "label": "Return a VOTable XML document with the object's key attributes. Returns 404 if\u2026",
-      "_origin": "ast",
-      "community": 110,
-      "community_name": "export_csv",
-      "file_type": "rationale",
-      "norm_label": "return a votable xml document with the object's key attributes. returns 404 if...",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L843"
-    },
-    {
-      "id": "api_routers_objects_py_post",
-      "label": "post",
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "post",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_objects_py_response",
-      "label": "Response",
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "code",
-      "norm_label": "response",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_objects_rationale_240",
-      "label": "Haversine angular separation between two sky coordinates, in arcseconds.",
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "rationale",
-      "norm_label": "haversine angular separation between two sky coordinates, in arcseconds.",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L240"
-    },
-    {
-      "id": "api_routers_objects_rationale_312",
-      "label": "Structured query over AstronomicalObject records with optional filters. All\u2026",
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "rationale",
-      "norm_label": "structured query over astronomicalobject records with optional filters. all...",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L312"
-    },
-    {
-      "id": "api_routers_objects_rationale_412",
-      "label": "Cone search, type filter, or SIMBAD name search over AstronomicalObject\u2026",
-      "_origin": "ast",
-      "community": 111,
-      "community_name": "search_objects",
-      "file_type": "rationale",
-      "norm_label": "cone search, type filter, or simbad name search over astronomicalobject...",
-      "source_file": "api/routers/objects.py",
-      "source_location": "L412"
-    },
-    {
-      "id": "alembic_env",
-      "label": "env.py",
-      "_origin": "ast",
-      "community": 113,
-      "community_name": "env.py",
-      "file_type": "code",
-      "norm_label": "env.py",
-      "source_file": "alembic/env.py",
-      "source_location": "L1"
     },
     {
       "id": "api_routers_health_py_get",
@@ -8962,26 +9073,59 @@
       "source_location": "L84"
     },
     {
-      "id": "api_routers_catalog_py_get",
-      "label": "get",
+      "id": "pipeline_tasks_validate_wcs_py_task",
+      "label": "task",
       "_origin": "ast",
       "community": 15,
-      "community_name": "catalog_summary",
+      "community_name": "validate_wcs",
       "file_type": "code",
-      "norm_label": "get",
+      "norm_label": "task",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "api_routers_catalog_py_session",
-      "label": "Session",
+      "id": "pipeline_tasks_validate_wcs_rationale_137",
+      "label": "Extract provenance metadata from FITS header fields. Supplements MAST metadata\u2026",
       "_origin": "ast",
       "community": 15,
-      "community_name": "catalog_summary",
-      "file_type": "code",
-      "norm_label": "session",
-      "source_file": "",
-      "source_location": ""
+      "community_name": "validate_wcs",
+      "file_type": "rationale",
+      "norm_label": "extract provenance metadata from fits header fields. supplements mast metadata...",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L137"
+    },
+    {
+      "id": "pipeline_tasks_validate_wcs_rationale_192",
+      "label": "Extract and validate WCS from FITS headers, update Observation with pointing.\u2026",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "validate_wcs",
+      "file_type": "rationale",
+      "norm_label": "extract and validate wcs from fits headers, update observation with pointing....",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L192"
+    },
+    {
+      "id": "pipeline_tasks_validate_wcs_rationale_40",
+      "label": "Find the SCI extension in a FITS HDU list. Checks for a named 'SCI' extension\u2026",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "validate_wcs",
+      "file_type": "rationale",
+      "norm_label": "find the sci extension in a fits hdu list. checks for a named 'sci' extension...",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L40"
+    },
+    {
+      "id": "pipeline_tasks_validate_wcs_rationale_88",
+      "label": "Validate WCS accuracy via pixel-to-world-to-pixel round-trip test. Tests\u2026",
+      "_origin": "ast",
+      "community": 15,
+      "community_name": "validate_wcs",
+      "file_type": "rationale",
+      "norm_label": "validate wcs accuracy via pixel-to-world-to-pixel round-trip test. tests...",
+      "source_file": "pipeline/tasks/validate_wcs.py",
+      "source_location": "L88"
     },
     {
       "id": "claude_hooks_graph_refresh",
@@ -9045,17 +9189,6 @@
       "norm_label": "generate_cutouts must not assign pipeline_status = pipelinestatus.completed.",
       "source_file": "tests/test_classification_schema.py",
       "source_location": "L277"
-    },
-    {
-      "id": "tests_test_classification_schema_rationale_415",
-      "label": "load_or_create_classifier returns None (not an exception) when S3 has no model.",
-      "_origin": "ast",
-      "community": 18,
-      "community_name": "test_classification_schema.py",
-      "file_type": "rationale",
-      "norm_label": "load_or_create_classifier returns none (not an exception) when s3 has no model.",
-      "source_file": "tests/test_classification_schema.py",
-      "source_location": "L415"
     },
     {
       "id": "tests_test_classification_schema_rationale_471",
@@ -9384,6 +9517,17 @@
       "source_location": "L1"
     },
     {
+      "id": "api_db_neo4j_py_session",
+      "label": "Session",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "graph_client",
+      "file_type": "code",
+      "norm_label": "session",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "tests_test_graph_query_api",
       "label": "test_graph_query_api.py",
       "_origin": "ast",
@@ -9393,6 +9537,17 @@
       "norm_label": "test_graph_query_api.py",
       "source_file": "tests/test_graph_query_api.py",
       "source_location": "L1"
+    },
+    {
+      "id": "api_db_neo4j_rationale_66",
+      "label": "FastAPI dependency yielding a Neo4j session from the singleton driver.",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "graph_client",
+      "file_type": "rationale",
+      "norm_label": "fastapi dependency yielding a neo4j session from the singleton driver.",
+      "source_file": "api/db/neo4j.py",
+      "source_location": "L66"
     },
     {
       "id": "tests_test_graph_query_api_rationale_1",
@@ -9481,6 +9636,17 @@
       "norm_label": "the endpoint must call session.run() \u2014 not do string formatting.",
       "source_file": "tests/test_graph_query_api.py",
       "source_location": "L91"
+    },
+    {
+      "id": "tests_test_load_graph_rationale_31",
+      "label": "get_neo4j_session must be a generator function so FastAPI Depends works.",
+      "_origin": "ast",
+      "community": 3,
+      "community_name": "graph_client",
+      "file_type": "rationale",
+      "norm_label": "get_neo4j_session must be a generator function so fastapi depends works.",
+      "source_file": "tests/test_load_graph.py",
+      "source_location": "L31"
     },
     {
       "id": "alembic_versions_8b7ed9ebe193_initial_schema_with_observations",
@@ -9582,47 +9748,14 @@
       "source_location": "L1"
     },
     {
-      "id": "api_db_neo4j",
-      "label": "neo4j.py",
+      "id": "alembic_env",
+      "label": "env.py",
       "_origin": "ast",
       "community": 35,
       "community_name": "AstronomicalObject",
       "file_type": "code",
-      "norm_label": "neo4j.py",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_db_session",
-      "label": "session.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "session.py",
-      "source_file": "api/db/session.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_main",
-      "label": "main.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "main.py",
-      "source_file": "api/main.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_routers_catalog",
-      "label": "routers/catalog.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "routers/catalog.py",
-      "source_file": "api/routers/catalog.py",
+      "norm_label": "env.py",
+      "source_file": "alembic/env.py",
       "source_location": "L1"
     },
     {
@@ -9637,15 +9770,37 @@
       "source_location": "L1"
     },
     {
-      "id": "api_routers_ingest",
-      "label": "routers/ingest.py",
+      "id": "api_routers_chat_py_basemodel",
+      "label": "BaseModel",
       "_origin": "ast",
       "community": 35,
       "community_name": "AstronomicalObject",
       "file_type": "code",
-      "norm_label": "routers/ingest.py",
-      "source_file": "api/routers/ingest.py",
-      "source_location": "L1"
+      "norm_label": "basemodel",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_chat_py_post",
+      "label": "post",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "post",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_chat_py_session",
+      "label": "Session",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "code",
+      "norm_label": "session",
+      "source_file": "",
+      "source_location": ""
     },
     {
       "id": "api_routers_objects",
@@ -9659,28 +9814,6 @@
       "source_location": "L1"
     },
     {
-      "id": "api_routers_test_upload",
-      "label": "test_upload.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "test_upload.py",
-      "source_file": "api/routers/test_upload.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_routers_tiles",
-      "label": "tiles.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "tiles.py",
-      "source_file": "api/routers/tiles.py",
-      "source_location": "L1"
-    },
-    {
       "id": "declarativebase",
       "label": "DeclarativeBase",
       "_origin": "ast",
@@ -9690,28 +9823,6 @@
       "norm_label": "declarativebase",
       "source_file": "",
       "source_location": ""
-    },
-    {
-      "id": "fastapi",
-      "label": "FastAPI",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "fastapi",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "pipeline_tasks_load_graph",
-      "label": "load_graph.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "load_graph.py",
-      "source_file": "pipeline/tasks/load_graph.py",
-      "source_location": "L1"
     },
     {
       "id": "shared_models",
@@ -9758,61 +9869,6 @@
       "source_location": "L1"
     },
     {
-      "id": "tests_test_structured_search_api",
-      "label": "test_structured_search_api.py",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "code",
-      "norm_label": "test_structured_search_api.py",
-      "source_file": "tests/test_structured_search_api.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_db_neo4j_rationale_1",
-      "label": "Neo4j driver singleton and FastAPI dependency. One driver is created at FastAPI\u2026",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "neo4j driver singleton and fastapi dependency. one driver is created at fastapi...",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "api_db_neo4j_rationale_35",
-      "label": "Create the singleton driver and apply schema constraints.",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "create the singleton driver and apply schema constraints.",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L35"
-    },
-    {
-      "id": "api_db_neo4j_rationale_49",
-      "label": "Close the singleton driver (called at FastAPI shutdown).",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "close the singleton driver (called at fastapi shutdown).",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L49"
-    },
-    {
-      "id": "api_routers_catalog_rationale_1",
-      "label": "Live catalog coverage, including records whose survey imagery is queued.",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "live catalog coverage, including records whose survey imagery is queued.",
-      "source_file": "api/routers/catalog.py",
-      "source_location": "L1"
-    },
-    {
       "id": "api_routers_chat_rationale_1",
       "label": "AI chat interface router. POST /api/chat \u2014 translates a natural-language\u2026",
       "_origin": "ast",
@@ -9824,15 +9880,15 @@
       "source_location": "L1"
     },
     {
-      "id": "api_routers_ingest_rationale_1",
-      "label": "Ingest API endpoints for triggering and monitoring the pipeline. POST\u2026",
+      "id": "api_routers_chat_rationale_138",
+      "label": "Translate a natural-language question into a catalog query and return results.",
       "_origin": "ast",
       "community": 35,
       "community_name": "AstronomicalObject",
       "file_type": "rationale",
-      "norm_label": "ingest api endpoints for triggering and monitoring the pipeline. post...",
-      "source_file": "api/routers/ingest.py",
-      "source_location": "L1"
+      "norm_label": "translate a natural-language question into a catalog query and return results.",
+      "source_file": "api/routers/chat.py",
+      "source_location": "L138"
     },
     {
       "id": "api_routers_objects_rationale_1",
@@ -9846,6 +9902,17 @@
       "source_location": "L1"
     },
     {
+      "id": "api_routers_objects_rationale_249",
+      "label": "Return a 1-hour signed MinIO URL for the cutout PNG, or None if no prefix.",
+      "_origin": "ast",
+      "community": 35,
+      "community_name": "AstronomicalObject",
+      "file_type": "rationale",
+      "norm_label": "return a 1-hour signed minio url for the cutout png, or none if no prefix.",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L249"
+    },
+    {
       "id": "api_routers_objects_rationale_286",
       "label": "Request body for POST /api/objects/search structured query.",
       "_origin": "ast",
@@ -9855,28 +9922,6 @@
       "norm_label": "request body for post /api/objects/search structured query.",
       "source_file": "api/routers/objects.py",
       "source_location": "L286"
-    },
-    {
-      "id": "api_routers_tiles_rationale_1",
-      "label": "Tile serving API endpoints for the sky viewer. GET\u2026",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "tile serving api endpoints for the sky viewer. get...",
-      "source_file": "api/routers/tiles.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_tasks_load_graph_rationale_1",
-      "label": "Bulk-load observation objects into the Neo4j knowledge graph. Tenth (final)\u2026",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "bulk-load observation objects into the neo4j knowledge graph. tenth (final)...",
-      "source_file": "pipeline/tasks/load_graph.py",
-      "source_location": "L1"
     },
     {
       "id": "tests_test_anomaly_api_rationale_1",
@@ -9931,17 +9976,6 @@
       "file_type": "rationale",
       "norm_label": "tests for simbad name-search mode of get /api/objects/search. covers: -...",
       "source_file": "tests/test_name_search_api.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "tests_test_structured_search_api_rationale_1",
-      "label": "Tests for structured query API endpoint. POST /api/objects/search \u2014 structured\u2026",
-      "_origin": "ast",
-      "community": 35,
-      "community_name": "AstronomicalObject",
-      "file_type": "rationale",
-      "norm_label": "tests for structured query api endpoint. post /api/objects/search \u2014 structured...",
-      "source_file": "tests/test_structured_search_api.py",
       "source_location": "L1"
     },
     {
@@ -10009,6 +10043,17 @@
       "norm_label": "next",
       "source_file": "web/package.json",
       "source_location": "L12"
+    },
+    {
+      "id": "web_package_dependencies_openseadragon",
+      "label": "openseadragon",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "devDependencies",
+      "file_type": "code",
+      "norm_label": "openseadragon",
+      "source_file": "web/package.json",
+      "source_location": "L13"
     },
     {
       "id": "web_package_dependencies_react",
@@ -11038,50 +11083,6 @@
       "source_location": "L1"
     },
     {
-      "id": "api_routers_chat_py_basemodel",
-      "label": "BaseModel",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "basemodel",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_chat_py_post",
-      "label": "post",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "post",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_chat_py_session",
-      "label": "Session",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "code",
-      "norm_label": "session",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_chat_rationale_138",
-      "label": "Translate a natural-language question into a catalog query and return results.",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "chat_query",
-      "file_type": "rationale",
-      "norm_label": "translate a natural-language question into a catalog query and return results.",
-      "source_file": "api/routers/chat.py",
-      "source_location": "L138"
-    },
-    {
       "id": "pipeline_tasks_cross_match_catalogs_py_skycoord",
       "label": "SkyCoord",
       "_origin": "ast",
@@ -11276,25 +11277,36 @@
       "source_location": "L56"
     },
     {
+      "id": "api_db_session",
+      "label": "session.py",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "ProcessingStep",
+      "file_type": "code",
+      "norm_label": "session.py",
+      "source_file": "api/db/session.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "basesettings",
+      "label": "BaseSettings",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "ProcessingStep",
+      "file_type": "code",
+      "norm_label": "basesettings",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "pipeline_celery_app",
       "label": "celery_app.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "celery_app.py",
       "source_file": "pipeline/celery_app.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_ml_models_classifier",
-      "label": "classifier.py",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "classifier.py",
-      "source_file": "pipeline/ml_models/classifier.py",
       "source_location": "L1"
     },
     {
@@ -11302,29 +11314,18 @@
       "label": "classify_objects.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "classify_objects.py",
       "source_file": "pipeline/tasks/classify_objects.py",
       "source_location": "L1"
     },
     {
-      "id": "pipeline_tasks_classify_objects_py_task",
-      "label": "task",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "pipeline_tasks_cross_match_catalogs",
       "label": "cross_match_catalogs.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "cross_match_catalogs.py",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
@@ -11335,7 +11336,7 @@
       "label": "UUID",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "uuid",
       "source_file": "",
@@ -11346,7 +11347,7 @@
       "label": "detect_anomalies.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "detect_anomalies.py",
       "source_file": "pipeline/tasks/detect_anomalies.py",
@@ -11357,7 +11358,7 @@
       "label": "UUID",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "uuid",
       "source_file": "",
@@ -11368,7 +11369,7 @@
       "label": "download.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "download.py",
       "source_file": "pipeline/tasks/download.py",
@@ -11379,7 +11380,7 @@
       "label": "task",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "task",
       "source_file": "",
@@ -11390,7 +11391,7 @@
       "label": "generate_cutouts.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "generate_cutouts.py",
       "source_file": "pipeline/tasks/generate_cutouts.py",
@@ -11401,10 +11402,21 @@
       "label": "tasks/ingest.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "tasks/ingest.py",
       "source_file": "pipeline/tasks/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_tasks_load_graph",
+      "label": "load_graph.py",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "ProcessingStep",
+      "file_type": "code",
+      "norm_label": "load_graph.py",
+      "source_file": "pipeline/tasks/load_graph.py",
       "source_location": "L1"
     },
     {
@@ -11412,7 +11424,7 @@
       "label": "tile.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "tile.py",
       "source_file": "pipeline/tasks/tile.py",
@@ -11423,7 +11435,7 @@
       "label": "task",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "task",
       "source_file": "",
@@ -11434,29 +11446,18 @@
       "label": "validate_wcs.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "validate_wcs.py",
       "source_file": "pipeline/tasks/validate_wcs.py",
       "source_location": "L1"
     },
     {
-      "id": "pipeline_tasks_validate_wcs_py_task",
-      "label": "task",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "code",
-      "norm_label": "task",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "shared_config",
       "label": "config.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "config.py",
       "source_file": "shared/config.py",
@@ -11467,7 +11468,7 @@
       "label": "s3.py",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "s3.py",
       "source_file": "shared/s3.py",
@@ -11478,62 +11479,29 @@
       "label": "str",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "code",
       "norm_label": "str",
       "source_file": "",
       "source_location": ""
     },
     {
-      "id": "pipeline_ml_models_classifier_rationale_1",
-      "label": "Random Forest classifier for astronomical object morphological type prediction.\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "random forest classifier for astronomical object morphological type prediction....",
-      "source_file": "pipeline/ml_models/classifier.py",
-      "source_location": "L1"
-    },
-    {
-      "id": "pipeline_ml_models_classifier_rationale_65",
-      "label": "Download and deserialize the pre-trained RF classifier from S3. Returns None if\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "download and deserialize the pre-trained rf classifier from s3. returns none if...",
-      "source_file": "pipeline/ml_models/classifier.py",
-      "source_location": "L65"
-    },
-    {
       "id": "pipeline_tasks_classify_objects_rationale_1",
       "label": "Classify Celery task: feature extraction + RF classification for every object.\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "classify celery task: feature extraction + rf classification for every object....",
       "source_file": "pipeline/tasks/classify_objects.py",
       "source_location": "L1"
     },
     {
-      "id": "pipeline_tasks_classify_objects_rationale_101",
-      "label": "Extract morphological features and classify objects using a trained ML model.\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "extract morphological features and classify objects using a trained ml model....",
-      "source_file": "pipeline/tasks/classify_objects.py",
-      "source_location": "L101"
-    },
-    {
       "id": "pipeline_tasks_cross_match_catalogs_rationale_1",
       "label": "Cross-match Celery task: query all 4 catalogs in parallel per object. Seventh\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "cross-match celery task: query all 4 catalogs in parallel per object. seventh...",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
@@ -11544,7 +11512,7 @@
       "label": "Return WCS pixel scale in arcsec/px for this observation. Recovers FITS S3 keys\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "return wcs pixel scale in arcsec/px for this observation. recovers fits s3 keys...",
       "source_file": "pipeline/tasks/cross_match_catalogs.py",
@@ -11555,7 +11523,7 @@
       "label": "Anomaly detection Celery task: IsolationForest scoring + multi-signal flagging.\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "anomaly detection celery task: isolationforest scoring + multi-signal flagging....",
       "source_file": "pipeline/tasks/detect_anomalies.py",
@@ -11566,7 +11534,7 @@
       "label": "Mark step and observation completed when there are no objects to score.",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "mark step and observation completed when there are no objects to score.",
       "source_file": "pipeline/tasks/detect_anomalies.py",
@@ -11577,7 +11545,7 @@
       "label": "MAST download Celery task for JWST observations. Queries the Mikulski Archive\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "mast download celery task for jwst observations. queries the mikulski archive...",
       "source_file": "pipeline/tasks/download.py",
@@ -11588,7 +11556,7 @@
       "label": "Download calibrated FITS files from MAST and upload to MinIO. Receives a pre-\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "download calibrated fits files from mast and upload to minio. receives a pre-...",
       "source_file": "pipeline/tasks/download.py",
@@ -11599,7 +11567,7 @@
       "label": "Cutout generation Celery task (sixth step in the 9-task pipeline chain).\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "cutout generation celery task (sixth step in the 9-task pipeline chain)....",
       "source_file": "pipeline/tasks/generate_cutouts.py",
@@ -11610,10 +11578,21 @@
       "label": "Pipeline orchestrator Celery task for JWST observations. Dispatches the full\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "pipeline orchestrator celery task for jwst observations. dispatches the full...",
       "source_file": "pipeline/tasks/ingest.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "pipeline_tasks_load_graph_rationale_1",
+      "label": "Bulk-load observation objects into the Neo4j knowledge graph. Tenth (final)\u2026",
+      "_origin": "ast",
+      "community": 63,
+      "community_name": "ProcessingStep",
+      "file_type": "rationale",
+      "norm_label": "bulk-load observation objects into the neo4j knowledge graph. tenth (final)...",
+      "source_file": "pipeline/tasks/load_graph.py",
       "source_location": "L1"
     },
     {
@@ -11621,7 +11600,7 @@
       "label": "DZI tile pyramid generation Celery task for FITS observations. Converts FITS\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "dzi tile pyramid generation celery task for fits observations. converts fits...",
       "source_file": "pipeline/tasks/tile.py",
@@ -11632,7 +11611,7 @@
       "label": "Upload DZI XML and all tile images to MinIO tiles bucket. Uploads the DZI\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "upload dzi xml and all tile images to minio tiles bucket. uploads the dzi...",
       "source_file": "pipeline/tasks/tile.py",
@@ -11643,7 +11622,7 @@
       "label": "Generate DZI tile pyramids from FITS data and upload to MinIO. Receives the\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "generate dzi tile pyramids from fits data and upload to minio. receives the...",
       "source_file": "pipeline/tasks/tile.py",
@@ -11654,62 +11633,18 @@
       "label": "WCS validation Celery task for FITS observations. Extracts World Coordinate\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "wcs validation celery task for fits observations. extracts world coordinate...",
       "source_file": "pipeline/tasks/validate_wcs.py",
       "source_location": "L1"
     },
     {
-      "id": "pipeline_tasks_validate_wcs_rationale_137",
-      "label": "Extract provenance metadata from FITS header fields. Supplements MAST metadata\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "extract provenance metadata from fits header fields. supplements mast metadata...",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L137"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_rationale_192",
-      "label": "Extract and validate WCS from FITS headers, update Observation with pointing.\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "extract and validate wcs from fits headers, update observation with pointing....",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L192"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_rationale_40",
-      "label": "Find the SCI extension in a FITS HDU list. Checks for a named 'SCI' extension\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "find the sci extension in a fits hdu list. checks for a named 'sci' extension...",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L40"
-    },
-    {
-      "id": "pipeline_tasks_validate_wcs_rationale_88",
-      "label": "Validate WCS accuracy via pixel-to-world-to-pixel round-trip test. Tests\u2026",
-      "_origin": "ast",
-      "community": 63,
-      "community_name": "Observation",
-      "file_type": "rationale",
-      "norm_label": "validate wcs accuracy via pixel-to-world-to-pixel round-trip test. tests...",
-      "source_file": "pipeline/tasks/validate_wcs.py",
-      "source_location": "L88"
-    },
-    {
       "id": "shared_s3_rationale_1",
       "label": "Reusable S3 client singleton for MinIO access. Provides a lazy-initialized\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "reusable s3 client singleton for minio access. provides a lazy-initialized...",
       "source_file": "shared/s3.py",
@@ -11720,7 +11655,7 @@
       "label": "Return a boto3 S3 client configured for MinIO. Uses a module-level singleton --\u2026",
       "_origin": "ast",
       "community": 63,
-      "community_name": "Observation",
+      "community_name": "ProcessingStep",
       "file_type": "rationale",
       "norm_label": "return a boto3 s3 client configured for minio. uses a module-level singleton --...",
       "source_file": "shared/s3.py",
@@ -11751,59 +11686,15 @@
       "source_location": "L1"
     },
     {
-      "id": "api_routers_graph_py_basemodel",
-      "label": "BaseModel",
+      "id": "web_src_app_viewer_uuid_page",
+      "label": "viewer/[uuid]/page.tsx",
       "_origin": "ast",
       "community": 65,
-      "community_name": "get_graph_neighbors",
+      "community_name": "viewer/[uuid]/page.tsx",
       "file_type": "code",
-      "norm_label": "basemodel",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_graph_py_get",
-      "label": "get",
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "code",
-      "norm_label": "get",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_graph_py_session",
-      "label": "Session",
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "code",
-      "norm_label": "session",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_graph_rationale_149",
-      "label": "Query AstronomicalObject nodes in Neo4j by property filters. All filter\u2026",
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "rationale",
-      "norm_label": "query astronomicalobject nodes in neo4j by property filters. all filter...",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L149"
-    },
-    {
-      "id": "api_routers_graph_rationale_182",
-      "label": "Return 1-hop neighbors for an AstronomicalObject in the knowledge graph.\u2026",
-      "_origin": "ast",
-      "community": 65,
-      "community_name": "get_graph_neighbors",
-      "file_type": "rationale",
-      "norm_label": "return 1-hop neighbors for an astronomicalobject in the knowledge graph....",
-      "source_file": "api/routers/graph.py",
-      "source_location": "L182"
+      "norm_label": "viewer/[uuid]/page.tsx",
+      "source_file": "web/src/app/viewer/[uuid]/page.tsx",
+      "source_location": "L1"
     },
     {
       "id": "pipeline_catalog_clients_simbad_client",
@@ -12059,6 +11950,28 @@
       "source_location": ""
     },
     {
+      "id": "api_routers_objects_py_post",
+      "label": "post",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "post",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_objects_py_response",
+      "label": "Response",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "code",
+      "norm_label": "response",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
       "id": "api_routers_objects_py_session",
       "label": "Session",
       "_origin": "ast",
@@ -12092,6 +12005,28 @@
       "source_location": "L179"
     },
     {
+      "id": "api_routers_objects_rationale_240",
+      "label": "Haversine angular separation between two sky coordinates, in arcseconds.",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "haversine angular separation between two sky coordinates, in arcseconds.",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L240"
+    },
+    {
+      "id": "api_routers_objects_rationale_312",
+      "label": "Structured query over AstronomicalObject records with optional filters. All\u2026",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "structured query over astronomicalobject records with optional filters. all...",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L312"
+    },
+    {
       "id": "api_routers_objects_rationale_390",
       "label": "Return the list of distinct classified_object_type values present in the DB.",
       "_origin": "ast",
@@ -12103,6 +12038,17 @@
       "source_location": "L390"
     },
     {
+      "id": "api_routers_objects_rationale_412",
+      "label": "Cone search, type filter, or SIMBAD name search over AstronomicalObject\u2026",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "cone search, type filter, or simbad name search over astronomicalobject...",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L412"
+    },
+    {
       "id": "api_routers_objects_rationale_630",
       "label": "Return the full record for a single astronomical object. Includes a signed\u2026",
       "_origin": "ast",
@@ -12112,6 +12058,83 @@
       "norm_label": "return the full record for a single astronomical object. includes a signed...",
       "source_file": "api/routers/objects.py",
       "source_location": "L630"
+    },
+    {
+      "id": "api_routers_objects_rationale_706",
+      "label": "Sanitize a string for use in a Content-Disposition filename token. Strips\u2026",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "sanitize a string for use in a content-disposition filename token. strips...",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L706"
+    },
+    {
+      "id": "api_routers_objects_rationale_714",
+      "label": "Return a safe Content-Disposition filename for an object export.",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "return a safe content-disposition filename for an object export.",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L714"
+    },
+    {
+      "id": "api_routers_objects_rationale_720",
+      "label": "Fetch AstronomicalObject by UUID or raise 404.",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "fetch astronomicalobject by uuid or raise 404.",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L720"
+    },
+    {
+      "id": "api_routers_objects_rationale_732",
+      "label": "Return latest ObjectClassification for an object, or None.",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "return latest objectclassification for an object, or none.",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L732"
+    },
+    {
+      "id": "api_routers_objects_rationale_754",
+      "label": "Stream the cutout FITS file for an object from MinIO. Returns 404 if the UUID\u2026",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "stream the cutout fits file for an object from minio. returns 404 if the uuid...",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L754"
+    },
+    {
+      "id": "api_routers_objects_rationale_796",
+      "label": "Return a single-row CSV with the object's key attributes. Returns 404 if the\u2026",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "return a single-row csv with the object's key attributes. returns 404 if the...",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L796"
+    },
+    {
+      "id": "api_routers_objects_rationale_843",
+      "label": "Return a VOTable XML document with the object's key attributes. Returns 404 if\u2026",
+      "_origin": "ast",
+      "community": 71,
+      "community_name": "get_object_detail",
+      "file_type": "rationale",
+      "norm_label": "return a votable xml document with the object's key attributes. returns 404 if...",
+      "source_file": "api/routers/objects.py",
+      "source_location": "L843"
     },
     {
       "id": "api_routers_objects_rationale_95",
@@ -12895,7 +12918,7 @@
       "label": "observations.py",
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "observations.py",
       "source_file": "api/routers/observations.py",
@@ -12906,7 +12929,7 @@
       "label": "BaseModel",
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "basemodel",
       "source_file": "",
@@ -12917,7 +12940,7 @@
       "label": "get",
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "get",
       "source_file": "",
@@ -12928,9 +12951,53 @@
       "label": "Session",
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "code",
       "norm_label": "session",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_test_upload",
+      "label": "test_upload.py",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "test_upload.py",
+      "source_file": "api/routers/test_upload.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "api_routers_test_upload_py_post",
+      "label": "post",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "post",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "api_routers_test_upload_py_session",
+      "label": "Session",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "session",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "uploadfile",
+      "label": "UploadFile",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "code",
+      "norm_label": "uploadfile",
       "source_file": "",
       "source_location": ""
     },
@@ -12939,7 +13006,7 @@
       "label": "Observations list API endpoint. GET /api/observations \u2014 all ingested\u2026",
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "rationale",
       "norm_label": "observations list api endpoint. get /api/observations \u2014 all ingested...",
       "source_file": "api/routers/observations.py",
@@ -12950,11 +13017,33 @@
       "label": "Return all ingested observations with pipeline status and object counts.",
       "_origin": "ast",
       "community": 80,
-      "community_name": "observations.py",
+      "community_name": "Observation",
       "file_type": "rationale",
       "norm_label": "return all ingested observations with pipeline status and object counts.",
       "source_file": "api/routers/observations.py",
       "source_location": "L43"
+    },
+    {
+      "id": "api_routers_test_upload_rationale_20",
+      "label": "Temporary test endpoint: uploads a file to MinIO and creates an observation\u2026",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "rationale",
+      "norm_label": "temporary test endpoint: uploads a file to minio and creates an observation...",
+      "source_file": "api/routers/test_upload.py",
+      "source_location": "L20"
+    },
+    {
+      "id": "pipeline_catalog_import_rationale_66",
+      "label": "Import genuine published records idempotently, without fabricated detections.",
+      "_origin": "ast",
+      "community": 80,
+      "community_name": "Observation",
+      "file_type": "rationale",
+      "norm_label": "import genuine published records idempotently, without fabricated detections.",
+      "source_file": "pipeline/catalog_import.py",
+      "source_location": "L66"
     },
     {
       "id": "tests_test_name_search_api_rationale_106",
@@ -13122,17 +13211,6 @@
       "source_location": "L1"
     },
     {
-      "id": "api_db_neo4j_py_session",
-      "label": "Session",
-      "_origin": "ast",
-      "community": 84,
-      "community_name": "test_load_graph.py",
-      "file_type": "code",
-      "norm_label": "session",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
       "id": "driver",
       "label": "Driver",
       "_origin": "ast",
@@ -13197,17 +13275,6 @@
       "norm_label": "return the singleton driver, initialising lazily if needed.",
       "source_file": "api/db/neo4j.py",
       "source_location": "L58"
-    },
-    {
-      "id": "api_db_neo4j_rationale_66",
-      "label": "FastAPI dependency yielding a Neo4j session from the singleton driver.",
-      "_origin": "ast",
-      "community": 84,
-      "community_name": "test_load_graph.py",
-      "file_type": "rationale",
-      "norm_label": "fastapi dependency yielding a neo4j session from the singleton driver.",
-      "source_file": "api/db/neo4j.py",
-      "source_location": "L66"
     },
     {
       "id": "pipeline_tasks_ingest_rationale_45",
@@ -13276,17 +13343,6 @@
       "source_location": "L286"
     },
     {
-      "id": "tests_test_load_graph_rationale_31",
-      "label": "get_neo4j_session must be a generator function so FastAPI Depends works.",
-      "_origin": "ast",
-      "community": 84,
-      "community_name": "test_load_graph.py",
-      "file_type": "rationale",
-      "norm_label": "get_neo4j_session must be a generator function so fastapi depends works.",
-      "source_file": "tests/test_load_graph.py",
-      "source_location": "L31"
-    },
-    {
       "id": "tests_test_load_graph_rationale_338",
       "label": "Source check: load_graph must not use CREATE for nodes (only MERGE).",
       "_origin": "ast",
@@ -13307,6 +13363,28 @@
       "norm_label": "api/main.py must wire init_driver/close_driver via a lifespan context.",
       "source_file": "tests/test_load_graph.py",
       "source_location": "L99"
+    },
+    {
+      "id": "tests_test_structured_search_api",
+      "label": "test_structured_search_api.py",
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "_make_app_with_mock_session",
+      "file_type": "code",
+      "norm_label": "test_structured_search_api.py",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "tests_test_structured_search_api_rationale_1",
+      "label": "Tests for structured query API endpoint. POST /api/objects/search \u2014 structured\u2026",
+      "_origin": "ast",
+      "community": 85,
+      "community_name": "_make_app_with_mock_session",
+      "file_type": "rationale",
+      "norm_label": "tests for structured query api endpoint. post /api/objects/search \u2014 structured...",
+      "source_file": "tests/test_structured_search_api.py",
+      "source_location": "L1"
     },
     {
       "id": "tests_test_structured_search_api_rationale_30",
@@ -13735,50 +13813,6 @@
       "source_location": "L2"
     },
     {
-      "id": "api_routers_test_upload_py_post",
-      "label": "post",
-      "_origin": "ast",
-      "community": 92,
-      "community_name": "upload_test_file",
-      "file_type": "code",
-      "norm_label": "post",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_test_upload_py_session",
-      "label": "Session",
-      "_origin": "ast",
-      "community": 92,
-      "community_name": "upload_test_file",
-      "file_type": "code",
-      "norm_label": "session",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "uploadfile",
-      "label": "UploadFile",
-      "_origin": "ast",
-      "community": 92,
-      "community_name": "upload_test_file",
-      "file_type": "code",
-      "norm_label": "uploadfile",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "api_routers_test_upload_rationale_20",
-      "label": "Temporary test endpoint: uploads a file to MinIO and creates an observation\u2026",
-      "_origin": "ast",
-      "community": 92,
-      "community_name": "upload_test_file",
-      "file_type": "rationale",
-      "norm_label": "temporary test endpoint: uploads a file to minio and creates an observation...",
-      "source_file": "api/routers/test_upload.py",
-      "source_location": "L20"
-    },
-    {
       "id": "web_src_app_objects_uuid_not_found",
       "label": "not-found.tsx",
       "_origin": "ast",
@@ -13788,17 +13822,6 @@
       "norm_label": "not-found.tsx",
       "source_file": "web/src/app/objects/[uuid]/not-found.tsx",
       "source_location": "L1"
-    },
-    {
-      "id": "web_package_dependencies_openseadragon",
-      "label": "openseadragon",
-      "_origin": "ast",
-      "community": 94,
-      "community_name": "Image Tiling (HiPS/HEALPix)",
-      "file_type": "code",
-      "norm_label": "openseadragon",
-      "source_file": "web/package.json",
-      "source_location": "L13"
     },
     {
       "id": "openseadragon",
@@ -14003,7 +14026,7 @@
       "label": "DashboardClient.tsx",
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "dashboardclient.tsx",
       "source_file": "web/src/app/dashboard/DashboardClient.tsx",
@@ -14014,7 +14037,7 @@
       "label": "STATUS_STYLES",
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "status_styles",
       "source_file": "web/src/app/dashboard/DashboardClient.tsx",
@@ -14025,7 +14048,7 @@
       "label": "dashboard/page.tsx",
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "dashboard/page.tsx",
       "source_file": "web/src/app/dashboard/page.tsx",
@@ -14036,22 +14059,11 @@
       "label": "metadata",
       "_origin": "ast",
       "community": 99,
-      "community_name": "observation.ts",
+      "community_name": "DashboardClient.tsx",
       "file_type": "code",
       "norm_label": "metadata",
       "source_file": "web/src/app/dashboard/page.tsx",
       "source_location": "L5"
-    },
-    {
-      "id": "web_src_types_observation",
-      "label": "observation.ts",
-      "_origin": "ast",
-      "community": 99,
-      "community_name": "observation.ts",
-      "file_type": "code",
-      "norm_label": "observation.ts",
-      "source_file": "web/src/types/observation.ts",
-      "source_location": "L1"
     },
     {
       "id": "docs_plans_2026_02_21_phase1_implementation_plan",
@@ -14065,51 +14077,6 @@
       "file_type": "document",
       "norm_label": "phase 1: foundation & infrastructure implementation plan",
       "source_file": "docs/plans/2026-02-21-phase1-implementation-plan.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_pytorch",
-      "label": "PyTorch",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 115,
-      "community_name": "PyTorch",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "pytorch",
-      "source_file": ".planning/research/STACK.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_sam2",
-      "label": "SAM 2.1",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 115,
-      "community_name": "PyTorch",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "sam 2.1",
-      "source_file": ".planning/research/STACK.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_timm",
-      "label": "timm",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 115,
-      "community_name": "PyTorch",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "timm",
-      "source_file": ".planning/research/STACK.md",
       "source_location": null,
       "source_url": null
     },
@@ -15389,6 +15356,141 @@
       "source_url": null
     },
     {
+      "id": "concept_react_force_graph",
+      "label": "react-force-graph",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "react-force-graph",
+      "source_file": ".planning/research/SUMMARY.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_features_ai_nl_querying",
+      "label": "AI-assisted Natural Language Querying",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "ai-assisted natural language querying",
+      "source_file": ".planning/research/FEATURES.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_features_anti_raw_sql_interface",
+      "label": "Anti-feature: Raw SQL/ADQL Query Interface",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "anti-feature: raw sql/adql query interface",
+      "source_file": ".planning/research/FEATURES.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_features_knowledge_graph",
+      "label": "Knowledge Graph With Spatial Hierarchy",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "knowledge graph with spatial hierarchy",
+      "source_file": ".planning/research/FEATURES.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_features_object_search",
+      "label": "Object Search",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "object search",
+      "source_file": ".planning/research/FEATURES.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_features_visual_graph_explorer",
+      "label": "Visual Knowledge Graph Explorer",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "visual knowledge graph explorer",
+      "source_file": ".planning/research/FEATURES.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_pitfalls_kg_schema_lock_in",
+      "label": "Pitfall: Knowledge Graph Schema Lock-in",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "pitfall: knowledge graph schema lock-in",
+      "source_file": ".planning/research/PITFALLS.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_stack_neo4j",
+      "label": "Neo4j Community Edition",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "neo4j community edition",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_stack_neo4j_driver",
+      "label": "neo4j Python Driver",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 6,
+      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "neo4j python driver",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
       "id": "planning_phases_05_classification_cross_matching_05_01_plan_doc",
       "label": "Phase 5 Plan 01: Schema, Config, Catalog Clients",
       "_origin": "semantic",
@@ -15944,32 +16046,32 @@
       "source_url": null
     },
     {
-      "id": "concept_react_force_graph",
-      "label": "react-force-graph",
+      "id": "concept_astropy",
+      "label": "Astropy",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "react-force-graph",
+      "norm_label": "astropy",
       "source_file": ".planning/research/SUMMARY.md",
       "source_location": null,
       "source_url": null
     },
     {
-      "id": "planning_research_features_ai_nl_querying",
-      "label": "AI-assisted Natural Language Querying",
+      "id": "concept_astroquery",
+      "label": "astroquery",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "ai-assisted natural language querying",
-      "source_file": ".planning/research/FEATURES.md",
+      "norm_label": "astroquery",
+      "source_file": ".planning/research/SUMMARY.md",
       "source_location": null,
       "source_url": null
     },
@@ -15980,7 +16082,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "anomaly detection and novel object flagging",
@@ -15995,7 +16097,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "anti-feature: full citizen science platform",
@@ -16010,25 +16112,10 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "anti-feature: full lsst real-time ingestion",
-      "source_file": ".planning/research/FEATURES.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_features_anti_raw_sql_interface",
-      "label": "Anti-feature: Raw SQL/ADQL Query Interface",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "anti-feature: raw sql/adql query interface",
       "source_file": ".planning/research/FEATURES.md",
       "source_location": null,
       "source_url": null
@@ -16040,10 +16127,25 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "anti-feature: spectral analysis tools",
+      "source_file": ".planning/research/FEATURES.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_features_catalog_cross_matching",
+      "label": "Catalog Cross-matching",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 86,
+      "community_name": "Automated SAM-based Object Segmentation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "catalog cross-matching",
       "source_file": ".planning/research/FEATURES.md",
       "source_location": null,
       "source_url": null
@@ -16055,7 +16157,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "fits ingestion pipeline",
@@ -16064,16 +16166,16 @@
       "source_url": null
     },
     {
-      "id": "planning_research_features_knowledge_graph",
-      "label": "Knowledge Graph With Spatial Hierarchy",
+      "id": "planning_research_features_fits_support",
+      "label": "FITS File Support",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "knowledge graph with spatial hierarchy",
+      "norm_label": "fits file support",
       "source_file": ".planning/research/FEATURES.md",
       "source_location": null,
       "source_url": null
@@ -16085,25 +16187,10 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "individual object detail pages",
-      "source_file": ".planning/research/FEATURES.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_features_object_search",
-      "label": "Object Search",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "object search",
       "source_file": ".planning/research/FEATURES.md",
       "source_location": null,
       "source_url": null
@@ -16115,7 +16202,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "automated sam-based object segmentation",
@@ -16130,7 +16217,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "temporal change tracking",
@@ -16139,31 +16226,31 @@
       "source_url": null
     },
     {
-      "id": "planning_research_features_visual_graph_explorer",
-      "label": "Visual Knowledge Graph Explorer",
+      "id": "planning_research_features_wcs_coordinate_support",
+      "label": "Coordinate System Support (WCS)",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "visual knowledge graph explorer",
+      "norm_label": "coordinate system support (wcs)",
       "source_file": ".planning/research/FEATURES.md",
       "source_location": null,
       "source_url": null
     },
     {
-      "id": "planning_research_pitfalls_kg_schema_lock_in",
-      "label": "Pitfall: Knowledge Graph Schema Lock-in",
+      "id": "planning_research_pitfalls_cross_match_false_associations",
+      "label": "Pitfall: Catalog Cross-matching False Associations",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "pitfall: knowledge graph schema lock-in",
+      "norm_label": "pitfall: catalog cross-matching false associations",
       "source_file": ".planning/research/PITFALLS.md",
       "source_location": null,
       "source_url": null
@@ -16175,7 +16262,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "pitfall: sam produces garbage without domain adaptation",
@@ -16190,10 +16277,25 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "pitfall: storage costs explode before funding",
+      "source_file": ".planning/research/PITFALLS.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_pitfalls_wcs_errors",
+      "label": "Pitfall: WCS Coordinate Errors Corrupt Cross-matching",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 86,
+      "community_name": "Automated SAM-based Object Segmentation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "pitfall: wcs coordinate errors corrupt cross-matching",
       "source_file": ".planning/research/PITFALLS.md",
       "source_location": null,
       "source_url": null
@@ -16205,7 +16307,7 @@
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
       "norm_label": "minio",
@@ -16214,31 +16316,61 @@
       "source_url": null
     },
     {
-      "id": "planning_research_stack_neo4j",
-      "label": "Neo4j Community Edition",
+      "id": "planning_research_stack_pytorch",
+      "label": "PyTorch",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "neo4j community edition",
+      "norm_label": "pytorch",
       "source_file": ".planning/research/STACK.md",
       "source_location": null,
       "source_url": null
     },
     {
-      "id": "planning_research_stack_neo4j_driver",
-      "label": "neo4j Python Driver",
+      "id": "planning_research_stack_reproject",
+      "label": "reproject",
       "_origin": "semantic",
       "author": null,
       "captured_at": null,
       "community": 86,
-      "community_name": "Knowledge Graph With Spatial Hierarchy",
+      "community_name": "Automated SAM-based Object Segmentation",
       "contributor": null,
       "file_type": "concept",
-      "norm_label": "neo4j python driver",
+      "norm_label": "reproject",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_stack_sam2",
+      "label": "SAM 2.1",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 86,
+      "community_name": "Automated SAM-based Object Segmentation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "sam 2.1",
+      "source_file": ".planning/research/STACK.md",
+      "source_location": null,
+      "source_url": null
+    },
+    {
+      "id": "planning_research_stack_timm",
+      "label": "timm",
+      "_origin": "semantic",
+      "author": null,
+      "captured_at": null,
+      "community": 86,
+      "community_name": "Automated SAM-based Object Segmentation",
+      "contributor": null,
+      "file_type": "concept",
+      "norm_label": "timm",
       "source_file": ".planning/research/STACK.md",
       "source_location": null,
       "source_url": null
@@ -16360,126 +16492,6 @@
       "file_type": "image",
       "norm_label": "window.svg icon",
       "source_file": "web/public/window.svg",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "concept_astropy",
-      "label": "Astropy",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "astropy",
-      "source_file": ".planning/research/SUMMARY.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "concept_astroquery",
-      "label": "astroquery",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "astroquery",
-      "source_file": ".planning/research/SUMMARY.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_features_catalog_cross_matching",
-      "label": "Catalog Cross-matching",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "catalog cross-matching",
-      "source_file": ".planning/research/FEATURES.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_features_fits_support",
-      "label": "FITS File Support",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "fits file support",
-      "source_file": ".planning/research/FEATURES.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_features_wcs_coordinate_support",
-      "label": "Coordinate System Support (WCS)",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "coordinate system support (wcs)",
-      "source_file": ".planning/research/FEATURES.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_pitfalls_cross_match_false_associations",
-      "label": "Pitfall: Catalog Cross-matching False Associations",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "pitfall: catalog cross-matching false associations",
-      "source_file": ".planning/research/PITFALLS.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_pitfalls_wcs_errors",
-      "label": "Pitfall: WCS Coordinate Errors Corrupt Cross-matching",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "pitfall: wcs coordinate errors corrupt cross-matching",
-      "source_file": ".planning/research/PITFALLS.md",
-      "source_location": null,
-      "source_url": null
-    },
-    {
-      "id": "planning_research_stack_reproject",
-      "label": "reproject",
-      "_origin": "semantic",
-      "author": null,
-      "captured_at": null,
-      "community": 90,
-      "community_name": "Catalog Cross-matching",
-      "contributor": null,
-      "file_type": "concept",
-      "norm_label": "reproject",
-      "source_file": ".planning/research/STACK.md",
       "source_location": null,
       "source_url": null
     },
@@ -17448,7 +17460,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L146",
+      "source_location": "L149",
       "weight": 1.0
     },
     {
@@ -17460,7 +17472,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L147",
+      "source_location": "L150",
       "weight": 1.0
     },
     {
@@ -17472,7 +17484,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L150",
+      "source_location": "L153",
       "weight": 1.0
     },
     {
@@ -17484,7 +17496,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L151",
+      "source_location": "L154",
       "weight": 1.0
     },
     {
@@ -17496,7 +17508,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L155",
+      "source_location": "L158",
       "weight": 1.0
     },
     {
@@ -17508,7 +17520,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L172",
+      "source_location": "L176",
       "weight": 1.0
     },
     {
@@ -17520,7 +17532,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -17532,7 +17544,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L59",
+      "source_location": "L60",
       "weight": 1.0
     },
     {
@@ -17544,7 +17556,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L61",
+      "source_location": "L62",
       "weight": 1.0
     },
     {
@@ -17556,7 +17568,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L239",
+      "source_location": "L247",
       "weight": 1.0
     },
     {
@@ -17568,7 +17580,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L116",
+      "source_location": "L119",
       "weight": 1.0
     },
     {
@@ -17580,7 +17592,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L117",
+      "source_location": "L120",
       "weight": 1.0
     },
     {
@@ -17592,7 +17604,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L119",
+      "source_location": "L122",
       "weight": 1.0
     },
     {
@@ -17604,7 +17616,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L189",
+      "source_location": "L193",
       "weight": 1.0
     },
     {
@@ -17616,7 +17628,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L190",
+      "source_location": "L194",
       "weight": 1.0
     },
     {
@@ -17628,7 +17640,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L194",
+      "source_location": "L198",
       "weight": 1.0
     },
     {
@@ -17640,7 +17652,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L205",
+      "source_location": "L212",
       "weight": 1.0
     },
     {
@@ -17652,7 +17664,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L211",
+      "source_location": "L219",
       "weight": 1.0
     },
     {
@@ -17664,7 +17676,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L70",
+      "source_location": "L71",
       "weight": 1.0
     },
     {
@@ -18721,6 +18733,30 @@
       "context": "call",
       "source_file": "tests/test_catalog.py",
       "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_catalog_test_display_orientation_matches_viewer_fits_y_flip",
+      "target": "tests_test_catalog_survey_fits",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_catalog.py",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_catalog_test_display_orientation_matches_viewer_fits_y_flip",
+      "target": "pipeline_catalog_import_prepare_images",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "tests/test_catalog.py",
+      "source_location": "L90",
       "weight": 1.0
     },
     {
@@ -25260,7 +25296,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -25272,7 +25308,7 @@
       "confidence_score": 1.0,
       "context": "generic_arg",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -31669,7 +31705,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L109",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -33426,7 +33462,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog.py",
-      "source_location": "L109",
+      "source_location": "L113",
       "weight": 1.0
     },
     {
@@ -33602,7 +33638,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L109",
+      "source_location": "L112",
       "weight": 1.0
     },
     {
@@ -33613,7 +33649,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L115",
+      "source_location": "L118",
       "weight": 1.0
     },
     {
@@ -33624,7 +33660,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L145",
+      "source_location": "L148",
       "weight": 1.0
     },
     {
@@ -33635,7 +33671,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L183",
+      "source_location": "L187",
       "weight": 1.0
     },
     {
@@ -33646,7 +33682,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L229",
+      "source_location": "L237",
       "weight": 1.0
     },
     {
@@ -33657,7 +33693,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L42",
+      "source_location": "L43",
       "weight": 1.0
     },
     {
@@ -33668,7 +33704,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0
     },
     {
@@ -33679,7 +33715,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L56",
+      "source_location": "L57",
       "weight": 1.0
     },
     {
@@ -33690,7 +33726,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L64",
+      "source_location": "L65",
       "weight": 1.0
     },
     {
@@ -33701,7 +33737,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L91",
+      "source_location": "L92",
       "weight": 1.0
     },
     {
@@ -34989,6 +35025,17 @@
       "confidence_score": 1.0,
       "source_file": "tests/test_catalog.py",
       "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "tests_test_catalog",
+      "target": "tests_test_catalog_test_display_orientation_matches_viewer_fits_y_flip",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "tests/test_catalog.py",
+      "source_location": "L84",
       "weight": 1.0
     },
     {
@@ -41062,25 +41109,25 @@
       "weight": 1.0
     },
     {
-      "source": "pipeline_catalog_import_rationale_65",
+      "source": "pipeline_catalog_import_rationale_66",
       "target": "pipeline_catalog_import_seed_catalog",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L65",
+      "source_location": "L66",
       "weight": 1.0
     },
     {
-      "source": "pipeline_catalog_import_rationale_92",
+      "source": "pipeline_catalog_import_rationale_93",
       "target": "pipeline_catalog_import_prepare_images",
       "relation": "rationale_for",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L92",
+      "source_location": "L93",
       "weight": 1.0
     },
     {
@@ -43536,7 +43583,7 @@
       "confidence_score": 0.85,
       "context": "call",
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L96",
+      "source_location": "L97",
       "weight": 1.0
     },
     {
@@ -44682,7 +44729,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L161",
+      "source_location": "L164",
       "weight": 0.8
     },
     {
@@ -44693,7 +44740,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L161",
+      "source_location": "L164",
       "weight": 0.8
     },
     {
@@ -44704,7 +44751,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L166",
+      "source_location": "L170",
       "weight": 0.8
     },
     {
@@ -44715,7 +44762,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L174",
+      "source_location": "L178",
       "weight": 0.8
     },
     {
@@ -44726,7 +44773,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L197",
+      "source_location": "L201",
       "weight": 0.8
     },
     {
@@ -44737,7 +44784,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L75",
+      "source_location": "L76",
       "weight": 0.8
     },
     {
@@ -44748,7 +44795,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L85",
+      "source_location": "L86",
       "weight": 0.8
     },
     {
@@ -44759,7 +44806,7 @@
       "confidence": "INFERRED",
       "confidence_score": 0.95,
       "source_file": "pipeline/catalog_import.py",
-      "source_location": "L86",
+      "source_location": "L87",
       "weight": 0.8
     },
     {
@@ -48266,5 +48313,5 @@
       "source_file": ".planning/research/STACK.md"
     }
   ],
-  "built_at_commit": "f92c1266bb1bab34d478212dd811acff06986185"
+  "built_at_commit": "a82c7075801e2de13c3a48519e1752588c27760a"
 }

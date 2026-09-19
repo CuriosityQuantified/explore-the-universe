@@ -90,10 +90,14 @@ def parse_catalog(text: str) -> list[dict]:
 
 def diverse_order(targets: list[dict]) -> list[dict]:
     """Messier targets first, then round-robin by sky sector and object type."""
-    famous = sorted((t for t in targets if t["messier"]), key=lambda t: int(t["name"][1:]))
+    featured_ids = ("NGC0224", "NGC1976", "Mel022", "NGC0253", "NGC5139", "NGC2070")
+    featured = {t["id"]: t for t in targets if t["id"] in featured_ids}
+    famous = [featured[key] for key in featured_ids if key in featured]
+    famous += sorted((t for t in targets if t["messier"] and t["id"] not in featured),
+                     key=lambda t: int(t["name"][1:]))
     groups = defaultdict(list)
     for target in targets:
-        if not target["messier"]:
+        if not target["messier"] and target["id"] not in featured:
             band = min(5, int((math.sin(math.radians(target["dec"])) + 1) * 3))
             groups[(band, int(target["ra"] / 30), target["type"])].append(target)
     queues = [deque(sorted(group, key=lambda t: (t["magnitude"] is None, t["magnitude"] or 0, t["id"])))

@@ -79,3 +79,14 @@ def test_budget_exhaustion_does_not_upload_or_commit():
 def test_invalid_image_rejected():
     with pytest.raises(Exception):
         prepare_images(b"upstream error page")
+
+
+def test_display_orientation_matches_viewer_fits_y_flip():
+    data = survey_fits()
+    with fits.open(io.BytesIO(data)) as hdus:
+        hdus[0].data[:] = np.arange(512)[:, None]
+        buffer = io.BytesIO()
+        hdus.writeto(buffer)
+    image, _ = prepare_images(buffer.getvalue())
+    pixels = np.asarray(image)
+    assert pixels[0, 256] > pixels[-1, 256]

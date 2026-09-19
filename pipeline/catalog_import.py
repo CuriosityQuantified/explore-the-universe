@@ -36,6 +36,7 @@ logger = logging.getLogger(__name__)
 NAMESPACE = uuid.UUID("d06332d1-6774-4f56-9eee-5ca9eb977c79")
 PIXELS = 512
 MAX_DOWNLOAD_BYTES = 4_000_000
+RENDER_VERSION = 2
 LOCK_ID = 731804219
 
 
@@ -102,7 +103,9 @@ def prepare_images(data: bytes) -> tuple[Image.Image, dict]:
         if vmax <= vmin:
             raise ValueError("Survey image has no display contrast")
         normalized = np.clip((np.nan_to_num(array, nan=vmin) - vmin) / (vmax - vmin), 0, 1)
-        image = Image.fromarray((AsinhStretch(0.1)(normalized) * 255).astype(np.uint8))
+        # FITS rows start at the bottom; the browser viewer flips Y back to FITS
+        # coordinates. Display assets therefore need north/up array orientation.
+        image = Image.fromarray((AsinhStretch(0.1)(normalized) * 255).astype(np.uint8)).transpose(Image.Transpose.FLIP_TOP_BOTTOM)
     return image, {"normalization_vmin": vmin, "normalization_vmax": vmax}
 
 
@@ -162,7 +165,8 @@ def import_image(target: dict, remaining_bytes: int) -> int:
         obj.cutout_s3_prefix = f"catalog/{obs_id}/{obj_id}"
         obj.physical_properties = dict(obj.physical_properties, imagery_bytes=total_bytes,
                                       image_source_url=source_url, image_sha256=hashlib.sha256(data).hexdigest(),
-                                      field_of_view_degrees=params["fov"], image_status="available")
+                                      field_of_view_degrees=params["fov"], image_status="available",
+                                      imagery_render_version=RENDER_VERSION)
         obs.pipeline_status = PipelineStatus.completed
         for name, metadata in (("survey_download", {"source_url": source_url, "survey": SURVEY}),
                                ("generate_tiles", tile_metadata)):
@@ -194,9 +198,12 @@ def run(max_images: int, max_seconds: int, max_total_bytes: int, metadata_only: 
             client = get_catalog_s3_client()
             client.head_bucket(Bucket=settings.catalog_s3_bucket)
             with SessionLocal() as session:
-                completed = set(session.scalars(select(AstronomicalObject.object_uuid).where(
+                existing = session.execute(select(AstronomicalObject.object_uuid, AstronomicalObject.physical_properties).where(
                     AstronomicalObject.classification_source_catalog == "OpenNGC",
-                    AstronomicalObject.cutout_s3_prefix.isnot(None))))
+                    AstronomicalObject.cutout_s3_prefix.isnot(None))).all()
+                prior_bytes = {obj_id: properties.get("imagery_bytes", 0) for obj_id, properties in existing}
+                completed = {obj_id for obj_id, properties in existing
+                             if properties.get("imagery_render_version") == RENDER_VERSION}
                 stored = session.scalar(select(func.coalesce(func.sum(
                     AstronomicalObject.physical_properties["imagery_bytes"].astext.cast(BigInteger)), 0)))
             started = time.monotonic()
@@ -208,7 +215,8 @@ def run(max_images: int, max_seconds: int, max_total_bytes: int, metadata_only: 
                     break
                 attempted += 1
                 try:
-                    stored += import_image(target, max_total_bytes - stored)
+                    replaced_bytes = prior_bytes.get(identity(target)[1], 0)
+                    stored += import_image(target, max_total_bytes - stored + replaced_bytes) - replaced_bytes
                     added += 1
                     logger.info("Imagery %s ready: added=%d total_bytes=%d", target["id"], added, stored)
                 except OverflowError:
